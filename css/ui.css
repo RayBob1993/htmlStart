@@ -1,0 +1,815 @@
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {box-sizing: inherit;}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {display: block;}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+[hidden],
+template {display: none}
+
+b,
+strong {font-weight: 700}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	line-height: 100%;
+}
+
+h1 {font-size: 34px;}
+h2 {font-size: 24px;}
+h3 {font-size: 22px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+small {font-size: 80%}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {font-weight: normal;}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sup {top: -.5em;}
+sub {bottom: -.25em;}
+
+img {
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+svg:not(:root) {overflow: hidden}
+
+form,
+figure {margin: 0}
+
+hr {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	border-bottom: 1px solid #000;
+}
+
+p {margin-top: 0}
+
+pre {overflow: auto}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {overflow: visible}
+
+button,
+select {text-transform: none}
+
+button,
+html input[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {cursor: default}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+fieldset {
+	border: 1px solid silver;
+	margin: 0 2px;
+	padding: .35em .625em .75em
+}
+
+legend {
+	border: 0;
+	padding: 0
+}
+
+textarea {overflow: auto}
+optgroup {font-weight: 700}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+td,
+th {padding: 0}
+
+/* ============================ Основа кнопки */
+.but {
+	position: relative;
+	display: inline-block;
+	background: none;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+
+	transition: all .2s ease-in-out;
+
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.but[disabled] {
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	opacity: .65;
+}
+
+/* Размеры кнопок */
+.butBlock {
+	display: block;
+	width: 100%;
+}
+
+.butSmall {}
+.butBig {}
+
+/* Стили кнопок */
+.butDefault {}
+
+.butClear {}
+
+/* ============================ Готовые классы помошники */
+.cf:before,
+.cf:after {display: table;content: "";}
+.cf:after {clear: both;}
+
+.ovh {overflow: hidden;}
+
+.left {float: left;}
+.right {float: right;}
+
+.textRight {text-align: right;}
+.textCenter {text-align: center;}
+
+/* ============================ Списки */
+/* Обнуление списка */
+.listNull {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.listNull > li {position: relative;}
+
+/* Плавающий список */
+.listFloat > li {float: left;}
+
+/* Строчный список */
+.listCenter {text-align: center;}
+.listRight {text-align: right;}
+
+.listCenter > li,
+.listRight > li,
+.listInline > li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Резиновый список */
+.listFlex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.listFlex > li {
+	text-align: center;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+/* ============================ Сетка */
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-width: 320px;
+	min-height: 1px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	margin-left: -10px;
+	margin-right: -10px;
+
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+/* Горизонтальное выравнивание строки */
+.rowLeft {
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	text-align: start;
+}
+
+.rowCenter {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.rowRight {
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	text-align: end;
+}
+
+.rowAround {
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.rowBetween {
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+/* Вертикальное выравнивание строки */
+.rowTop {
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.rowMiddle {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.rowBot {
+	-webkit-align-items: flex-end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.rowBaseline {
+	-webkit-justify-content: baseline;
+	-ms-flex-pack: baseline;
+	justify-content: baseline;
+}
+
+.col {
+	position: relative;
+
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+
+	padding-left: 10px;
+	padding-right: 10px; 
+	min-height: 1px;
+}
+
+/* Вертикальное выравнивание ячеек */
+.colTop {
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+.colMiddle {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.colBottom {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+.colAutoSize {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.col1 {
+	-webkit-flex: 0 0 8.33333333%;
+	-ms-flex: 0 0 8.3333333%;
+	flex: 0 0 8.3333333%;
+	max-width: 8.33333333%;
+}
+
+.col2 {
+	-webkit-flex: 0 0 16.66666667%;
+	-ms-flex: 0 0 16.66666667%;
+	flex: 0 0 16.66666667%;
+	max-width: 16.66666667%;
+}
+
+.col3 {
+	-webkit-flex: 0 0 25%;
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.col4 {
+	-webkit-flex: 0 0 33.33333333%;
+	-ms-flex: 0 0 33.33333333%;
+	flex: 0 0 33.33333333%;
+	max-width: 33.33333333%;
+}
+
+.col5 {
+	-webkit-flex: 0 0 41.66666667%;
+	-ms-flex: 0 0 41.66666667%;
+	flex: 0 0 41.66666667%;
+	max-width: 41.66666667%;
+}
+
+.col6 {
+	-webkit-flex: 0 0 50%;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.col7 {
+	-webkit-flex: 0 0 58.33333333%;
+	-ms-flex: 0 0 58.33333333%;
+	flex: 0 0 58.33333333%;
+	max-width: 58.33333333%;
+}
+
+.col8 {
+	-webkit-flex: 0 0 66.66666667%;
+	-ms-flex: 0 0 66666667%;
+	flex: 0 0 66666667%;
+	max-width: 66.66666667%;
+}
+
+.col9 {
+	-webkit-flex: 0 0 75%;
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.col10 {
+	-webkit-flex: 0 0 83.33333333%;
+	-ms-flex: 0 0 83.33333333%;
+	flex: 0 0 83.33333333%;
+	max-width: 83.33333333%; 
+}
+
+.col11 {
+	-webkit-flex: 0 0 91.66666667%;
+	-ms-flex: 0 0 91.66666667%;
+	flex: 0 0 91.66666667%;
+	max-width: 91.66666667%;
+}
+
+.col12 {
+	-webkit-flex: 0 0 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+/* Смещение колонок */
+.offset1 {margin-left: 8.33333333%}
+.offset2 {margin-left: 16.66666667%}
+.offset3 {margin-left: 25%}
+.offset4 {margin-left: 33.33333333%}
+.offset5 {margin-left: 41.66666667%}
+.offset6 {margin-left: 50%}
+.offset7 {margin-left: 58.33333333%}
+.offset8 {margin-left: 66.66666667%}
+.offset9 {margin-left: 75%}
+.offset10 {margin-left: 83.33333333%}
+.offset11 {margin-left: 91.66666667%}
+
+/* ============================ Секции */
+.section {}
+
+.sectionTitle {}
+
+/* ============================ Слайдер */
+.slick {
+	position: relative;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.slick-list:focus {outline: none;}
+
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+}
+
+.slick-track:before,
+.slick-track:after {
+	display: table;
+	content: '';
+}
+
+.slick-track:after {clear: both;}
+.slick-loading .slick-track {visibility: hidden;}
+
+.slick-slide {
+	position: relative;
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	outline: none;
+}
+
+.slick-initialized .slick-slide {display: block;}
+.slick-loading .slick-slide {visibility: hidden;}
+
+.slick-arrow.slick-hidden {display: none;}
+
+/* Навигация по слайдам */ 
+.slick-dots {
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 4px;
+}
+
+.slick-dots button {
+	width: 10px;
+	height: 10px;
+	background: #000;
+	border-radius: 100%;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+.slick-dots .slick-active button,
+.slick-dots li:hover button {
+	background: #444;
+}
+
+/* Кнопки лево-право */ 
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	width: 20px;
+	height: 20px;
+	z-index: 10;
+	font-size: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: url('../img/ico/slickArr.png') no-repeat;
+}
+
+.slick-prev {
+	left: 0;
+	background-position: left top; 
+}
+
+.slick-prev:hover {background-position: left bottom;}
+
+.slick-next {
+	right: 0;
+	background-position: right top; 
+}
+
+.slick-next:hover {background-position: right bottom;}
+
+/* ============================ Таблицы */
+.table {width: 100%;}
+
+.tlf {table-layout: fixed;}
+
+/* Полосатая таблица */
+.tableStriped > tbody > tr:nth-of-type(even) {background: #ccc;}
+
+/* ============================ Формы */
+.form {}
+
+.formGroup {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.formGroup:last-child {margin-bottom: 0}
+
+.fieldName {
+	display: block;
+	position: relative;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.field {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: #fff;
+	border-radius: 0;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.field::-webkit-input-placeholder {
+	text-overflow: ellipsis;
+	color: #aaa;
+}
+
+.field::-moz-placeholder {
+	text-overflow: ellipsis;
+	color: #aaa;
+}
+
+.field:-moz-placeholder {
+	text-overflow: ellipsis;
+	color: #aaa;
+}
+
+.field:-ms-input-placeholder {
+	text-overflow: ellipsis;
+	color: #aaa;
+}
+
+.field:hover {}
+
+.field:focus {}
+
+.field:focus::-webkit-input-placeholder {color: transparent}
+.field:focus::-moz-placeholder {color: transparent}
+.field:focus:-moz-placeholder {color: transparent}
+.field:focus:-ms-input-placeholder {color: transparent}
+
+/* ============================ Модальные окна */
+.modalOpen {overflow: hidden;}
+
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity .15s linear;
+	transition: opacity .15s linear;
+}
+
+.fade.in {opacity: 1;}
+
+.modal.fade .modalDialog {
+	-webkit-transform: translate(0, -25%);
+	-ms-transform: translate(0, -25%);
+	transform: translate(0, -25%);
+
+	-webkit-transition: -webkit-transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+}
+
+.modal.in .modalDialog {
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+
+.modalOpen .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modalDialog {
+	position: relative;
+	max-width: 500px;
+	margin: 40px auto;
+}
+
+.modalContent {
+	position: relative;
+	background: #fff;
+}
+
+.modalBackdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+
+.modalBackdrop.fade {opacity: 0;}
+.modalBackdrop.in {opacity: 0.5;}
+
+.modalHeader {
+	position: relative;
+	padding: 15px;
+}
+
+.modalClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.modalTitle {
+	margin: 0;
+}
+
+.modalBody {
+	position: relative;
+	padding: 15px;
+}
+
+/* ============================ Выпадающее меню */
+.dropdown {position: relative;}
+
+.dropdownBut {}
+
+.dropdownMenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+	transform: translateY(20px);
+}
+
+.open .dropdownMenu {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* ============================ Вкладки */
+.tabsNav a {
+	display: block;
+	text-decoration: none;
+	transition: all .15s linear;
+}
+
+.tabsNav .active > a {}
+
+.tabPanel {display: none;}
+.tabPanel.active {display: block;}

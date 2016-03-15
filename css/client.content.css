@@ -1,0 +1,53 @@
+/*
+	Добавлять к каждому блоку @font-face
+	font-display: swap;
+*/
+
+body {
+	margin: 0;
+	font-size: 14px;
+	color: #393938;
+	line-height: 1.42857143;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Ссылки */
+a {
+	color: #4078c0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+a:active,
+a:hover,
+a:focus {outline: 0}
+
+/* Обтекание картинок */
+.img_left {
+	float: left; 
+	margin-right: 10px;
+}
+
+.img_right {
+	float: right; 
+	margin-left: 10px;
+}
+
+/* Таблица */
+.table_bordered {
+	width: 100%;
+	margin: 15px 0;
+}
+
+.table_bordered thead tr {}
+.table_bordered thead tr th:not(:first-child) {}
+.table_bordered thead tr th {text-align: left;}
+
+.table_bordered tbody tr:not(:last-child) {}
+.table_bordered tbody tr td:not(:first-child) {}
+.table_bordered tbody tr td {}
