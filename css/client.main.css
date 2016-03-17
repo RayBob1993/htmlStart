@@ -41,6 +41,22 @@ body {height: 100%;}
 	top: 100%;
 	left: 0;
 	z-index: 1000;
+
+	opacity: 0;
+	visibility: hidden;
+	
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+
+	transition: .2s;
+}
+
+#topMenu li:hover ul {
+	opacity: 1;
+	visibility: visible;
+	
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
 }
 
 /* ============================ Основной блок */
