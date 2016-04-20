@@ -2,24 +2,6 @@ var Template = (function($){
 	'use strict';
 
 	return {
-		// Одинаковая высота для элементов
-		sameHeight: function(selector){
-			var el = $(selector),
-				maxHeight = 0;
-
-			// Сначала обнулим значение высоты
-			el.removeAttr('style');
-
-			el.each(function(){
-				var elHeight = $(this).height();
-
-				if (elHeight > maxHeight) {
-					maxHeight = elHeight;
-				}
-			});
-
-			el.height(maxHeight);
-		},
 
 		// Меню гармошка
 		accordion: function(selector){
@@ -74,28 +56,3 @@ var Template = (function($){
 		}
 	}
 })(jQuery);
-
-$(document).on('ready', function(){
-	'use strict';
-
-	// Открытие картинок
-	if (typeof($.fn.fancybox) !== "undefined") {
-		$(".fancybox").fancybox({
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			}
-		});
-	}
-
-	// Слайдеры
-	if (typeof($.fn.slick) !== "undefined") {
-		$('#mainSlider').slick();
-	}
-
-	// Видимость элементов
-	if (typeof($.fn.viewportChecker) !== "undefined") {
-		$('.section').viewportChecker();
-	}
-});

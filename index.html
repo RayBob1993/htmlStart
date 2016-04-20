@@ -8,50 +8,59 @@
 		<meta name="theme-color" content="#fff">
 
 		<title>Главная</title>
-
-		<link rel="stylesheet" href="css/ui.css">
-		<link rel="stylesheet" href="css/client.content.css">
-		<link rel="stylesheet" href="css/client.main.css">
-		<link rel="stylesheet" href="css/jquery.fancybox.css">
-		<link rel="stylesheet" href="css/responsive.css">
+		
+		<link rel="stylesheet" href="app/css/fonts.css">
+		<link rel="stylesheet" href="app/css/ui.css">
+		<link rel="stylesheet" href="app/css/client.content.css">
+		<link rel="stylesheet" href="app/css/app.css">
+		<link rel="stylesheet" href="app/css/fancybox.css">
+		<link rel="stylesheet" href="app/css/responsive.css">
 
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
 	</head>
 	<body>
-		<!-- Прижатие подвала -->
-		<div class="wrap">
-			<!-- Шапка -->
-			<header id="header">
-				<div class="container">
-					<a href="/" id="logo" class="logo">
-						<img src="img/logo.png" alt="Логотип" title="Логотип">
-					</a>
+		<!-- Шапка -->
+		<header id="header" class="header">
+			<div class="container">
+				<a href="/" id="headerLogo" class="logo headerLogo">
+					<img src="app/img/logo.png" alt="Логотип" title="Логотип">
+				</a>
 
-					<!-- Контакты в шапке -->
-					<div id="headerContacts">
-						<div class="tel">
-							
-						</div>
+				<!-- Контакты в шапке -->
+				<div id="headerContacts" class="headerContacts">
+					<div class="tel">
+						
 					</div>
-
-					<!-- Меню сверху -->
-					<nav id="topMenu">
-						<div class="container">
-							<ul class="listNull listInline">
-								<li class="cms_tree_current"><a href="">Главная</a></li>
-								<li><a href="">О компании</a></li>
-							</ul>
-						</div>
-					</nav>
 				</div>
-			</header>
 
-			<!-- Основа -->
-			<main id="main">
+				<!-- Меню сверху -->
+				<button id="topMenuToggle" class="but butToggle" data-toggle="#topMenu">
+					<span class="butToggleIco icoCross">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+
+					<span class="butToggleTitle">Меню</span>
+				</button>
+
+				<nav id="topMenu" class="topMenu">
+					<ul class="listNull listInline">
+						<li class="cms_tree_current"><a href="">Главная</a></li>
+						<li><a href="">О компании</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Основа -->
+		<main id="main" class="main">
+
+			<div class="container">
 				<!-- Колонка слева -->
-				<section id="sidebarLeft">
+				<section id="sidebarLeft" class="sidebarLeft">
 					<!-- Меню слева -->
-					<nav id="leftMenu">
+					<nav id="leftMenu" class="leftMenu">
 						<ul class="listNull">
 							<li class="cms_tree_current"><a href="">Главная</a></li>
 							<li><a href="">О компании</a></li>
@@ -60,9 +69,9 @@
 				</section>
 				
 				<!-- Контент блок -->
-				<section id="content">
+				<section id="content" class="content">
 					<!-- Путь по сайту -->
-					<nav id="path">
+					<nav id="path" class="path">
 						<ul class="listNull listInline">
 							<li><a href="">Главная</a></li>
 							<li class="cms_current"><a href="">О компании</a></li>
@@ -70,16 +79,16 @@
 					</nav>
 
 					<!-- Заголовок страницы -->
-					<h1 id="pageTitle"></h1>
+					<h1 id="pageTitle" class="pageTitle"></h1>
 				</section>
-			</main>
-		</div>
+			</div>
+		</main>
 
 		<!-- Подвал -->
-		<footer id="footer">
+		<footer id="footer" class="footer">
 			<div class="container">
 				<!-- Меню снизу -->
-				<nav id="bottomMenu">
+				<nav id="bottomMenu" class="bottomMenu">
 					<ul class="listNull listInline">
 						<li class="cms_tree_current"><a href="">Главная</a></li>
 						<li><a href="">О компании</a></li>
@@ -87,12 +96,15 @@
 				</nav>
 			</div>
 		</footer>
+	
+		<script src="app/js/lib/jquery-1.12.3.min.js"></script>
 
-		<script src="js/jquery-1.12.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/jquery.viewportchecker.js"></script>
-		<script src="js/jquery.fancybox.pack.js"></script>
-		<script src="js/main.js"></script>
+		<script src="app/js/plugins/bootstrap.min.js"></script>
+		<script src="app/js/plugins/jquery.slick.min.js"></script>
+		<script src="app/js/plugins/jquery.viewportchecker.js"></script>
+		<script src="app/js/plugins/jquery.fancybox.pack.js"></script>
+
+		<script src="app/js/templateMethods.js"></script>
+		<script src="app/js/app.js"></script>
 	</body>
 </html>

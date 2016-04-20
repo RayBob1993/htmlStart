@@ -1,0 +1,151 @@
+body {
+	min-height: 100vh;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+/* ============================ Шапка */
+.header {
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+/* ============================ Логотип */
+.logo {
+	text-decoration: none;
+	display: block;
+}
+
+/* ============================ Контакты в шапке */
+.headerContacts {}
+
+/* Телефон */
+.tel {}
+
+/* ============================ Верхнее меню */
+.topMenu {}
+
+.topMenu a {
+	display: block;
+	text-decoration: none;
+
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+/* Уровень 1 */ 
+.topMenu .level1 > li > a {}
+
+.topMenu .level1 > li:hover > a,
+.topMenu .level1 > li.cms_tree_current > a {}
+
+/* Выпадающий список */
+.topMenu .level1 ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+
+	opacity: 0;
+	visibility: hidden;
+	
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.topMenu .level1 > li:hover ul {
+	opacity: 1;
+	visibility: visible;
+	
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+/* ============================ Основной блок */
+.main {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+/* ============================ Путь по сайту */
+.path {}
+
+.path li + li:before {
+	padding: 0 5px;
+	content: "/";
+}
+
+.path a {}
+
+.path li:hover > a,
+.path li.cms_current > a {}
+
+/* ============================ Сайдбар */
+.sidebarLeft {}
+
+/* ============================ Левое меню */
+.leftMenu {}
+
+.leftMenu a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Уровень 1 */ 
+.leftMenu .level1 > li > a {}
+
+.leftMenu .level1 > li:hover > a,
+.leftMenu .level1 > li.cms_tree_current > a {}
+
+/* ============================ Контент */
+.content {}
+
+/* Заголовок страницы */
+.pageTitle {}
+
+/* ============================ Переключатель страниц */
+.pager {}
+
+.pager a {
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.pagePrev {}
+.pageNext {}
+
+.pager li:hover > a,
+.pager li.cms_current > a {}
+
+/* ============================ Подвал */
+.footer {
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+/* ============================ Нижнее меню */
+.bottomMenu {}
+
+.bottomMenu a {
+	display: block;
+	text-decoration: none;
+
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.bottomMenu a:hover,
+.bottomMenu a.cms_tree_current {}

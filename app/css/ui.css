@@ -221,7 +221,8 @@ th {padding: 0}
 	border: 0;
 	outline: 0;
 
-	transition: all .2s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -238,7 +239,6 @@ th {padding: 0}
 
 .but[disabled] {
 	cursor: not-allowed;
-	filter: alpha(opacity=65);
 	opacity: .65;
 }
 
@@ -248,13 +248,45 @@ th {padding: 0}
 	width: 100%;
 }
 
-.butSmall {}
-.butBig {}
+/* Кнопки переключатели */
+.butToggle {
+	display: none;
+}
 
-/* Стили кнопок */
-.butDefault {}
+.butToggleTitle {
+	display: inline-block;
+	vertical-align: middle;
+}
 
-.butClear {}
+/* ============================ Css иконки */ 
+.butToggleIco {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.butToggleIco > span {
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+/* Иконка меню */ 
+.icoCross {
+}
+
+.icoCross span {
+}
+
+.icoCross span:nth-child(2) {
+}
+
+.act .icoCross span:first-child {
+}
+
+.act .icoCross span:nth-child(2) {
+}
+
+.act .icoCross span:last-child {
+}
 
 /* ============================ Готовые классы помошники */
 .cf:before,
@@ -276,6 +308,11 @@ th {padding: 0}
 	display: -moz-flex;
 	display: -ms-flexbox;
 	display: flex;
+
+	-webkit-flex-basis: 100%;
+	-ms-flex-basis: 100%;
+	flex-basis: 100%;
+	max-width: 100%;
 
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -370,21 +407,18 @@ th {padding: 0}
 	-webkit-justify-content: flex-start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	text-align: start;
 }
 
 .rowCenter {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	text-align: center;
 }
 
 .rowRight {
 	-webkit-justify-content: flex-end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-	text-align: end;
 }
 
 .rowAround {
@@ -433,6 +467,7 @@ th {padding: 0}
 
 	padding-left: 10px;
 	padding-right: 10px; 
+
 	min-height: 1px;
 }
 
@@ -455,6 +490,12 @@ th {padding: 0}
 	align-self: flex-end;
 }
 
+.colDefault {
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
 .colAuto {
 	-webkit-flex: 1;
 	-ms-flex: 1;
@@ -465,84 +506,72 @@ th {padding: 0}
 	-webkit-flex-basis: 8.33333333%;
 	-ms-flex-basis: 8.3333333%;
 	flex-basis: 8.3333333%;
-	max-width: 8.33333333%;
 }
 
 .col2 {
 	-webkit-flex-basis: 16.66666667%;
 	-ms-flex-basis: 16.66666667%;
 	flex-basis: 16.66666667%;
-	max-width: 16.66666667%;
 }
 
 .col3 {
 	-webkit-flex-basis: 25%;
 	-ms-flex-basis: 25%;
 	flex-basis: 25%;
-	max-width: 25%;
 }
 
 .col4 {
 	-webkit-flex-basis: 33.33333333%;
 	-ms-flex-basis: 33.33333333%;
 	flex-basis: 33.33333333%;
-	max-width: 33.33333333%;
 }
 
 .col5 {
 	-webkit-flex-basis: 41.66666667%;
 	-ms-flex-basis: 41.66666667%;
 	flex-basis: 41.66666667%;
-	max-width: 41.66666667%;
 }
 
 .col6 {
 	-webkit-flex-basis: 50%;
 	-ms-flex-basis: 50%;
 	flex-basis: 50%;
-	max-width: 50%;
 }
 
 .col7 {
 	-webkit-flex-basis: 58.33333333%;
 	-ms-flex-basis: 58.33333333%;
 	flex-basis: 58.33333333%;
-	max-width: 58.33333333%;
 }
 
 .col8 {
 	-webkit-flex-basis: 66.66666667%;
 	-ms-flex-basis: 66666667%;
 	flex-basis: 66666667%;
-	max-width: 66.66666667%;
 }
 
 .col9 {
 	-webkit-flex-basis: 75%;
 	-ms-flex-basis: 75%;
 	flex-basis: 75%;
-	max-width: 75%;
 }
 
 .col10 {
 	-webkit-flex-basis: 83.33333333%;
 	-ms-flex-basis: 83.33333333%;
 	flex-basis: 83.33333333%;
-	max-width: 83.33333333%; 
 }
 
 .col11 {
 	-webkit-flex-basis: 91.66666667%;
 	-ms-flex-basis: 91.66666667%;
 	flex-basis: 91.66666667%;
-	max-width: 91.66666667%;
 }
 
 .col12 {
 	-webkit-flex-basis: 100%;
 	-ms-flex-basis: 100%;
 	flex-basis: 100%;
-	max-width: 100%;
 }
 
 /* Смещение колонок */
@@ -576,23 +605,24 @@ th {padding: 0}
 	-khtml-user-select: none;
 	-ms-touch-action: pan-y;
 	touch-action: pan-y;
+
 	-webkit-tap-highlight-color: transparent;
 }
 
-.slick-list {
+.slickList {
 	position: relative;
 	overflow: hidden;
 }
 
-.slick-list:focus {outline: none;}
+.slickList:focus {outline: none;}
 
-.slick-list.dragging {
+.slickList.dragging {
 	cursor: pointer;
 	cursor: hand;
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+.slickSlider .slickTrack,
+.slickSlider .slickList {
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
@@ -600,20 +630,20 @@ th {padding: 0}
 	transform: translate3d(0, 0, 0);
 }
 
-.slick-track {
+.slickTrack {
 	position: relative;
 }
 
-.slick-track:before,
-.slick-track:after {
+.slickTrack:before,
+.slickTrack:after {
 	display: table;
 	content: '';
 }
 
-.slick-track:after {clear: both;}
-.slick-loading .slick-track {visibility: hidden;}
+.slickTrack:after {clear: both;}
+.slickLoading .slickTrack {visibility: hidden;}
 
-.slick-slide {
+.slickSlide {
 	position: relative;
 	display: none;
 	float: left;
@@ -622,13 +652,13 @@ th {padding: 0}
 	outline: none;
 }
 
-.slick-initialized .slick-slide {display: block;}
-.slick-loading .slick-slide {visibility: hidden;}
+.slickInit .slickSlide {display: block;}
+.slickLoading .slickSlide {visibility: hidden;}
 
-.slick-arrow.slick-hidden {display: none;}
+.slickArrow.slick-hidden {display: none;}
 
 /* Навигация по слайдам */ 
-.slick-dots {
+.slickDots {
 	position: absolute;
 	list-style: none;
 	margin: 0;
@@ -640,13 +670,13 @@ th {padding: 0}
 	bottom: 0;
 }
 
-.slick-dots li {
+.slickDots li {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 4px;
 }
 
-.slick-dots button {
+.slickDots button {
 	width: 10px;
 	height: 10px;
 	background: #000;
@@ -656,13 +686,13 @@ th {padding: 0}
 	outline: 0;
 }
 
-.slick-dots .slick-active button,
-.slick-dots li:hover button {
+.slickDots .slickActive button,
+.slickDots li:hover button {
 	background: #444;
 }
 
 /* Кнопки лево-право */ 
-.slick-arrow {
+.slickArrow {
 	position: absolute;
 	top: 50%;
 	margin-top: -10px;
@@ -676,19 +706,19 @@ th {padding: 0}
 	background: url('../img/ico/slickArr.png') no-repeat;
 }
 
-.slick-prev {
+.slickPrev {
 	left: 0;
 	background-position: left top; 
 }
 
-.slick-prev:hover {background-position: left bottom;}
+.slickPrev:hover {background-position: left bottom;}
 
-.slick-next {
+.slickNext {
 	right: 0;
 	background-position: right top; 
 }
 
-.slick-next:hover {background-position: right bottom;}
+.slickNext:hover {background-position: right bottom;}
 
 /* ============================ Таблицы */
 .table {width: 100%;}
@@ -776,6 +806,7 @@ th {padding: 0}
 
 .fade {
 	opacity: 0;
+
 	-webkit-transition: opacity .15s linear;
 	transition: opacity .15s linear;
 }
@@ -784,7 +815,6 @@ th {padding: 0}
 
 .modal.fade .modalDialog {
 	-webkit-transform: translate(0, -25%);
-	-ms-transform: translate(0, -25%);
 	transform: translate(0, -25%);
 
 	-webkit-transition: -webkit-transform 0.3s ease-out;
@@ -793,7 +823,6 @@ th {padding: 0}
 
 .modal.in .modalDialog {
 	-webkit-transform: none;
-	-ms-transform: none;
 	transform: none;
 }
 
@@ -859,21 +888,29 @@ th {padding: 0}
 
 	visibility: hidden;
 	opacity: 0;
-	transition: all .2s ease-in-out;
+
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+
+	-webkit-transform: translateY(20px);
 	transform: translateY(20px);
 }
 
-.open .dropdownMenu {
+.open > .dropdownMenu {
 	visibility: visible;
 	opacity: 1;
-	transform: translateY(0);
+
+	-webkit-transform: none;
+	transform: none;
 }
 
 /* ============================ Вкладки */
 .tabsNav a {
 	display: block;
 	text-decoration: none;
-	transition: all .15s linear;
+
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .tabsNav .active > a {}
