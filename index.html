@@ -28,9 +28,9 @@
 
 				<!-- Контакты в шапке -->
 				<div id="headerContacts" class="headerContacts">
-					<div class="tel">
+					<a href="tel: " class="tel">
 						
-					</div>
+					</a>
 				</div>
 
 				<!-- Меню сверху -->
@@ -45,7 +45,7 @@
 				</button>
 
 				<nav id="topMenu" class="topMenu">
-					<ul class="listNull listInline">
+					<ul class="listNull listInline level1">
 						<li class="cms_tree_current"><a href="">Главная</a></li>
 						<li><a href="">О компании</a></li>
 					</ul>
@@ -55,33 +55,30 @@
 
 		<!-- Основа -->
 		<main id="main" class="main">
+			<!-- Колонка слева -->
+			<section id="sidebarLeft" class="sidebarLeft">
+				<!-- Меню слева -->
+				<nav id="leftMenu" class="leftMenu">
+					<ul class="listNull level1">
+						<li class="cms_tree_current"><a href="">Главная</a></li>
+						<li><a href="">О компании</a></li>
+					</ul>
+				</nav>
+			</section>
+			
+			<!-- Контент блок -->
+			<section id="content" class="content">
+				<!-- Путь по сайту -->
+				<nav id="path" class="path">
+					<ul class="listNull listInline">
+						<li><a href="">Главная</a></li>
+						<li class="cms_current"><a href="">О компании</a></li>
+					</ul>
+				</nav>
 
-			<div class="container">
-				<!-- Колонка слева -->
-				<section id="sidebarLeft" class="sidebarLeft">
-					<!-- Меню слева -->
-					<nav id="leftMenu" class="leftMenu">
-						<ul class="listNull">
-							<li class="cms_tree_current"><a href="">Главная</a></li>
-							<li><a href="">О компании</a></li>
-						</ul>
-					</nav>
-				</section>
-				
-				<!-- Контент блок -->
-				<section id="content" class="content">
-					<!-- Путь по сайту -->
-					<nav id="path" class="path">
-						<ul class="listNull listInline">
-							<li><a href="">Главная</a></li>
-							<li class="cms_current"><a href="">О компании</a></li>
-						</ul>
-					</nav>
-
-					<!-- Заголовок страницы -->
-					<h1 id="pageTitle" class="pageTitle"></h1>
-				</section>
-			</div>
+				<!-- Заголовок страницы -->
+				<h1 id="pageTitle" class="pageTitle"></h1>
+			</section>
 		</main>
 
 		<!-- Подвал -->
@@ -89,7 +86,7 @@
 			<div class="container">
 				<!-- Меню снизу -->
 				<nav id="bottomMenu" class="bottomMenu">
-					<ul class="listNull listInline">
+					<ul class="listNull listInline level1">
 						<li class="cms_tree_current"><a href="">Главная</a></li>
 						<li><a href="">О компании</a></li>
 					</ul>
