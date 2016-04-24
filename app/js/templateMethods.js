@@ -2,9 +2,53 @@ var Template = (function($){
 	'use strict';
 
 	return {
+		// ============================ Фиксация верхнего меню
+		topMenuSectionFixed: function(){
+			var self = this;
 
-		// Меню гармошка
+			var 
+				topMenu = $('#topMenu'),
+				topMenuOffsetTop = $('#header').innerHeight();
+
+			if(win.scrollTop() >= topMenuOffsetTop){
+				topMenu.addClass('fixed');
+			} else {
+				topMenu.removeClass('fixed');
+			}
+
+			return self;
+		},
+		
+		// ============================ Прокрутка к началу страницы
+		pageUp: function(){
+			var self = this;
+
+			$('html, body').animate({
+				scrollTop: 0
+			}, 300);
+
+			return self;
+		},
+		
+		// ============================ Показывать кнопку вверх только если был скролл
+		pageUpButFade: function(){
+			var self = this;
+
+			var but = $('#pageUp');
+
+			if(win.scrollTop() >= 200){
+				but.fadeIn();
+			} else {
+				but.fadeOut();
+			}
+
+			return self;
+		},
+
+		// ============================ Меню гармошка
 		accordion: function(selector){
+			var self = this;
+			
 			var el = $(selector),
 				slideBlocks = el.next();
 
@@ -26,11 +70,15 @@ var Template = (function($){
 
 					slideBlocks.slideUp().removeClass('act');
 				}
-			});	
+			});
+			
+			return self;
 		},
 
-		// Простенький метод для определения типа устройства
+		// ============================ Простенький метод для определения типа устройства
 		mobileDevice: function(){
+			var self = this;
+			
 			var device = {
 				Android: function() {
 					return navigator.userAgent.match(/Android/i);
