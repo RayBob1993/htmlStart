@@ -48,30 +48,44 @@ var Template = (function($){
 		// ============================ Меню гармошка
 		accordion: function(selector){
 			var self = this;
-			
-			var el = $(selector),
-				slideBlocks = el.next();
+
+			var 
+				el = $(selector).find('a'),
+				subMenus = el.next();
 
 			el.on('click', function(event){
-				var nextBlock = $(this).next();
+				var 
+					subMenu = $(this).next(),
+					parent = $(this).parent();
 
-				if(nextBlock.length){
+				if(subMenu.length){
 					event.preventDefault();
 				}
 
-				if(!nextBlock.is(':visible')){
-					el.removeClass('act');
-					$(this).addClass('act');
+				if(!subMenu.is(':visible')){
+					el.parent().removeClass('act');
+					parent.addClass('act');
 
-					slideBlocks.slideUp().removeClass('act');
-					nextBlock.slideDown().addClass('act');
+					subMenus.slideUp();
+					subMenu.slideDown();
 				} else {
-					el.removeClass('act');
+					el.parent().removeClass('act');
 
-					slideBlocks.slideUp().removeClass('act');
+					subMenus.slideUp();
 				}
 			});
-			
+
+			// Установим класс на родителя, если есть вложенное меню
+			el.each(function(index, el) {
+				var 
+					subMenu = $(this).next(),
+					parent = $(this).parent();
+
+				if(subMenu.length){
+					parent.addClass('subMenu')
+				}
+			});
+
 			return self;
 		},
 
