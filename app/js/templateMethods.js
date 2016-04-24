@@ -1,5 +1,7 @@
 var Template = (function($){
 	'use strict';
+	
+	var win = $(window);
 
 	return {
 		// ============================ Фиксация верхнего меню
