@@ -35,12 +35,7 @@ template {display: none}
 
 b,
 strong {
-	font-weight: inherit;
-}
-
-b,
-strong {
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 h1,
@@ -258,49 +253,9 @@ th {padding: 0}
 	vertical-align: middle;
 }
 
-/* ============================ Css иконки */ 
-.butToggleIco {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.butToggleIco > span {
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-
-/* Иконка меню */ 
-.icoCross {
-}
-
-.icoCross span {
-}
-
-.icoCross span:nth-child(2) {
-}
-
-.act .icoCross span:first-child {
-}
-
-.act .icoCross span:nth-child(2) {
-}
-
-.act .icoCross span:last-child {
-}
-
 /* ============================ Готовые классы помошники */
-.cf:before,
-.cf:after {display: table;content: "";}
-.cf:after {clear: both;}
-
-.ovh {overflow: hidden;}
-
-.left {float: left;}
-.right {float: right;}
-
 .textRight {text-align: right;}
 .textCenter {text-align: center;}
-
 
 /* ============================ Изображения */
 .imgView {
@@ -341,9 +296,6 @@ th {padding: 0}
 }
 
 .listNull > li {position: relative;}
-
-/* Плавающий список */
-.listFloat > li {float: left;}
 
 /* Строчный список */
 .listCenter {text-align: center;}
@@ -503,9 +455,9 @@ th {padding: 0}
 
 .col1 {
 	-webkit-flex-basis: 8.33333333%;
-	-ms-flex-basis: 8.3333333%;
-	flex-basis: 8.3333333%;
-	max-width: 8.3333333%;
+	-ms-flex-basis: 8.33333333%;
+	flex-basis: 8.33333333%;
+	max-width: 8.33333333%;
 }
 
 .col2 {
