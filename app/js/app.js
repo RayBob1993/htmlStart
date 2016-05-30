@@ -16,6 +16,11 @@ $(document).on('ready', function(){
 	if (typeof($.fn.slick) !== "undefined") {
 		$('#mainSlider').slick();
 	}
+	
+	// Маскирование полей с телефоном
+	if (typeof($.fn.mask) !== "undefined") {
+		$('input[type="tel"]').mask('+7 (999) 999-9999');
+	}
 
 	// Видимость элементов
 	if (typeof($.fn.viewportChecker) !== "undefined") {
