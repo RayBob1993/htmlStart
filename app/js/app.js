@@ -4,6 +4,7 @@ $(document).on('ready', function(){
 	// Открытие картинок
 	if (typeof($.fn.fancybox) !== "undefined") {
 		$(".fancybox").fancybox({
+			padding: 0,
 			helpers: {
 				overlay: {
 					locked: false
