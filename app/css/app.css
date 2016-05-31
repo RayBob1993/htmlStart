@@ -45,7 +45,7 @@ body {
 .topMenu .level1 > li > a {}
 
 .topMenu .level1 > li:hover > a,
-.topMenu .level1 > li.cms_tree_current > a {}
+.topMenu .level1 > li.active > a {}
 
 /* Выпадающий список */
 .topMenu .level1 ul {
@@ -87,10 +87,13 @@ body {
 	content: "/";
 }
 
-.path a {}
+.path a {
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
 
 .path li:hover > a,
-.path li.cms_current > a {}
+.path li.active > a {}
 
 /* ============================ Сайдбар */
 .sidebarLeft {}
@@ -101,13 +104,16 @@ body {
 .leftMenu a {
 	display: block;
 	text-decoration: none;
+	
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;	
 }
 
 /* Уровень 1 */ 
 .leftMenu .level1 > li > a {}
 
 .leftMenu .level1 > li:hover > a,
-.leftMenu .level1 > li.cms_tree_current > a {}
+.leftMenu .level1 > li.active > a {}
 
 /* ============================ Контент */
 .content {}
@@ -119,6 +125,9 @@ body {
 .pager {}
 
 .pager a {
+	display: block;
+	text-decoration: none;
+	
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
@@ -127,7 +136,7 @@ body {
 .pageNext {}
 
 .pager li:hover > a,
-.pager li.cms_current > a {}
+.pager li.active > a {}
 
 /* ============================ Подвал */
 .footer {
@@ -148,4 +157,4 @@ body {
 }
 
 .bottomMenu a:hover,
-.bottomMenu a.cms_tree_current {}
+.bottomMenu a.active {}
