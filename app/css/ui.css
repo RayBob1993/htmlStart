@@ -622,14 +622,16 @@ th {padding: 0}
 /* Навигация по слайдам */ 
 .slickDots {
 	position: absolute;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-size: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	text-align: center;
+	font-size: 0;
 }
 
 .slickDots li {
@@ -646,6 +648,9 @@ th {padding: 0}
 	padding: 0;
 	border: 0;
 	outline: 0;
+	
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .slickDots .slickActive button,
