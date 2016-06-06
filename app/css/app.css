@@ -156,5 +156,5 @@ body {
 	transition: .2s ease-in-out;
 }
 
-.bottomMenu a:hover,
-.bottomMenu a.active {}
+.bottomMenu .level1 > li:hover > a,
+.bottomMenu .level1 > li.active > a {}
