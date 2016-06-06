@@ -203,17 +203,21 @@ th {padding: 0}
 /* ============================ Основа кнопки */
 .but {
 	position: relative;
+	
 	display: inline-block;
-	background: none;
-	vertical-align: middle;
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
-	overflow: hidden;
-	cursor: pointer;
 	padding: 0;
 	margin: 0;
 	border: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	
+	border-radius: 0;
+	background: none;
 	outline: 0;
 
 	-webkit-transition: .2s ease-in-out;
@@ -241,16 +245,6 @@ th {padding: 0}
 .butBlock {
 	display: block;
 	width: 100%;
-}
-
-/* Кнопки переключатели */
-.butToggle {
-	display: none;
-}
-
-.butToggleTitle {
-	display: inline-block;
-	vertical-align: middle;
 }
 
 /* ============================ Готовые классы помошники */
@@ -661,8 +655,7 @@ th {padding: 0}
 /* Кнопки лево-право */ 
 .slickArrow {
 	position: absolute;
-	top: 50%;
-	margin-top: -10px;
+	top: calc(50% - 10px);
 	width: 20px;
 	height: 20px;
 	z-index: 10;
