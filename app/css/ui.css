@@ -160,7 +160,6 @@ input::-moz-focus-inner {
 
 [type="checkbox"],
 [type="radio"] {
-	box-sizing: border-box;
 	padding: 0;
 }
 
