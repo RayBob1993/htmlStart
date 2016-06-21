@@ -219,8 +219,14 @@ th {padding: 0}
 	background: none;
 	outline: 0;
 
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
+	-webkit-transition: 
+		background-color .2s ease-in-out, 
+		color .2s ease-in-out
+	;
+	transition: 
+		background-color .2s ease-in-out, 
+		color .2s ease-in-out
+	;
 
 	-moz-user-select: none;
 	-ms-user-select: none;
