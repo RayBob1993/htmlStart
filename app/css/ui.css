@@ -699,6 +699,8 @@ th {padding: 0}
 /* ============================ Формы */
 .form {}
 
+.formHeader,
+.formBody,
 .formGroup {
 	position: relative;
 	margin-bottom: 10px;
