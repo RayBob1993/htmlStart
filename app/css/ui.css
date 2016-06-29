@@ -204,11 +204,10 @@ th {padding: 0}
 	position: relative;
 	
 	display: inline-block;
+	vertical-align: middle;
 	padding: 0;
 	margin: 0;
 	border: 0;
-	vertical-align: middle;
-	overflow: hidden;
 	
 	text-align: center;
 	text-decoration: none;
@@ -251,6 +250,8 @@ th {padding: 0}
 	display: block;
 	width: 100%;
 }
+
+/* Стили кнопок */
 
 /* ============================ Готовые классы помошники */
 .textRight {text-align: right;}
@@ -696,6 +697,9 @@ th {padding: 0}
 /* Полосатая таблица */
 .tableStriped > tbody > tr:nth-of-type(even) {background: #ccc;}
 
+/* Базовая таблица */
+.tableBasic {}
+
 /* ============================ Формы */
 .form {}
 
@@ -788,8 +792,8 @@ th {padding: 0}
 }
 
 .modal.fade .modalDialog {
-	-webkit-transform: translate(0, -25%);
-	transform: translate(0, -25%);
+	-webkit-transform: translateY(-25%);
+	transform: translateY(-25%);
 
 	-webkit-transition: -webkit-transform .3s ease-out;
 	transition: transform .3s ease-out;
@@ -828,31 +832,28 @@ th {padding: 0}
 
 .modalBackdrop.fade {
 	opacity: 0;
-	
 }
 
 .modalBackdrop.in {
 	opacity: .5;
 }
 
-.modalHeader {
+.modalHeader,
+.modalBody {
 	position: relative;
 	padding: 15px;
 }
 
 .modalClose {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 10px;
+	right: 10px;
 }
 
 .modalTitle {
-	margin: 0;
-}
-
-.modalBody {
-	position: relative;
-	padding: 15px;
+	margin-bottom: 0;
+	
+	text-align: center;
 }
 
 /* ============================ Выпадающее меню */
@@ -860,7 +861,7 @@ th {padding: 0}
 
 .dropdownBut {}
 
-.dropdownMenu {
+.dropdownBlock {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -876,7 +877,7 @@ th {padding: 0}
 	transform: translateY(20px);
 }
 
-.open > .dropdownMenu {
+.open > .dropdownBlock {
 	visibility: visible;
 	opacity: 1;
 
