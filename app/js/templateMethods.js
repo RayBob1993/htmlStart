@@ -1,9 +1,44 @@
 var Template = (function($){
 	'use strict';
-	
-	var win = $(window);
 
 	return {
+		// ============================ Скролить до элемента
+		scrollTo: function(element){
+			var self = this;
+
+			var 
+				scrollTo = $(element),
+				offset = scrollTo.offset().top;
+
+			$('html, body').animate({
+				scrollTop: offset
+			}, 300);
+
+			return self;
+		},
+
+		// ============================ Отправка форм
+		sendForm: function(form){
+			var form = $(form);
+
+			$.ajax({
+				url: form.attr('action'),
+				type: form.attr('method') || 'POST',
+				dataType: 'html',
+				data: form.serialize(),
+			}).done(function(result){
+				
+				if(result && (result === 'ok')){
+					console.log(result);
+					
+					form.trigger('reset');
+				} else {
+					console.error('Ошибка, форма не отправлена');
+				}
+
+			});
+		},
+		
 		// ============================ Фиксация верхнего меню
 		topMenuSectionFixed: function(){
 			var self = this;
