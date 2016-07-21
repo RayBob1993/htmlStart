@@ -1,4 +1,4 @@
-var Template = (function($){
+var App = (function($){
 	'use strict';
 
 	return {
