@@ -707,6 +707,7 @@ th {padding: 0}
 .formBody,
 .formGroup {
 	position: relative;
+	
 	margin-bottom: 10px;
 }
 
@@ -715,10 +716,10 @@ th {padding: 0}
 }
 
 .fieldName {
-	display: block;
 	position: relative;
+	
+	display: block;
 	margin-bottom: 5px;
-	cursor: pointer;
 }
 
 .field {
@@ -726,6 +727,7 @@ th {padding: 0}
 	width: 100%;
 	padding: 0;
 	border: 0;
+	
 	outline: 0;
 	background: #fff;
 	border-radius: 0;
@@ -811,12 +813,14 @@ th {padding: 0}
 
 .modalDialog {
 	position: relative;
+	
 	max-width: 500px;
 	margin: 40px auto;
 }
 
 .modalContent {
 	position: relative;
+	
 	background: #fff;
 }
 
@@ -827,6 +831,7 @@ th {padding: 0}
 	bottom: 0;
 	left: 0;
 	z-index: 1040;
+	
 	background-color: #000;
 }
 
@@ -841,6 +846,7 @@ th {padding: 0}
 .modalHeader,
 .modalBody {
 	position: relative;
+	
 	padding: 15px;
 }
 
@@ -888,6 +894,7 @@ th {padding: 0}
 /* ============================ Вкладки */
 .tabsNav a {
 	display: block;
+	
 	text-decoration: none;
 
 	-webkit-transition: .2s ease-in-out;
