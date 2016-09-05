@@ -5,9 +5,14 @@ $(document).on('ready', function(){
 	if (typeof($.fn.fancybox) !== "undefined") {
 		$(".fancybox").fancybox({
 			padding: 0,
+			openEffect: 'elastic',
+			closeEffect: 'elastic',
 			helpers: {
 				overlay: {
 					locked: false
+				},
+				title: {
+					type : 'over'
 				}
 			}
 		});
