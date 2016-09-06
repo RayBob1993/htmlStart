@@ -299,10 +299,8 @@ th {padding: 0}
 
 /* Строчный список */
 .listCenter {text-align: center;}
-.listRight {text-align: right;}
 
 .listCenter > li,
-.listRight > li,
 .listInline > li {
 	display: inline-block;
 	vertical-align: middle;
