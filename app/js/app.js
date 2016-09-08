@@ -181,22 +181,22 @@ var App = (function($){
 
 					// Уменьшим значение
 					function decrement() {
-						var value = parseInt(el[0].value);
+						var value = parseInt(el.val());
 						value--;
 
 						if(!min || value >= min) {
-							el[0].value = value;
+							el.val(value);
 						}
 					};
 
 					// Увеличим значение
 					function increment() {
-						var value = parseInt(el[0].value);
+						var value = parseInt(el.val());
 							
 						value++;
 
 						if(!max || value <= max) {
-							el[0].value = value++;
+							el.val(value++);
 						}
 					};
 					
