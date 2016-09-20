@@ -79,22 +79,6 @@ body {
 	flex: 1;
 }
 
-/* ============================ Путь по сайту */
-.path {}
-
-.path li + li:before {
-	padding: 0 5px;
-	content: "/";
-}
-
-.path a {
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-
-.path li:hover > a,
-.path li.active > a {}
-
 /* ============================ Сайдбар */
 .sidebarLeft {}
 
