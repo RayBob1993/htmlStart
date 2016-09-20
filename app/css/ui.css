@@ -562,6 +562,23 @@ th {padding: 0}
 .path li:hover > a,
 .path li.active > a {}
 
+/* ============================ Переключатель страниц */
+.pager {}
+
+.pager a {
+	display: block;
+	text-decoration: none;
+	
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.pagePrev {}
+.pageNext {}
+
+.pager li:hover > a,
+.pager li.active > a {}
+
 /* ============================ Секции */
 .section {
 	position: relative;
