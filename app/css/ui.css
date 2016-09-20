@@ -66,9 +66,11 @@ h6 small {font-weight: normal;}
 
 sub,
 sup {
+	position: relative;
+	
 	font-size: 75%;
 	line-height: 0;
-	position: relative;
+	
 	vertical-align: baseline
 }
 
@@ -551,7 +553,8 @@ th {padding: 0}
 
 .path li + li:before {
 	padding: 0 5px;
-	content: "/";
+	
+	content: '/';
 }
 
 .path a {
@@ -611,6 +614,7 @@ th {padding: 0}
 
 .slickList {
 	position: relative;
+	
 	overflow: hidden;
 }
 
@@ -637,6 +641,7 @@ th {padding: 0}
 .slickTrack:before,
 .slickTrack:after {
 	display: table;
+	
 	content: '';
 }
 
@@ -645,10 +650,12 @@ th {padding: 0}
 
 .slickSlide {
 	position: relative;
+	
 	display: none;
 	float: left;
 	height: 100%;
 	min-height: 1px;
+	
 	outline: none;
 }
 
@@ -665,6 +672,7 @@ th {padding: 0}
 	bottom: 0;
 	
 	list-style: none;
+	
 	margin: 0;
 	padding: 0;
 	
@@ -681,10 +689,11 @@ th {padding: 0}
 .slickDots button {
 	width: 10px;
 	height: 10px;
-	background: #000;
-	border-radius: 100%;
 	padding: 0;
 	border: 0;
+	
+	background: #000;
+	border-radius: 100%;
 	outline: 0;
 	
 	-webkit-transition: .2s ease-in-out;
@@ -708,24 +717,30 @@ th {padding: 0}
 	border: 0;
 	
 	font-size: 0;
-	outline: 0;
 	
+	outline: 0;
 	background: url('../img/ico/slickArr.png') no-repeat;
 }
 
 .slickPrev {
 	left: 0;
+	
 	background-position: left top; 
 }
 
-.slickPrev:hover {background-position: left bottom;}
+.slickPrev:hover {
+	background-position: left bottom;
+}
 
 .slickNext {
 	right: 0;
+	
 	background-position: right top; 
 }
 
-.slickNext:hover {background-position: right bottom;}
+.slickNext:hover {
+	background-position: right bottom;
+}
 
 /* ============================ Таблицы */
 .table {width: 100%;}
@@ -810,14 +825,16 @@ th {padding: 0}
 .modalOpen {overflow: hidden;}
 
 .modal {
-	display: none;
-	overflow: hidden;
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	z-index: 1050;
+	
+	display: none;
+	overflow: hidden;
+	
 	-webkit-overflow-scrolling: touch;
 	outline: 0;
 }
