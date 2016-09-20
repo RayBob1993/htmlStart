@@ -105,23 +105,6 @@ body {
 /* Заголовок страницы */
 .pageTitle {}
 
-/* ============================ Переключатель страниц */
-.pager {}
-
-.pager a {
-	display: block;
-	text-decoration: none;
-	
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-
-.pagePrev {}
-.pageNext {}
-
-.pager li:hover > a,
-.pager li.active > a {}
-
 /* ============================ Подвал */
 .footer {
 	-webkit-flex: 0 0 auto;
