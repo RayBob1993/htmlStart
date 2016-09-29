@@ -3,7 +3,7 @@ $(document).on('ready', function(){
 
 	// Открытие картинок
 	if (typeof($.fn.fancybox) !== "undefined") {
-		$(".fancybox").fancybox({
+		$('.fancybox').fancybox({
 			padding: 0,
 			openEffect: 'elastic',
 			closeEffect: 'elastic',
@@ -26,10 +26,5 @@ $(document).on('ready', function(){
 	// Маскирование полей с телефоном
 	if (typeof($.fn.mask) !== "undefined") {
 		$('input[type="tel"]').mask('+7 (999) 999-9999');
-	}
-
-	// Видимость элементов
-	if (typeof($.fn.viewportChecker) !== "undefined") {
-		$('.section').viewportChecker();
 	}
 });
