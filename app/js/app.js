@@ -89,8 +89,8 @@ var App = (function($){
 			var 
 				el = $(selector).find('a'),
 				subMenus = el.next();
-
-			el.on('click', function(event){
+			
+			function init(){
 				var 
 					subMenu = $(this).next(),
 					parent = $(this).parent();
@@ -100,17 +100,27 @@ var App = (function($){
 				}
 
 				if(!subMenu.is(':visible')){
-					el.parent().removeClass('act');
+					el
+						.parent()
+						.removeClass('act');
+
 					parent.addClass('act');
 
 					subMenus.slideUp();
 					subMenu.slideDown();
 				} else {
-					el.parent().removeClass('act');
+
+					el
+						.parent()
+						.removeClass('act');
 
 					subMenus.slideUp();
 				}
-			});
+			}
+
+			el
+				.unbind('click')
+				.on('click', init);
 
 			// Установим класс на родителя, если есть вложенное меню
 			el.each(function(index, el) {
