@@ -1,5 +1,6 @@
+'use strict';
+
 var App = (function($){
-	'use strict';
 
 	return {
 		// ============================ Скролить до элемента
