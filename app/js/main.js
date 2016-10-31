@@ -1,8 +1,10 @@
+'use strict';
+
 $(document).on('ready', function(){
-	'use strict';
 
 	// Открытие картинок
 	if (typeof($.fn.fancybox) !== "undefined") {
+		// Для галерей с изображениями
 		$('.fancybox').fancybox({
 			padding: 0,
 			openEffect: 'elastic',
@@ -15,6 +17,18 @@ $(document).on('ready', function(){
 					type : 'over'
 				}
 			}
+		});
+		
+		// Для видео роликов
+		$('.fancyboxMedia').fancybox({
+			padding: 0,
+			maxWidth: 1000,
+			maxHeight: 600,
+			fitToView: false,
+			autoSize: false,
+			closeClick: false,
+			openEffect: 'elastic',
+			closeEffect: 'elastic'
 		});
 	}
 
