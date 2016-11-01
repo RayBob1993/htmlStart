@@ -216,6 +216,7 @@ th {padding: 0}
 	text-decoration: none;
 	white-space: nowrap;
 	cursor: pointer;
+	line-height: normal;
 	
 	border-radius: 0;
 	background: none;
