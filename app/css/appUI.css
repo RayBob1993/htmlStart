@@ -249,6 +249,12 @@ th {padding: 0}
 	opacity: .65;
 }
 
+/* Текст кнопки */
+.butText {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 /* Размеры кнопок */
 .butBlock {
 	display: block;
@@ -256,6 +262,20 @@ th {padding: 0}
 }
 
 /* Стили кнопок */
+
+/* ============================ Иконки */
+.ico {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icoLeft {
+	margin-right: 5px;
+}
+
+.icoRight {
+	margin-left: 5px;
+}
 
 /* ============================ Готовые классы помошники */
 .textRight {text-align: right;}
