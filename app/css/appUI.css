@@ -793,7 +793,10 @@ th {padding: 0}
 	position: relative;
 	
 	display: block;
-	margin-bottom: 5px;
+}
+
+.fieldName + .field {
+	margin-top: 5px;
 }
 
 .field {
@@ -841,6 +844,43 @@ th {padding: 0}
 .field:focus::-moz-placeholder {color: transparent}
 .field:focus:-moz-placeholder {color: transparent}
 .field:focus:-ms-input-placeholder {color: transparent}
+
+/* Чекбокс */
+.fieldCheckbox {
+	position: relative;
+}
+
+.fieldCheckbox input {
+	display: none;
+}
+
+.fieldCheckbox .fieldName {
+	padding-left: 30px;
+
+	cursor: pointer;
+}
+
+.fieldCheckbox .fieldName:before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+
+	width: 17px;
+	height: 17px;
+
+	background: #fff;
+
+	color: #000;
+	text-align: center;
+	line-height: 17px;
+	font-weight: bold;
+
+	content: '';
+}
+
+.fieldCheckbox input:checked + .fieldName:before {
+	content: '✓';
+}
 
 /* ============================ Модальные окна */
 .modalOpen {overflow: hidden;}
