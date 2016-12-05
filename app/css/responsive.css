@@ -97,6 +97,147 @@
 		flex-basis: 100%;
 		max-width: 100%;
 	}
+	
+	/* Сортировка колонок */
+	.orderxlgNull {
+		-webkit-order: 0;
+		-ms-order: 0;
+		order: 0;
+	}
+	
+	/* Вперёд */
+	.pushxlg1 {
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+
+	.pushxlg2 {
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+
+	.pushxlg3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pushxlg4 {
+		-webkit-order: 4;
+		-ms-order: 4;
+		order: 4;
+	}
+
+	.pushxlg5 {
+		-webkit-order: 5;
+		-ms-order: 5;
+		order: 5;
+	}
+
+	.pushxlg6 {
+		-webkit-order: 6;
+		-ms-order: 6;
+		order: 6;
+	}
+
+	.pushxlg7 {
+		-webkit-order: 7;
+		-ms-order: 7;
+		order: 7;
+	}
+
+	.pushxlg8 {
+		-webkit-order: 8;
+		-ms-order: 8;
+		order: 8;
+	}
+
+	.pushxlg9 {
+		-webkit-order: 9;
+		-ms-order: 9;
+		order: 9;
+	}
+
+	.pushxlg10 {
+		-webkit-order: 10;
+		-ms-order: 10;
+		order: 10;
+	}
+
+	.pushxlg11 {
+		-webkit-order: 11;
+		-ms-order: 11;
+		order: 11;
+	}
+
+	/* Назад */
+	.pullxlg1 {
+		-webkit-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+
+	.pullxlg2 {
+		-webkit-order: -2;
+		-ms-order: -2;
+		order: -2;
+	}
+
+	.pullxlg3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pullxlg4 {
+		-webkit-order: -4;
+		-ms-order: -4;
+		order: -4;
+	}
+
+	.pullxlg5 {
+		-webkit-order: -5;
+		-ms-order: -5;
+		order: -5;
+	}
+
+	.pullxlg6 {
+		-webkit-order: -6;
+		-ms-order: -6;
+		order: -6;
+	}
+
+	.pullxlg7 {
+		-webkit-order: -7;
+		-ms-order: -7;
+		order: -7;
+	}
+
+	.pullxlg8 {
+		-webkit-order: -8;
+		-ms-order: -8;
+		order: -8;
+	}
+
+	.pullxlg9 {
+		-webkit-order: -9;
+		-ms-order: -9;
+		order: -9;
+	}
+
+	.pullxlg10 {
+		-webkit-order: -10;
+		-ms-order: -10;
+		order: -10;
+	}
+
+	.pullxlg11 {
+		-webkit-order: -11;
+		-ms-order: -11;
+		order: -11;
+	}
 }
 
 @media (max-width: 1069px){
@@ -197,6 +338,147 @@
 		-ms-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+	
+	/* Сортировка колонок */
+	.orderlgNull {
+		-webkit-order: 0;
+		-ms-order: 0;
+		order: 0;
+	}
+	
+	/* Вперёд */
+	.pushlg1 {
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+
+	.pushlg2 {
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+
+	.pushlg3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pushlg4 {
+		-webkit-order: 4;
+		-ms-order: 4;
+		order: 4;
+	}
+
+	.pushlg5 {
+		-webkit-order: 5;
+		-ms-order: 5;
+		order: 5;
+	}
+
+	.pushlg6 {
+		-webkit-order: 6;
+		-ms-order: 6;
+		order: 6;
+	}
+
+	.pushlg7 {
+		-webkit-order: 7;
+		-ms-order: 7;
+		order: 7;
+	}
+
+	.pushlg8 {
+		-webkit-order: 8;
+		-ms-order: 8;
+		order: 8;
+	}
+
+	.pushlg9 {
+		-webkit-order: 9;
+		-ms-order: 9;
+		order: 9;
+	}
+
+	.pushlg10 {
+		-webkit-order: 10;
+		-ms-order: 10;
+		order: 10;
+	}
+
+	.pushlg11 {
+		-webkit-order: 11;
+		-ms-order: 11;
+		order: 11;
+	}
+
+	/* Назад */
+	.pulllg1 {
+		-webkit-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+
+	.pulllg2 {
+		-webkit-order: -2;
+		-ms-order: -2;
+		order: -2;
+	}
+
+	.pulllg3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pulllg4 {
+		-webkit-order: -4;
+		-ms-order: -4;
+		order: -4;
+	}
+
+	.pulllg5 {
+		-webkit-order: -5;
+		-ms-order: -5;
+		order: -5;
+	}
+
+	.pulllg6 {
+		-webkit-order: -6;
+		-ms-order: -6;
+		order: -6;
+	}
+
+	.pulllg7 {
+		-webkit-order: -7;
+		-ms-order: -7;
+		order: -7;
+	}
+
+	.pulllg8 {
+		-webkit-order: -8;
+		-ms-order: -8;
+		order: -8;
+	}
+
+	.pulllg9 {
+		-webkit-order: -9;
+		-ms-order: -9;
+		order: -9;
+	}
+
+	.pulllg10 {
+		-webkit-order: -10;
+		-ms-order: -10;
+		order: -10;
+	}
+
+	.pulllg11 {
+		-webkit-order: -11;
+		-ms-order: -11;
+		order: -11;
 	}
 }
 
@@ -299,6 +581,147 @@
 		flex-basis: 100%;
 		max-width: 100%;
 	}
+	
+	/* Сортировка колонок */
+	.ordermdNull {
+		-webkit-order: 0;
+		-ms-order: 0;
+		order: 0;
+	}
+	
+	/* Вперёд */
+	.pushmd1 {
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+
+	.pushmd2 {
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+
+	.pushmd3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pushmd4 {
+		-webkit-order: 4;
+		-ms-order: 4;
+		order: 4;
+	}
+
+	.pushmd5 {
+		-webkit-order: 5;
+		-ms-order: 5;
+		order: 5;
+	}
+
+	.pushmd6 {
+		-webkit-order: 6;
+		-ms-order: 6;
+		order: 6;
+	}
+
+	.pushmd7 {
+		-webkit-order: 7;
+		-ms-order: 7;
+		order: 7;
+	}
+
+	.pushmd8 {
+		-webkit-order: 8;
+		-ms-order: 8;
+		order: 8;
+	}
+
+	.pushmd9 {
+		-webkit-order: 9;
+		-ms-order: 9;
+		order: 9;
+	}
+
+	.pushmd10 {
+		-webkit-order: 10;
+		-ms-order: 10;
+		order: 10;
+	}
+
+	.pushmd11 {
+		-webkit-order: 11;
+		-ms-order: 11;
+		order: 11;
+	}
+
+	/* Назад */
+	.pullmd1 {
+		-webkit-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+
+	.pullmd2 {
+		-webkit-order: -2;
+		-ms-order: -2;
+		order: -2;
+	}
+
+	.pullmd3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pullmd4 {
+		-webkit-order: -4;
+		-ms-order: -4;
+		order: -4;
+	}
+
+	.pullmd5 {
+		-webkit-order: -5;
+		-ms-order: -5;
+		order: -5;
+	}
+
+	.pullmd6 {
+		-webkit-order: -6;
+		-ms-order: -6;
+		order: -6;
+	}
+
+	.pullmd7 {
+		-webkit-order: -7;
+		-ms-order: -7;
+		order: -7;
+	}
+
+	.pullmd8 {
+		-webkit-order: -8;
+		-ms-order: -8;
+		order: -8;
+	}
+
+	.pullmd9 {
+		-webkit-order: -9;
+		-ms-order: -9;
+		order: -9;
+	}
+
+	.pullmd10 {
+		-webkit-order: -10;
+		-ms-order: -10;
+		order: -10;
+	}
+
+	.pullmd11 {
+		-webkit-order: -11;
+		-ms-order: -11;
+		order: -11;
+	}
 }
 
 @media (max-width: 569px){	
@@ -399,6 +822,147 @@
 		-ms-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+	
+	/* Сортировка колонок */
+	.ordersmNull {
+		-webkit-order: 0;
+		-ms-order: 0;
+		order: 0;
+	}
+	
+	/* Вперёд */
+	.pushsm1 {
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+
+	.pushsm2 {
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+
+	.pushsm3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pushsm4 {
+		-webkit-order: 4;
+		-ms-order: 4;
+		order: 4;
+	}
+
+	.pushsm5 {
+		-webkit-order: 5;
+		-ms-order: 5;
+		order: 5;
+	}
+
+	.pushsm6 {
+		-webkit-order: 6;
+		-ms-order: 6;
+		order: 6;
+	}
+
+	.pushsm7 {
+		-webkit-order: 7;
+		-ms-order: 7;
+		order: 7;
+	}
+
+	.pushsm8 {
+		-webkit-order: 8;
+		-ms-order: 8;
+		order: 8;
+	}
+
+	.pushsm9 {
+		-webkit-order: 9;
+		-ms-order: 9;
+		order: 9;
+	}
+
+	.pushsm10 {
+		-webkit-order: 10;
+		-ms-order: 10;
+		order: 10;
+	}
+
+	.pushsm11 {
+		-webkit-order: 11;
+		-ms-order: 11;
+		order: 11;
+	}
+
+	/* Назад */
+	.pullsm1 {
+		-webkit-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+
+	.pullsm2 {
+		-webkit-order: -2;
+		-ms-order: -2;
+		order: -2;
+	}
+
+	.pullsm3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pullsm4 {
+		-webkit-order: -4;
+		-ms-order: -4;
+		order: -4;
+	}
+
+	.pullsm5 {
+		-webkit-order: -5;
+		-ms-order: -5;
+		order: -5;
+	}
+
+	.pullsm6 {
+		-webkit-order: -6;
+		-ms-order: -6;
+		order: -6;
+	}
+
+	.pullsm7 {
+		-webkit-order: -7;
+		-ms-order: -7;
+		order: -7;
+	}
+
+	.pullsm8 {
+		-webkit-order: -8;
+		-ms-order: -8;
+		order: -8;
+	}
+
+	.pullsm9 {
+		-webkit-order: -9;
+		-ms-order: -9;
+		order: -9;
+	}
+
+	.pullsm10 {
+		-webkit-order: -10;
+		-ms-order: -10;
+		order: -10;
+	}
+
+	.pullsm11 {
+		-webkit-order: -11;
+		-ms-order: -11;
+		order: -11;
 	}
 }
 
@@ -501,5 +1065,146 @@
 		-ms-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+	
+	/* Сортировка колонок */
+	.orderxsmNull {
+		-webkit-order: 0;
+		-ms-order: 0;
+		order: 0;
+	}
+	
+	/* Вперёд */
+	.pushxsm1 {
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+
+	.pushxsm2 {
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+
+	.pushxsm3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pushxsm4 {
+		-webkit-order: 4;
+		-ms-order: 4;
+		order: 4;
+	}
+
+	.pushxsm5 {
+		-webkit-order: 5;
+		-ms-order: 5;
+		order: 5;
+	}
+
+	.pushxsm6 {
+		-webkit-order: 6;
+		-ms-order: 6;
+		order: 6;
+	}
+
+	.pushxsm7 {
+		-webkit-order: 7;
+		-ms-order: 7;
+		order: 7;
+	}
+
+	.pushxsm8 {
+		-webkit-order: 8;
+		-ms-order: 8;
+		order: 8;
+	}
+
+	.pushxsm9 {
+		-webkit-order: 9;
+		-ms-order: 9;
+		order: 9;
+	}
+
+	.pushxsm10 {
+		-webkit-order: 10;
+		-ms-order: 10;
+		order: 10;
+	}
+
+	.pushxsm11 {
+		-webkit-order: 11;
+		-ms-order: 11;
+		order: 11;
+	}
+
+	/* Назад */
+	.pullxsm1 {
+		-webkit-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+
+	.pullxsm2 {
+		-webkit-order: -2;
+		-ms-order: -2;
+		order: -2;
+	}
+
+	.pullsm3 {
+		-webkit-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	.pullxsm4 {
+		-webkit-order: -4;
+		-ms-order: -4;
+		order: -4;
+	}
+
+	.pullxsm5 {
+		-webkit-order: -5;
+		-ms-order: -5;
+		order: -5;
+	}
+
+	.pullxsm6 {
+		-webkit-order: -6;
+		-ms-order: -6;
+		order: -6;
+	}
+
+	.pullxsm7 {
+		-webkit-order: -7;
+		-ms-order: -7;
+		order: -7;
+	}
+
+	.pullxsm8 {
+		-webkit-order: -8;
+		-ms-order: -8;
+		order: -8;
+	}
+
+	.pullxsm9 {
+		-webkit-order: -9;
+		-ms-order: -9;
+		order: -9;
+	}
+
+	.pullxsm10 {
+		-webkit-order: -10;
+		-ms-order: -10;
+		order: -10;
+	}
+
+	.pullxsm11 {
+		-webkit-order: -11;
+		-ms-order: -11;
+		order: -11;
 	}
 }
