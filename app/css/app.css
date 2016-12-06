@@ -69,8 +69,8 @@ body {
 	opacity: 1;
 	visibility: visible;
 	
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
+	-webkit-transform: none;
+	transform: none;
 }
 
 /* ============================ Основной блок */
