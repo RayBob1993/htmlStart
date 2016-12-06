@@ -98,6 +98,20 @@
 		max-width: 100%;
 	}
 	
+	/* Смещение колонок */
+	.offsetxlg1 {margin-left: 8.33333333%}
+	.offsetxlg2 {margin-left: 16.66666667%}
+	.offsetxlg3 {margin-left: 25%}
+	.offsetxlg4 {margin-left: 33.33333333%}
+	.offsetxlg5 {margin-left: 41.66666667%}
+	.offsetxlg6 {margin-left: 50%}
+	.offsetxlg7 {margin-left: 58.33333333%}
+	.offsetxlg8 {margin-left: 66.66666667%}
+	.offsetxlg9 {margin-left: 75%}
+	.offsetxlg10 {margin-left: 83.33333333%}
+	.offsetxlg11 {margin-left: 91.66666667%}
+	.offsetxlgNone {margin-left: 0;}
+	
 	/* Сортировка колонок */
 	.orderxlgNull {
 		-webkit-order: 0;
@@ -339,6 +353,20 @@
 		flex-basis: 100%;
 		max-width: 100%;
 	}
+	
+	/* Смещение колонок */
+	.offsetlg1 {margin-left: 8.33333333%}
+	.offsetlg2 {margin-left: 16.66666667%}
+	.offsetlg3 {margin-left: 25%}
+	.offsetlg4 {margin-left: 33.33333333%}
+	.offsetlg5 {margin-left: 41.66666667%}
+	.offsetlg6 {margin-left: 50%}
+	.offsetlg7 {margin-left: 58.33333333%}
+	.offsetlg8 {margin-left: 66.66666667%}
+	.offsetlg9 {margin-left: 75%}
+	.offsetlg10 {margin-left: 83.33333333%}
+	.offsetlg11 {margin-left: 91.66666667%}
+	.offsetlgNone {margin-left: 0;}
 	
 	/* Сортировка колонок */
 	.orderlgNull {
@@ -582,6 +610,20 @@
 		max-width: 100%;
 	}
 	
+	/* Смещение колонок */
+	.offsetmd1 {margin-left: 8.33333333%}
+	.offsetmd2 {margin-left: 16.66666667%}
+	.offsetmd3 {margin-left: 25%}
+	.offsetmd4 {margin-left: 33.33333333%}
+	.offsetmd5 {margin-left: 41.66666667%}
+	.offsetmd6 {margin-left: 50%}
+	.offsetmd7 {margin-left: 58.33333333%}
+	.offsetmd8 {margin-left: 66.66666667%}
+	.offsetmd9 {margin-left: 75%}
+	.offsetmd10 {margin-left: 83.33333333%}
+	.offsetmd11 {margin-left: 91.66666667%}
+	.offsetmdNone {margin-left: 0;}
+	
 	/* Сортировка колонок */
 	.ordermdNull {
 		-webkit-order: 0;
@@ -823,6 +865,20 @@
 		flex-basis: 100%;
 		max-width: 100%;
 	}
+	
+	/* Смещение колонок */
+	.offsetsm1 {margin-left: 8.33333333%}
+	.offsetsm2 {margin-left: 16.66666667%}
+	.offsetsm3 {margin-left: 25%}
+	.offsetsm4 {margin-left: 33.33333333%}
+	.offsetsm5 {margin-left: 41.66666667%}
+	.offsetsm6 {margin-left: 50%}
+	.offsetsm7 {margin-left: 58.33333333%}
+	.offsetsm8 {margin-left: 66.66666667%}
+	.offsetsm9 {margin-left: 75%}
+	.offsetsm10 {margin-left: 83.33333333%}
+	.offsetsm11 {margin-left: 91.66666667%}
+	.offsetsmNone {margin-left: 0;}
 	
 	/* Сортировка колонок */
 	.ordersmNull {
@@ -1066,6 +1122,20 @@
 		flex-basis: 100%;
 		max-width: 100%;
 	}
+	
+	/* Смещение колонок */
+	.offsetxsm1 {margin-left: 8.33333333%}
+	.offsetxsm2 {margin-left: 16.66666667%}
+	.offsetxsm3 {margin-left: 25%}
+	.offsetxsm4 {margin-left: 33.33333333%}
+	.offsetxsm5 {margin-left: 41.66666667%}
+	.offsetxsm6 {margin-left: 50%}
+	.offsetxsm7 {margin-left: 58.33333333%}
+	.offsetxsm8 {margin-left: 66.66666667%}
+	.offsetxsm9 {margin-left: 75%}
+	.offsetxsm10 {margin-left: 83.33333333%}
+	.offsetxsm11 {margin-left: 91.66666667%}
+	.offsetxsmNone {margin-left: 0;}
 	
 	/* Сортировка колонок */
 	.orderxsmNull {
