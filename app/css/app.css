@@ -21,21 +21,18 @@ body {
 
 /* ============================ Логотип */
 .logo {
-	text-decoration: none;
 	display: block;
+	
+	text-decoration: none;
 }
 
 /* ============================ Контакты в шапке */
 .headerContacts {}
 
-/* Телефон */
-.tel {}
-
 /* ============================ Верхнее меню */
-.topMenu {}
-
 .topMenu a {
 	display: block;
+	
 	text-decoration: none;
 
 	-webkit-transition: .2s ease-in-out;
@@ -43,13 +40,17 @@ body {
 }
 
 /* Уровень 1 */ 
-.topMenu .level1 > li > a {}
+.topMenu .level1 > li > a {
+	
+}
 
 .topMenu .level1 > li:hover > a,
-.topMenu .level1 > li.active > a {}
+.topMenu .level1 > li.active > a {
+	text-decoration: underline;
+}
 
 /* Выпадающий список */
-.topMenu .level1 ul {
+.topMenu .level2 {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -65,7 +66,7 @@ body {
 	transition: .2s ease-in-out;
 }
 
-.topMenu .level1 > li:hover ul {
+.topMenu li:hover .level2 {
 	opacity: 1;
 	visibility: visible;
 	
@@ -84,10 +85,9 @@ body {
 .sidebarLeft {}
 
 /* ============================ Левое меню */
-.leftMenu {}
-
 .leftMenu a {
 	display: block;
+	
 	text-decoration: none;
 	
 	-webkit-transition: .2s ease-in-out;
@@ -95,10 +95,14 @@ body {
 }
 
 /* Уровень 1 */ 
-.leftMenu .level1 > li > a {}
+.leftMenu .level1 > li > a {
+	
+}
 
 .leftMenu .level1 > li:hover > a,
-.leftMenu .level1 > li.active > a {}
+.leftMenu .level1 > li.active > a {
+	text-decoration: underline;
+}
 
 /* ============================ Контент */
 .content {}
@@ -114,15 +118,21 @@ body {
 }
 
 /* ============================ Нижнее меню */
-.bottomMenu {}
-
 .bottomMenu a {
 	display: block;
+	
 	text-decoration: none;
 
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
 
+/* Уровень 1 */ 
+.bottomMenu .level1 > li > a {
+	
+}
+
 .bottomMenu .level1 > li:hover > a,
-.bottomMenu .level1 > li.active > a {}
+.bottomMenu .level1 > li.active > a {
+	text-decoration: underline;
+}
