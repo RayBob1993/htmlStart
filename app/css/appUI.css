@@ -304,8 +304,9 @@ th {padding: 0}
 	
 }
 
-/* Телефон */
-.tel {
+/* Телефон и email*/
+.tel,
+.mail {
 	display: block;
 
 	text-decoration: none;
@@ -763,8 +764,8 @@ th {padding: 0}
 	transition: .2s ease-in-out;
 }
 
-.pagePrev {}
-.pageNext {}
+.pager a.pagePrev {}
+.pager a.pageNext {}
 
 .pager li:hover > a,
 .pager li.active > a {}
