@@ -73,7 +73,8 @@
 }
 
 #fancybox-loading, 
-.fancybox-close {
+.fancybox-close,
+.fancybox-nav span {
 	background-image: url('../img/fancybox/fancybox_sprite.png');
 }
 
