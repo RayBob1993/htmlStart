@@ -267,6 +267,9 @@ th {padding: 0}
 .ico {
 	display: inline-block;
 	vertical-align: middle;
+	
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .icoLeft {
