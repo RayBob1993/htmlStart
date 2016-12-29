@@ -280,6 +280,39 @@ th {padding: 0}
 	margin-left: 5px;
 }
 
+/* Иконка меню */
+.crossIco {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+}
+
+.crossIco span {
+	display: block;
+	height: 1px;
+	background: #000;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.crossIco span:nth-child(2) {
+	margin: 5px 0;
+}
+
+.open .crossIco span:first-child {
+	-webkit-transform: translateY(6px) rotate(45deg);
+	transform: translateY(6px) rotate(45deg);
+}
+
+.open .crossIco span:nth-child(2) {
+	opacity: 0;
+}
+
+.open .crossIco span:last-child {
+	-webkit-transform: translateY(-6px) rotate(-45deg);
+	transform: translateY(-6px) rotate(-45deg);
+}
+
 /* ============================ Контакты */
 .contactsGroup {
 	
