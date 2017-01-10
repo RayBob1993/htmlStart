@@ -261,8 +261,45 @@ th {padding: 0}
 	width: 100%;
 }
 
-/* Стили кнопок */
+.but.butLarge {}
 
+.but.butSmall {}
+
+.but.butTiny {}
+
+/* Стили кнопок */
+.butPrimary {}
+.butPrimary:hover {}
+.butPrimary.active,
+.butPrimary:active {}
+
+.butSecondary {}
+.butSecondary:hover {}
+.butSecondary.active,
+.butSecondary:active {}
+
+.butDefault {}
+.butDefault:hover {}
+.butDefault.active,
+.butDefault:active {}
+
+.butLink {}
+.butLink:hover {}
+.butLink.active,
+.butLink:active {}
+
+.butRound {
+	border-radius: 100px;
+}
+
+/* Типы кнопок */
+.butClose {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	
+	padding: 0;
+}
 /* ============================ Иконки */
 .ico {
 	display: inline-block;
@@ -1041,9 +1078,12 @@ th {padding: 0}
 .modalDialog {
 	position: relative;
 	
-	max-width: 500px;
+	max-width: 600px;
 	margin: 40px auto;
 }
+
+.modalLarge {}
+.modalSmall {}
 
 .modalContent {
 	position: relative;
@@ -1070,19 +1110,13 @@ th {padding: 0}
 	opacity: .5;
 }
 
-.modalHeader,
-.modalBody {
+.modalHeader {
 	position: relative;
 	
 	padding: 15px;
 }
 
-.modalClose {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	z-index: 2;
-}
+.modalClose {}
 
 .modalTitle {
 	margin-bottom: 0;
@@ -1090,10 +1124,16 @@ th {padding: 0}
 	text-align: center;
 }
 
+.modalBody {
+	padding: 15px;
+}
+
+.modalFooter {
+	padding: 15px;
+}
+
 /* ============================ Выпадающее меню */
 .dropdown {position: relative;}
-
-.dropdownBut {}
 
 .dropdownBlock {
 	position: absolute;
