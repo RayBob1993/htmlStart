@@ -12,6 +12,7 @@
 		-webkit-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
+		width: auto;
 	}
 
 	.colxlg1 {
@@ -268,6 +269,7 @@
 		-webkit-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
+		width: auto;
 	}
 
 	.collg1 {
@@ -524,6 +526,7 @@
 		-webkit-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
+		width: auto;
 	}
 
 	.colmd1 {
@@ -865,6 +868,7 @@
 		-webkit-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
+		width: auto;
 	}
 
 	.colsm1 {
@@ -1122,6 +1126,7 @@
 		-webkit-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
+		width: auto;
 	}
 
 	.colxsm1 {
