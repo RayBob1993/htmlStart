@@ -507,7 +507,6 @@ th {padding: 0}
 	padding-left: 10px;
 	padding-right: 10px; 
 	min-height: 1px;
-	max-width: 100%;
 }
 
 /* Вертикальное выравнивание ячеек */
@@ -539,6 +538,7 @@ th {padding: 0}
 	-webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+	width: auto;
 }
 
 .col1 {
