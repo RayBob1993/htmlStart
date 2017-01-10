@@ -657,138 +657,25 @@ th {padding: 0}
 .offset11 {margin-left: 91.66666667%}
 
 /* Сортировка колонок */
-/* Вперёд */
-.push1 {
-	-webkit-order: 1;
-	-ms-order: 1;
-	order: 1;
+.colFirst {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
 }
 
-.push2 {
-	-webkit-order: 2;
-	-ms-order: 2;
-	order: 2;
+.colLast {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
 }
 
-.push3 {
-	-webkit-order: 3;
-	-ms-order: 3;
-	order: 3;
-}
-
-.push4 {
-	-webkit-order: 4;
-	-ms-order: 4;
-	order: 4;
-}
-
-.push5 {
-	-webkit-order: 5;
-	-ms-order: 5;
-	order: 5;
-}
-
-.push6 {
-	-webkit-order: 6;
-	-ms-order: 6;
-	order: 6;
-}
-
-.push7 {
-	-webkit-order: 7;
-	-ms-order: 7;
-	order: 7;
-}
-
-.push8 {
-	-webkit-order: 8;
-	-ms-order: 8;
-	order: 8;
-}
-
-.push9 {
-	-webkit-order: 9;
-	-ms-order: 9;
-	order: 9;
-}
-
-.push10 {
-	-webkit-order: 10;
-	-ms-order: 10;
-	order: 10;
-}
-
-.push11 {
-	-webkit-order: 11;
-	-ms-order: 11;
-	order: 11;
-}
-
-/* Назад */
-.pull1 {
-	-webkit-order: -1;
-	-ms-order: -1;
-	order: -1;
-}
-
-.pull2 {
-	-webkit-order: -2;
-	-ms-order: -2;
-	order: -2;
-}
-
-.pull3 {
-	-webkit-order: 3;
-	-ms-order: 3;
-	order: 3;
-}
-
-.pull4 {
-	-webkit-order: -4;
-	-ms-order: -4;
-	order: -4;
-}
-
-.pull5 {
-	-webkit-order: -5;
-	-ms-order: -5;
-	order: -5;
-}
-
-.pull6 {
-	-webkit-order: -6;
-	-ms-order: -6;
-	order: -6;
-}
-
-.pull7 {
-	-webkit-order: -7;
-	-ms-order: -7;
-	order: -7;
-}
-
-.pull8 {
-	-webkit-order: -8;
-	-ms-order: -8;
-	order: -8;
-}
-
-.pull9 {
-	-webkit-order: -9;
-	-ms-order: -9;
-	order: -9;
-}
-
-.pull10 {
-	-webkit-order: -10;
-	-ms-order: -10;
-	order: -10;
-}
-
-.pull11 {
-	-webkit-order: -11;
-	-ms-order: -11;
-	order: -11;
+.colUnordered {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
 }
 
 /* ============================ Путь по сайту */
