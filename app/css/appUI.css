@@ -442,20 +442,33 @@ th {padding: 0}
 	flex-flow: row wrap;
 }
 
+.noGutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.noGutters > .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
 /* Горизонтальное выравнивание строки */
 .rowLeft {
+	-webkit-box-pack: start;
 	-webkit-justify-content: flex-start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
 }
 
 .rowCenter {
+	-webkit-box-pack: center;
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .rowRight {
+	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
@@ -468,6 +481,7 @@ th {padding: 0}
 }
 
 .rowBetween {
+	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -475,18 +489,21 @@ th {padding: 0}
 
 /* Вертикальное выравнивание строки */
 .rowTop {
+	-webkit-box-align: start;
 	-webkit-align-items: flex-start;
 	-ms-flex-align: start;
 	align-items: flex-start;
 }
 
 .rowMiddle {
+	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
 }
 
 .rowBot {
+	-webkit-box-align: end;
 	-webkit-align-items: flex-end;
 	-ms-flex-align: end;
 	align-items: flex-end;
@@ -519,6 +536,7 @@ th {padding: 0}
 .colMiddle {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
 	align-self: center;
 }
 
