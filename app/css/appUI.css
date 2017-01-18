@@ -716,6 +716,42 @@ th {padding: 0}
     order: 0;
 }
 
+/* ============================ Счётчик товаров */
+.counter {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	border: 1px solid #C6C6C6;
+	margin: 0 auto;
+	width: 100px;
+}
+
+.counter > * {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.counter .counterBut {
+	width: 30px;
+
+	background: #F7F7F7;
+}
+
+.counter .fieldCount {
+	border: 0;
+	border-left: 1px solid #C6C6C6;
+	border-right: 1px solid #C6C6C6;
+	width: 35px;
+	padding: 5px 10px;
+	
+	text-align: center;
+}
+
 /* ============================ Путь по сайту */
 .path {}
 
