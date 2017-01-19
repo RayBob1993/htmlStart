@@ -16,7 +16,10 @@ $(document).on('ready', function(){
 				title: {
 					type : 'over'
 				}
-			}
+			},
+			beforeShow : function() {
+				this.title = (this.title ? '' + this.title + '' : '') + ' <span class="fancyboxNum">' + (this.index + 1) + ' из ' + this.group.length + ' </span>';
+			} 
 		});
 		
 		// Для видео роликов
