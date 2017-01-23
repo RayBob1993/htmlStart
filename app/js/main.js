@@ -15,6 +15,10 @@ $(document).on('ready', function(){
 				},
 				title: {
 					type : 'over'
+				},
+				thumbs: {
+					width: 80,
+					height: 80
 				}
 			},
 			beforeShow : function() {
