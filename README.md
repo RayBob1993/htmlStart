@@ -33,7 +33,11 @@
 </ul>
 
 <h3 id="titles">Заголовки</h3>
-<pre></pre>
+<pre>
+<code>
+<p>sdvdfv</p>
+</code>
+</pre>
 <a href="#">наверх</a>
 
 <h3 id="lists">Списки</h3>
