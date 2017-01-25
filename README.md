@@ -20,6 +20,7 @@
 <li><a href="#user-content-pager">Переключатель страниц</a></li>
 <li><a href="#user-content-sections">Секции</a></li>
 <li><a href="#user-content-forms">Формы</a></li>
+<li><a href="#user-content-formTelMask">Маскировка полей телефонов</a></li>
 </ul>
 
 Все остальные компоненты добавляются по мере необходимости:
@@ -77,3 +78,6 @@
 
 <h3 id="forms">Формы</h3>
 <pre></pre>
+
+<h3 id="user-content-formTelMask">Маскировка полей телефонов</h3>
+Плагин уже встроен. Инициализация происходит на поля <b>input[type="tel]</b>
