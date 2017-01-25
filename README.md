@@ -27,6 +27,7 @@
 <ul>
 <li><a href="https://github.com/malihu/malihu-custom-scrollbar-plugin">Кастомный скроллбар</a></li>
 <li><a href="https://github.com/alvarotrigo/fullPage.js">Полноэкранный скролл</a></li>
+<li><a href="https://refreshless.com/nouislider/">Ползунок диапазона чисел/цен</a></li>
 </ul>
 
 
