@@ -4,6 +4,7 @@
 <h2>Компоненты</h2>
 
 <ul>
+<li><a href="#user-content-titles">Заголовки</a></li>
 <li><a href="#user-content-lists">Списки</a></li>
 <li><a href="#user-content-icons">Иконки</a></li>
 <li><a href="#user-content-tables">Таблици</a></li>
@@ -30,6 +31,8 @@
 <li><a href="https://refreshless.com/nouislider/">Ползунок диапазона чисел/цен</a></li>
 </ul>
 
+<h3 id="titles">Заголовки</h3>
+<pre></pre>
 
 <h3 id="lists">Списки</h3>
 <h4>Пустой список</h4>
