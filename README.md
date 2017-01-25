@@ -104,7 +104,13 @@
 <a href="#">наверх</a>
 
 <h3 id="breadcrumbs">Хлебные крошки</h3>
-```
+```html
+<nav class="breadcrumbs">
+  <ul class="list listInline">
+    <li><a href="/">Главная</a></li>
+    <li><a href="#">Раздел</a></li>
+  </ul>
+</nav>
 ```
 <a href="#">наверх</a>
 
