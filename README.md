@@ -68,7 +68,7 @@
 <pre></pre>
 <a href="#">наверх</a>
 
-<h3 id="dropdowns">Дробауны</h3>
+<h3 id="dropdowns">Дропбауны</h3>
 <pre></pre>
 <a href="#">наверх</a>
 
