@@ -33,76 +33,89 @@
 </ul>
 
 <h3 id="titles">Заголовки</h3>
-<pre>
 ```
-<h3 id="titles">Заголовки</h3>
 ```
-</pre>
 <a href="#">наверх</a>
 
 <h3 id="lists">Списки</h3>
 <h4>Пустой список</h4>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="icons">Иконки</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="tables">Таблицы</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="buttons">Кнопки</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="imgGalery">Галерея изображений</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="grid">Flexbox сетка</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="tabs">Вкладки</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="dropdowns">Дропбауны</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="modals">Модальные окна</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="imgs">Изображения</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="counters">Счётчик для input полей</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="breadcrumbs">Хлебные крошки</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="pager">Переключатель страниц</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="sections">Секции</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="forms">Формы</h3>
-<pre></pre>
+```
+```
 <a href="#">наверх</a>
 
 <h3 id="user-content-formTelMask">Маскировка полей телефонов</h3>
