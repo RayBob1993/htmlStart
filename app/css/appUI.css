@@ -748,21 +748,21 @@ th {padding: 0}
 }
 
 /* ============================ Путь по сайту */
-.path {}
+.breadcrumbs {}
 
-.path li + li:before {
+.breadcrumbs li + li:before {
 	padding: 0 5px;
 	
 	content: '/';
 }
 
-.path a {
+.breadcrumbs a {
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
 
-.path li:hover > a,
-.path li.active > a {}
+.breadcrumbs li:hover > a,
+.breadcrumbs li.active > a {}
 
 /* ============================ Переключатель страниц */
 .pager {}
