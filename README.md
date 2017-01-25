@@ -39,7 +39,21 @@
 
 <h3 id="lists">Списки</h3>
 <h4>Пустой список</h4>
+```html
+<ul class="list">
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
+</ul>
 ```
+
+<h4>Список по горизонтали</h4>
+```html
+<ul class="list listInline">
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
+</ul>
 ```
 <a href="#">наверх</a>
 
