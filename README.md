@@ -115,7 +115,20 @@
 <a href="#">наверх</a>
 
 <h3 id="pager">Переключатель страниц</h3>
-```
+```html
+<nav class="pager">
+  <ul class="list listInline">
+    <li><a href="#" class="pagePrev">Назад</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li class="active"><a href="">4</a></li>
+    <li class="pagerDots"><a href="#">...</a></li>
+    <li><a href="#">10</a></li>
+    <li><a href="#">11</a></li>
+    <li><a href="#" class="pageNext">Вперёд</a></li>
+  </ul>
+</nav>
 ```
 <a href="#">наверх</a>
 
