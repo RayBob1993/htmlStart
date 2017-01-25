@@ -33,26 +33,49 @@
 <h4>Пустой список</h4>
 
 Пустой список, с обнулением отступов и маркеров у пунктов
-<pre>
-<ul class="list">
-<li>Пункт 1</li>
-<li>Пункт 2</li>
-<li>Пункт 3</li>
-</ul>
-</pre>
+<pre></pre>
 
 <h3 id="icons">Иконки</h3>
+<pre></pre>
+
 <h3 id="tables">Таблици</h3>
+<pre></pre>
+
 <h3 id="buttons">Кнопки</h3>
+<pre></pre>
+
 <h3 id="imgGalery">Галерея изображений</h3>
+<pre></pre>
+
 <h3 id="sliders">Слайдер</h3>
+<pre></pre>
+
 <h3 id="grid">Flexbox сетка</h3>
+<pre></pre>
+
 <h3 id="tabs">Вкладки</h3>
+<pre></pre>
+
 <h3 id="dropdowns">Дробауны</h3>
+<pre></pre>
+
 <h3 id="modals">Модальные окна</h3>
+<pre></pre>
+
 <h3 id="imgs">Изображения</h3>
+<pre></pre>
+
 <h3 id="counters">Счётчик для input полей</h3>
+<pre></pre>
+
 <h3 id="breadcrumbs">Хлебные крошки</h3>
+<pre></pre>
+
 <h3 id="pager">Переключатель страниц</h3>
+<pre></pre>
+
 <h3 id="sections">Секции</h3>
+<pre></pre>
+
 <h3 id="forms">Формы</h3>
+<pre></pre>
