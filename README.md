@@ -4,23 +4,22 @@
 <h2>Компоненты</h2>
 
 <ul>
-<li><a href="#">Списки</a></li>
-<li><a href="#">Иконки</a></li>
-<li><a href="#">Таблици</a></li>
-<li><a href="#">Кнопки</a></li>
-<li><a href="#">Галерея изображений</a></li>
-<li><a href="#">Слайдер</a></li>
-<li><a href="#">Flexbox сетка</a></li>
-<li><a href="#">Вкладки</a></li>
-<li><a href="#">Дробауны</a></li>
-<li><a href="#">Модальные окна</a></li>
-<li><a href="#">Иконки</a></li>
-<li><a href="#">Изображения</a></li>
-<li><a href="#">Счётчик для input полей</a></li>
-<li><a href="#">Хлебные крошки</a></li>
-<li><a href="#">Переключатель страниц</a></li>
-<li><a href="#">Секции</a></li>
-<li><a href="#">Формы</a></li>
+<li><a href="#user-content-lists">Списки</a></li>
+<li><a href="#user-content-icons">Иконки</a></li>
+<li><a href="#user-content-tables">Таблици</a></li>
+<li><a href="#user-content-buttons">Кнопки</a></li>
+<li><a href="#user-content-imgGalery">Галерея изображений</a></li>
+<li><a href="#user-content-sliders">Слайдер</a></li>
+<li><a href="#user-content-grid">Flexbox сетка</a></li>
+<li><a href="#user-content-tabs">Вкладки</a></li>
+<li><a href="#user-content-dropdowns">Дробауны</a></li>
+<li><a href="#user-content-modals">Модальные окна</a></li>
+<li><a href="#user-content-imgs">Изображения</a></li>
+<li><a href="#user-content-counters">Счётчик для input полей</a></li>
+<li><a href="#user-content-breadcrumbs">Хлебные крошки</a></li>
+<li><a href="#user-content-pager">Переключатель страниц</a></li>
+<li><a href="#user-content-sections">Секции</a></li>
+<li><a href="#user-content-forms">Формы</a></li>
 </ul>
 
 Все остальные компоненты добавляются по мере необходимости:
