@@ -5,6 +5,7 @@
 
 <ul>
 <li><a href="#">Списки</a></li>
+<li><a href="#">Иконки</a></li>
 <li><a href="#">Таблици</a></li>
 <li><a href="#">Кнопки</a></li>
 <li><a href="#">Слайдер</a></li>
