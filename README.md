@@ -21,6 +21,7 @@
 <li><a href="#pager">Переключатель страниц</a></li>
 <li><a href="#sections">Секции</a></li>
 <li><a href="#forms">Формы</a></li>
+<li><a href="#mediaQueries">Медиа запросы</a></li>
 <li><a href="#formTelMask">Маскировка полей телефонов</a></li>
 </ul>
 
@@ -156,5 +157,7 @@
 ```
 <a href="#">наверх</a>
 
-<h3 id="user-content-formTelMask">Маскировка полей телефонов</h3>
+<h3 id="mediaQueries">Медиа запросы</h3>
+
+<h3 id="formTelMask">Маскировка полей телефонов</h3>
 Плагин уже встроен. Инициализация происходит на поля <b>input[type="tel]</b>
