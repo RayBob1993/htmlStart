@@ -28,3 +28,21 @@
 <li><a href="https://github.com/malihu/malihu-custom-scrollbar-plugin">Кастомный скроллбар</a></li>
 <li><a href="https://github.com/alvarotrigo/fullPage.js">Полноэкранный скролл</a></li>
 </ul>
+
+
+<h3 id="lists">Списки</h3>
+<h3 id="icons">Иконки</h3>
+<h3 id="tables">Таблици</h3>
+<h3 id="buttons">Кнопки</h3>
+<h3 id="imgGalery">Галерея изображений</h3>
+<h3 id="sliders">Слайдер</h3>
+<h3 id="grid">Flexbox сетка</h3>
+<h3 id="tabs">Вкладки</h3>
+<h3 id="dropdowns">Дробауны</h3>
+<h3 id="modals">Модальные окна</h3>
+<h3 id="imgs">Изображения</h3>
+<h3 id="counters">Счётчик для input полей</h3>
+<h3 id="breadcrumbs">Хлебные крошки</h3>
+<h3 id="pager">Переключатель страниц</h3>
+<h3 id="sections">Секции</h3>
+<h3 id="forms">Формы</h3>
