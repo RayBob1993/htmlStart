@@ -13,7 +13,7 @@
 <li><a href="#sliders">Слайдер</a></li>
 <li><a href="#grid">Flexbox сетка</a></li>
 <li><a href="#tabs">Вкладки</a></li>
-<li><a href="#dropdowns">Дропбауны</a></li>
+<li><a href="#dropdowns">Дропдауны</a></li>
 <li><a href="#modals">Модальные окна</a></li>
 <li><a href="#imgs">Изображения</a></li>
 <li><a href="#counters">Счётчик для input полей</a></li>
@@ -78,7 +78,7 @@
 ```
 <a href="#">наверх</a>
 
-<h3 id="dropdowns">Дропбауны</h3>
+<h3 id="dropdowns">Дропдауны</h3>
 ```
 ```
 <a href="#">наверх</a>
@@ -95,6 +95,11 @@
 
 <h3 id="counters">Счётчик для input полей</h3>
 ```
+<div class="counter">
+  <button type="button" class="but counterBut dec">-</button>
+  <input type="text" class="field" value="1" data-min="1" data-max="20">
+  <button type="button" class="but counterBut inc">+</button>
+</div>
 ```
 <a href="#">наверх</a>
 
