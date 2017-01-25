@@ -1,6 +1,34 @@
 # htmlStart
 Заготовка для вёрстки сайта. Для работы нужно удалить css файл <b>client.content.css</b> и перенести его стили в файл <b>appUI.css</b>.
 
+<h2>Структура</h2>
+```
+├── index.html
+└── app
+    ├── css
+        └── app.css
+        └── appUI.css
+        └── client.content.css
+        └── fancybox.css
+        └── responsive.css
+    └── img
+        └── ico
+        └── fancybox
+    └── js
+        └── lib
+        └── plugins
+            └── fancybox
+                └── jquery.fancybox-media.js
+                └── jquery.fancybox-thumbs.js
+                └── jquery.fancybox.pack.js
+            └── bootstrap.min.js
+            └── jquery.maskedinput.min.js
+            └── jquery.slick.min.js
+        └── app.js
+        └── main.js
+
+```
+
 <h2>Компоненты</h2>
 
 <ul>
