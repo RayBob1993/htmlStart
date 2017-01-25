@@ -41,7 +41,7 @@
 <h3 id="icons">Иконки</h3>
 <pre></pre>
 
-<h3 id="tables">Таблици</h3>
+<h3 id="tables">Таблицы</h3>
 <pre></pre>
 
 <h3 id="buttons">Кнопки</h3>
