@@ -94,7 +94,7 @@
 <a href="#">наверх</a>
 
 <h3 id="counters">Счётчик для input полей</h3>
-```
+```html
 <div class="counter">
   <button type="button" class="but counterBut dec">-</button>
   <input type="text" class="field" value="1" data-min="1" data-max="20">
