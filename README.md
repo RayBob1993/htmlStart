@@ -13,7 +13,7 @@
 <li><a href="#sliders">Слайдер</a></li>
 <li><a href="#grid">Flexbox сетка</a></li>
 <li><a href="#tabs">Вкладки</a></li>
-<li><a href="#dropdowns">Дробауны</a></li>
+<li><a href="#dropdowns">Дропбауны</a></li>
 <li><a href="#modals">Модальные окна</a></li>
 <li><a href="#imgs">Изображения</a></li>
 <li><a href="#counters">Счётчик для input полей</a></li>
