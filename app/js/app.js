@@ -3,9 +3,55 @@
 var App = (function($){
 
 	return {
+		slickInit: function(){
+
+			if (typeof($.fn.slick) !== "undefined") {
+				$('#mainSlider').slick({
+					
+				});
+			}
+
+			return this;
+
+		},
+		
+		fancyboxInit(){
+
+			if (typeof($.fn.fancybox) !== "undefined") {
+				// Для галерей с изображениями
+				$('.fancybox').fancybox({
+					padding: 0,
+					openEffect: 'elastic',
+					closeEffect: 'elastic',
+					helpers: {
+						overlay: {
+							locked: false
+						},
+						title: {
+							type : 'over'
+						}
+					}
+				});
+				
+				// Для видео роликов
+				$('.fancyboxMedia').fancybox({
+					padding: 0,
+					maxWidth: 1000,
+					maxHeight: 600,
+					fitToView: false,
+					autoSize: false,
+					closeClick: false,
+					openEffect: 'elastic',
+					closeEffect: 'elastic'
+				});
+			}
+
+			return this;
+
+		},
+		
 		// ============================ Скролить до элемента
 		scrollTo: function(element){
-			var self = this;
 
 			var 
 				scrollTo = $(element),
@@ -15,7 +61,7 @@ var App = (function($){
 				scrollTop: offset
 			}, 300);
 
-			return self;
+			return this;
 		},
 
 		// ============================ Отправка форм
@@ -42,7 +88,6 @@ var App = (function($){
 		
 		// ============================ Фиксация верхнего меню
 		topMenuSectionFixed: function(){
-			var self = this;
 
 			var 
 				topMenu = $('#topMenu'),
@@ -54,7 +99,7 @@ var App = (function($){
 				topMenu.removeClass('fixed');
 			}
 
-			return self;
+			return this;
 		},
 		
 		// ============================ Прокрутка к началу страницы
@@ -80,12 +125,11 @@ var App = (function($){
 				but.fadeOut();
 			}
 
-			return self;
+			return this;
 		},
 
 		// ============================ Меню гармошка
 		accordion: function(selector){
-			var self = this;
 
 			var 
 				el = $(selector).find('a'),
@@ -134,12 +178,11 @@ var App = (function($){
 				}
 			});
 
-			return self;
+			return this;
 		},
 
 		// ============================ Простенький метод для определения типа устройства
 		mobileDevice: function(){
-			var self = this;
 			
 			var device = {
 				Android: function() {
@@ -167,7 +210,6 @@ var App = (function($){
 		
 		// ============================ Кол-во товара для покупки
 		catalogItemCounter: function(field){
-			var self = this;
 			
 			var fieldCount = function(el) {
 
@@ -221,6 +263,8 @@ var App = (function($){
 			$(field).each(function(){
 				fieldCount($(this));
 			});
+			
+			return this;
 		}
 		
 	}
