@@ -50,6 +50,16 @@ var App = (function($){
 
 		},
 		
+		inputTelMaskInit(input){
+
+			if (typeof($.fn.mask) !== "undefined") {
+				$(input).mask('+7 (999) 999-9999');
+			}
+
+			return this;
+
+		},
+		
 		// ============================ Скролить до элемента
 		scrollTo: function(element){
 
