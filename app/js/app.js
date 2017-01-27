@@ -29,7 +29,14 @@ var App = (function($){
 						},
 						title: {
 							type : 'over'
+						},
+						thumbs: {
+							width: 100,
+							height: 100
 						}
+					},
+					beforeShow : function() {
+						this.title = (this.title ? '' + this.title + '' : '') + ' <span class="fancyboxNum">' + (this.index + 1) + ' из ' + this.group.length + ' </span>';
 					}
 				});
 				
