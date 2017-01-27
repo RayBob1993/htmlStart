@@ -221,7 +221,9 @@ var App = (function($){
 		// ============================ Кол-во товара для покупки
 		catalogItemCounter: function(field){
 			
-			var fieldCount = function(el) {
+			var field = $('.field');
+			
+			function fieldCount(el){
 
 				var 
 					// Мин. значение
@@ -270,9 +272,13 @@ var App = (function($){
 				});
 			};
 
-			$(field).each(function(){
-				fieldCount($(this));
-			});
+			if(field.length){
+
+				field.each(function(){
+					fieldCount($(this));
+				});
+
+			}
 			
 			return this;
 		}
