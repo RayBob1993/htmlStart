@@ -448,6 +448,18 @@ th {padding: 0}
 	flex: 1 1 auto;
 }
 
+.listBetween {
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.listBetween > li {
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
 /* ============================ Сетка */
 .container {
 	position: relative;
