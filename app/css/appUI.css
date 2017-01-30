@@ -604,6 +604,17 @@ th {padding: 0}
 	width: auto;
 }
 
+.colStretch {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
 .col1 {
 	-webkit-flex-basis: 8.33333333%;
 	-ms-flex-basis: 8.33333333%;
