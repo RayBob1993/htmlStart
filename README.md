@@ -132,7 +132,19 @@
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
-```
+Для работы слайдеров используется плагин <a href="https://github.com/kenwheeler/slick"><b>slick</b></a>
+```html
+<section id="mainSlider" class="slick mainSlider">
+	<div class="slickSlide">
+        <img class="app/img/slider/1.jpg">
+    </div>
+    <div class="slickSlide">
+        <img class="app/img/slider/2.jpg">
+    </div>
+    <div class="slickSlide">
+        <img class="app/img/slider/3.jpg">
+    </div>
+</section>
 ```
 <a href="#">наверх</a>
 
@@ -142,12 +154,44 @@
 <a href="#">наверх</a>
 
 <h3 id="tabs">Вкладки</h3>
-```
+```html
+<div class="tabs">
+	<nav class="tabsNav">
+		<ul class="list listInline" role="tablist">
+			<li role="presentation" class="active">
+				<a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Таб 1</a>
+			</li>
+
+			<li role="presentation">
+				<a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Таб 2</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="tabContent">
+		<div role="tabpanel" class="tabPanel fade in active" id="tab1">
+			...
+		</div>
+
+		<div role="tabpanel" class="tabPanel fade" id="tab2">
+			...
+		</div>
+	</div>
+</div>
 ```
 <a href="#">наверх</a>
 
 <h3 id="dropdowns">Дропдауны</h3>
-```
+```html
+<div class="dropdown">
+	<button class="but dropdownBut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Выпадающее меню
+	</button>
+	
+	<div class="dropdownBlock" aria-labelledby="Выпадающее меню">
+		Контент
+	</div>
+</div>
 ```
 <a href="#">наверх</a>
 
