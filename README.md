@@ -105,13 +105,13 @@
 <h3 id="imgGalery">Галерея изображений</h3>
 Для галереи изображений используется jquery плагин <a href="http://fancyapps.com/fancybox/"><b>fancybox</b></a>.
 Пример кода:
-```
+```html
 <a href="app/img/galery/1.jpg" class="fancybox">
 <img class="app/img/galery/1.jpg">
 </a>
 ```
 Для создания галереи из множества изображений используйте атрибут <b>rel</b> с уникальным значением.
-```
+```html
 <a href="app/img/galery/1.jpg" class="fancybox" rel="galery">
 <img class="app/img/galery/1.jpg">
 </a>
