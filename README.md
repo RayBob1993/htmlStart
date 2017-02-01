@@ -59,6 +59,7 @@
 <li><a href="https://github.com/alvarotrigo/fullPage.js">Полноэкранный скролл</a></li>
 <li><a href="https://refreshless.com/nouislider/">Ползунок диапазона чисел/цен</a></li>
 <li><a href="https://github.com/jzaefferer/jquery-validation">Валидация форм</a></li>
+<li><a href="https://github.com/select2/select2">Кастомный select</a></li>
 </ul>
 
 <h3 id="titles">Заголовки</h3>
