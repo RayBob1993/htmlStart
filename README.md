@@ -277,7 +277,12 @@
 <a href="#">наверх</a>
 
 <h3 id="forms">Формы</h3>
-```
+Блок поиска
+```html
+<form action="#" class="search" method="post">
+	<input type="search" class="field" placeholder="Поиск по сайту..." required>
+	<input type="submit" class="but" value="Искать">
+</form>
 ```
 <a href="#">наверх</a>
 
