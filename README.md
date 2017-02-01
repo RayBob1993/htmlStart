@@ -103,7 +103,26 @@
 <a href="#">наверх</a>
 
 <h3 id="imgGalery">Галерея изображений</h3>
+Для галереи изображений используется jquery плагин <a href="http://fancyapps.com/fancybox/"><b>fancybox</b></a>.
+Пример кода:
 ```
+<a href="app/img/galery/1.jpg" class="fancybox">
+<img class="app/img/galery/1.jpg">
+</a>
+```
+Для создания галереи из множества изображений используйте атрибут <b>rel</b> с уникальным значением.
+```
+<a href="app/img/galery/1.jpg" class="fancybox" rel="galery">
+<img class="app/img/galery/1.jpg">
+</a>
+
+<a href="app/img/galery/2.jpg" class="fancybox" rel="galery">
+<img class="app/img/galery/2.jpg">
+</a>
+
+<a href="app/img/galery/3.jpg" class="fancybox" rel="galery">
+<img class="app/img/galery/3.jpg">
+</a>
 ```
 <a href="#">наверх</a>
 
