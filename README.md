@@ -107,21 +107,21 @@
 Пример кода:
 ```html
 <a href="app/img/galery/1.jpg" class="fancybox">
-<img class="app/img/galery/1.jpg">
+	<img class="app/img/galery/1.jpg">
 </a>
 ```
 Для создания галереи из множества изображений используйте атрибут <b>rel</b> с уникальным значением.
 ```html
 <a href="app/img/galery/1.jpg" class="fancybox" rel="galery">
-<img class="app/img/galery/1.jpg">
+	<img class="app/img/galery/1.jpg">
 </a>
 
 <a href="app/img/galery/2.jpg" class="fancybox" rel="galery">
-<img class="app/img/galery/2.jpg">
+	<img class="app/img/galery/2.jpg">
 </a>
 
 <a href="app/img/galery/3.jpg" class="fancybox" rel="galery">
-<img class="app/img/galery/3.jpg">
+	<img class="app/img/galery/3.jpg">
 </a>
 ```
 Для вывода видео роликов в галерее подключите плагин <b>jquery.fancybox-media.js</b>
