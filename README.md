@@ -124,6 +124,11 @@
 <img class="app/img/galery/3.jpg">
 </a>
 ```
+Для вывода видео роликов в галерее подключите плагин <b>jquery.fancybox-media.js</b>
+```html
+<script src="app/js/plugins/fancybox/jquery.fancybox-media.js"></script>
+```
+
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
