@@ -156,6 +156,7 @@
 <a href="#">наверх</a>
 
 <h3 id="tabs">Вкладки</h3>
+<a href="http://getbootstrap.com/javascript/#tabs"><b>Документация</b></a> по работе с событиями плагина
 ```html
 <div class="tabs">
 	<nav class="tabsNav">
@@ -184,6 +185,7 @@
 <a href="#">наверх</a>
 
 <h3 id="dropdowns">Дропдауны</h3>
+<a href="http://getbootstrap.com/javascript/#dropdowns"><b>Документация</b></a> по работе с событиями плагина
 ```html
 <div class="dropdown">
 	<button class="but dropdownBut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,7 +200,30 @@
 <a href="#">наверх</a>
 
 <h3 id="modals">Модальные окна</h3>
-```
+<a href="http://getbootstrap.com/javascript/#modals"><b>Документация</b></a> по работе с событиями плагина
+```html
+<button data-toggle="modal" data-target="#myModal">Модальное окно</button>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="Модальное окно">
+	<div class="modalDialog" role="document">
+		<div class="modalContent">
+			<div class="modalHeader">
+
+				<h4 class="modalTitle">Модальное окно</h4>
+
+				<button class="but butClose modalClose" data-dismiss="modal" aria-label="Закрыть окно">
+					<span aria-hidden="true">×</span>
+				</button>
+
+			</div>
+
+			<div class="modalBody">
+				
+			</div>
+		</div>
+	</div>
+</div>
 ```
 <a href="#">наверх</a>
 
