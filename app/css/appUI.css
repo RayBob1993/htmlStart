@@ -486,6 +486,12 @@ th {padding: 0}
 	flex-flow: row wrap;
 }
 
+.rowNoWrap {
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
 .noGutters {
 	margin-right: 0;
 	margin-left: 0;
