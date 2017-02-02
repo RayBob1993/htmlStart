@@ -748,12 +748,6 @@ th {padding: 0}
 	width: 100px;
 }
 
-.counter > * {
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-}
-
 .counter .counterBut {
 	width: 30px;
 
@@ -761,6 +755,10 @@ th {padding: 0}
 }
 
 .counter .fieldCount {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	
 	border: 0;
 	border-left: 1px solid #C6C6C6;
 	border-right: 1px solid #C6C6C6;
