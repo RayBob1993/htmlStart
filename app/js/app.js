@@ -228,7 +228,7 @@ var App = (function($){
 		// ============================ Кол-во товара для покупки
 		catalogItemCounter: function(field){
 			
-			var field = $('.field');
+			var field = $(field);
 			
 			function fieldCount(el){
 
