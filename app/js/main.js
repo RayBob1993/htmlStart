@@ -2,7 +2,7 @@
 
 $(document).on('ready', function(){
 	
-	App.
+	App
 		.slickInit()
 		.fancyboxInit()
 		.inputTelMaskInit()
