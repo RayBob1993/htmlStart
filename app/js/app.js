@@ -18,7 +18,7 @@ var App = (function($){
 		fancyboxInit(){
 
 			if (typeof($.fn.fancybox) !== "undefined") {
-				// Для галерей с изображениями
+				// Для галерей с изображениями или роликами
 				$('.fancybox').fancybox({
 					padding: 0,
 					openEffect: 'elastic',
@@ -33,28 +33,11 @@ var App = (function($){
 						thumbs: {
 							width: 100,
 							height: 100
-						}
+						},
+						media: {}
 					},
 					beforeShow : function() {
 						this.title = (this.title ? '' + this.title + '' : '') + ' <span class="fancyboxNum">' + (this.index + 1) + ' из ' + this.group.length + ' </span>';
-					}
-				});
-				
-				// Для видео роликов
-				$('.fancyboxMedia').fancybox({
-					padding: 0,
-					maxWidth: 1000,
-					maxHeight: 600,
-					fitToView: false,
-					autoSize: false,
-					closeClick: false,
-					openEffect: 'elastic',
-					closeEffect: 'elastic',
-					helpers: {
-						overlay: {
-							locked: false
-						},
-						media: {}
 					}
 				});
 			}
