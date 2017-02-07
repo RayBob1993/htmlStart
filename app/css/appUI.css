@@ -222,14 +222,8 @@ th {padding: 0}
 	background: none;
 	outline: 0;
 
-	-webkit-transition: 
-		background-color .2s ease-in-out, 
-		color .2s ease-in-out
-	;
-	transition: 
-		background-color .2s ease-in-out, 
-		color .2s ease-in-out
-	;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -327,9 +321,9 @@ th {padding: 0}
 .crossIco span {
 	display: block;
 	height: 1px;
-	background: #000;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	background-color: #000;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .crossIco span:nth-child(2) {
@@ -760,7 +754,7 @@ th {padding: 0}
 	flex: 0 0 30px;
 	width: 30px;
 
-	background: #F7F7F7;
+	background-color: #F7F7F7;
 }
 
 .counter .fieldCount {
@@ -920,7 +914,7 @@ th {padding: 0}
 	padding: 0;
 	border: 0;
 	
-	background: #000;
+	background-color: #000;
 	border-radius: 100%;
 	outline: 0;
 	
@@ -930,7 +924,7 @@ th {padding: 0}
 
 .slickDots .slickActive button,
 .slickDots li:hover button {
-	background: #444;
+	background-color: #444;
 }
 
 /* Кнопки лево-право */ 
@@ -1013,7 +1007,7 @@ th {padding: 0}
 	border: 0;
 	
 	outline: 0;
-	background: #fff;
+	background-color: #fff;
 	border-radius: 0;
 }
 
@@ -1075,7 +1069,7 @@ th {padding: 0}
 	width: 17px;
 	height: 17px;
 
-	background: #fff;
+	background-color: #fff;
 
 	color: #000;
 	text-align: center;
@@ -1110,8 +1104,8 @@ th {padding: 0}
 .fade {
 	opacity: 0;
 
-	-webkit-transition: opacity .15s linear;
-	transition: opacity .15s linear;
+	-webkit-transition: opacity .2s linear;
+	transition: opacity .2s linear;
 }
 
 .fade.in {
@@ -1122,8 +1116,8 @@ th {padding: 0}
 	-webkit-transform: translateY(-25%);
 	transform: translateY(-25%);
 
-	-webkit-transition: -webkit-transform .3s ease-out;
-	transition: transform .3s ease-out;
+	-webkit-transition: -webkit-transform .2s ease-out;
+	transition: transform .2s ease-out;
 }
 
 .modal.in .modalDialog {
@@ -1149,7 +1143,7 @@ th {padding: 0}
 .modalContent {
 	position: relative;
 	
-	background: #fff;
+	background-color: #fff;
 }
 
 .modalBackdrop {
