@@ -49,7 +49,13 @@ var App = (function($){
 					autoSize: false,
 					closeClick: false,
 					openEffect: 'elastic',
-					closeEffect: 'elastic'
+					closeEffect: 'elastic',
+					helpers: {
+						overlay: {
+							locked: false
+						},
+						media: {}
+					}
 				});
 			}
 
