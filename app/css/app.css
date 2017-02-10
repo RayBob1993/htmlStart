@@ -79,8 +79,23 @@ body {
 	flex: 1;
 }
 
+/* ============================ Разметка колонок */
+.mainLayout {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
 /* ============================ Сайдбар */
-.sidebarLeft {}
+.sidebarLeft {
+	width: 300px;
+	margin-right: 20px;
+}
 
 /* ============================ Левое меню */
 .leftMenu a {
@@ -103,7 +118,12 @@ body {
 }
 
 /* ============================ Контент */
-.content {}
+.content {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	max-width: calc(100% - 320px);
+}
 
 /* Заголовок страницы */
 .pageTitle {}
