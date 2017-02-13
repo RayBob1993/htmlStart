@@ -160,9 +160,9 @@
 ```html
 <section id="mainSlider" class="slick mainSlider">
 	<div class="slickSlide">
-        	<img class="app/img/slider/1.jpg">
-    	</div>
-   	<div class="slickSlide">
+		<img class="app/img/slider/1.jpg">
+	</div>
+	<div class="slickSlide">
 		<img class="app/img/slider/2.jpg">
 	</div>
 	<div class="slickSlide">
@@ -257,9 +257,9 @@
 <h3 id="counters">Счётчик для input полей</h3>
 ```html
 <div class="counter">
-  <button type="button" class="but counterBut dec">-</button>
-  <input type="text" class="field" value="1" data-min="1" data-max="20">
-  <button type="button" class="but counterBut inc">+</button>
+	<button type="button" class="but counterBut dec">-</button>
+	<input type="text" class="field" value="1" data-min="1" data-max="20">
+	<button type="button" class="but counterBut inc">+</button>
 </div>
 ```
 <a href="#">наверх</a>
@@ -267,10 +267,10 @@
 <h3 id="breadcrumbs">Хлебные крошки</h3>
 ```html
 <nav class="breadcrumbs">
-  <ul class="list listInline">
-    <li><a href="/">Главная</a></li>
-    <li><a href="#">Раздел</a></li>
-  </ul>
+	<ul class="list listInline">
+		<li><a href="/">Главная</a></li>
+		<li><a href="#">Раздел</a></li>
+	</ul>
 </nav>
 ```
 <a href="#">наверх</a>
@@ -278,17 +278,17 @@
 <h3 id="pager">Переключатель страниц</h3>
 ```html
 <nav class="pager">
-  <ul class="list listInline">
-    <li><a href="#" class="pagerArrows pagePrev">Назад</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li class="active"><a href="">4</a></li>
-    <li class="pagerDots"><a href="#">...</a></li>
-    <li><a href="#">10</a></li>
-    <li><a href="#">11</a></li>
-    <li><a href="#" class="pagerArrows pageNext">Вперёд</a></li>
-  </ul>
+	<ul class="list listInline">
+		<li><a href="#" class="pagerArrows pagePrev">Назад</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li class="active"><a href="">4</a></li>
+		<li class="pagerDots"><a href="#">...</a></li>
+		<li><a href="#">10</a></li>
+		<li><a href="#">11</a></li>
+		<li><a href="#" class="pagerArrows pageNext">Вперёд</a></li>
+	</ul>
 </nav>
 ```
 <a href="#">наверх</a>
