@@ -98,7 +98,21 @@
 	<use xlink:href="app/img/ico/icons.svg#icoTel"></use>
 </svg>
 ```
-Если используются растровые иконки, просто удалите в стилях размеры и заливку
+Если используются растровые иконки, просто удалите в стилях размеры и заливку.
+
+Для того, что-бы сделать отступы у иконок по бокам, добавлены 2 класса:
+Если иконка расположена слева
+```html
+<svg class="ico icoLeft">
+	<use xlink:href="app/img/ico/icons.svg#icoTel"></use>
+</svg>
+```
+Если иконка расположена справа
+```html
+<svg class="ico icoRight">
+	<use xlink:href="app/img/ico/icons.svg#icoTel"></use>
+</svg>
+```
 
 <a href="#">наверх</a>
 
@@ -146,14 +160,14 @@
 ```html
 <section id="mainSlider" class="slick mainSlider">
 	<div class="slickSlide">
-        <img class="app/img/slider/1.jpg">
-    </div>
-    <div class="slickSlide">
-        <img class="app/img/slider/2.jpg">
-    </div>
-    <div class="slickSlide">
-        <img class="app/img/slider/3.jpg">
-    </div>
+        	<img class="app/img/slider/1.jpg">
+    	</div>
+   	<div class="slickSlide">
+		<img class="app/img/slider/2.jpg">
+	</div>
+	<div class="slickSlide">
+		<img class="app/img/slider/3.jpg">
+	</div>
 </section>
 ```
 <a href="#">наверх</a>
