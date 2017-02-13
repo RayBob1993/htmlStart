@@ -298,6 +298,10 @@ th {padding: 0}
 .ico {
 	display: inline-block;
 	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	
+	fill: #000;
 	
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
