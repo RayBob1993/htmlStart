@@ -92,17 +92,22 @@
 <a href="#">наверх</a>
 
 <h3 id="icons">Иконки</h3>
+Для вставки иконки, добавьте ей класс <b>.ico</b>. Так как работа с иконками подразумевает использование svg иконок, класс .ico по умолчанию имеет размер 25px-25px и заливку чёрным. Что бы унифицировать все иконки. Для каждого проекта изменяем значения на нужные.
+```html
+<svg class="ico">
+	<use xlink:href="app/img/ico/icons.svg#icoTel"></use>
+</svg>
 ```
-```
+
 <a href="#">наверх</a>
 
 <h3 id="tables">Таблицы</h3>
-```
+```html
 ```
 <a href="#">наверх</a>
 
 <h3 id="buttons">Кнопки</h3>
-```
+```html
 ```
 <a href="#">наверх</a>
 
@@ -128,7 +133,7 @@
 	<img class="app/img/galery/3.jpg">
 </a>
 ```
-Для вывода видео роликов в галерее подключите плагин <b>jquery.fancybox-media.js</b>
+Для вывода видео роликов в галерее подключите плагин <b>jquery.fancybox-media.js</b>. Он находится в папке <b>/app/js/plugins/fancybox/</b>
 ```html
 <script src="app/js/plugins/fancybox/jquery.fancybox-media.js"></script>
 ```
@@ -153,7 +158,7 @@
 <a href="#">наверх</a>
 
 <h3 id="grid">Flexbox сетка</h3>
-```
+```html
 ```
 <a href="#">наверх</a>
 
@@ -230,7 +235,7 @@
 <a href="#">наверх</a>
 
 <h3 id="imgs">Изображения</h3>
-```
+```html
 ```
 <a href="#">наверх</a>
 
@@ -274,7 +279,7 @@
 <a href="#">наверх</a>
 
 <h3 id="sections">Секции</h3>
-```
+```html
 ```
 <a href="#">наверх</a>
 
