@@ -798,11 +798,13 @@ th {padding: 0}
 	transition: .2s ease-in-out;
 }
 
+.pagerArrows {}
+
 .pager a.pagePrev {}
 .pager a.pageNext {}
 
-.pager li:hover > a,
-.pager li.active > a {}
+.pager li:hover > a:not(.pagerArrows),
+.pager li.active > a:not(.pagerArrows) {}
 
 /* ============================ Секции */
 .section {
