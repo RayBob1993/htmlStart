@@ -312,13 +312,13 @@ th {padding: 0}
 }
 
 /* Иконка меню */
-.crossIco {
+.icoMenu {
 	display: inline-block;
 	vertical-align: middle;
 	width: 25px;
 }
 
-.crossIco span {
+.icoMenu span {
 	display: block;
 	height: 1px;
 	background-color: #000;
@@ -326,20 +326,20 @@ th {padding: 0}
 	transition: .2s ease-in-out;
 }
 
-.crossIco span:nth-child(2) {
+.icoMenu span:nth-child(2) {
 	margin: 5px 0;
 }
 
-.open .crossIco span:first-child {
+.open .icoMenu span:first-child {
 	-webkit-transform: translateY(6px) rotate(45deg);
 	transform: translateY(6px) rotate(45deg);
 }
 
-.open .crossIco span:nth-child(2) {
+.open .icoMenu span:nth-child(2) {
 	opacity: 0;
 }
 
-.open .crossIco span:last-child {
+.open .icoMenu span:last-child {
 	-webkit-transform: translateY(-6px) rotate(-45deg);
 	transform: translateY(-6px) rotate(-45deg);
 }
