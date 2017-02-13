@@ -215,7 +215,7 @@ var App = (function($){
 		},
 		
 		// ============================ Кол-во товара для покупки
-		catalogItemCounter: function(field){
+		counter: function(field){
 			
 			var field = $(field);
 			
