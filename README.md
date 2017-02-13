@@ -54,6 +54,7 @@
 <li><a href="#forms">Формы</a></li>
 <li><a href="#mediaQueries">Медиа запросы</a></li>
 <li><a href="#formTelMask">Маскировка полей телефонов</a></li>
+<li><a href="#mediaBox">Вставка медиа контента</a></li>
 </ul>
 
 Все остальные компоненты добавляются по мере необходимости:
@@ -291,3 +292,13 @@
 
 <h3 id="formTelMask">Маскировка полей телефонов</h3>
 Плагин уже встроен. Инициализация происходит на поля <b>input[type="tel]</b>
+<a href="#">наверх</a>
+
+<h3 id="mediaBox">Вставка медиа контента</h3>
+Вставка ролика с youtube
+```html
+<div class="mediaBox">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/3FVplCff1co" frameborder="0" allowfullscreen=""></iframe>
+</div>
+```
+<a href="#">наверх</a>
