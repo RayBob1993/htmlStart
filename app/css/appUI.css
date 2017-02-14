@@ -1139,8 +1139,8 @@ th {padding: 0}
 	margin: 40px auto;
 }
 
-.modalLarge {}
-.modalSmall {}
+.modalLg {}
+.modalSm {}
 
 .modalContent {
 	position: relative;
