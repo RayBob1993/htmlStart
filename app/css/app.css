@@ -28,6 +28,10 @@ body {
 .headerContacts {}
 
 /* ============================ Верхнее меню */
+.topMenuWrap > .dropdownBut {
+	display: none;
+}
+
 .topMenu a {
 	display: block;
 	
