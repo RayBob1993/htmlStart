@@ -46,7 +46,7 @@ var App = (function($){
 
 		},
 		
-		inputTelMaskInit(){
+		inputTelMaskInit: function(){
 
 			if (typeof($.fn.mask) !== "undefined") {
 				$('input[type="tel"]').mask('+7 (999) 999-9999');
