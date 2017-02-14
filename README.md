@@ -106,13 +106,13 @@
 Если иконка расположена слева
 ```html
 <svg class="ico icoLeft">
-	<use xlink:href="app/img/ico/icons.svg#icoTel"></use>
+	<use xlink:href="#icoTel"></use>
 </svg>
 ```
 Если иконка расположена справа
 ```html
 <svg class="ico icoRight">
-	<use xlink:href="app/img/ico/icons.svg#icoTel"></use>
+	<use xlink:href="#icoTel"></use>
 </svg>
 ```
 
