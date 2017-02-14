@@ -15,7 +15,7 @@ var App = (function($){
 
 		},
 		
-		fancyboxInit(){
+		fancyboxInit: function(){
 
 			if (typeof($.fn.fancybox) !== "undefined") {
 				// Для галерей с изображениями или роликами
