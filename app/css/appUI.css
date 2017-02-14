@@ -295,6 +295,10 @@ th {padding: 0}
 	padding: 0;
 }
 /* ============================ Иконки */
+#iconsSvg {
+	display: none;
+}
+
 .ico {
 	display: inline-block;
 	vertical-align: middle;
