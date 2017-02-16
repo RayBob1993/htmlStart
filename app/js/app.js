@@ -98,38 +98,55 @@ var App = (function($){
 			var 
 				topMenu = $('#topMenu'),
 				topMenuOffsetTop = $('#header').innerHeight();
-
-			if(win.scrollTop() >= topMenuOffsetTop){
-				topMenu.addClass('fixed');
-			} else {
-				topMenu.removeClass('fixed');
-			}
+			
+			$(window).on('load scroll', function(){
+				
+				var scrollTop = $(this).scrollTop();
+				
+				if(scrollTop >= topMenuOffsetTop){
+					topMenu.addClass('fixed');
+				} else {
+					topMenu.removeClass('fixed');
+				}
+				
+			});
 
 			return this;
 		},
 		
 		// ============================ Прокрутка к началу страницы
-		pageUp: function(){
-			var self = this;
+		pageUp: function(button){
 
-			$('html, body').animate({
-				scrollTop: 0
-			}, 300);
+			var button = $(button);
+
+			button.on('click', function(event){
+
+				event.preventDefault();
+
+				App.scrollTo('html, body');
+
+			});
 
 			return self;
 		},
 		
 		// ============================ Показывать кнопку вверх только если был скролл
-		pageUpButFade: function(){
-			var self = this;
+		pageUpFadeToggle: function(button, length){
 
-			var but = $('#pageUp');
-
-			if(win.scrollTop() >= 200){
-				but.fadeIn();
-			} else {
-				but.fadeOut();
-			}
+			var button = $(button);
+			var length = length || 200;
+			
+			$(window).on('load scroll', function(){
+				
+				var scrollTop = $(this).scrollTop();
+				
+				if(scrollTop >= length){
+					button.fadeIn();
+				} else {
+					button.fadeOut();
+				}
+				
+			});
 
 			return this;
 		},
