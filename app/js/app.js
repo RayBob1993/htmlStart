@@ -215,9 +215,10 @@ var App = (function($){
 		},
 		
 		// ============================ Кол-во товара для покупки
-		counter: function(field){
+		counter: function(field, prfx){
 			
 			var field = $(field);
+			var prfx = prfx || '';
 			
 			function fieldCount(el){
 
@@ -246,7 +247,7 @@ var App = (function($){
 						value--;
 
 						if(!min || value >= min) {
-							el.val(value);
+							el.val(value + prfx);
 						}
 					};
 
@@ -257,7 +258,7 @@ var App = (function($){
 						value++;
 
 						if(!max || value <= max) {
-							el.val(value++);
+							el.val(value++ + prfx);
 						}
 					};
 					
