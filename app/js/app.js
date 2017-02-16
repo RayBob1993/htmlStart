@@ -115,19 +115,22 @@ var App = (function($){
 		},
 		
 		// ============================ Прокрутка к началу страницы
-		pageUp: function(button){
+		pageUp: function(button, speed){
 
 			var button = $(button);
+			var speed = speed || 200;
 
 			button.on('click', function(event){
 
 				event.preventDefault();
 
-				App.scrollTo('html, body');
+				$('html, body').animate({
+					scrollTop: 0
+				}, speed);
 
 			});
 
-			return self;
+			return this;
 		},
 		
 		// ============================ Показывать кнопку вверх только если был скролл
