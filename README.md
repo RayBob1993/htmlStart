@@ -83,7 +83,7 @@
 
 <h4>Список по горизонтали</h4>
 ```html
-<ul class="list listInline">
+<ul class="list listFlex">
   <li>Пункт 1</li>
   <li>Пункт 2</li>
   <li>Пункт 3</li>
