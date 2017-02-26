@@ -115,24 +115,24 @@
 	
 	/* Сортировка колонок */
 	.colxlgFirst {
-	    -webkit-box-ordinal-group: 0;
-	    -webkit-order: -1;
-	    -ms-flex-order: -1;
-	    order: -1;
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
 	}
 
 	.colxlgLast {
-	    -webkit-box-ordinal-group: 2;
-	    -webkit-order: 1;
-	    -ms-flex-order: 1;
-	    order: 1;
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
 	}
 
 	.colxlgUnordered {
-	    -webkit-box-ordinal-group: 1;
-	    -webkit-order: 0;
-	    -ms-flex-order: 0;
-	    order: 0;
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
 	}
 }
 
@@ -253,24 +253,24 @@
 	
 	/* Сортировка колонок */
 	.collgFirst {
-	    -webkit-box-ordinal-group: 0;
-	    -webkit-order: -1;
-	    -ms-flex-order: -1;
-	    order: -1;
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
 	}
 
 	.collgLast {
-	    -webkit-box-ordinal-group: 2;
-	    -webkit-order: 1;
-	    -ms-flex-order: 1;
-	    order: 1;
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
 	}
 
 	.collgUnordered {
-	    -webkit-box-ordinal-group: 1;
-	    -webkit-order: 0;
-	    -ms-flex-order: 0;
-	    order: 0;
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
 	}
 }
 
@@ -391,24 +391,24 @@
 	
 	/* Сортировка колонок */
 	.colmdFirst {
-	    -webkit-box-ordinal-group: 0;
-	    -webkit-order: -1;
-	    -ms-flex-order: -1;
-	    order: -1;
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
 	}
 
 	.colmdLast {
-	    -webkit-box-ordinal-group: 2;
-	    -webkit-order: 1;
-	    -ms-flex-order: 1;
-	    order: 1;
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
 	}
 
 	.colmdUnordered {
-	    -webkit-box-ordinal-group: 1;
-	    -webkit-order: 0;
-	    -ms-flex-order: 0;
-	    order: 0;
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
 	}
 	
 	/* Выпадающее меню */
@@ -654,24 +654,24 @@
 	
 	/* Сортировка колонок */
 	.colsmFirst {
-	    -webkit-box-ordinal-group: 0;
-	    -webkit-order: -1;
-	    -ms-flex-order: -1;
-	    order: -1;
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
 	}
 
 	.colsmLast {
-	    -webkit-box-ordinal-group: 2;
-	    -webkit-order: 1;
-	    -ms-flex-order: 1;
-	    order: 1;
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
 	}
 
 	.colsmUnordered {
-	    -webkit-box-ordinal-group: 1;
-	    -webkit-order: 0;
-	    -ms-flex-order: 0;
-	    order: 0;
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
 	}
 }
 
@@ -793,23 +793,23 @@
 	
 	/* Сортировка колонок */
 	.colxsmFirst {
-	    -webkit-box-ordinal-group: 0;
-	    -webkit-order: -1;
-	    -ms-flex-order: -1;
-	    order: -1;
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
 	}
 
 	.colxsmLast {
-	    -webkit-box-ordinal-group: 2;
-	    -webkit-order: 1;
-	    -ms-flex-order: 1;
-	    order: 1;
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
 	}
 
 	.colxsmUnordered {
-	    -webkit-box-ordinal-group: 1;
-	    -webkit-order: 0;
-	    -ms-flex-order: 0;
-	    order: 0;
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
 	}
 }
