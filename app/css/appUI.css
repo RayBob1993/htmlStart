@@ -424,15 +424,6 @@ th {padding: 0}
 
 .list > li {position: relative;}
 
-/* Строчный список */
-.listCenter {text-align: center;}
-
-.listCenter > li,
-.listInline > li {
-	display: inline-block;
-	vertical-align: middle;
-}
-
 /* Резиновый список */
 .listFlex {
 	display: -webkit-flex;
@@ -445,13 +436,21 @@ th {padding: 0}
 	flex-flow: row wrap;
 }
 
-.listFlex > li {
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
+.listAuto > li {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.listCenter {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .listBetween {
+	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
