@@ -161,7 +161,7 @@ var App = (function($){
 				el = $(selector).find('a'),
 				subMenus = el.next();
 			
-			function init(){
+			function init(event){
 				var 
 					subMenu = $(this).next(),
 					parent = $(this).parent();
