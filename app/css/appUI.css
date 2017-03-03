@@ -562,9 +562,8 @@ th {padding: 0}
 }
 
 .rowBaseline {
-	-webkit-justify-content: baseline;
-	-ms-flex-pack: baseline;
-	justify-content: baseline;
+	-webkit-align-items: baseline;
+	align-items: baseline;
 }
 
 .col {
