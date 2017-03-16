@@ -29,7 +29,6 @@
             └── jquery.slick.min.js
         └── app.js
         └── main.js
-
 ```
 
 <h2>Компоненты</h2>
