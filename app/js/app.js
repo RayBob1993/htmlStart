@@ -17,28 +17,15 @@ var App = (function($){
 		
 		fancyboxInit: function(){
 
-			if (typeof($.fn.fancybox) !== "undefined") {
-				// Для галерей с изображениями или роликами
-				$('.fancybox').fancybox({
-					padding: 0,
-					openEffect: 'elastic',
-					closeEffect: 'elastic',
-					helpers: {
-						overlay: {
-							locked: false
-						},
-						title: {
-							type : 'over'
-						},
-						thumbs: {
-							width: 100,
-							height: 100
-						},
-						media: {}
+			if (typeof($.fn.fancybox) !== "undefined"){
+				$('[data-fancybox]').fancybox({
+					image: {
+						protect: true
 					},
-					beforeShow : function() {
-						this.title = (this.title ? '' + this.title + '' : '') + ' <span class="fancyboxNum">' + (this.index + 1) + ' из ' + this.group.length + ' </span>';
-					}
+					youtube: {
+						controls: 0,
+						showinfo: 0
+					},
 				});
 			}
 
