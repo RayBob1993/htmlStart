@@ -88,6 +88,16 @@ h4 small,
 h5 small,
 h6 small {font-weight: normal;}
 
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+	color: inherit;
+	text-decoration: none;
+}
+
 sub,
 sup {
 	position: relative;
