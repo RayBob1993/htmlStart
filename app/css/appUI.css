@@ -311,6 +311,11 @@ th {padding: 0}
 .butDefault.active,
 .butDefault:active {}
 
+.butSuccess {}
+.butSuccess:hover {}
+.butSuccess.active,
+.butSuccess:active {}
+
 .butLink {}
 .butLink:hover {}
 .butLink.active,
