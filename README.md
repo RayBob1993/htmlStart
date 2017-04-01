@@ -12,8 +12,6 @@
     ├── css
         └── app.css
         └── appUI.css
-        └── client.content.css
-        └── fancybox.css
         └── responsive.css
     └── img
         └── ico
@@ -21,13 +19,10 @@
     └── js
         └── lib
         └── plugins
-            └── fancybox
-                └── jquery.fancybox-media.js
-                └── jquery.fancybox-thumbs.js
-                └── jquery.fancybox.pack.js
             └── bootstrap.min.js
             └── jquery.maskedinput.min.js
             └── jquery.slick.min.js
+	    └── jquery.fancybox.min.js
         └── app.js
         └── main.js
 ```
