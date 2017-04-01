@@ -88,6 +88,33 @@
   <li>Пункт 3</li>
 </ul>
 ```
+
+<h4>Список по центру</h4>
+```html
+<ul class="list listFlex listCenter">
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
+</ul>
+```
+
+<h4>Список по равномерно по ширине блока</h4>
+```html
+<ul class="list listFlex listBetween">
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
+</ul>
+```
+
+<h4>Список с пунтами по всей ширине блока</h4>
+```html
+<ul class="list listFlex listBetween">
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
+</ul>
+```
 <a href="#">наверх</a>
 
 <h3 id="icons">Иконки</h3>
@@ -114,7 +141,6 @@
 	<use xlink:href="#icoTel"></use>
 </svg>
 ```
-
 <a href="#">наверх</a>
 
 <h3 id="tables">Таблицы</h3>
@@ -128,24 +154,24 @@
 <a href="#">наверх</a>
 
 <h3 id="imgGalery">Галерея изображений</h3>
-Для галереи изображений используется jquery плагин <a href="http://fancyapps.com/fancybox/"><b>fancybox</b></a>.
+Для галереи изображений используется jquery плагин <a href="http://fancyapps.com/fancybox/3/"><b>fancybox</b></a>.
 Пример кода:
 ```html
-<a href="app/img/galery/1.jpg" class="fancybox">
+<a href="app/img/galery/1.jpg" data-fancybox>
 	<img class="app/img/galery/1.jpg">
 </a>
 ```
-Для создания галереи из множества изображений используйте атрибут <b>rel</b> с уникальным значением.
+Для создания галереи из множества изображений используйте атрибут <b>data-fancybox</b> с уникальным значением.
 ```html
-<a href="app/img/galery/1.jpg" class="fancybox" rel="galery">
+<a href="app/img/galery/1.jpg" class="fancybox" data-fancybox="galery">
 	<img class="app/img/galery/1.jpg">
 </a>
 
-<a href="app/img/galery/2.jpg" class="fancybox" rel="galery">
+<a href="app/img/galery/2.jpg" class="fancybox" data-fancybox="galery">
 	<img class="app/img/galery/2.jpg">
 </a>
 
-<a href="app/img/galery/3.jpg" class="fancybox" rel="galery">
+<a href="app/img/galery/3.jpg" class="fancybox" data-fancybox="galery">
 	<img class="app/img/galery/3.jpg">
 </a>
 ```
@@ -178,7 +204,7 @@
 ```html
 <div class="tabs">
 	<nav class="tabsNav">
-		<ul class="list listInline" role="tablist">
+		<ul class="list listFlex" role="tablist">
 			<li role="presentation" class="active">
 				<a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Таб 1</a>
 			</li>
@@ -263,7 +289,7 @@
 <h3 id="breadcrumbs">Хлебные крошки</h3>
 ```html
 <nav class="breadcrumbs">
-	<ul class="list listInline">
+	<ul class="list listFlex">
 		<li><a href="/">Главная</a></li>
 		<li><a href="#">Раздел</a></li>
 	</ul>
@@ -274,7 +300,7 @@
 <h3 id="pager">Переключатель страниц</h3>
 ```html
 <nav class="pager">
-	<ul class="list listInline">
+	<ul class="list listFlex">
 		<li><a href="#" class="pagerArrows pagePrev">Назад</a></li>
 		<li><a href="#">1</a></li>
 		<li><a href="#">2</a></li>
