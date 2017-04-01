@@ -230,6 +230,7 @@
 
 <h3 id="dropdowns">Дропдауны</h3>
 <a href="http://getbootstrap.com/javascript/#dropdowns"><b>Документация</b></a> по работе с событиями плагина
+
 ```html
 <div class="dropdown">
 	<button class="but dropdownBut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -241,6 +242,7 @@
 	</div>
 </div>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="modals">Модальные окна</h3>
