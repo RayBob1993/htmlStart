@@ -73,6 +73,7 @@
 
 <h3 id="lists">Списки</h3>
 <h4>Пустой список</h4>
+
 ```html
 <ul class="list">
   <li>Пункт 1</li>
@@ -82,6 +83,7 @@
 ```
 
 <h4>Список по горизонтали</h4>
+
 ```html
 <ul class="list listFlex">
   <li>Пункт 1</li>
@@ -91,6 +93,7 @@
 ```
 
 <h4>Список по центру</h4>
+
 ```html
 <ul class="list listFlex listCenter">
   <li>Пункт 1</li>
@@ -100,6 +103,7 @@
 ```
 
 <h4>Список по равномерно по ширине блока</h4>
+
 ```html
 <ul class="list listFlex listBetween">
   <li>Пункт 1</li>
@@ -109,6 +113,7 @@
 ```
 
 <h4>Список с пунтами по всей ширине блока</h4>
+
 ```html
 <ul class="list listFlex listBetween">
   <li>Пункт 1</li>
@@ -116,12 +121,14 @@
   <li>Пункт 3</li>
 </ul>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="icons">Иконки</h3>
 Для вставки иконки, добавьте ей класс <b>.ico</b>. Так как работа с иконками подразумевает использование <b>svg</b> иконок, класс <b>.ico</b> по умолчанию имеет размер 18px-18px и заливку чёрным. Что бы унифицировать все иконки. Для каждого проекта изменяем значения на нужные.
 
 Созданный спрайт должен иметь атрибут <b>id</b> со значением <b>iconsSvg</b>. Далее инлайним его в документ и вставляем нужные иконки так:
+
 ```html
 <svg class="ico">
 	<use xlink:href="#icoTel"></use>
@@ -131,38 +138,49 @@
 
 Для того, что-бы сделать отступы у иконок по бокам, добавлены 2 класса:
 Если иконка расположена слева
+
 ```html
 <svg class="ico icoLeft">
 	<use xlink:href="#icoTel"></use>
 </svg>
 ```
+
 Если иконка расположена справа
+
 ```html
 <svg class="ico icoRight">
 	<use xlink:href="#icoTel"></use>
 </svg>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="tables">Таблицы</h3>
+
 ```html
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="buttons">Кнопки</h3>
+
 ```html
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="imgGalery">Галерея изображений</h3>
 Для галереи изображений используется jquery плагин <a href="http://fancyapps.com/fancybox/3/"><b>fancybox</b></a>.
 Пример кода:
+
 ```html
 <a href="app/img/galery/1.jpg" data-fancybox>
 	<img class="app/img/galery/1.jpg">
 </a>
 ```
+
 Для создания галереи из множества изображений используйте атрибут <b>data-fancybox</b> с уникальным значением.
+
 ```html
 <a href="app/img/galery/1.jpg" class="fancybox" data-fancybox="galery">
 	<img class="app/img/galery/1.jpg">
@@ -176,10 +194,12 @@
 	<img class="app/img/galery/3.jpg">
 </a>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
 Для работы слайдеров используется плагин <a href="https://github.com/kenwheeler/slick"><b>slick</b></a>
+
 ```html
 <section id="mainSlider" class="slick mainSlider">
 	<div class="slickSlide">
@@ -193,15 +213,19 @@
 	</div>
 </section>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="grid">Flexbox сетка</h3>
+
 ```html
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="tabs">Вкладки</h3>
 <a href="http://getbootstrap.com/javascript/#tabs"><b>Документация</b></a> по работе с событиями плагина
+
 ```html
 <div class="tabs">
 	<nav class="tabsNav">
@@ -227,6 +251,7 @@
 	</div>
 </div>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="dropdowns">Дропдауны</h3>
@@ -248,6 +273,7 @@
 
 <h3 id="modals">Модальные окна</h3>
 <a href="http://getbootstrap.com/javascript/#modals"><b>Документация</b></a> по работе с событиями плагина
+
 ```html
 <button data-toggle="modal" data-target="#myModal">Модальное окно</button>
 
@@ -272,14 +298,18 @@
 	</div>
 </div>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="imgs">Изображения</h3>
+
 ```html
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="counters">Счётчик для input полей</h3>
+
 ```html
 <div class="counter">
 	<button type="button" class="but counterBut dec">-</button>
@@ -287,9 +317,11 @@
 	<button type="button" class="but counterBut inc">+</button>
 </div>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="breadcrumbs">Хлебные крошки</h3>
+
 ```html
 <nav class="breadcrumbs">
 	<ul class="list listFlex">
@@ -298,9 +330,11 @@
 	</ul>
 </nav>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="pager">Переключатель страниц</h3>
+
 ```html
 <nav class="pager">
 	<ul class="list listFlex">
@@ -316,21 +350,26 @@
 	</ul>
 </nav>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="sections">Секции</h3>
+
 ```html
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="forms">Формы</h3>
 Блок поиска
+
 ```html
 <form action="#" class="search" method="post">
 	<input type="search" class="field" placeholder="Поиск по сайту..." required>
 	<input type="submit" class="but" value="Искать">
 </form>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="mediaQueries">Медиа запросы</h3>
@@ -342,9 +381,11 @@
 
 <h3 id="mediaBox">Вставка медиа контента</h3>
 Вставка ролика с youtube
+
 ```html
 <div class="mediaBox">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/3FVplCff1co" frameborder="0" allowfullscreen=""></iframe>
 </div>
 ```
+
 <a href="#">наверх</a>
