@@ -1297,6 +1297,47 @@ th {padding: 0}
 	border: 0;
 }
 
+/* ============================ Аккордион */
+.collapse.in {
+	display: block;
+}
+
+.collapse {
+	display: none;
+}
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+
+	-webkit-transition-duration: .35s;
+	transition-duration: .35s;
+
+	-webkit-transition-property: height, visibility;
+	transition-property: height, visibility;
+}
+
+.collapseTitle {
+	position: relative;
+}
+
+.collapseIco {
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.collapseTitle.collapsed .collapseIco {
+	transform: none;
+}
+
 /* ============================ Fancybox */
 .fancybox {
 	cursor: zoom-in;
