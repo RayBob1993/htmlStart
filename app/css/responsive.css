@@ -1,6 +1,13 @@
 @media (max-width: 1319px){
 	.hiddenxlg {display: none!important}
 	
+	.rowxlgCenter {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	
 	.colxlgDefault {
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
@@ -139,6 +146,13 @@
 @media (max-width: 1069px){
 	.hiddenlg {display: none!important}
 	
+	.rowlgCenter {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	
 	.collgDefault {
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
@@ -276,6 +290,13 @@
 
 @media (max-width: 819px){
 	.hiddenmd {display: none!important}
+	
+	.rowmdCenter {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
 	
 	.colmdDefault {
 		-webkit-flex: 0 0 auto;
@@ -540,6 +561,13 @@
 @media (max-width: 569px){	
 	.hiddensm {display: none!important}
 	
+	.rowsmCenter {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	
 	.colsmDefault {
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
@@ -676,8 +704,14 @@
 }
 
 @media (max-width: 420px){
-	
 	.hiddenxsm {display: none!important}
+	
+	.rowxsmCenter {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
 	
 	.colxsmDefault {
 		-webkit-flex: 0 0 auto;
