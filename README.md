@@ -332,17 +332,17 @@
 <h3 id="pager">Переключатель страниц</h3>
 
 ```html
-<nav class="pager">
+<nav class="breadcrumbs">
 	<ul class="list listFlex">
-		<li><a href="#" class="pagerArrows pagePrev">Назад</a></li>
+		<li><a href="#" class="breadcrumbsArrows breadcrumbsPrev">Назад</a></li>
 		<li><a href="#">1</a></li>
 		<li><a href="#">2</a></li>
 		<li><a href="#">3</a></li>
 		<li class="active"><a href="">4</a></li>
-		<li class="pagerDots"><a href="#">...</a></li>
+		<li class="breadcrumbsDots"><a href="#">...</a></li>
 		<li><a href="#">10</a></li>
 		<li><a href="#">11</a></li>
-		<li><a href="#" class="pagerArrows pageNext">Вперёд</a></li>
+		<li><a href="#" class="breadcrumbsArrows breadcrumbsNext">Вперёд</a></li>
 	</ul>
 </nav>
 ```
