@@ -61,6 +61,7 @@
 <li><a href="https://github.com/jzaefferer/jquery-validation">Валидация форм</a></li>
 <li><a href="https://github.com/select2/select2">Кастомный select</a></li>
 <li><a href="https://github.com/metafizzy/isotope">Динамическая сетка</a></li>
+<li><a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Датапикер</a></li>
 </ul>
 
 <h3 id="titles">Заголовки</h3>
