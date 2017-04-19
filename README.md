@@ -292,6 +292,8 @@
 </div>
 ```
 
+<a href="#">наверх</a>
+
 <h3 id="modals">Модальные окна</h3>
 <a href="http://getbootstrap.com/javascript/#modals"><b>Документация</b></a> по работе с событиями плагина
 
