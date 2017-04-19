@@ -40,6 +40,7 @@
 <li><a href="#grid">Flexbox сетка</a></li>
 <li><a href="#tabs">Вкладки</a></li>
 <li><a href="#dropdowns">Дропдауны</a></li>
+<li><a href="#responsiveNav">Адаптивное меню</a></li>
 <li><a href="#modals">Модальные окна</a></li>
 <li><a href="#imgs">Изображения</a></li>
 <li><a href="#counters">Счётчик для input полей</a></li>
@@ -266,6 +267,30 @@
 ```
 
 <a href="#">наверх</a>
+
+<h3 id="responsiveNav">Адаптивное меню</h3>
+
+```html
+<div class="dropdown topMenuWrap"> 
+	<button type="button" class="but dropdownBut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		<span class="icoMenu"> 
+			<span></span> 
+			<span></span> 
+			<span></span> 
+		</span> 
+
+		<span class="butText">Меню</span> 
+	</button> 
+
+	<nav class="topMenu"> 
+		<ul class="list listFlex">
+			<li class="active"><a href="#">Главная</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</nav> 
+</div>
+```
 
 <h3 id="modals">Модальные окна</h3>
 <a href="http://getbootstrap.com/javascript/#modals"><b>Документация</b></a> по работе с событиями плагина
