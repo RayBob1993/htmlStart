@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).on('ready', function(){
+$(function() {
 	
 	App
 		.slickInit()
