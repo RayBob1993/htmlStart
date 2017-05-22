@@ -1,0 +1,27 @@
+{
+	"name": "htmlStart",
+	"version": "1.0.0",
+	"description": "Заготовка для вёрстки сайта",
+	"main": "",
+	"scripts": {
+    	"test": "command for testing package"
+  	},
+  	"repository": {
+  		"type": "git",
+  		"url": "git+https://github.com/RayBob1993/htmlStart.git"
+  	},
+  	"keywords": [
+  		"flexbox",
+		"css",
+		"html",
+		"css-framework",
+		"starter-kit",
+		"jquery"
+  	],
+  	"author": "RayBob1993",
+  	"license": "MIT",
+  	"bugs": {
+  		"url": "https://github.com/RayBob1993/htmlStart/issues"
+  	},
+  	"homepage": "https://github.com/RayBob1993/htmlStart#readme"
+}
