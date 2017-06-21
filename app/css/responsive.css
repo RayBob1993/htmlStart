@@ -473,7 +473,9 @@
 		bottom: 0;
 		z-index: 1000;
 
+		overflow: hidden;
 		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 		margin-bottom: 0;
 		width: 280px;
 		padding: 15px 15px 50px;
