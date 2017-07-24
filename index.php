@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 
-		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="theme-color" content="#fff">
 
