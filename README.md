@@ -362,7 +362,7 @@
 <nav class="breadcrumbs">
 	<ul class="list listFlex">
 		<li><a href="/">Главная</a></li>
-		<li><a href="#">Раздел</a></li>
+		<li class="active><a href="#">Раздел</a></li>
 	</ul>
 </nav>
 ```
