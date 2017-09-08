@@ -62,6 +62,5 @@
 		<script src="app/js/plugins/jquery.fancybox.min.js"></script>
 
 		<script src="app/js/app.js"></script>
-		<script src="app/js/main.js"></script>
 	</body>
 </html>
