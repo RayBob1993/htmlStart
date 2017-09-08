@@ -1,8 +1,24 @@
 'use strict';
 
-var App = (function($){
+(function($){
 
-	return {
+	var App = function(){
+
+		this.init();
+
+	};
+
+	App.prototype = {
+		init: function(){
+
+			this
+				.slickInit()
+				.fancyboxInit()
+				.inputTelMaskInit()
+				.counter('.fieldCount');
+
+		},
+
 		slickInit: function(){
 
 			if (typeof($.fn.slick) !== "undefined") {
@@ -43,7 +59,6 @@ var App = (function($){
 
 		},
 		
-		// ============================ Скролить до элемента
 		scrollTo: function(element){
 
 			var 
@@ -57,7 +72,6 @@ var App = (function($){
 			return this;
 		},
 
-		// ============================ Отправка форм
 		sendForm: function(form){
 			var form = $(form);
 
@@ -77,28 +91,6 @@ var App = (function($){
 				}
 
 			});
-		},
-		
-		// ============================ Фиксация верхнего меню
-		topMenuSectionFixed: function(){
-
-			var 
-				topMenu = $('#topMenu'),
-				topMenuOffsetTop = $('#header').innerHeight();
-			
-			$(window).on('load scroll', function(){
-				
-				var scrollTop = $(this).scrollTop();
-				
-				if(scrollTop >= topMenuOffsetTop){
-					topMenu.addClass('fixed');
-				} else {
-					topMenu.removeClass('fixed');
-				}
-				
-			});
-
-			return this;
 		},
 		
 		// ============================ Прокрутка к началу страницы
@@ -141,7 +133,6 @@ var App = (function($){
 			return this;
 		},
 
-		// ============================ Меню гармошка
 		accordion: function(selector){
 
 			var 
@@ -194,7 +185,6 @@ var App = (function($){
 			return this;
 		},
 
-		// ============================ Простенький метод для определения типа устройства
 		mobileDevice: function(){
 			
 			var device = {
@@ -221,7 +211,6 @@ var App = (function($){
 			return device.any();
 		},
 		
-		// ============================ Кол-во товара для покупки
 		counter: function(field, prfx){
 			
 			var field = $(field);
@@ -286,6 +275,8 @@ var App = (function($){
 			
 			return this;
 		}
-		
 	}
+
+	window.App = new App();
+
 })(jQuery);
