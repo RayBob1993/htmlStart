@@ -2,10 +2,6 @@
 
 $(function() {
 	
-	App
-		.slickInit()
-		.fancyboxInit()
-		.inputTelMaskInit()
-		.counter('.fieldCount');
+	var app = new App();
 	
 });
