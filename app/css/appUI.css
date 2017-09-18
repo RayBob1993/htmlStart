@@ -273,6 +273,7 @@ th {padding: 0}
 }
 
 .but[disabled] {
+	pointer-events: none;
 	cursor: not-allowed;
 	opacity: .65;
 }
@@ -289,38 +290,56 @@ th {padding: 0}
 	width: 100%;
 }
 
+/* Очень большая */
 .but.butLg {}
 
+/* Средняя */
+.but.butMd {}
+
+/* Маленькая */
 .but.butSm {}
 
+/* Очень маленькая */
 .but.butTiny {}
 
 /* Стили кнопок */
+/* Первичная кнопка */
 .butPrimary {}
 .butPrimary:hover {}
 .butPrimary.active,
 .butPrimary:active {}
 
+/* Вторичная */
 .butSecondary {}
 .butSecondary:hover {}
 .butSecondary.active,
 .butSecondary:active {}
 
-.butDefault {}
-.butDefault:hover {}
-.butDefault.active,
-.butDefault:active {}
-
+/* Зелёная кнопка */
 .butSuccess {}
 .butSuccess:hover {}
 .butSuccess.active,
 .butSuccess:active {}
 
+/* Кнопка ссылка */
 .butLink {}
 .butLink:hover {}
 .butLink.active,
 .butLink:active {}
 
+/* Кнопка по дефолту без фона */
+.butFlat {}
+.butFlat:hover {}
+.butFlat.active,
+.butFlat:active {}
+
+/* Кнопка только с рамкой по краям */
+.butGhost {}
+.butGhost:hover {}
+.butGhost.active,
+.butGhost:active {}
+
+/* Кнопка для закругления краёв */
 .butRound {
 	border-radius: 100px;
 }
