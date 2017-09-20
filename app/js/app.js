@@ -12,18 +12,22 @@
 		init: function(){
 
 			this
-				.slickInit()
+				.swiperInit()
 				.fancyboxInit()
 				.inputTelMaskInit()
 				.counter('.fieldCount');
 
 		},
 
-		slickInit: function(){
+		swiperInit: function(){
 
-			if (typeof($.fn.slick) !== "undefined") {
-				$('#mainSlider').slick({
-					
+			if(typeof($.fn.swiper) !== 'undefined'){
+				$('#mainSlider').swiper({
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev',
+					loop: true
 				});
 			}
 

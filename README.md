@@ -4,65 +4,65 @@
 
 Для работы некоторых UI элементов используется js плагины фреймворка <a href="https://github.com/twbs/bootstrap"><b>bootstrap</b></a> версии 3.3.6. <b>Примечание: используемые плагины изменены, в плане переименования классов в натацию camelCase</b>
 
-<h2>Структура</h2>
+## Структура
 
 ```
-├── index.html
+├── index.php
+└── components
+	└── header.php
+	└── footer.php
+	└── js.php
 └── app
-    ├── css
-        └── app.css
-        └── appUI.css
-        └── responsive.css
-    └── img
-        └── ico
-        └── fancybox
-    └── js
-        └── lib
-        └── plugins
-            └── bootstrap.min.js
-            └── jquery.maskedinput.min.js
-            └── jquery.slick.min.js
-	    └── jquery.fancybox.min.js
-        └── app.js
-        └── main.js
+	├── css
+		└── app.css
+		└── appUI.css
+		└── responsive.css
+	└── img
+		└── ico
+	└── js
+	    └── lib
+	    └── plugins
+			└── bootstrap.min.js
+			└── jquery.maskedinput.min.js
+			└── jquery.swiper.umd.min.js
+			└── jquery.fancybox.min.js
+	└── app.js
 ```
 
-<h2>Компоненты</h2>
+## Компоненты
 
-<ul>
-<li><a href="#titles">Заголовки</a></li>
-<li><a href="#lists">Списки</a></li>
-<li><a href="#icons">Иконки</a></li>
-<li><a href="#tables">Таблици</a></li>
-<li><a href="#buttons">Кнопки</a></li>
-<li><a href="#imgGalery">Галерея изображений</a></li>
-<li><a href="#sliders">Слайдер</a></li>
-<li><a href="#grid">Flexbox сетка</a></li>
-<li><a href="#tabs">Вкладки</a></li>
-<li><a href="#dropdowns">Дропдауны</a></li>
-<li><a href="#responsiveNav">Адаптивное меню</a></li>
-<li><a href="#modals">Модальные окна</a></li>
-<li><a href="#imgs">Изображения</a></li>
-<li><a href="#counters">Счётчик для input полей</a></li>
-<li><a href="#breadcrumbs">Хлебные крошки</a></li>
-<li><a href="#pager">Переключатель страниц</a></li>
-<li><a href="#sections">Секции</a></li>
-<li><a href="#forms">Формы</a></li>
-<li><a href="#mediaQueries">Медиа запросы</a></li>
-<li><a href="#formTelMask">Маскировка полей телефонов</a></li>
-<li><a href="#mediaBox">Вставка медиа контента</a></li>
-</ul>
+* <a href="#titles">Заголовки</a>
+* <a href="#lists">Списки</a>
+* <a href="#icons">Иконки</a>
+* <a href="#tables">Таблици</a>
+* <a href="#buttons">Кнопки</a>
+* <a href="#imgGalery">Галерея изображений</a>
+* <a href="#sliders">Слайдер</a>
+* <a href="#grid">Flexbox сетка</a>
+* <a href="#tabs">Вкладки</a>
+* <a href="#dropdowns">Дропдауны</a>
+* <a href="#responsiveNav">Адаптивное меню</a>
+* <a href="#modals">Модальные окна</a>
+* <a href="#imgs">Изображения</a>
+* <a href="#counters">Счётчик для input полей</a>
+* <a href="#breadcrumbs">Хлебные крошки</a>
+* <a href="#pager">Переключатель страниц</a>
+* <a href="#sections">Секции</a>
+* <a href="#forms">Формы</a>
+* <a href="#mediaQueries">Медиа запросы</a>
+* <a href="#formTelMask">Маскировка полей телефонов</a>
+* <a href="#mediaBox">Вставка медиа контента</a>
 
 Все остальные компоненты добавляются по мере необходимости:
-<ul>
-<li><a href="https://github.com/malihu/malihu-custom-scrollbar-plugin">Кастомный скроллбар</a></li>
-<li><a href="https://github.com/alvarotrigo/fullPage.js">Полноэкранный скролл</a></li>
-<li><a href="https://refreshless.com/nouislider/">Ползунок диапазона чисел/цен</a></li>
-<li><a href="https://github.com/jzaefferer/jquery-validation">Валидация форм</a></li>
-<li><a href="https://github.com/select2/select2">Кастомный select</a></li>
-<li><a href="https://github.com/metafizzy/isotope">Динамическая сетка</a></li>
-<li><a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Датапикер</a></li>
-</ul>
+
+* [Кастомный скроллбар](https://github.com/malihu/malihu-custom-scrollbar-plugin)
+* [Полноэкранный скролл](https://github.com/alvarotrigo/fullPage.js)
+* [Ползунок диапазона чисел/цен](https://refreshless.com/nouislider/)
+* [Валидация форм](https://github.com/jzaefferer/jquery-validation)
+* [Кастомный select](https://github.com/select2/select2)
+* [Динамическая сетка](https://github.com/metafizzy/isotope)
+* [Датапикер](https://github.com/Eonasdan/bootstrap-datetimepicker)
+
 
 <h3 id="titles">Заголовки</h3>
 С заголовками всё просто. У всех убран верхний отступы и высота линии задана в 100%
@@ -208,19 +208,30 @@
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
-Для работы слайдеров используется плагин <a href="https://github.com/kenwheeler/slick"><b>slick</b></a>
+Для работы слайдеров используется плагин <a href="https://github.com/nolimits4web/Swiper"><b>Swiper</b></a>
 
 ```html
-<section id="mainSlider" class="slick mainSlider">
-	<div class="slickSlide">
-		<img class="app/img/slider/1.jpg">
+<section id="mainSlider" class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			Slide 1
+		</div>
+
+		<div class="swiper-slide">
+			Slide 2
+		</div>
+
+		<div class="swiper-slide">
+			Slide 3
+		</div>
 	</div>
-	<div class="slickSlide">
-		<img class="app/img/slider/2.jpg">
-	</div>
-	<div class="slickSlide">
-		<img class="app/img/slider/3.jpg">
-	</div>
+
+	<!-- Навигация -->
+	<div class="swiper-pagination"></div>
+
+	<!-- Стрелки переключения -->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
 </section>
 ```
 
