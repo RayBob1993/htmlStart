@@ -208,20 +208,31 @@
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
-Для работы слайдеров используется плагин <a href="https://github.com/kenwheeler/slick"><b>slick</b></a>
+Для работы слайдеров используется плагин <a href="https://github.com/nolimits4web/Swiper"><b>Swiper</b></a>
 
 ```html
-<section id="mainSlider" class="slick mainSlider">
-	<div class="slickSlide">
-		<img class="app/img/slider/1.jpg">
+<div class="swiper-container mainSlider">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			Slide 1
+		</div>
+
+		<div class="swiper-slide">
+			Slide 2
+		</div>
+
+		<div class="swiper-slide">
+			Slide 3
+		</div>
 	</div>
-	<div class="slickSlide">
-		<img class="app/img/slider/2.jpg">
-	</div>
-	<div class="slickSlide">
-		<img class="app/img/slider/3.jpg">
-	</div>
-</section>
+
+	<!-- Навигация -->
+	<div class="swiper-pagination"></div>
+
+	<!-- Стрелки переключения -->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+</div>
 ```
 
 <a href="#">наверх</a>
