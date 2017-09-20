@@ -211,7 +211,7 @@
 Для работы слайдеров используется плагин <a href="https://github.com/nolimits4web/Swiper"><b>Swiper</b></a>
 
 ```html
-<div class="swiper-container mainSlider">
+<section id="mainSlider" class="swiper-container">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			Slide 1
@@ -232,7 +232,7 @@
 	<!-- Стрелки переключения -->
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
-</div>
+</section>
 ```
 
 <a href="#">наверх</a>
