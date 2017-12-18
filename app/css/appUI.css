@@ -1559,21 +1559,28 @@ button.swiper-pagination-bullet {
 .field:focus:-ms-input-placeholder {color: transparent}
 
 /* Чекбокс */
-.fieldCheckbox {
+.checkbox {
 	position: relative;
+	
+	display: inline-block;
 }
 
-.fieldCheckbox input {
-	display: none;
+.checkbox input {
+	position: absolute;
+	overflow: hidden;
+	height: 0;
+	width: 0;
+	visibility: hidden;
 }
 
-.fieldCheckbox .fieldName {
+.checkboxText {
+	display: block;
 	padding-left: 30px;
 
 	cursor: pointer;
 }
 
-.fieldCheckbox .fieldName:before {
+.checkboxText:before {
 	position: absolute;
 	top: 2px;
 	left: 0;
@@ -1591,7 +1598,7 @@ button.swiper-pagination-bullet {
 	content: '';
 }
 
-.fieldCheckbox input:checked + .fieldName:before {
+.checkbox input:checked + .checkboxText:before {
 	content: '✓';
 }
 
