@@ -282,6 +282,8 @@ th {padding: 0}
 .butText {
 	display: inline-block;
 	vertical-align: middle;
+	
+	white-space: nowrap;
 }
 
 /* Размеры кнопок */
