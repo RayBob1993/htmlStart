@@ -293,13 +293,13 @@ th {padding: 0}
 }
 
 /* Очень большая */
-.but.butLg {}
+.but.butLarge {}
 
 /* Средняя */
-.but.butMd {}
+.but.butMedium {}
 
 /* Маленькая */
-.but.butSm {}
+.but.butSmall {}
 
 /* Очень маленькая */
 .but.butTiny {}
