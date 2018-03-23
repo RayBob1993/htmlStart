@@ -1,0 +1,111 @@
+.form {}
+
+.formHeader,
+.formBody,
+.formGroup {
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.fieldName {
+  position: relative;
+
+  display: block;
+}
+
+.fieldName + .field {
+  margin-top: 5px;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+
+  transition: .2s ease-in-out;
+
+  outline: 0;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.field:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.field::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field::-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:hover {}
+
+.field:focus {}
+
+.field:focus::-webkit-input-placeholder {color: transparent}
+.field:focus::-moz-placeholder {color: transparent}
+.field:focus:-moz-placeholder {color: transparent}
+.field:focus:-ms-input-placeholder {color: transparent}
+
+/* Чекбокс */
+.checkbox {
+  position: relative;
+
+  display: inline-block;
+}
+
+.checkbox input {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.checkboxText {
+  display: block;
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.checkboxText:before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  background-color: #fff;
+
+  color: #000;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+
+  content: '';
+}
+
+.checkbox input:checked + .checkboxText:before {
+  content: '✓';
+}

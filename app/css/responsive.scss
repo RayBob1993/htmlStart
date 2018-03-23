@@ -1,0 +1,153 @@
+@media (max-width: 819px){
+	/* Выпадающее меню */
+	.topMenuWrap:before {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+
+		pointer-events: none;
+
+		background: rgba(0,0,0,.3);
+		opacity: 0;
+		visibility: hidden;
+
+		transition: .3s ease-in-out;
+
+		content: '';
+	}
+
+	.topMenuWrap.open:before {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.topMenuWrap > .dropdownBut {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 1001;
+
+		display: block;
+		padding: 5px;
+	}
+
+	.topMenu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 1000;
+
+		overflow: hidden;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		margin-bottom: 0;
+		width: 280px;
+		padding: 15px;
+
+		transform: translateX(-100%);
+
+		transition: .3s ease-in-out;
+
+		background-color: #fff;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.open .topMenu {
+		opacity: 1;
+		visibility: visible;
+
+		transform: none;
+
+		box-shadow:
+						0 14px 28px rgba(0,0,0,0.25),
+						0 10px 10px rgba(0,0,0,0.22)
+	;
+	}
+
+	.topMenu .level1 {
+		flex-direction: column;
+	}
+
+	.topMenu .level1 > li > a {
+
+	}
+
+	.topMenu .level2 {
+		position: static;
+
+		opacity: 1;
+		visibility: visible;
+
+		-webkit-transform: none;
+		transform: none;
+
+		-webkit-transition: none;
+		transition: none;
+
+		border: 0;
+		width: auto;
+		display: none;
+
+		border-radius: 0;
+	}
+
+	/* Таблица корзины */
+	.cartTable, .cartTable > tbody,
+	.cartTable > tbody > tr,
+	.cartTable > tbody > tr > th,
+	.cartTable > tbody > tr > td,
+	.cartTable > tfoot,
+	.cartTable > tfoot > tr,
+	.cartTable > tfoot > tr > th,
+	.cartTable > tfoot > tr > td {
+		display: block;
+	}
+
+	.cartTable > tbody > tr > th,
+	.cartTable > tbody > tr > td,
+	.cartTable > tbody > tr > td:first-child,
+	.cartTable > tbody > tr > th:first-child,
+	.cartTable > tbody > tr > th:last-child,
+	.cartTable > tbody > tr > td:last-child {
+		padding: 10px;
+	}
+
+	.cartTable {
+		width: auto;
+	}
+
+	.cartTable > thead {
+		display: none;
+	}
+
+	.cartItem {
+		margin-bottom: 20px;
+
+		border-radius: 2px;
+		box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+	}
+
+	.cartTable > tbody > tr > td[data-title]:before {
+		display: block;
+
+		text-align: center;
+		padding: 0 10px;
+		font-weight: bold;
+		content: attr(data-title);
+	}
+
+	.cartItemDelCol {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.cartItem:last-child {
+		margin-bottom: 0;
+	}
+}

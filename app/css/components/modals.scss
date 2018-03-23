@@ -1,0 +1,98 @@
+.modalOpen {overflow: hidden;}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+
+  display: none;
+  overflow: hidden;
+
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+.fade {
+  opacity: 0;
+
+  transition: opacity .2s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.modal.fade .modalDialog {
+  transform: translateY(-25%);
+
+  transition: transform .2s ease-out;
+}
+
+.modal.in .modalDialog {
+  transform: none;
+}
+
+.modalOpen .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modalDialog {
+  position: relative;
+
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.modalLg {}
+.modalSm {}
+
+.modalContent {
+  position: relative;
+
+  background-color: #fff;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+
+  background-color: #000;
+}
+
+.modalBackdrop.fade {
+  opacity: 0;
+}
+
+.modalBackdrop.in {
+  opacity: .5;
+}
+
+.modalHeader {
+  position: relative;
+
+  padding: 15px;
+}
+
+.modalClose {}
+
+.modalTitle {
+  margin-bottom: 0;
+
+  text-align: center;
+}
+
+.modalBody {
+  padding: 15px;
+}
+
+.modalFooter {
+  padding: 15px;
+}

@@ -1,0 +1,14 @@
+.breadcrumbs {}
+
+.breadcrumbs li + li:before {
+  padding: 0 5px;
+
+  content: '/';
+}
+
+.breadcrumbs a {
+  transition: .2s ease-in-out;
+}
+
+.breadcrumbs li:hover > a,
+.breadcrumbs li.active > a {}

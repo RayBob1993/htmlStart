@@ -1,0 +1,23 @@
+.dropdown {position: relative;}
+
+.dropdownBlock {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .2s ease-in-out;
+
+  transform: translateY(20px);
+}
+
+.open > .dropdownBlock {
+  visibility: visible;
+  opacity: 1;
+
+  -webkit-transform: none;
+  transform: none;
+}

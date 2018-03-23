@@ -1,0 +1,96 @@
+.but {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: normal;
+
+  border-radius: 0;
+  background: none;
+  outline: 0;
+
+  transition: .2s ease-in-out;
+
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.but[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+/* Текст кнопки */
+.butText {
+  display: inline-block;
+  vertical-align: middle;
+
+  white-space: normal;
+  line-height: 100%;
+}
+
+/* Размеры кнопок */
+.butBlock {
+  display: block;
+  width: 100%;
+}
+
+/* Очень большая */
+.but.butLarge {}
+
+/* Средняя */
+.but.butMedium {}
+
+/* Маленькая */
+.but.butSmall {}
+
+/* Очень маленькая */
+.but.butTiny {}
+
+/* Стили кнопок */
+/* Первичная кнопка */
+.butPrimary {}
+.butPrimary:hover {}
+.butPrimary.active,
+.butPrimary:active {}
+
+/* Вторичная */
+.butSecondary {}
+.butSecondary:hover {}
+.butSecondary.active,
+.butSecondary:active {}
+
+/* Зелёная кнопка */
+.butSuccess {}
+.butSuccess:hover {}
+.butSuccess.active,
+.butSuccess:active {}
+
+/* Кнопка ссылка */
+.butLink {}
+.butLink:hover {}
+.butLink.active,
+.butLink:active {}
+
+/* Кнопка для закругления краёв */
+.butRound {
+  border-radius: 100px;
+}

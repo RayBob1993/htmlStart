@@ -1,0 +1,56 @@
+#iconsSvg {
+  display: none;
+}
+
+.ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+
+  fill: #000;
+
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.icoLeft {
+  margin-right: 5px;
+}
+
+.icoRight {
+  margin-left: 5px;
+}
+
+/* Иконка меню */
+.icoMenu {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 16px;
+}
+
+.icoMenu span {
+  display: block;
+  height: 1px;
+
+  background-color: #000;
+
+  transition: .2s ease-in-out;
+}
+
+.icoMenu span:nth-child(2) {
+  margin: 5px 0;
+}
+
+.open .icoMenu span:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.open .icoMenu span:nth-child(2) {
+  opacity: 0;
+}
+
+.open .icoMenu span:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+}

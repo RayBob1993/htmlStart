@@ -1,0 +1,12 @@
+.tabsNav a {
+  display: block;
+
+  text-decoration: none;
+
+  transition: .2s ease-in-out;
+}
+
+.tabsNav .active > a {}
+
+.tabPanel {display: none;}
+.tabPanel.active {display: block;}

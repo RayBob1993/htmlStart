@@ -1,0 +1,17 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td,
+th {padding: 0}
+
+.table {width: 100%;}
+
+.tlf {table-layout: fixed;}
+
+/* Базовая таблица */
+.tableBasic {}
+
+/* Полосатая таблица */
+.tableStriped > tbody > tr:nth-of-type(even) {background: #ccc;}

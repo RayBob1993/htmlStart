@@ -1,0 +1,31 @@
+/* Обнуление списка */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list > li {position: relative;}
+
+/* Резиновый список */
+.listFlex {
+  display: flex;
+
+  flex-flow: row wrap;
+}
+
+.listFlex > li {
+  flex: 0 0 auto;
+}
+
+.listAuto > li {
+  flex: 1;
+}
+
+.listCenter {
+  justify-content: center;
+}
+
+.listBetween {
+  justify-content: space-between;
+}
