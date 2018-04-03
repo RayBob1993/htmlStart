@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
 	</head>
 	<body>
-		<%= _.template(require('./../components/header.html'))() %>
+        {{> header }}
 
 		<!-- Основа -->
 		<main class="main">
@@ -28,7 +28,7 @@
 					</ul>
 				</nav>
 			</section>
-			
+
 			<!-- Контент блок -->
 			<section class="content">
 				<!-- Путь по сайту -->
@@ -43,8 +43,6 @@
 				<h1 class="pageTitle"></h1>
 			</section>
 		</main>
-
-		<%= _.template(require('./../components/footer.html'))() %>
 
 		<script src="js/bundle.js"></script>
 	</body>

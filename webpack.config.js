@@ -3,26 +3,8 @@ const fs = require('fs');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HandlebarsPlugin = require("handlebars-webpack-plugin");
 const webpack = require('webpack');
-
-function generateHtmlPlugins(templateDir) {
-    const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-
-    return templateFiles.map(item => {
-        const parts = item.split('.');
-        const name = parts[0];
-        const extension = parts[1];
-
-        return new HtmlWebpackPlugin({
-            filename: `${name}.html`,
-            template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-            inject: false
-        });
-    });
-}
-
-const htmlPlugins = generateHtmlPlugins('./app/html/pages');
 
 module.exports = {
     entry: [
@@ -79,11 +61,6 @@ module.exports = {
                         }
                     ]
                 })
-            },
-            {
-                test: /\.html$/,
-                include: path.resolve(__dirname, 'app/html/components'),
-                use: ['raw-loader']
             }
         ]
     },
@@ -103,10 +80,17 @@ module.exports = {
                 to: './img'
             }
         ]),
+        new HandlebarsPlugin({
+            entry: path.resolve(__dirname, "app", "html", "pages", "*.hbs"),
+            output: path.resolve(__dirname, "dist", "[name].html"),
+            partials: [
+                path.resolve(__dirname, "app", "html", "components", "*", "*.hbs")
+            ]
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         })
-    ].concat(htmlPlugins)
+    ]
 };
