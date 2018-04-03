@@ -4,19 +4,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
-const dir = {
-    js: path.resolve(__dirname, 'app/js'),
-    css: path.resolve(__dirname, 'app/css'),
-    fonts: path.resolve(__dirname, 'app/fonts'),
-    image: path.resolve(__dirname, 'app/img'),
-    html: {
-        pages: 'app/html/pages',
-        components: path.resolve(__dirname, 'app/html/components')
-    }
-};
-
-const generateHtmlPlugins = (templateDir) => {
+function generateHtmlPlugins(templateDir) {
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
 
     return templateFiles.map(item => {
@@ -28,16 +18,16 @@ const generateHtmlPlugins = (templateDir) => {
             filename: `${name}.html`,
             template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
             inject: false
-        })
+        });
     });
 }
 
-const htmlPlugins = generateHtmlPlugins(dir.html.pages);
+const htmlPlugins = generateHtmlPlugins('./app/html/pages');
 
 module.exports = {
     entry: [
-        dir.js + '/app.js',
-        dir.css + '/index.scss'
+        './app/js/app.js',
+        './app/css/index.scss'
     ],
     output: {
         filename: './js/bundle.js'
@@ -47,7 +37,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                include: dir.js,
+                include: path.resolve(__dirname, 'app/js'),
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -56,8 +46,19 @@ module.exports = {
                 }
             },
             {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'img/[name].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(sass|scss)$/,
-                include: dir.css,
+                include: path.resolve(__dirname, 'app/css'),
                 use: ExtractTextPlugin.extract({
                     use: [
                         {
@@ -80,38 +81,32 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: dir.image + '/[name].[ext]'
-                        }
-                    }
-                ]
-            },
-            {
                 test: /\.html$/,
-                include: dir.html.components,
+                include: path.resolve(__dirname, 'app/html/components'),
                 use: ['raw-loader']
             }
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
         new ExtractTextPlugin({
             filename: './css/style.bundle.css',
-            allChunks: true
+            allChunks: true,
         }),
+        new CleanWebpackPlugin(['dist']),
         new CopyWebpackPlugin([
             {
-                from: dir.fonts,
+                from: './app/fonts',
                 to: './fonts'
             },
             {
-                from: dir.image,
+                from: './app/img',
                 to: './img'
             }
-        ])
+        ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        })
     ].concat(htmlPlugins)
 };

@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
 	</head>
 	<body>
-		<%= _.template(require('./../components/header.html')) %>
+		<%= _.template(require('./../components/header.html'))() %>
 
 		<!-- Основа -->
 		<main class="main">
@@ -44,7 +44,7 @@
 			</section>
 		</main>
 
-		<%= _.template(require('./../components/footer.html')) %>
+		<%= _.template(require('./../components/footer.html'))() %>
 
 		<script src="js/bundle.js"></script>
 	</body>

@@ -1,7 +1,6 @@
-import $ from 'jquery'
-import swiper from 'swiper'
-import fancybox from '@fancyapps/fancybox'
-import mask from 'jquery.maskedinput'
+const Swiper = require('swiper');
+const fancybox = require('@fancyapps/fancybox')
+const mask = require('jquery.maskedinput')
 
 class App {
 	constructor(){
@@ -9,26 +8,26 @@ class App {
 	}
 
     init(){
-
 		this
 			.swiperInit()
 			.fancyboxInit()
 			.inputTelMaskInit()
 			.counter('.fieldCount');
-
 	}
 
 	swiperInit(){
 
-		if(typeof($.fn.swiper) !== 'undefined'){
-			$('#mainSlider').swiper({
-				pagination: '.swiper-pagination',
-				paginationClickable: true,
-				nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
-				loop: true
-			});
-		}
+        let mySwiper = new Swiper('#mainSlider', {
+            pagination: {
+                el: '.swiper-pagination',
+                paginationClickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true
+        })
 
 		return this;
 
