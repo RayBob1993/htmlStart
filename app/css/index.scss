@@ -1,21 +1,27 @@
-@import './appUI';
-@import './components/icons';
-@import './components/buttons';
-@import './components/img';
-@import './components/list';
-@import './components/grid';
-@import './components/breadcrumbs';
-@import './components/pagination';
-@import './components/swiper';
-@import './components/tables';
-@import './components/forms';
-@import './components/modals';
-@import './components/dropdown';
-@import './components/tabs';
-@import './components/media';
-@import './components/collapse';
-@import './components/fancybox';
-@import './components/counter';
-@import './components/sections';
+// Компоненты
+@import 'components/reset';
+@import 'components/variables';
+@import 'components/typography';
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/img';
+@import 'components/list';
+@import 'components/grid';
+@import 'components/breadcrumbs';
+@import 'components/pagination';
+@import 'components/tables';
+@import 'components/forms';
+@import 'components/modals';
+@import 'components/dropdown';
+@import 'components/tabs';
+@import 'components/media';
+@import 'components/collapse';
+@import 'components/counter';
+@import 'components/sections';
+
+// npm модули
+@import '~swiper/dist/css/swiper.min';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox';
+
 @import './app';
 @import './responsive';

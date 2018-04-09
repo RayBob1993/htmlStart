@@ -1,5 +1,4 @@
 const path = require('path');
-const fs = require('fs');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -84,6 +83,7 @@ module.exports = {
             entry: path.resolve(__dirname, "app", "html", "pages", "*.hbs"),
             output: path.resolve(__dirname, "dist", "[name].html"),
             partials: [
+                path.resolve(__dirname, "app", "html", "components", "*.hbs"),
                 path.resolve(__dirname, "app", "html", "components", "*", "*.hbs")
             ]
         }),

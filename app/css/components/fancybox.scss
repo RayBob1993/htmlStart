@@ -618,11 +618,11 @@
   width: 3px;
   height: 3px;
   box-shadow:
-          0 -4px 0, -4px -4px 0,
-          4px -4px 0, 0 0 0 32px inset,
-          -4px 0 0, 4px 0 0, 0 4px 0,
-          -4px 4px 0, 4px 4px 0
-;
+    0 -4px 0, -4px -4px 0,
+    4px -4px 0, 0 0 0 32px inset,
+    -4px 0 0, 4px 0 0, 0 4px 0,
+    -4px 4px 0, 4px 4px 0
+  ;
 }
 
 .fancybox-container--thumbs .fancybox-controls,
@@ -650,7 +650,6 @@
 
 .fancybox-thumbs > ul {
   list-style: none;
-  position: absolute;
   position: relative;
   width: 100%;
   height: 100%;

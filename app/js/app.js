@@ -1,4 +1,4 @@
-const Swiper = require('swiper');
+import Swiper from 'swiper'
 const fancybox = require('@fancyapps/fancybox')
 const mask = require('jquery.maskedinput')
 
@@ -27,7 +27,7 @@ class App {
                 prevEl: '.swiper-button-prev',
             },
             loop: true
-        })
+        });
 
 		return this;
 
@@ -43,7 +43,7 @@ class App {
 				youtube: {
 					controls: 0,
 					showinfo: 0
-				},
+				}
 			});
 		}
 
