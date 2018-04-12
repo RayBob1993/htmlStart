@@ -1,4 +1,10 @@
-.modalOpen {overflow: hidden;}
+.fade {
+  transition: $transitionFade;
+}
+
+.modal-open {
+  overflow: hidden;
+}
 
 .modal {
   position: fixed;
@@ -13,86 +19,90 @@
 
   -webkit-overflow-scrolling: touch;
   outline: 0;
+
+  .modal-open & {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
-.fade {
-  opacity: 0;
-
-  transition: opacity .2s linear;
-}
-
-.fade.in {
-  opacity: 1;
-}
-
-.modal.fade .modalDialog {
-  transform: translateY(-25%);
-
-  transition: transform .2s ease-out;
-}
-
-.modal.in .modalDialog {
-  transform: none;
-}
-
-.modalOpen .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.modalDialog {
+.modal-dialog {
   position: relative;
-
   max-width: 600px;
   margin: 40px auto;
+  pointer-events: none;
+
+  .modal.fade & {
+    transition: $transitionModal;
+    transform: translate(0, -25%);
+  }
+  .modal.show & {
+    transform: none;
+  }
 }
 
-.modalLg {}
-.modalSm {}
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - (40 * 2));
+}
 
-.modalContent {
+.modal-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  pointer-events: auto;
 
   background-color: #fff;
+
+  outline: 0;
 }
 
-.modalBackdrop {
+.modal-backdrop {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 999;
 
   background-color: #000;
+
+  &.fade { opacity: 0; }
+  &.show { opacity: .8; }
 }
 
-.modalBackdrop.fade {
-  opacity: 0;
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .close {
+
+  }
 }
 
-.modalBackdrop.in {
-  opacity: .5;
-}
-
-.modalHeader {
-  position: relative;
-
-  padding: 15px;
-}
-
-.modalClose {}
-
-.modalTitle {
+.modal-title {
   margin-bottom: 0;
-
-  text-align: center;
 }
 
-.modalBody {
-  padding: 15px;
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
 }
 
-.modalFooter {
-  padding: 15px;
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
 }

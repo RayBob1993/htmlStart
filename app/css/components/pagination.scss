@@ -2,9 +2,10 @@
 
 .pagination a {
   display: block;
+
   text-decoration: none;
 
-  transition: .2s ease-in-out;
+  transition: $transitionBase;
 }
 
 .paginationArrows {}

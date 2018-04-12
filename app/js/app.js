@@ -1,10 +1,13 @@
 import Swiper from 'swiper'
+const { Collapse, Tab, Modal, Dropdown } = require('bootstrap/dist/js/bootstrap.bundle')
 const fancybox = require('@fancyapps/fancybox')
 const mask = require('jquery.maskedinput')
 
 class App {
 	constructor(){
         this.init();
+
+
 	}
 
     init(){

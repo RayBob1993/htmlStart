@@ -10,8 +10,7 @@
 
   fill: #000;
 
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  transition: $transitionBase;
 }
 
 .icoLeft {
@@ -36,7 +35,7 @@
 
   background-color: #000;
 
-  transition: .2s ease-in-out;
+  transition: $transitionBase;
 }
 
 .icoMenu span:nth-child(2) {

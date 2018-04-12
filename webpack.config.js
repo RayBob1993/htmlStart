@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: [
@@ -51,6 +52,17 @@ module.exports = {
                         },
                         {
                             loader: "resolve-url-loader"
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: [
+                                    autoprefixer({
+                                        browsers:['ie >= 10', 'last 4 version']
+                                    })
+                                ],
+                                sourceMap: true
+                            }
                         },
                         {
                             loader: "sass-loader",
