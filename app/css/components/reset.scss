@@ -14,7 +14,7 @@ body {
 	font-size: 14px;
 	color: #393938;
 	line-height: 1.42857143;
-	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-family: $fontDefault;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-touch-callout: none;
 
@@ -219,31 +219,3 @@ legend {
 
 textarea {overflow: auto}
 optgroup {font-weight: 700}
-
-/* Телефон и email*/
-.tel,
-.mail {
-	display: block;
-
-	text-decoration: none;
-	color: inherit;
-}
-
-@import './components/icons';
-@import './components/buttons';
-@import './components/img';
-@import './components/list';
-@import './components/grid';
-@import './components/breadcrumbs';
-@import './components/pagination';
-@import './components/swiper';
-@import './components/tables';
-@import './components/forms';
-@import './components/modals';
-@import './components/dropdown';
-@import './components/tabs';
-@import './components/media';
-@import './components/collapse';
-@import './components/fancybox';
-@import './components/counter';
-@import './components/sections';

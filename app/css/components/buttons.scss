@@ -17,7 +17,7 @@
   background: none;
   outline: 0;
 
-  transition: .2s ease-in-out;
+  transition: $transitionBase;
 
   -moz-user-select: none;
   -ms-user-select: none;
