@@ -2,14 +2,11 @@ body {
 	min-height: 100vh;
 	min-width: 320px;
 
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flexbox;
 	display: flex;
 
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
 	flex-direction: column;
+
+	background-color: #fff;
 }
 
 /* ============================ Шапка */
@@ -60,19 +57,16 @@ body {
 
 	opacity: 0;
 	visibility: hidden;
-	
-	-webkit-transform: translateY(20px);
+
 	transform: translateY(20px);
 
-	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
 
 .topMenu li:hover .level2 {
 	opacity: 1;
 	visibility: visible;
-	
-	-webkit-transform: none;
+
 	transform: none;
 }
 
@@ -85,13 +79,8 @@ body {
 
 /* ============================ Разметка колонок */
 .mainLayout {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flexbox;
 	display: flex;
 
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
 	flex-direction: row;
 }
 
@@ -106,8 +95,7 @@ body {
 	display: block;
 	
 	text-decoration: none;
-	
-	-webkit-transition: .2s ease-in-out;
+
 	transition: .2s ease-in-out;	
 }
 
@@ -134,7 +122,7 @@ body {
 
 /* ============================ Подвал */
 .footer {
-	
+
 }
 
 /* ============================ Нижнее меню */
@@ -143,7 +131,6 @@ body {
 	
 	text-decoration: none;
 
-	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
 

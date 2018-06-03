@@ -14,38 +14,19 @@
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
 	</head>
 	<body>
-		<%= _.template(require('./../components/header.html')) %>
+        <%= _.template(require('./../components/header.html'))() %>
 
-		<!-- Основа -->
 		<main class="main">
-			<!-- Колонка слева -->
-			<section class="sidebarLeft">
-				<!-- Меню слева -->
-				<nav class="leftMenu">
-					<ul class="list level1">
-						<li class="active"><a href="">Главная</a></li>
-						<li><a href="">О компании</a></li>
-					</ul>
-				</nav>
-			</section>
-			
-			<!-- Контент блок -->
-			<section class="content">
-				<!-- Путь по сайту -->
-				<nav class="path">
-					<ul class="list listFlex">
-						<li><a href="">Главная</a></li>
-						<li class="active"><a href="">О компании</a></li>
-					</ul>
-				</nav>
-
-				<!-- Заголовок страницы -->
-				<h1 class="pageTitle"></h1>
-			</section>
+			sdafvsdfvsd asdca sd cs sdf vd asd c
 		</main>
 
-		<%= _.template(require('./../components/footer.html')) %>
+        <%= _.template(require('./../components/footer.html'))() %>
 
-		<script src="js/bundle.js"></script>
+		<script src="js/libs/jquery-3.2.1.min.js"></script>
+		<script src="js/plugins/bootstrap.min.js"></script>
+		<script src="js/plugins/jquery.fancybox.min.js"></script>
+		<script src="js/plugins/jquery.maskedinput.min.js"></script>
+		<script src="js/plugins/swiper.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
