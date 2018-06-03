@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 const generateHtmlPlugins = (templateDir) => {
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -50,12 +51,23 @@ module.exports = {
                         {
                             loader: "resolve-url-loader"
                         },
+						{
+							loader: 'postcss-loader',
+							options: {
+								plugins: [
+									autoprefixer({
+										browsers:['ie >= 10', 'last 4 version']
+									})
+								],
+								sourceMap: true
+							}
+						},
                         {
                             loader: "sass-loader",
                             options: {
                                 sourceMap: true
                             }
-                        }
+                        },
                     ]
                 })
             },
