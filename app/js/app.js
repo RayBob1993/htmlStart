@@ -16,20 +16,25 @@
 		},
 
 		swiperInit: function () {
-
-			if (typeof($.fn.swiper) !== "undefined"){
-				$('#mainSlider').swiper({
-					pagination: {
-						el: '.swiper-pagination',
-						clickable: true
-					},
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev'
-					},
-					loop: true
-				});
-			}
+			
+			var mySwiper = new Swiper('#reviewsSlider', {
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				slidesPerView: 2,
+				spaceBetween: 30,
+				breakpoints: {
+					569: {
+						slidesPerView: 1,
+						spaceBetween: 0
+					}
+				}
+			});
 
 			return this;
 
@@ -63,18 +68,21 @@
 
 		},
 
-		scrollTo: function (selector) {
+		scrollTo: function () {
 
-			var
-				scrollTo = $(selector),
-				offset = scrollTo.offset().top;
+			var scrollTo = $('[data-scroll-to]');
 
-			$('html, body').animate({
-				scrollTop: offset
-			}, 300);
+			scrollTo.on('click', function () {
+				var target = $(this).attr('href');
+				var offset = target.offset().top;
+
+				$('html, body').animate({
+					scrollTop: offset
+				}, 300);
+			});
 
 			return this;
-		},
+		}
 
 		sendForm: function (selector) {
 			var form = $(selector);
