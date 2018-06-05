@@ -73,7 +73,7 @@
 			var scrollTo = $('[data-scroll-to]');
 
 			scrollTo.on('click', function () {
-				var target = $(this).attr('href');
+				var target = $($(this).attr('href'));
 				var offset = target.offset().top;
 
 				$('html, body').animate({
