@@ -82,7 +82,7 @@
 			});
 
 			return this;
-		}
+		},
 
 		sendForm: function (selector) {
 			var form = $(selector);
