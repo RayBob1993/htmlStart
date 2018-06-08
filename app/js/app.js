@@ -91,8 +91,8 @@
 				url: form.attr('action'),
 				type: form.attr('method') || 'POST',
 				dataType: 'html',
-				data: form.serialize(),
-			}).done((result) => {
+				data: form.serialize()
+			}).done(function(result) {
 
 				if(result && (result === 'ok')){
 					console.log(result);
