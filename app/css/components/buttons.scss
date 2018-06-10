@@ -19,17 +19,30 @@
 
   transition: $transitionBase;
 
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
   user-select: none;
 
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
+  
+  /* Размеры кнопок */
+  &.butBlock {
+    display: block;
+    width: 100%;
+  }
+
+  /* Очень большая */
+  &.butLarge {}
+
+  /* Средняя */
+  &.butMedium {}
+
+  /* Маленькая */
+  &.butSmall {}
+
+  /* Очень маленькая */
+  &.butTiny {}
 }
 
 .but[disabled] {
@@ -46,24 +59,6 @@
   white-space: normal;
   line-height: 100%;
 }
-
-/* Размеры кнопок */
-.butBlock {
-  display: block;
-  width: 100%;
-}
-
-/* Очень большая */
-.but.butLarge {}
-
-/* Средняя */
-.but.butMedium {}
-
-/* Маленькая */
-.but.butSmall {}
-
-/* Очень маленькая */
-.but.butTiny {}
 
 /* Стили кнопок */
 /* Первичная кнопка */
