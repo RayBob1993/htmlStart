@@ -7,7 +7,7 @@
 }
 
 .breadcrumbs a {
-  transition: .2s ease-in-out;
+  transition: $transitionBase;
 }
 
 .breadcrumbs li:hover > a,
