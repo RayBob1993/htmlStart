@@ -194,7 +194,7 @@
   order: 0;
 }
 
-@media (max-width: 1319px){
+@media (max-width: $mediaxlg){
   .hiddenxlg {display: none!important}
 
   .rowxlgCenter {
@@ -299,7 +299,7 @@
   }
 }
 
-@media (max-width: 1069px){
+@media (max-width: $medialg){
   .hiddenlg {display: none!important}
 
   .rowlgCenter {
@@ -404,7 +404,7 @@
   }
 }
 
-@media (max-width: 819px){
+@media (max-width: $mediamd){
   .hiddenmd {display: none!important}
 
   .rowmdCenter {
@@ -509,7 +509,7 @@
   }
 }
 
-@media (max-width: 569px){
+@media (max-width: $mediasm){
   .hiddensm {display: none!important}
 
   .rowsmCenter {
@@ -613,7 +613,7 @@
   }
 }
 
-@media (max-width: 420px){
+@media (max-width: $mediaxsm){
   .hiddenxsm {display: none!important}
 
   .rowxsmCenter {
