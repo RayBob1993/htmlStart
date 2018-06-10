@@ -9,7 +9,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: .2s ease-in-out;
+  transition: $transitionBase;
 
   transform: translateY(20px);
 }
