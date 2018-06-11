@@ -1,4 +1,4 @@
-.tabsNav a {
+.nav-tabs a {
   display: block;
 
   text-decoration: none;
@@ -6,7 +6,7 @@
   transition: $transitionBase;
 }
 
-.tabsNav .active > a {}
+.nav-tabs .active > a {}
 
-.tabPanel {display: none;}
-.tabPanel.active {display: block;}
+.tab-pane {display: none;}
+.tab-pane.active {display: block;}
