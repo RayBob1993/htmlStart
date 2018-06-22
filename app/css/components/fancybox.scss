@@ -818,7 +818,7 @@ body.compensate-for-scrollbar {
   position: absolute;
   right: 0;
   top: 0;
-  transition: $transitionBase
+  transition: $transitionBase;
   z-index: 99991; 
 }
 
