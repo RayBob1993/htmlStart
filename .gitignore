@@ -1,6 +1,7 @@
 ### Node.js
 *.log
 node_modules/
+src/app
 
 # Windows image file caches
 Thumbs.db
