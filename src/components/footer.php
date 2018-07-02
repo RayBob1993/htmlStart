@@ -10,8 +10,8 @@
 		
 		<div class="row rowMiddle rowBetween">
 			<div class="col">
-				<a href="/" class="logo footerLogo">
-					<img src="img/footerLogo.png" alt="" title="">
+				<a href="index.php" class="logo footerLogo">
+					<img src="app/img/footerLogo.png" alt="" title="">
 				</a>	
 			</div>
 		</div>
