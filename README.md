@@ -1,33 +1,17 @@
 # htmlStart
-Заготовка для вёрстки сайта. Для работы нужно удалить css файл <b>client.content.css</b> и перенести его стили в файл <b>appUI.css</b>.
-Множество элементов по умолчанию не имеют стилей оформления, только скелет для прочной работы. Стили оформления заносятся самим разработчиком, так, как требует его дизайн.
+## Запуск
+* Берём OpenServer
+* Скачиваем архив из репозитория
+* Распаковываем в папку с доменами OpenServer
+* Заходим в настройки, вкладка <b>Домены</b>, находим раздел <b>Управление доменами</b>, устанавливаем значение <b>Ручное + Автопоиск</b>
+* После, в этой же вкладке <b>Домены</b> добавляем новый домен и указываем путь к папке <b>имя папки проекта/app</b>, имя домена, на свой вкус или так же, как имя папки проекта, сохраняем, запускаем!
+* Как проделали все шаги, запускаем терминал из корневой директории проекта и пишем <b>npm install</b>
+* Как установили все зависимости для сборки, запускаем сборку <b>npm run dev</b>
+* Работаем
 
-Для работы некоторых UI элементов используется js плагины фреймворка <a href="https://github.com/twbs/bootstrap"><b>bootstrap</b></a> версии 3.3.6. <b>Примечание: используемые плагины изменены, в плане переименования классов в натацию camelCase</b>
-
-## Структура
-
-```
-├── index.php
-└── components
-	└── header.php
-	└── footer.php
-	└── js.php
-└── app
-	├── css
-		└── app.css
-		└── appUI.css
-		└── responsive.css
-	└── img
-		└── ico
-	└── js
-	    └── lib
-	    └── plugins
-			└── bootstrap.min.js
-			└── jquery.maskedinput.min.js
-			└── jquery.swiper.umd.min.js
-			└── jquery.fancybox.min.js
-	└── app.js
-```
+## Сборка билда
+* Из корневой директории запускаем команду <b>npm run build</b>. Появится папка <b>app</b> внутри папки <b>src</b>
+* Берём все страницы + папку <b>app</b> и заливаем на хостинг. 
 
 ## Компоненты
 
@@ -62,6 +46,7 @@
 * [Кастомный select](https://github.com/select2/select2)
 * [Динамическая сетка](https://github.com/metafizzy/isotope)
 * [Датапикер](https://github.com/Eonasdan/bootstrap-datetimepicker)
+* [Отслеживание видимости элемента в окне браузера](https://github.com/dirkgroenen/jQuery-viewport-checker)
 
 
 <h3 id="titles">Заголовки</h3>
@@ -168,6 +153,11 @@
 <h3 id="tables">Таблицы</h3>
 
 ```html
+<table class="table">
+    <thead></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+</table>
 ```
 
 <a href="#">наверх</a>
@@ -208,7 +198,7 @@
 <a href="#">наверх</a>
 
 <h3 id="sliders">Слайдер</h3>
-Для работы слайдеров используется плагин <a href="https://github.com/nolimits4web/Swiper"><b>Swiper</b></a>
+Для работы слайдеров используется плагин <a href="http://idangero.us/swiper/api/"><b>Swiper</b></a>
 
 ```html
 <section id="mainSlider" class="swiper-container">
@@ -245,28 +235,53 @@
 <a href="#">наверх</a>
 
 <h3 id="tabs">Вкладки</h3>
-<a href="http://getbootstrap.com/javascript/#tabs"><b>Документация</b></a> по работе с событиями плагина
+<a href="http://getbootstrap.com/docs/4.1/components/navs/#via-javascript"><b>Документация</b></a> по работе с событиями плагина
 
 ```html
 <div class="tabs">
-	<nav class="tabsNav">
-		<ul class="list listFlex" role="tablist">
-			<li role="presentation" class="active">
-				<a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Таб 1</a>
-			</li>
+    <ul class="list listFlex nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a 
+                href="#tab1" 
+                class="active" 
+                aria-controls="home" 
+                role="tab" 
+                data-toggle="tab" 
+                aria-selected="true"
+            >
+                Таб 1
+            </a>
+        </li>
 
-			<li role="presentation">
-				<a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Таб 2</a>
-			</li>
-		</ul>
-	</nav>
+        <li class="nav-item">
+            <a 
+                href="#tab2" 
+                aria-controls="profile" 
+                role="tab" 
+                data-toggle="tab" 
+                aria-selected="false"
+            >
+                Таб 2
+            </a>
+        </li>
+    </ul>
 
 	<div class="tabContent">
-		<div role="tabpanel" class="tabPanel fade in active" id="tab1">
+		<div 
+            role="tabpanel" 
+            class="tab-pane fade show active" 
+            id="tab1" 
+            aria-labelledby="home-tab"
+		>
 			...
 		</div>
 
-		<div role="tabpanel" class="tabPanel fade" id="tab2">
+		<div 
+            role="tabpanel" 
+            class="tab-pane fade" 
+            id="tab2" 
+            aria-labelledby="home-tab"
+		>
 			...
 		</div>
 	</div>
@@ -276,15 +291,21 @@
 <a href="#">наверх</a>
 
 <h3 id="dropdowns">Дропдауны</h3>
-<a href="http://getbootstrap.com/javascript/#dropdowns"><b>Документация</b></a> по работе с событиями плагина
+<a href="http://getbootstrap.com/docs/4.1/components/dropdowns/"><b>Документация</b></a> по работе с событиями плагина
 
 ```html
 <div class="dropdown">
-	<button class="but dropdownBut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<button 
+        class="but dropdownBut" 
+        data-toggle="dropdown" 
+        aria-haspopup="true" 
+        aria-expanded="false" 
+        data-display="static"
+	>
 		Выпадающее меню
 	</button>
 	
-	<div class="dropdownBlock" aria-labelledby="Выпадающее меню">
+	<div class="dropdown-menu">
 		Контент
 	</div>
 </div>
@@ -296,53 +317,76 @@
 
 ```html
 <div class="dropdown topMenuWrap"> 
-	<button type="button" class="but dropdownBut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-		<span class="icoMenu"> 
-			<span></span> 
-			<span></span> 
-			<span></span> 
-		</span> 
-
-		<span class="butText">Меню</span> 
+	<button 
+        type="button" 
+        class="but dropdownBut"
+        data-toggle="dropdown" 
+        aria-haspopup="true" 
+        aria-expanded="false"
+    > 
+        <span class="icoMenu"> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+        </span>
 	</button> 
-
-	<nav class="topMenu"> 
-		<ul class="list listFlex">
-			<li class="active"><a href="#">Главная</a></li>
-			<li><a href="#">О компании</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-	</nav> 
+    
+    <div class="dropdown-menu">
+        <nav class="topMenu"> 
+            <ul class="list listFlex">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav> 
+    </div>
 </div>
 ```
 
 <a href="#">наверх</a>
 
 <h3 id="modals">Модальные окна</h3>
-<a href="http://getbootstrap.com/javascript/#modals"><b>Документация</b></a> по работе с событиями плагина
+<a href="http://getbootstrap.com/docs/4.1/components/modal/"><b>Документация</b></a> по работе с событиями плагина
 
 ```html
-<button data-toggle="modal" data-target="#myModal">Модальное окно</button>
+<button
+    type="button"
+    class="but"
+    data-toggle="modal"
+    data-target="#feedbackModal"
+>
+    Обратная связь
+</button>
 
-<!-- Модальное окно -->
-<div class="modal fade" id="myModal" role="dialog" aria-labelledby="Модальное окно">
-	<div class="modalDialog" role="document">
-		<div class="modalContent">
-			<div class="modalHeader">
 
-				<h4 class="modalTitle">Модальное окно</h4>
+<div
+    class="modal fade"
+    id="feedbackModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="Обратная связь"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Обратная связь</h5>
 
-				<button class="but butClose modalClose" data-dismiss="modal" aria-label="Закрыть окно">
-					<span aria-hidden="true">×</span>
-				</button>
+                <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
 
-			</div>
+            <div class="modal-body">
 
-			<div class="modalBody">
-				
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </div>
 ```
 

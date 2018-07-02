@@ -1,6 +1,6 @@
 .dropdown {position: relative;}
 
-.dropdownBlock {
+.dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -12,12 +12,12 @@
   transition: $transitionBase;
 
   transform: translateY(20px);
-}
 
-.open > .dropdownBlock {
-  visibility: visible;
-  opacity: 1;
+  &.show {
+    visibility: visible;
+    opacity: 1;
 
-  -webkit-transform: none;
-  transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
 }

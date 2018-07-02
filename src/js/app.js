@@ -11,7 +11,8 @@
 				.swiperInit()
 				.fancyboxInit()
 				.inputTelMaskInit()
-				.counter('.fieldCount');
+				.counter('.fieldCount')
+				.accordion('.topMenu');
 
 		},
 
@@ -120,13 +121,14 @@
 
 			});
 
+			this.pageUpFadeToggle(button)
+
 			return this;
 		},
 
 		// ============================ Показывать кнопку вверх только если был скролл
-		pageUpFadeToggle: function (selector, length) {
+		pageUpFadeToggle: function (button, length) {
 			var length = length || 200;
-			var button = $(selector);
 
 			$(window).on('load scroll', function () {
 				var scrollTop = $(this).scrollTop();
@@ -153,6 +155,7 @@
 
 				if(subMenu.length){
 					event.preventDefault();
+					event.stopPropagation();
 				}
 
 				if(!subMenu.is(':visible')){
@@ -174,15 +177,23 @@
 				}
 			}
 
-			el
-				.unbind('click')
-				.on('click', init);
+			$(window).on('load resize', function () {
+                var winWidth = $(this).innerWidth();
+
+                if (winWidth <= 819) {
+                    el
+                        .unbind('click')
+                        .on('click', init);
+				} else {
+                    el.unbind('click');
+                    subMenus.attr('style', '');
+				}
+            });
 
 			// Установим класс на родителя, если есть вложенное меню
 			el.each(function () {
-				var
-					subMenu = $(this).next(),
-					parent = $(this).parent();
+				var subMenu = $(this).next();
+				var parent = $(this).parent();
 
 				if(subMenu.length){
 					parent.addClass('subMenu')

@@ -11,14 +11,15 @@
   fill: #000;
 
   transition: $transitionBase;
-}
 
-.icoLeft {
-  margin-right: 5px;
-}
+  &.icoLeft {
+    margin-right: 5px;
+  }
 
-.icoRight {
-  margin-left: 5px;
+  &.icoRight {
+    margin-left: 5px;
+  }
+
 }
 
 /* Иконка меню */
@@ -27,29 +28,33 @@
   vertical-align: middle;
   width: 25px;
   height: 16px;
-}
 
-.icoMenu span {
-  display: block;
-  height: 1px;
+  span {
+    display: block;
+    height: 2px;
 
-  background-color: #000;
+    background-color: #000;
 
-  transition: $transitionBase;
-}
+    transition: $transitionBase;
 
-.icoMenu span:nth-child(2) {
-  margin: 5px 0;
-}
+    &:nth-child(2) {
+      margin: 5px 0;
+    }
+  }
 
-.open .icoMenu span:first-child {
-  transform: translateY(6px) rotate(45deg);
-}
+  .show & {
+    span {
+      &:first-child {
+        transform: translateY(7px) rotate(45deg);
+      }
 
-.open .icoMenu span:nth-child(2) {
-  opacity: 0;
-}
+      &:nth-child(2) {
+        opacity: 0;
+      }
 
-.open .icoMenu span:last-child {
-  transform: translateY(-6px) rotate(-45deg);
+      &:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
 }

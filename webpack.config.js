@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -86,6 +87,7 @@ module.exports = {
                 from: './src/components',
                 to: './components'
             }
-        ])
+        ]),
+        new ProgressBarPlugin()
     ]
 };

@@ -20,48 +20,140 @@ body {
 }
 
 /* ============================ Верхнее меню */
-.topMenuWrap > .dropdownBut {
-	display: none;
+.topMenuWrap {
+	> .dropdownBut {
+		display: none;
+
+		@media (max-width: $mediamd) {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			z-index: 1001;
+
+			display: block;
+			padding: 5px;
+		}
+	}
+
+	.dropdown-menu {
+		@media (min-width: $mediamd) {
+			position: static;
+
+			opacity: 1;
+			visibility: visible;
+
+			transform: none;
+		}
+
+		@media (max-width: $mediamd) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 1000;
+
+			overflow: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+
+			background: rgba(0, 0, 0, .3);
+
+			transform: none;
+
+			opacity: 0;
+			visibility: hidden;
+
+			&.show {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
 }
 
-.topMenu a {
-	display: block;
-	
-	text-decoration: none;
+.topMenu {
+	a {
+		display: block;
 
-	transition: $transitionBase;
+		text-decoration: none;
+
+		transition: $transitionBase;
+	}
+
+	@media (max-width: $mediamd) {
+		height: 100%;
+		width: 280px;
+		padding: 15px;
+
+		transition: $transitionBase;
+
+		transform: translateX(-100%);
+
+		background-color: #fff;
+
+		.show & {
+			transform: none;
+		}
+	}
 }
 
 /* Уровень 1 */ 
-.topMenu .level1 > li > a {
-	
-}
+.topMenu {
+	.level1 {
+		> li {
+			> a {
 
-.topMenu .level1 > li:hover > a,
-.topMenu .level1 > li.active > a {
-	text-decoration: underline;
-}
+			}
 
-/* Выпадающий список */
-.topMenu .level2 {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	z-index: 1000;
+			&:hover > a,
+			&.active > a {
+				text-decoration: underline;
+			}
 
-	opacity: 0;
-	visibility: hidden;
+			&:hover {
+				.level2 {
+					opacity: 1;
+					visibility: visible;
 
-	transform: translateY(20px);
+					transform: none;
+				}
+			}
+		}
 
-	transition: $transitionBase;
-}
+		@media (max-width: $mediamd) {
+			flex-direction: column;
+		}
+	}
 
-.topMenu li:hover .level2 {
-	opacity: 1;
-	visibility: visible;
+	.level2 {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
 
-	transform: none;
+		opacity: 0;
+		visibility: hidden;
+
+		transform: translateY(20px);
+
+		transition: $transitionBase;
+
+		@media (max-width: $mediamd) {
+			position: static;
+
+			opacity: 1;
+			visibility: visible;
+
+			transform: none;
+
+			transition: none;
+
+			border: 0;
+			width: auto;
+			display: none;
+		}
+	}
 }
 
 /* ============================ Основной блок */

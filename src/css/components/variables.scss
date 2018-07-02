@@ -2,12 +2,12 @@
 $fontDefault: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Transitions
-$transitionBase: .3s ease-in-out;
+$transitionBase: .2s ease-in-out;
 $transitionFade: opacity .15s linear;
-$transitionModal: transform .3s ease-out;
+$transitionModal: transform .2s ease-out;
 
 // MediaQueries
-$mediaxlg: 1366px;
+$mediaxlg: 1319px;
 $medialg: 1069px;
 $mediamd: 819px;
 $mediasm: 569px;
