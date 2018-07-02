@@ -59,9 +59,9 @@
 
 ```html
 <ul class="list">
-  <li>Пункт 1</li>
-  <li>Пункт 2</li>
-  <li>Пункт 3</li>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
 </ul>
 ```
 
@@ -69,9 +69,9 @@
 
 ```html
 <ul class="list listFlex">
-  <li>Пункт 1</li>
-  <li>Пункт 2</li>
-  <li>Пункт 3</li>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
 </ul>
 ```
 
@@ -79,9 +79,9 @@
 
 ```html
 <ul class="list listFlex listCenter">
-  <li>Пункт 1</li>
-  <li>Пункт 2</li>
-  <li>Пункт 3</li>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
 </ul>
 ```
 
@@ -89,9 +89,9 @@
 
 ```html
 <ul class="list listFlex listBetween">
-  <li>Пункт 1</li>
-  <li>Пункт 2</li>
-  <li>Пункт 3</li>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
 </ul>
 ```
 
@@ -99,9 +99,9 @@
 
 ```html
 <ul class="list listFlex listBetween">
-  <li>Пункт 1</li>
-  <li>Пункт 2</li>
-  <li>Пункт 3</li>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
 </ul>
 ```
 
@@ -114,7 +114,7 @@
 
 ```html
 <svg class="ico">
-	<use xlink:href="#icoTel"></use>
+    <use xlink:href="#icoTel"></use>
 </svg>
 ```
 Если используются растровые иконки, просто удалите в стилях размеры и заливку.
@@ -124,7 +124,7 @@
 
 ```html
 <svg class="ico icoLeft">
-	<use xlink:href="#icoTel"></use>
+    <use xlink:href="#icoTel"></use>
 </svg>
 ```
 
@@ -132,7 +132,7 @@
 
 ```html
 <svg class="ico icoRight">
-	<use xlink:href="#icoTel"></use>
+    <use xlink:href="#icoTel"></use>
 </svg>
 ```
 
@@ -140,9 +140,9 @@
 
 ```html
 <span class="icoMenu"> 
-	<span></span> 
-	<span></span> 
-	<span></span> 
+    <span></span> 
+    <span></span> 
+    <span></span> 
 </span> 
 ```
 
@@ -175,7 +175,7 @@
 
 ```html
 <a href="app/img/galery/1.jpg" data-fancybox>
-	<img class="app/img/galery/1.jpg">
+    <img class="app/img/galery/1.jpg">
 </a>
 ```
 
@@ -183,15 +183,15 @@
 
 ```html
 <a href="app/img/galery/1.jpg" class="fancybox" data-fancybox="galery">
-	<img class="app/img/galery/1.jpg">
+    <img class="app/img/galery/1.jpg">
 </a>
 
 <a href="app/img/galery/2.jpg" class="fancybox" data-fancybox="galery">
-	<img class="app/img/galery/2.jpg">
+    <img class="app/img/galery/2.jpg">
 </a>
 
 <a href="app/img/galery/3.jpg" class="fancybox" data-fancybox="galery">
-	<img class="app/img/galery/3.jpg">
+    <img class="app/img/galery/3.jpg">
 </a>
 ```
 
@@ -202,26 +202,26 @@
 
 ```html
 <section id="mainSlider" class="swiper-container">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide">
-			Slide 1
-		</div>
-
-		<div class="swiper-slide">
-			Slide 2
-		</div>
-
-		<div class="swiper-slide">
-			Slide 3
-		</div>
-	</div>
-
-	<!-- Навигация -->
-	<div class="swiper-pagination"></div>
-
-	<!-- Стрелки переключения -->
-	<div class="swiper-button-next"></div>
-	<div class="swiper-button-prev"></div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            Slide 1
+        </div>
+    
+        <div class="swiper-slide">
+            Slide 2
+        </div>
+    
+        <div class="swiper-slide">
+            Slide 3
+        </div>
+    </div>
+    
+    <!-- Навигация -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- Стрелки переключения -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </section>
 ```
 
@@ -266,25 +266,25 @@
         </li>
     </ul>
 
-	<div class="tabContent">
-		<div 
+    <div class="tabContent">
+        <div 
             role="tabpanel" 
             class="tab-pane fade show active" 
             id="tab1" 
             aria-labelledby="home-tab"
-		>
-			...
-		</div>
-
-		<div 
+        >
+            ...
+        </div>
+        
+        <div 
             role="tabpanel" 
             class="tab-pane fade" 
             id="tab2" 
             aria-labelledby="home-tab"
-		>
-			...
-		</div>
-	</div>
+        >
+            ...
+        </div>
+    </div>
 </div>
 ```
 
@@ -295,19 +295,19 @@
 
 ```html
 <div class="dropdown">
-	<button 
+    <button 
         class="but dropdownBut" 
         data-toggle="dropdown" 
         aria-haspopup="true" 
         aria-expanded="false" 
         data-display="static"
-	>
-		Выпадающее меню
-	</button>
-	
-	<div class="dropdown-menu">
-		Контент
-	</div>
+    >
+        Выпадающее меню
+    </button>
+    
+    <div class="dropdown-menu">
+        Контент
+    </div>
 </div>
 ```
 
@@ -317,7 +317,7 @@
 
 ```html
 <div class="dropdown topMenuWrap"> 
-	<button 
+    <button 
         type="button" 
         class="but dropdownBut"
         data-toggle="dropdown" 
@@ -329,7 +329,7 @@
             <span></span> 
             <span></span> 
         </span>
-	</button> 
+    </button> 
     
     <div class="dropdown-menu">
         <nav class="topMenu"> 
@@ -357,7 +357,6 @@
 >
     Обратная связь
 </button>
-
 
 <div
     class="modal fade"
@@ -403,9 +402,9 @@
 
 ```html
 <div class="counter">
-	<button type="button" class="but counterBut dec">-</button>
-	<input type="text" class="field" value="1" data-min="1" data-max="20">
-	<button type="button" class="but counterBut inc">+</button>
+    <button type="button" class="but counterBut dec">-</button>
+    <input type="text" class="field" value="1" data-min="1" data-max="20">
+    <button type="button" class="but counterBut inc">+</button>
 </div>
 ```
 
@@ -415,10 +414,10 @@
 
 ```html
 <nav class="breadcrumbs">
-	<ul class="list listFlex">
-		<li><a href="/">Главная</a></li>
-		<li class="active><a href="#">Раздел</a></li>
-	</ul>
+    <ul class="list listFlex">
+        <li><a href="/">Главная</a></li>
+        <li class="active><a href="#">Раздел</a></li>
+    </ul>
 </nav>
 ```
 
@@ -428,17 +427,17 @@
 
 ```html
 <nav class="pager">
-	<ul class="list listFlex">
-		<li><a href="#" class="pagerArrows pagerPrev">Назад</a></li>
-		<li><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li class="active"><a href="">4</a></li>
-		<li class="pagerDots"><a href="#">...</a></li>
-		<li><a href="#">10</a></li>
-		<li><a href="#">11</a></li>
-		<li><a href="#" class="pagerArrows pagerNext">Вперёд</a></li>
-	</ul>
+    <ul class="list listFlex">
+        <li><a href="#" class="pagerArrows pagerPrev">Назад</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li class="active"><a href="">4</a></li>
+        <li class="pagerDots"><a href="#">...</a></li>
+        <li><a href="#">10</a></li>
+        <li><a href="#">11</a></li>
+        <li><a href="#" class="pagerArrows pagerNext">Вперёд</a></li>
+    </ul>
 </nav>
 ```
 
@@ -456,8 +455,8 @@
 
 ```html
 <form action="#" class="search" method="post">
-	<input type="search" class="field" placeholder="Поиск по сайту..." required>
-	<input type="submit" class="but" value="Искать">
+    <input type="search" class="field" placeholder="Поиск по сайту..." required>
+    <input type="submit" class="but" value="Искать">
 </form>
 ```
 
@@ -475,7 +474,7 @@
 
 ```html
 <div class="mediaBox">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/3FVplCff1co" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3FVplCff1co" frameborder="0" allowfullscreen=""></iframe>
 </div>
 ```
 
