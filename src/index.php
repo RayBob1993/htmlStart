@@ -14,15 +14,15 @@
 		<link rel="shortcut icon" href="app/img/ico/favicon.ico">
 	</head>
 	<body>
-        <?php include_once('app/components/header.php')?>
+        	<?php include_once('app/components/header.php')?>
 
 		<main class="main">
 
 		</main>
 
-        <?php include_once('app/components/footer.php')?>
-        <?php include_once('app/components/modals/feedback.php')?>
-        <?php include_once('app/img/ico/icons.svg')?>
+		<?php include_once('app/components/footer.php')?>
+		<?php include_once('app/components/modals/feedback.php')?>
+		<?php include_once('app/img/ico/icons.svg')?>
 
 		<script src="app/js/libs/jquery-3.2.1.min.js"></script>
 		<script src="app/js/plugins/bootstrap.min.js"></script>
