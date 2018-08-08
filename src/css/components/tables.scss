@@ -1,17 +1,26 @@
 table {
-  border-collapse: collapse;
-  border-spacing: 0
+	border-collapse: collapse;
+	border-spacing: 0
 }
 
 td,
-th {padding: 0}
+th {
+	padding: 0
+}
 
-.table {width: 100%;}
+.table {
+	width: 100%;
+}
 
-.tlf {table-layout: fixed;}
+.tlf {
+	table-layout: fixed;
+}
 
 /* Базовая таблица */
-.tableBasic {}
+.tableBasic {
+}
 
 /* Полосатая таблица */
-.tableStriped > tbody > tr:nth-of-type(even) {background: #ccc;}
+.tableStriped > tbody > tr:nth-of-type(even) {
+	background: #ccc;
+}

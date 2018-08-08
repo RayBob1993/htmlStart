@@ -1,19 +1,19 @@
 .nav-tabs {
-  a {
-    display: block;
+	a {
+		display: block;
 
-    text-decoration: none;
+		text-decoration: none;
 
-    transition: $transitionBase;
+		transition: $transitionBase;
 
-    &.active {
-      text-decoration: underline;
-    }
-  }
+		&.active {
+			text-decoration: underline;
+		}
+	}
 }
 
 .tab-pane {
-  &:not(.active) {
-    display: none;
-  }
+	&:not(.active) {
+		display: none;
+	}
 }

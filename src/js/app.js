@@ -17,7 +17,7 @@
 		},
 
 		swiperInit: function () {
-			
+
 			var mySwiper = new Swiper('#reviewsSlider', {
 				pagination: {
 					el: '.swiper-pagination',
@@ -43,7 +43,7 @@
 
 		fancyboxInit: function () {
 
-			if (typeof($.fn.fancybox) !== "undefined"){
+			if (typeof($.fn.fancybox) !== "undefined") {
 				$('[data-fancybox]').fancybox({
 					image: {
 						protect: true
@@ -93,9 +93,9 @@
 				type: form.attr('method') || 'POST',
 				dataType: 'html',
 				data: form.serialize()
-			}).done(function(result) {
+			}).done(function (result) {
 
-				if(result && (result === 'ok')){
+				if (result && (result === 'ok')) {
 					console.log(result);
 
 					form.trigger('reset');
@@ -148,17 +148,17 @@
 				el = $(selector).find('a'),
 				subMenus = el.next();
 
-			function init(event){
+			function init (event) {
 				var
 					subMenu = $(this).next(),
 					parent = $(this).parent();
 
-				if(subMenu.length){
+				if (subMenu.length) {
 					event.preventDefault();
 					event.stopPropagation();
 				}
 
-				if(!subMenu.is(':visible')){
+				if (!subMenu.is(':visible')) {
 					el
 						.parent()
 						.removeClass('act');
@@ -178,24 +178,24 @@
 			}
 
 			$(window).on('load resize', function () {
-                var winWidth = $(this).innerWidth();
+				var winWidth = $(this).innerWidth();
 
-                if (winWidth <= 819) {
-                    el
-                        .unbind('click')
-                        .on('click', init);
+				if (winWidth <= 819) {
+					el
+						.unbind('click')
+						.on('click', init);
 				} else {
-                    el.unbind('click');
-                    subMenus.attr('style', '');
+					el.unbind('click');
+					subMenus.attr('style', '');
 				}
-            });
+			});
 
 			// Установим класс на родителя, если есть вложенное меню
 			el.each(function () {
 				var subMenu = $(this).next();
 				var parent = $(this).parent();
 
-				if(subMenu.length){
+				if (subMenu.length) {
 					parent.addClass('subMenu')
 				}
 			});
@@ -240,32 +240,32 @@
 				var max = el.data('max') || false;
 				// Кнопка уменьшения кол-ва
 				var dec = el.prev('.dec');
-					// Кнопка увеличения кол-ва
+				// Кнопка увеличения кол-ва
 				var inc = el.next('.inc');
 
 				function init (el) {
-					if(!el.attr('disabled')){
+					if (!el.attr('disabled')) {
 						dec.on('click', decrement);
 						inc.on('click', increment);
 					}
 
 					// Уменьшим значение
-					function decrement() {
+					function decrement () {
 						var value = parseInt(el.val());
 						value--;
 
-						if(!min || value >= min) {
+						if (!min || value >= min) {
 							el.val(value + prfx);
 						}
 					}
 
 					// Увеличим значение
-					function increment() {
+					function increment () {
 						var value = parseInt(el.val());
 
 						value++;
 
-						if(!max || value <= max) {
+						if (!max || value <= max) {
 							el.val(value++ + prfx);
 						}
 					}
@@ -277,7 +277,7 @@
 				});
 			}
 
-			if(field.length){
+			if (field.length) {
 				field.each(function () {
 					fieldCount($(this))
 				});

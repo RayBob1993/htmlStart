@@ -1,23 +1,25 @@
-.dropdown {position: relative;}
+.dropdown {
+	position: relative;
+}
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
 
-  visibility: hidden;
-  opacity: 0;
+	visibility: hidden;
+	opacity: 0;
 
-  transition: $transitionBase;
+	transition: $transitionBase;
 
-  transform: translateY(20px);
+	transform: translateY(20px);
 
-  &.show {
-    visibility: visible;
-    opacity: 1;
+	&.show {
+		visibility: visible;
+		opacity: 1;
 
-    -webkit-transform: none;
-    transform: none;
-  }
+		-webkit-transform: none;
+		transform: none;
+	}
 }

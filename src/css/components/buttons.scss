@@ -1,67 +1,71 @@
 .but {
-  position: relative;
+	position: relative;
 
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-  border: 0;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	border: 0;
 
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	line-height: normal;
 
-  border-radius: 0;
-  background: none;
-  outline: 0;
+	border-radius: 0;
+	background: none;
+	outline: 0;
 
-  transition: $transitionBase;
+	transition: $transitionBase;
 
-  user-select: none;
+	user-select: none;
 
-  touch-action: manipulation;
+	touch-action: manipulation;
 
-  appearance: none;
+	appearance: none;
 
-  &[disabled] {
-    pointer-events: none;
-    cursor: not-allowed;
-    opacity: .65;
-  }
+	&[disabled] {
+		pointer-events: none;
+		cursor: not-allowed;
+		opacity: .65;
+	}
 
-  /* Текст кнопки */
-  .butText {
-    display: inline-block;
-    vertical-align: middle;
+	/* Текст кнопки */
+	.butText {
+		display: inline-block;
+		vertical-align: middle;
 
-    white-space: normal;
-    line-height: 100%;
-  }
-  
-  /* ============================= Размеры кнопок */
-  &.butBlock {
-    display: block;
-    width: 100%;
-  }
+		white-space: normal;
+		line-height: 100%;
+	}
 
-  /* Очень большая */
-  &.butLarge {}
+	/* ============================= Размеры кнопок */
+	&.butBlock {
+		display: block;
+		width: 100%;
+	}
 
-  /* Средняя */
-  &.butMedium {}
+	/* Очень большая */
+	&.butLarge {
+	}
 
-  /* Маленькая */
-  &.butSmall {}
+	/* Средняя */
+	&.butMedium {
+	}
 
-  /* Очень маленькая */
-  &.butTiny {}
+	/* Маленькая */
+	&.butSmall {
+	}
 
-  /* ============================= Закругление */
-  &.butRound {
-    border-radius: 100px;
-  }
+	/* Очень маленькая */
+	&.butTiny {
+	}
+
+	/* ============================= Закругление */
+	&.butRound {
+		border-radius: 100px;
+	}
 
 }
 
@@ -69,35 +73,41 @@
 /* Первичная кнопка */
 .butPrimary {
 
-  &:hover {}
+	&:hover {
+	}
 
-  &.active,
-  &:active {}
+	&.active,
+	&:active {
+	}
 }
-
-
 
 /* Вторичная */
 .butSecondary {
 
-  &:hover {}
+	&:hover {
+	}
 
-  &.active,
-  &:active {}
+	&.active,
+	&:active {
+	}
 }
 
 /* Зелёная кнопка */
 .butSuccess {
-  &:hover {}
+	&:hover {
+	}
 
-  &.active,
-  &:active {}
+	&.active,
+	&:active {
+	}
 }
 
 /* Кнопка ссылка */
 .butLink {
-  &:hover {}
+	&:hover {
+	}
 
-  &.active,
-  &:active {}
+	&.active,
+	&:active {
+	}
 }

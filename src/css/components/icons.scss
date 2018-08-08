@@ -1,60 +1,59 @@
 #iconsSvg {
-  display: none;
+	display: none;
 }
 
 .ico {
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
 
-  fill: #000;
+	fill: #000;
 
-  transition: $transitionBase;
+	transition: $transitionBase;
 
-  &.icoLeft {
-    margin-right: 5px;
-  }
+	&.icoLeft {
+		margin-right: 5px;
+	}
 
-  &.icoRight {
-    margin-left: 5px;
-  }
-
+	&.icoRight {
+		margin-left: 5px;
+	}
 }
 
 /* Иконка меню */
 .icoMenu {
-  display: inline-block;
-  vertical-align: middle;
-  width: 25px;
-  height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 16px;
 
-  span {
-    display: block;
-    height: 2px;
+	span {
+		display: block;
+		height: 2px;
 
-    background-color: #000;
+		background-color: #000;
 
-    transition: $transitionBase;
+		transition: $transitionBase;
 
-    &:nth-child(2) {
-      margin: 5px 0;
-    }
-  }
+		&:nth-child(2) {
+			margin: 5px 0;
+		}
+	}
 
-  .show & {
-    span {
-      &:first-child {
-        transform: translateY(7px) rotate(45deg);
-      }
+	.show & {
+		span {
+			&:first-child {
+				transform: translateY(7px) rotate(45deg);
+			}
 
-      &:nth-child(2) {
-        opacity: 0;
-      }
+			&:nth-child(2) {
+				opacity: 0;
+			}
 
-      &:last-child {
-        transform: translateY(-7px) rotate(-45deg);
-      }
-    }
-  }
+			&:last-child {
+				transform: translateY(-7px) rotate(-45deg);
+			}
+		}
+	}
 }

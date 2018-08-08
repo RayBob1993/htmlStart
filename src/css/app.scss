@@ -9,13 +9,13 @@ body {
 
 /* ============================ Шапка */
 .header {
-	
+
 }
 
 /* ============================ Логотип */
 .logo {
 	display: block;
-	
+
 	text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ body {
 	}
 }
 
-/* Уровень 1 */ 
+/* Уровень 1 */
 .topMenu {
 	.level1 {
 		> li {
@@ -177,15 +177,15 @@ body {
 /* ============================ Левое меню */
 .leftMenu a {
 	display: block;
-	
+
 	text-decoration: none;
 
 	transition: $transitionBase;
 }
 
-/* Уровень 1 */ 
+/* Уровень 1 */
 .leftMenu .level1 > li > a {
-	
+
 }
 
 .leftMenu .level1 > li:hover > a,
@@ -200,25 +200,26 @@ body {
 }
 
 /* Заголовок страницы */
-.pageTitle {}
+.pageTitle {
+}
 
 /* ============================ Подвал */
 .footer {
-	
+
 }
 
 /* ============================ Нижнее меню */
 .bottomMenu a {
 	display: block;
-	
+
 	text-decoration: none;
 
 	transition: $transitionBase;
 }
 
-/* Уровень 1 */ 
+/* Уровень 1 */
 .bottomMenu .level1 > li > a {
-	
+
 }
 
 .bottomMenu .level1 > li:hover > a,

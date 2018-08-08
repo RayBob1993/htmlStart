@@ -1,17 +1,20 @@
-.pagination {}
+.pagination {
+	a {
+		display: block;
 
-.pagination a {
-  display: block;
+		text-decoration: none;
 
-  text-decoration: none;
+		transition: $transitionBase;
 
-  transition: $transitionBase;
+		&.pagePrev {}
+		&.pageNext {}
+	}
 }
 
-.paginationArrows {}
+.paginationArrows {
 
-.pagination a.pagePrev {}
-.pagination a.pageNext {}
+}
 
 .pagination li:hover > a:not(.paginationArrows),
-.pagination li.active > a:not(.paginationArrows) {}
+.pagination li.active > a:not(.paginationArrows) {
+}

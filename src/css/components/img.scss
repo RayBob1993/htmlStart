@@ -1,24 +1,24 @@
 img {
-  border: 0;
-  height: auto;
-  max-width: 100%;
-  display: inline-block;
-  vertical-align: middle;
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .imgView {
-  display: flex;
+	display: flex;
 
-  align-items: center;
+	align-items: center;
 
-  justify-content: center;
+	justify-content: center;
 
-  text-align: center;
-  text-decoration: none;
+	text-align: center;
+	text-decoration: none;
 
-  overflow: hidden;
-}
+	overflow: hidden;
 
-.imgView img {
-  max-height: 100%;
+	img {
+		max-height: 100%;
+	}
 }

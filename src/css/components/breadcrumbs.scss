@@ -1,14 +1,16 @@
-.breadcrumbs {}
+.breadcrumbs {
+}
 
 .breadcrumbs li + li:before {
-  padding: 0 5px;
+	padding: 0 5px;
 
-  content: '/';
+	content: '/';
 }
 
 .breadcrumbs a {
-  transition: $transitionBase;
+	transition: $transitionBase;
 }
 
 .breadcrumbs li:hover > a,
-.breadcrumbs li.active > a {}
+.breadcrumbs li.active > a {
+}

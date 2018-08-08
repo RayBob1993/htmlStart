@@ -7,7 +7,9 @@ html {
 
 *,
 *:before,
-*:after {box-sizing: inherit;}
+*:after {
+	box-sizing: inherit;
+}
 
 body {
 	margin: 0;
@@ -15,7 +17,7 @@ body {
 	color: #393938;
 	line-height: 1.42857143;
 	font-family: $fontDefault;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-touch-callout: none;
 
 	-webkit-font-smoothing: antialiased;
@@ -31,7 +33,9 @@ a {
 
 a:active,
 a:hover,
-a:focus {outline: 0}
+a:focus {
+	outline: 0
+}
 
 article,
 aside,
@@ -44,7 +48,9 @@ hgroup,
 main,
 nav,
 section,
-summary {display: block;}
+summary {
+	display: block;
+}
 
 audio,
 canvas,
@@ -55,7 +61,9 @@ video {
 }
 
 [hidden],
-template {display: none}
+template {
+	display: none
+}
 
 audio,
 canvas,
@@ -69,10 +77,14 @@ audio:not([controls]) {
 	height: 0;
 }
 
-svg:not(:root) {overflow: hidden}
+svg:not(:root) {
+	overflow: hidden
+}
 
 form,
-figure {margin: 0}
+figure {
+	margin: 0
+}
 
 hr {
 	box-sizing: content-box;
@@ -82,8 +94,13 @@ hr {
 	overflow: visible;
 }
 
-p {margin-top: 0}
-p:empty {display: none}
+p {
+	margin-top: 0
+}
+
+p:empty {
+	display: none
+}
 
 code,
 kbd,
@@ -109,7 +126,9 @@ select {
 }
 
 button,
-select {text-transform: none}
+select {
+	text-transform: none
+}
 
 button,
 [type="button"],
@@ -125,7 +144,9 @@ html input[type="button"],
 	-webkit-appearance: button;
 }
 
-[disabled] {cursor: default}
+[disabled] {
+	cursor: default
+}
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -163,5 +184,10 @@ legend {
 	padding: 0
 }
 
-textarea {overflow: auto}
-optgroup {font-weight: 700}
+textarea {
+	overflow: auto
+}
+
+optgroup {
+	font-weight: 700
+}
