@@ -7,6 +7,14 @@
 	margin: 0 auto;
 	padding-left: 10px;
 	padding-right: 10px;
+	
+	&.isSmall {
+		max-width: 960px;
+	}
+	
+	&.isLarge {
+		max-width: 1366px;
+	}
 }
 
 .row {
