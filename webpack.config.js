@@ -1,93 +1,116 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const fs = require('fs');
+
+function generateHtmlPlugins (templateDir) {
+	const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+
+	return templateFiles.map(item => {
+		const parts = item.split('.');
+		const name = parts[0];
+		const extension = parts[1];
+		return new HtmlWebpackPlugin({
+			filename: `${name}.html`,
+			template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+			inject: false,
+			minify: false
+		})
+	})
+}
+
+const htmlPlugins = generateHtmlPlugins('./pages');
 
 module.exports = {
 	entry: [
-		'./src/css/index.scss'
+		'./css/index.scss'
 	],
 	output: {
-		path: path.resolve(__dirname, 'src/app')
+		path: path.resolve(__dirname, 'dist')
 	},
 	devtool: "source-map",
 	module: {
 		rules: [
 			{
 				test: /\.(sass|scss)$/,
-				include: path.resolve(__dirname, 'src/css'),
-				use: ExtractTextPlugin.extract({
-					use: [
-						{
-							loader: "css-loader",
-							options: {
-								sourceMap: true,
-								minimize: true,
-								url: false
-							}
-						},
-						{
-							loader: "resolve-url-loader"
-						},
-						{
-							loader: 'postcss-loader',
-							options: {
-								plugins: [
-									autoprefixer({
-										browsers: ['ie >= 10', 'last 4 version']
-									})
-								],
-								sourceMap: true
-							}
-						},
-						{
-							loader: "sass-loader",
-							options: {
-								sourceMap: true
-							}
-						},
-					]
-				})
+				include: path.resolve(__dirname, 'css'),
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {}
+					},
+					{
+						loader: "css-loader",
+						options: {
+							sourceMap: true,
+							url: false
+						}
+					},
+					{
+						loader: 'postcss-loader',
+						options: {
+							ident: 'postcss',
+							sourceMap: true,
+							plugins: () => [
+								autoprefixer({
+									browsers: ['ie >= 10', 'last 4 version']
+								}),
+								require('cssnano')({
+									preset: ['default', {
+										discardComments: {
+											removeAll: true,
+										},
+									}]
+								})
+							]
+						}
+					},
+					{
+						loader: "sass-loader",
+						options: {
+							sourceMap: true
+						}
+					}
+				]
 			},
 			{
-				test: /\.(jpe?g|png|gif|svg)$/i,
-				loaders: [
-					'url-loader?limit=10000&name=images/[name].[hash].[ext]',
-				],
-			},
-			{
-				test: /\.(eot|ttf|woff|woff2)$/,
-				loader: 'file-loader?name=fonts/[name].[ext]',
+				test: /\.html$/,
+				include: path.resolve(__dirname, 'components'),
+				use: ['raw-loader']
 			}
 		]
 	},
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		compress: true,
+		port: 9000,
+		open: true,
+		overlay: {
+			warnings: true,
+			errors: true
+		}
+	},
 	plugins: [
-		new CleanWebpackPlugin(['src/app']),
-		new ExtractTextPlugin({
-			filename: './css/style.bundle.css',
-			allChunks: true
+		new MiniCssExtractPlugin({
+			filename: "./css/style.bundle.css"
 		}),
 		new CopyWebpackPlugin([
 			{
-				from: './src/fonts',
+				from: './fonts',
 				to: './fonts'
 			},
 			{
-				from: './src/img',
+				from: './img',
 				to: './img'
 			},
 			{
-				from: './src/js',
+				from: './js',
 				to: './js'
-			},
-			{
-				from: './src/components',
-				to: './components'
 			}
 		]),
 		new ProgressBarPlugin()
-	]
+	].concat(htmlPlugins)
 };

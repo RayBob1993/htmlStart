@@ -1,7 +1,7 @@
 ### Node.js
 *.log
 node_modules/
-src/app
+dist
 package-lock.json
 
 # Windows image file caches
