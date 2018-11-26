@@ -76,10 +76,14 @@ module.exports = {
 					}
 				]
 			},
-			{
-				test: /\.html$/,
-				include: path.resolve(__dirname, 'components'),
-				use: ['raw-loader']
+			{ 
+				test: /\.handlebars/, 
+				loader: "handlebars-loader",
+				query: {
+					partialDirs: [
+						path.join(__dirname, 'components')
+					]
+				}
 			}
 		]
 	},
