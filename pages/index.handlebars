@@ -12,14 +12,14 @@
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
 	</head>
 	<body>
-		<%= _.template(require('./../components/header.html'))() %>
+		{{> header }}
 
 		<main class="main">
 
 		</main>
-
-		<%= _.template(require('./../components/footer.html'))() %>
-		<%= _.template(require('./../components/icons.html'))() %>
+		
+		{{> footer }}
+		{{> icons }}
 
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="js/plugins/bootstrap.min.js"></script>
