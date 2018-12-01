@@ -30,12 +30,16 @@
 	outline: 0;
 	background-color: #fff;
 	border-radius: 0;
-}
-
-.field:not(select) {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+	
+	&:not(select) {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	
+	&:hover {}
+	
+	&:focus {}
 }
 
 .field::-webkit-input-placeholder {
@@ -56,12 +60,6 @@
 .field:-ms-input-placeholder {
 	text-overflow: ellipsis;
 	color: #aaa;
-}
-
-.field:hover {
-}
-
-.field:focus {
 }
 
 .field:focus::-webkit-input-placeholder {
@@ -85,14 +83,14 @@
 	position: relative;
 
 	display: inline-block;
-}
-
-.checkbox input {
-	position: absolute;
-	overflow: hidden;
-	height: 0;
-	width: 0;
-	visibility: hidden;
+	
+	input {
+		position: absolute;
+		overflow: hidden;
+		height: 0;
+		width: 0;
+		visibility: hidden;
+	}
 }
 
 .checkboxText {
@@ -100,24 +98,24 @@
 	padding-left: 30px;
 
 	cursor: pointer;
-}
+	
+	&:before {
+		position: absolute;
+		top: 2px;
+		left: 0;
 
-.checkboxText:before {
-	position: absolute;
-	top: 2px;
-	left: 0;
+		width: 17px;
+		height: 17px;
 
-	width: 17px;
-	height: 17px;
+		background-color: #fff;
 
-	background-color: #fff;
+		color: #000;
+		text-align: center;
+		line-height: 17px;
+		font-weight: bold;
 
-	color: #000;
-	text-align: center;
-	line-height: 17px;
-	font-weight: bold;
-
-	content: '';
+		content: '';
+	}
 }
 
 .checkbox input:checked + .checkboxText:before {
