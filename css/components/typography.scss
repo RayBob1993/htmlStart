@@ -60,6 +60,14 @@ h6 > a {
 	text-decoration: none;
 }
 
+p {
+	margin-top: 0
+		
+	&:empty {
+		display: none
+	}
+}
+
 sub,
 sup {
 	position: relative;
@@ -106,10 +114,10 @@ a {
 }
 
 // Выравнивание
-.isTextCenter {
+.textCenter {
 	text-align: center;
 }
 
-.isTextRight {
+.textRight {
 	text-align: right;
 }
