@@ -8,9 +8,7 @@ img {
 
 .imgView {
 	display: flex;
-
 	align-items: center;
-
 	justify-content: center;
 
 	text-align: center;
@@ -21,4 +19,8 @@ img {
 	img {
 		max-height: 100%;
 	}
+}
+
+.imgCover {
+	background: center / cover no-repeat;
 }

@@ -73,14 +73,6 @@ body {
 }
 
 .topMenu {
-	a {
-		display: block;
-
-		text-decoration: none;
-
-		transition: $transitionBase;
-	}
-
 	@media (max-width: $mediamd) {
 		height: 100%;
 		width: 280px;
@@ -96,10 +88,8 @@ body {
 			transform: none;
 		}
 	}
-}
 
-/* Уровень 1 */
-.topMenu {
+	/* Уровень 1 */
 	.level1 {
 		> li {
 			> a {
@@ -126,6 +116,7 @@ body {
 		}
 	}
 
+	/* Уровень 2 */
 	.level2 {
 		position: absolute;
 		top: 100%;
@@ -175,22 +166,22 @@ body {
 }
 
 /* ============================ Левое меню */
-.leftMenu a {
-	display: block;
+.sidebarMenu {
+	/* Уровень 1 */
+	.level1 {
+		> li {
+			> a {
 
-	text-decoration: none;
+			}
 
-	transition: $transitionBase;
-}
-
-/* Уровень 1 */
-.leftMenu .level1 > li > a {
-
-}
-
-.leftMenu .level1 > li:hover > a,
-.leftMenu .level1 > li.active > a {
-	text-decoration: underline;
+			&:hover,
+			&.active {
+				> a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
 
 /* ============================ Контент */
@@ -209,20 +200,20 @@ body {
 }
 
 /* ============================ Нижнее меню */
-.bottomMenu a {
-	display: block;
+.bottomMenu {
+	/* Уровень 1 */
+	.level1 {
+		> li {
+			> a {
 
-	text-decoration: none;
+			}
 
-	transition: $transitionBase;
-}
-
-/* Уровень 1 */
-.bottomMenu .level1 > li > a {
-
-}
-
-.bottomMenu .level1 > li:hover > a,
-.bottomMenu .level1 > li.active > a {
-	text-decoration: underline;
+			&:hover,
+			&.active {
+				> a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }

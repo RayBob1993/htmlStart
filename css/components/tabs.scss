@@ -1,11 +1,5 @@
 .nav-tabs {
 	a {
-		display: block;
-
-		text-decoration: none;
-
-		transition: $transitionBase;
-
 		&.active {
 			text-decoration: underline;
 		}

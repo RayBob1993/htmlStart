@@ -235,10 +235,6 @@
 }
 
 @media (max-width: $mediaxlg) {
-	.hiddenxlg {
-		display: none !important
-	}
-
 	.rowxlgCenter {
 		justify-content: center;
 	}
@@ -366,10 +362,6 @@
 }
 
 @media (max-width: $medialg) {
-	.hiddenlg {
-		display: none !important
-	}
-
 	.rowlgCenter {
 		justify-content: center;
 	}
@@ -497,10 +489,6 @@
 }
 
 @media (max-width: $mediamd) {
-	.hiddenmd {
-		display: none !important
-	}
-
 	.rowmdCenter {
 		justify-content: center;
 	}
@@ -628,15 +616,12 @@
 }
 
 @media (max-width: $mediasm) {
-	.hiddensm {
-		display: none !important
-	}
-
 	.rowsmCenter {
 		justify-content: center;
 	}
 
 	.colsmDefault {
+		flex: 0 0 auto;
 		max-width: none;
 	}
 
@@ -758,10 +743,6 @@
 }
 
 @media (max-width: $mediaxsm) {
-	.hiddenxsm {
-		display: none !important
-	}
-
 	.rowxsmCenter {
 		justify-content: center;
 	}
