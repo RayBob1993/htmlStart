@@ -358,8 +358,8 @@
     </button> 
     
     <div class="dropdown-menu">
-        <nav class="topMenu"> 
-            <ul class="list listFlex">
+        <nav class="nav topMenu"> 
+            <ul class="list listFlex level1">
                 <li class="active"><a href="#">Главная</a></li>
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -452,7 +452,7 @@
 <h3 id="pager">Переключатель страниц</h3>
 
 ```html
-<nav class="pager">
+<nav class="nav pager">
     <ul class="list listFlex">
         <li><a href="#" class="pagerArrows pagerPrev">Назад</a></li>
         <li><a href="#">1</a></li>
