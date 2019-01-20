@@ -1,22 +1,41 @@
 (function ($) {
 
 	var App = function () {
+		// Точки для адаптивности
+		this.mq = {
+			xlg: 1319,
+			lg: 1069,
+			md: 819,
+			sm: 569,
+			xsm: 420
+		};
+
+		// Формат цен
+		this.priceFormat = wNumb({
+			mark: '',
+			thousand: ' '
+		});
+
+		// На какой позиции скролла показать фиксированные элементы
+		this.fixedElementsVisible = 200;
+
 		this.init();
 	};
 
 	App.prototype = {
 		init: function () {
-
 			this
 				.swiperInit()
 				.fancyboxInit()
 				.inputTelMaskInit()
-				.counter('.fieldCount')
+				.counter()
 				.accordion('.topMenu');
-
 		},
 
 		swiperInit: function () {
+			if (typeof window.Swiper === 'undefined') {
+				return this;
+			}
 
 			var mySwiper = new Swiper('#reviewsSlider', {
 				pagination: {
@@ -38,11 +57,9 @@
 			});
 
 			return this;
-
 		},
 
 		fancyboxInit: function () {
-
 			if (typeof($.fn.fancybox) !== "undefined") {
 				$('[data-fancybox]').fancybox({
 					image: {
@@ -56,21 +73,17 @@
 			}
 
 			return this;
-
 		},
 
 		inputTelMaskInit: function () {
-
 			if (typeof($.fn.mask) !== "undefined") {
 				$('input[type="tel"]').mask('7 (999) 999 99 99');
 			}
 
 			return this;
-
 		},
 
 		scrollTo: function () {
-
 			var scrollTo = $('[data-scroll-to]');
 
 			scrollTo.on('click', function () {
@@ -143,7 +156,7 @@
 		},
 
 		accordion: function (selector) {
-
+			var self = this;
 			var
 				el = $(selector).find('a'),
 				subMenus = el.next();
@@ -180,7 +193,7 @@
 			$(window).on('load resize', function () {
 				var winWidth = $(this).innerWidth();
 
-				if (winWidth <= 819) {
+				if (winWidth <= self.mq.md) {
 					el
 						.unbind('click')
 						.on('click', init);
@@ -204,7 +217,6 @@
 		},
 
 		isMobileDevice: function () {
-
 			var device = {
 				Android: function () {
 					return navigator.userAgent.match(/Android/i)
@@ -229,9 +241,10 @@
 			return device.any();
 		},
 
-		counter: function (selector, prfx) {
+		counter: function (prfx) {
+			var counter = $('.counter');
 			var prfx = prfx || '';
-			var field = $(selector);
+			var field = counter.find('.field');
 
 			function fieldCount (el) {
 				// Мин. значение
@@ -282,6 +295,47 @@
 					fieldCount($(this))
 				});
 			}
+
+			return this;
+		},
+
+		rangeSlider: function () {
+			var rangeSliderGroup = $('.rangeSliderGroup');
+			var sliderDefaultOptions = {
+				connect: true,
+				format: this.priceFormat
+			};
+
+			if (typeof window.noUiSlider === 'undefined') {
+				return this;
+			}
+
+			rangeSliderGroup.each(function (index, el) {
+				var group = $(el);
+				var rangeSliderMin = group.find('.rangeSliderMin');
+				var rangeSliderMax = group.find('.rangeSliderMax');
+				var slider = group.find('.rangeSlider');
+				var sliderUserOption = slider.data('options');
+				var sliderNode = slider[0];
+
+				noUiSlider.create(sliderNode, $.extend(sliderDefaultOptions, sliderUserOption, true));
+
+				sliderNode.noUiSlider.on('update', function (values, handle) {
+					var value = values[handle];
+
+					handle
+						? rangeSliderMax.val(value)
+						: rangeSliderMin.val(value)
+				});
+
+				rangeSliderMin.on('change', function () {
+					sliderNode.noUiSlider.set([$(this).val(), null]);
+				});
+
+				rangeSliderMax.on('change', function () {
+					sliderNode.noUiSlider.set([null, $(this).val()]);
+				});
+			});
 
 			return this;
 		}
