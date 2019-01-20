@@ -1,11 +1,5 @@
 .pagination {
 	a {
-		display: block;
-
-		text-decoration: none;
-
-		transition: $transitionBase;
-
 		&.pagePrev {}
 		&.pageNext {}
 	}
