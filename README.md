@@ -17,6 +17,7 @@
 * <a href="#buttons">Кнопки</a>
 * <a href="#imgGalery">Галерея изображений</a>
 * <a href="#sliders">Слайдер</a>
+* <a href="#rangeSlider">Ползунок диапазона цен</a>
 * <a href="#grid">Flexbox сетка</a>
 * <a href="#tabs">Вкладки</a>
 * <a href="#dropdowns">Дропдауны</a>
@@ -218,6 +219,37 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </section>
+```
+
+<a href="#">наверх</a>
+
+<h3 id="rangeSlider">Ползунок диапазона цен</h3>
+Для начала, необходимо его подключить 
+* [Ползунок диапазона чисел/цен](https://refreshless.com/nouislider/)
+
+```html
+<div class="rangeSliderGroup">
+    <div class="row">
+        <div class="col">
+            <input type="text" class="field rangeSliderMin">
+        </div>
+
+        <div class="col">
+            <input type="text" class="field rangeSliderMax">
+        </div>
+    </div>
+
+    <div
+        class="rangeSlider"
+        data-options='{
+            "start": [1000, 278000],
+            "range": {
+                "min": 1000,
+                "max": 1000000
+            }
+        }'
+    ></div>
+</div>
 ```
 
 <a href="#">наверх</a>
