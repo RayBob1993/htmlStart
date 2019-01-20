@@ -225,7 +225,7 @@
 
 <h3 id="rangeSlider">Ползунок диапазона цен</h3>
 Для начала, необходимо его подключить 
-* [Ползунок диапазона чисел/цен](https://refreshless.com/nouislider/)
+[Ползунок диапазона чисел/цен](https://refreshless.com/nouislider/)
 
 ```html
 <div class="rangeSliderGroup">
