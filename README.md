@@ -17,6 +17,7 @@
 * <a href="#buttons">Кнопки</a>
 * <a href="#imgGalery">Галерея изображений</a>
 * <a href="#sliders">Слайдер</a>
+* <a href="#rangeSlider">Ползунок диапазона цен</a>
 * <a href="#grid">Flexbox сетка</a>
 * <a href="#tabs">Вкладки</a>
 * <a href="#dropdowns">Дропдауны</a>
@@ -222,6 +223,36 @@
 
 <a href="#">наверх</a>
 
+<h3 id="rangeSlider">Ползунок диапазона цен</h3>
+Для начала, необходимо его подключить https://refreshless.com/nouislider/
+
+```html
+<div class="rangeSliderGroup">
+    <div class="row">
+        <div class="col">
+            <input type="text" class="field rangeSliderMin">
+        </div>
+
+        <div class="col">
+            <input type="text" class="field rangeSliderMax">
+        </div>
+    </div>
+
+    <div
+        class="rangeSlider"
+        data-options='{
+            "start": [1000, 278000],
+            "range": {
+                "min": 1000,
+                "max": 1000000
+            }
+        }'
+    ></div>
+</div>
+```
+
+<a href="#">наверх</a>
+
 <h3 id="grid">Flexbox сетка</h3>
 
 ```html
@@ -327,8 +358,8 @@
     </button> 
     
     <div class="dropdown-menu">
-        <nav class="topMenu"> 
-            <ul class="list listFlex">
+        <nav class="nav topMenu"> 
+            <ul class="list listFlex level1">
                 <li class="active"><a href="#">Главная</a></li>
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -421,7 +452,7 @@
 <h3 id="pager">Переключатель страниц</h3>
 
 ```html
-<nav class="pager">
+<nav class="nav pager">
     <ul class="list listFlex">
         <li><a href="#" class="pagerArrows pagerPrev">Назад</a></li>
         <li><a href="#">1</a></li>
