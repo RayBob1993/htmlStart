@@ -107,7 +107,7 @@
 
 .colAuto {
 	flex: 1;
-	width: auto;
+	max-width: none;
 }
 
 .colStretch {
