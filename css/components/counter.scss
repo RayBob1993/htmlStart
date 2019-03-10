@@ -1,5 +1,7 @@
 .counter {
 	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
 	border: 1px solid #C6C6C6;
 	margin: 0 auto;
 	max-width: 100px;
