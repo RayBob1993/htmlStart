@@ -60,7 +60,7 @@
 		},
 
 		fancyboxInit: function () {
-			if (typeof($.fn.fancybox) !== "undefined") {
+			if (typeof($.fn.fancybox) !== 'undefined') {
 				$('[data-fancybox]').fancybox({
 					image: {
 						protect: true
@@ -68,7 +68,7 @@
 					youtube: {
 						controls: 0,
 						showinfo: 0
-					},
+					}
 				});
 			}
 
@@ -76,7 +76,7 @@
 		},
 
 		inputTelMaskInit: function () {
-			if (typeof($.fn.mask) !== "undefined") {
+			if (typeof($.fn.mask) !== 'undefined') {
 				$('input[type="tel"]').mask('7 (999) 999 99 99');
 			}
 
