@@ -22,6 +22,12 @@
 	}
 }
 
+@media (min-width: $mediaxsm) {
+	.hiddenxSmUp {
+		display: none!important;
+	}
+}
+
 @media (max-width: $mediaxsm) {
 	.hiddenxSmDown {
 		display: none!important;
@@ -48,12 +54,6 @@
 
 @media (max-width: $mediasm) {
 	.hiddenSmDown {
-		display: none!important;
-	}
-}
-
-@media (min-width: $mediaxsm) {
-	.hiddenxSmDown {
 		display: none!important;
 	}
 }
