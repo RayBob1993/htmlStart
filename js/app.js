@@ -217,7 +217,7 @@
 		},
 
 		isMobileDevice: function () {
-			var device = {
+			return {
 				Android: function () {
 					return navigator.userAgent.match(/Android/i)
 				},
@@ -234,11 +234,9 @@
 					return navigator.userAgent.match(/IEMobile/i)
 				},
 				any: function () {
-					return device.Android() || device.BlackBerry() || device.iOS() || device.Opera() || device.Windows()
+					return this.Android() || this.BlackBerry() || this.iOS() || this.Opera() || this.Windows()
 				}
-			};
-
-			return device.any();
+			}
 		},
 
 		counter: function (prfx) {
