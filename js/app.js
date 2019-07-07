@@ -62,13 +62,25 @@
 		fancyboxInit: function () {
 			if (typeof($.fn.fancybox) !== 'undefined') {
 				$('[data-fancybox]').fancybox({
+					backFocus: false,
 					image: {
 						protect: true
 					},
 					youtube: {
 						controls: 0,
 						showinfo: 0
-					}
+					},
+					thumbs: {
+						autoStart: true,
+						axis: 'x'
+					},
+					buttons: [
+						'slideShow',
+						'fullScreen',
+						'thumbs',
+						'zoom',
+						'close'
+					],
 				});
 			}
 
