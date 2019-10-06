@@ -90,8 +90,8 @@
 	position: relative;
 
 	flex: 0 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: $gutters;
+	padding-right: $gutters;
 	min-height: 1px;
 	max-width: 100%;
 }
