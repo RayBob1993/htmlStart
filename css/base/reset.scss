@@ -12,11 +12,17 @@ html {
 }
 
 body {
+	min-height: 100vh;
+	min-width: 320px;
+	display: flex;
+	flex-direction: column;
 	margin: 0;
+
 	font-size: 14px;
 	color: #393938;
 	line-height: 1.42857143;
 	font-family: $fontDefault;
+
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-touch-callout: none;
 
