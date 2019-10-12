@@ -60,8 +60,9 @@
 		},
 
 		fancyboxInit: function () {
-			if (typeof($.fn.fancybox) !== "undefined") {
+			if (typeof($.fn.fancybox) !== 'undefined') {
 				$('[data-fancybox]').fancybox({
+					backFocus: false,
 					image: {
 						protect: true
 					},
@@ -69,6 +70,17 @@
 						controls: 0,
 						showinfo: 0
 					},
+					thumbs: {
+						autoStart: true,
+						axis: 'x'
+					},
+					buttons: [
+						'slideShow',
+						'fullScreen',
+						'thumbs',
+						'zoom',
+						'close'
+					],
 				});
 			}
 
@@ -76,7 +88,7 @@
 		},
 
 		inputTelMaskInit: function () {
-			if (typeof($.fn.mask) !== "undefined") {
+			if (typeof($.fn.mask) !== 'undefined') {
 				$('input[type="tel"]').mask('7 (999) 999 99 99');
 			}
 
@@ -87,7 +99,7 @@
 			var scrollTo = $('[data-scroll-to]');
 
 			scrollTo.on('click', function () {
-				var target = $($(this).attr('href'));
+				var target = $($(this).attr('href') || scrollTo.data('scroll-to'));
 				var offset = target.offset().top;
 
 				$('html, body').animate({
@@ -217,7 +229,7 @@
 		},
 
 		isMobileDevice: function () {
-			var device = {
+			return {
 				Android: function () {
 					return navigator.userAgent.match(/Android/i)
 				},
@@ -234,11 +246,9 @@
 					return navigator.userAgent.match(/IEMobile/i)
 				},
 				any: function () {
-					return device.Android() || device.BlackBerry() || device.iOS() || device.Opera() || device.Windows()
+					return this.Android() || this.BlackBerry() || this.iOS() || this.Opera() || this.Windows()
 				}
-			};
-
-			return device.any();
+			}
 		},
 
 		counter: function (prfx) {

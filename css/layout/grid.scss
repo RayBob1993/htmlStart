@@ -5,13 +5,13 @@
 	max-width: 1280px;
 	min-height: 1px;
 	margin: 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	
+	padding-left: $gutters;
+	padding-right: $gutters;
+
 	&.isSmall {
 		max-width: 960px;
 	}
-	
+
 	&.isLarge {
 		max-width: 1366px;
 	}
@@ -19,11 +19,9 @@
 
 .row {
 	display: flex;
-
-	margin-left: -10px;
-	margin-right: -10px;
-
 	flex-flow: row wrap;
+	margin-left: -$gutters;
+	margin-right: -$gutters;
 }
 
 .rowNoWrap {
@@ -33,11 +31,21 @@
 .noGutters {
 	margin-right: 0;
 	margin-left: 0;
+
+	> .col {
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 
-.noGutters > .col {
-	padding-right: 0;
-	padding-left: 0;
+.guttersSmall {
+	margin-left: -$guttersSmall;
+	margin-right: -$guttersSmall;
+
+	> .col {
+		padding-right: $guttersSmall;
+		padding-left: $guttersSmall;
+	}
 }
 
 /* Горизонтальное выравнивание строки */
@@ -82,8 +90,8 @@
 	position: relative;
 
 	flex: 0 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: $gutters;
+	padding-right: $gutters;
 	min-height: 1px;
 	max-width: 100%;
 }
@@ -107,7 +115,7 @@
 
 .colAuto {
 	flex: 1;
-	width: auto;
+	max-width: none;
 }
 
 .colStretch {
@@ -117,108 +125,108 @@
 }
 
 .col1 {
-	flex-basis: 8.33333333%;
-	max-width: 8.33333333%;
+	flex-basis: $col1;
+	max-width: $col1;
 }
 
 .col2 {
-	flex-basis: 16.66666667%;
-	max-width: 16.66666667%;
+	flex-basis: $col2;
+	max-width: $col2;
 }
 
 .col3 {
-	flex-basis: 25%;
-	max-width: 25%;
+	flex-basis: $col3;
+	max-width: $col3;
 }
 
 .col4 {
-	flex-basis: 33.33333333%;
-	max-width: 33.33333333%;
+	flex-basis: $col4;
+	max-width: $col4;
 }
 
 .col5 {
-	flex-basis: 41.66666667%;
-	max-width: 41.66666667%;
+	flex-basis: $col5;
+	max-width: $col5;
 }
 
 .col6 {
-	flex-basis: 50%;
-	max-width: 50%;
+	flex-basis: $col6;
+	max-width: $col6;
 }
 
 .col7 {
-	flex-basis: 58.33333333%;
-	max-width: 58.33333333%;
+	flex-basis: $col7;
+	max-width: $col7;
 }
 
 .col8 {
-	flex-basis: 66.66666667%;
-	max-width: 66.66666667%;
+	flex-basis: $col8;
+	max-width: $col8;
 }
 
 .col9 {
-	flex-basis: 75%;
-	max-width: 75%;
+	flex-basis: $col9;
+	max-width: $col9;
 }
 
 .col10 {
-	flex-basis: 83.33333333%;
-	max-width: 83.33333333%;
+	flex-basis: $col10;
+	max-width: $col10;
 }
 
 .col11 {
-	flex-basis: 91.66666667%;
-	max-width: 91.66666667%;
+	flex-basis: $col11;
+	max-width: $col11;
 }
 
 .col12 {
-	flex-basis: 100%;
-	max-width: 100%;
+	flex-basis: $col12;
+	max-width: $col12;
 }
 
 /* Смещение колонок */
 .offset1 {
-	margin-left: 8.33333333%
+	margin-left: $col1;
 }
 
 .offset2 {
-	margin-left: 16.66666667%
+	margin-left: $col2;
 }
 
 .offset3 {
-	margin-left: 25%
+	margin-left: $col3;
 }
 
 .offset4 {
-	margin-left: 33.33333333%
+	margin-left: $col4;
 }
 
 .offset5 {
-	margin-left: 41.66666667%
+	margin-left: $col5;
 }
 
 .offset6 {
-	margin-left: 50%
+	margin-left: $col6;
 }
 
 .offset7 {
-	margin-left: 58.33333333%
+	margin-left: $col7;
 }
 
 .offset8 {
-	margin-left: 66.66666667%
+	margin-left: $col8;
 }
 
 .offset9 {
-	margin-left: 75%
+	margin-left: $col9;
 }
 
 .offset10 {
-	margin-left: 83.33333333%
+	margin-left: $col10;
 }
 
 .offset11 {
-	margin-left: 91.66666667%
+	margin-left: $col11;
 }
 
 /* Сортировка колонок */
@@ -250,98 +258,98 @@
 	}
 
 	.colxlg1 {
-		flex-basis: 8.33333333%;
-		max-width: 8.33333333%;
+		flex-basis: $col1;
+		max-width: $col1;
 	}
 
 	.colxlg2 {
-		flex-basis: 16.66666667%;
-		max-width: 16.66666667%;
+		flex-basis: $col2;
+		max-width: $col2;
 	}
 
 	.colxlg3 {
-		flex-basis: 25%;
-		max-width: 25%;
+		flex-basis: $col3;
+		max-width: $col3;
 	}
 
 	.colxlg4 {
-		flex-basis: 33.33333333%;
-		max-width: 33.33333333%;
+		flex-basis: $col4;
+		max-width: $col4;
 	}
 
 	.colxlg5 {
-		flex-basis: 41.66666667%;
-		max-width: 41.66666667%;
+		flex-basis: $col5;
+		max-width: $col5;
 	}
 
 	.colxlg6 {
-		flex-basis: 50%;
-		max-width: 50%;
+		flex-basis: $col6;
+		max-width: $col6;
 	}
 
 	.colxlg7 {
-		flex-basis: 58.33333333%;
-		max-width: 58.33333333%;
+		flex-basis: $col7;
+		max-width: $col7;
 	}
 
 	.colxlg8 {
-		flex-basis: 66.66666667%;
-		max-width: 66.66666667%;
+		flex-basis: $col8;
+		max-width: $col8;
 	}
 
 	.colxlg9 {
-		flex-basis: 75%;
-		max-width: 75%;
+		flex-basis: $col9;
+		max-width: $col9;
 	}
 
 	.colxlg10 {
-		flex-basis: 83.33333333%;
-		max-width: 83.33333333%;
+		flex-basis: $col10;
+		max-width: $col10;
 	}
 
 	.colxlg11 {
-		flex-basis: 91.66666667%;
-		max-width: 91.66666667%;
+		flex-basis: $col11;
+		max-width: $col11;
 	}
 
 	.colxlg12 {
-		flex-basis: 100%;
-		max-width: 100%;
+		flex-basis: $col12;
+		max-width: $col12;
 	}
 
 	/* Смещение колонок */
 	.offsetxlg1 {
-		margin-left: 8.33333333%
+		margin-left: $col1;
 	}
 	.offsetxlg2 {
-		margin-left: 16.66666667%
+		margin-left: $col2;
 	}
 	.offsetxlg3 {
-		margin-left: 25%
+		margin-left: $col3;
 	}
 	.offsetxlg4 {
-		margin-left: 33.33333333%
+		margin-left: $col4;
 	}
 	.offsetxlg5 {
-		margin-left: 41.66666667%
+		margin-left: $col5;
 	}
 	.offsetxlg6 {
-		margin-left: 50%
+		margin-left: $col6;
 	}
 	.offsetxlg7 {
-		margin-left: 58.33333333%
+		margin-left: $col7;
 	}
 	.offsetxlg8 {
-		margin-left: 66.66666667%
+		margin-left: $col8;
 	}
 	.offsetxlg9 {
-		margin-left: 75%
+		margin-left: $col9;
 	}
 	.offsetxlg10 {
-		margin-left: 83.33333333%
+		margin-left: $col10;
 	}
 	.offsetxlg11 {
-		margin-left: 91.66666667%
+		margin-left: $col11;
 	}
 	.offsetxlgNone {
 		margin-left: 0;
@@ -377,98 +385,98 @@
 	}
 
 	.collg1 {
-		flex-basis: 8.33333333%;
-		max-width: 8.33333333%;
+		flex-basis: $col1;
+		max-width: $col1;
 	}
 
 	.collg2 {
-		flex-basis: 16.66666667%;
-		max-width: 16.66666667%;
+		flex-basis: $col2;
+		max-width: $col2;
 	}
 
 	.collg3 {
-		flex-basis: 25%;
-		max-width: 25%;
+		flex-basis: $col3;
+		max-width: $col3;
 	}
 
 	.collg4 {
-		flex-basis: 33.33333333%;
-		max-width: 33.33333333%;
+		flex-basis: $col4;
+		max-width: $col4;
 	}
 
 	.collg5 {
-		flex-basis: 41.66666667%;
-		max-width: 41.66666667%;
+		flex-basis: $col5;
+		max-width: $col5;
 	}
 
 	.collg6 {
-		flex-basis: 50%;
-		max-width: 50%;
+		flex-basis: $col6;
+		max-width: $col6;
 	}
 
 	.collg7 {
-		flex-basis: 58.33333333%;
-		max-width: 58.33333333%;
+		flex-basis: $col7;
+		max-width: $col7;
 	}
 
 	.collg8 {
-		flex-basis: 66.66666667%;
-		max-width: 66.66666667%;
+		flex-basis: $col8;
+		max-width: $col8;
 	}
 
 	.collg9 {
-		flex-basis: 75%;
-		max-width: 75%;
+		flex-basis: $col9;
+		max-width: $col9;
 	}
 
 	.collg10 {
-		flex-basis: 83.33333333%;
-		max-width: 83.33333333%;
+		flex-basis: $col10;
+		max-width: $col10;
 	}
 
 	.collg11 {
-		flex-basis: 91.66666667%;
-		max-width: 91.66666667%;
+		flex-basis: $col11;
+		max-width: $col11;
 	}
 
 	.collg12 {
-		flex-basis: 100%;
-		max-width: 100%;
+		flex-basis: $col12;
+		max-width: $col12;
 	}
 
 	/* Смещение колонок */
 	.offsetlg1 {
-		margin-left: 8.33333333%
+		margin-left: $col1;
 	}
 	.offsetlg2 {
-		margin-left: 16.66666667%
+		margin-left: $col2;
 	}
 	.offsetlg3 {
-		margin-left: 25%
+		margin-left: $col3;
 	}
 	.offsetlg4 {
-		margin-left: 33.33333333%
+		margin-left: $col4;
 	}
 	.offsetlg5 {
-		margin-left: 41.66666667%
+		margin-left: $col5;
 	}
 	.offsetlg6 {
-		margin-left: 50%
+		margin-left: $col6;
 	}
 	.offsetlg7 {
-		margin-left: 58.33333333%
+		margin-left: $col7;
 	}
 	.offsetlg8 {
-		margin-left: 66.66666667%
+		margin-left: $col8;
 	}
 	.offsetlg9 {
-		margin-left: 75%
+		margin-left: $col9;
 	}
 	.offsetlg10 {
-		margin-left: 83.33333333%
+		margin-left: $col10;
 	}
 	.offsetlg11 {
-		margin-left: 91.66666667%
+		margin-left: $col11;
 	}
 	.offsetlgNone {
 		margin-left: 0;
@@ -504,98 +512,98 @@
 	}
 
 	.colmd1 {
-		flex-basis: 8.33333333%;
-		max-width: 8.33333333%;
+		flex-basis: $col1;
+		max-width: $col1;
 	}
 
 	.colmd2 {
-		flex-basis: 16.66666667%;
-		max-width: 16.66666667%;
+		flex-basis: $col2;
+		max-width: $col2;
 	}
 
 	.colmd3 {
-		flex-basis: 25%;
-		max-width: 25%;
+		flex-basis: $col3;
+		max-width: $col3;
 	}
 
 	.colmd4 {
-		flex-basis: 33.33333333%;
-		max-width: 33.33333333%;
+		flex-basis: $col4;
+		max-width: $col4;
 	}
 
 	.colmd5 {
-		flex-basis: 41.66666667%;
-		max-width: 41.66666667%;
+		flex-basis: $col5;
+		max-width: $col5;
 	}
 
 	.colmd6 {
-		flex-basis: 50%;
-		max-width: 50%;
+		flex-basis: $col6;
+		max-width: $col6;
 	}
 
 	.colmd7 {
-		flex-basis: 58.33333333%;
-		max-width: 58.33333333%;
+		flex-basis: $col7;
+		max-width: $col7;
 	}
 
 	.colmd8 {
-		flex-basis: 66.66666667%;
-		max-width: 66.66666667%;
+		flex-basis: $col8;
+		max-width: $col8;
 	}
 
 	.colmd9 {
-		flex-basis: 75%;
-		max-width: 75%;
+		flex-basis: $col9;
+		max-width: $col9;
 	}
 
 	.colmd10 {
-		flex-basis: 83.33333333%;
-		max-width: 83.33333333%;
+		flex-basis: $col10;
+		max-width: $col10;
 	}
 
 	.colmd11 {
-		flex-basis: 91.66666667%;
-		max-width: 91.66666667%;
+		flex-basis: $col11;
+		max-width: $col11;
 	}
 
 	.colmd12 {
-		flex-basis: 100%;
-		max-width: 100%;
+		flex-basis: $col12;
+		max-width: $col12;
 	}
 
 	/* Смещение колонок */
 	.offsetmd1 {
-		margin-left: 8.33333333%
+		margin-left: $col1;
 	}
 	.offsetmd2 {
-		margin-left: 16.66666667%
+		margin-left: $col2;
 	}
 	.offsetmd3 {
-		margin-left: 25%
+		margin-left: $col3;
 	}
 	.offsetmd4 {
-		margin-left: 33.33333333%
+		margin-left: $col4;
 	}
 	.offsetmd5 {
-		margin-left: 41.66666667%
+		margin-left: $col5;
 	}
 	.offsetmd6 {
-		margin-left: 50%
+		margin-left: $col6;
 	}
 	.offsetmd7 {
-		margin-left: 58.33333333%
+		margin-left: $col7;
 	}
 	.offsetmd8 {
-		margin-left: 66.66666667%
+		margin-left: $col8;
 	}
 	.offsetmd9 {
-		margin-left: 75%
+		margin-left: $col9;
 	}
 	.offsetmd10 {
-		margin-left: 83.33333333%
+		margin-left: $col10;
 	}
 	.offsetmd11 {
-		margin-left: 91.66666667%
+		margin-left: $col11;
 	}
 	.offsetmdNone {
 		margin-left: 0;
@@ -631,98 +639,98 @@
 	}
 
 	.colsm1 {
-		flex-basis: 8.33333333%;
-		max-width: 8.33333333%;
+		flex-basis: $col1;
+		max-width: $col1;
 	}
 
 	.colsm2 {
-		flex-basis: 16.66666667%;
-		max-width: 16.66666667%;
+		flex-basis: $col2;
+		max-width: $col2;
 	}
 
 	.colsm3 {
-		flex-basis: 25%;
-		max-width: 25%;
+		flex-basis: $col3;
+		max-width: $col3;
 	}
 
 	.colsm4 {
-		flex-basis: 33.33333333%;
-		max-width: 33.33333333%;
+		flex-basis: $col4;
+		max-width: $col4;
 	}
 
 	.colsm5 {
-		flex-basis: 41.66666667%;
-		max-width: 41.66666667%;
+		flex-basis: $col5;
+		max-width: $col5;
 	}
 
 	.colsm6 {
-		flex-basis: 50%;
-		max-width: 50%;
+		flex-basis: $col6;
+		max-width: $col6;
 	}
 
 	.colsm7 {
-		flex-basis: 58.33333333%;
-		max-width: 58.33333333%;
+		flex-basis: $col7;
+		max-width: $col7;
 	}
 
 	.colsm8 {
-		flex-basis: 66.66666667%;
-		max-width: 66.66666667%;
+		flex-basis: $col8;
+		max-width: $col8;
 	}
 
 	.colsm9 {
-		flex-basis: 75%;
-		max-width: 75%;
+		flex-basis: $col9;
+		max-width: $col9;
 	}
 
 	.colsm10 {
-		flex-basis: 83.33333333%;
-		max-width: 83.33333333%;
+		flex-basis: $col10;
+		max-width: $col10;
 	}
 
 	.colsm11 {
-		flex-basis: 91.66666667%;
-		max-width: 91.66666667%;
+		flex-basis: $col11;
+		max-width: $col11;
 	}
 
 	.colsm12 {
-		flex-basis: 100%;
-		max-width: 100%;
+		flex-basis: $col12;
+		max-width: $col12;
 	}
 
 	/* Смещение колонок */
 	.offsetsm1 {
-		margin-left: 8.33333333%
+		margin-left: $col1;
 	}
 	.offsetsm2 {
-		margin-left: 16.66666667%
+		margin-left: $col2;
 	}
 	.offsetsm3 {
-		margin-left: 25%
+		margin-left: $col3;
 	}
 	.offsetsm4 {
-		margin-left: 33.33333333%
+		margin-left: $col4;
 	}
 	.offsetsm5 {
-		margin-left: 41.66666667%
+		margin-left: $col5;
 	}
 	.offsetsm6 {
-		margin-left: 50%
+		margin-left: $col6;
 	}
 	.offsetsm7 {
-		margin-left: 58.33333333%
+		margin-left: $col7;
 	}
 	.offsetsm8 {
-		margin-left: 66.66666667%
+		margin-left: $col8;
 	}
 	.offsetsm9 {
-		margin-left: 75%
+		margin-left: $col9;
 	}
 	.offsetsm10 {
-		margin-left: 83.33333333%
+		margin-left: $col10;
 	}
 	.offsetsm11 {
-		margin-left: 91.66666667%
+		margin-left: $col11;
 	}
 	.offsetsmNone {
 		margin-left: 0;
@@ -758,98 +766,98 @@
 	}
 
 	.colxsm1 {
-		flex-basis: 8.33333333%;
-		max-width: 8.33333333%;
+		flex-basis: $col1;
+		max-width: $col1;
 	}
 
 	.colxsm2 {
-		flex-basis: 16.66666667%;
-		max-width: 16.66666667%;
+		flex-basis: $col2;
+		max-width: $col2;
 	}
 
 	.colxsm3 {
-		flex-basis: 25%;
-		max-width: 25%;
+		flex-basis: $col3;
+		max-width: $col3;
 	}
 
 	.colxsm4 {
-		flex-basis: 33.33333333%;
-		max-width: 33.33333333%;
+		flex-basis: $col4;
+		max-width: $col4;
 	}
 
 	.colxsm5 {
-		flex-basis: 41.66666667%;
-		max-width: 41.66666667%;
+		flex-basis: $col5;
+		max-width: $col5;
 	}
 
 	.colxsm6 {
-		flex-basis: 50%;
-		max-width: 50%;
+		flex-basis: $col6;
+		max-width: $col6;
 	}
 
 	.colxsm7 {
-		flex-basis: 58.33333333%;
-		max-width: 58.33333333%;
+		flex-basis: $col7;
+		max-width: $col7;
 	}
 
 	.colxsm8 {
-		flex-basis: 66.66666667%;
-		max-width: 66.66666667%;
+		flex-basis: $col8;
+		max-width: $col8;
 	}
 
 	.colxsm9 {
-		flex-basis: 75%;
-		max-width: 75%;
+		flex-basis: $col9;
+		max-width: $col9;
 	}
 
 	.colxsm10 {
-		flex-basis: 83.33333333%;
-		max-width: 83.33333333%;
+		flex-basis: $col10;
+		max-width: $col10;
 	}
 
 	.colxsm11 {
-		flex-basis: 91.66666667%;
-		max-width: 91.66666667%;
+		flex-basis: $col11;
+		max-width: $col11;
 	}
 
 	.colxsm12 {
-		flex-basis: 100%;
-		max-width: 100%;
+		flex-basis: $col12;
+		max-width: $col12;
 	}
 
 	/* Смещение колонок */
 	.offsetxsm1 {
-		margin-left: 8.33333333%
+		margin-left: $col1;
 	}
 	.offsetxsm2 {
-		margin-left: 16.66666667%
+		margin-left: $col2;
 	}
 	.offsetxsm3 {
-		margin-left: 25%
+		margin-left: $col3;
 	}
 	.offsetxsm4 {
-		margin-left: 33.33333333%
+		margin-left: $col4;
 	}
 	.offsetxsm5 {
-		margin-left: 41.66666667%
+		margin-left: $col5;
 	}
 	.offsetxsm6 {
-		margin-left: 50%
+		margin-left: $col6;
 	}
 	.offsetxsm7 {
-		margin-left: 58.33333333%
+		margin-left: $col7;
 	}
 	.offsetxsm8 {
-		margin-left: 66.66666667%
+		margin-left: $col8;
 	}
 	.offsetxsm9 {
-		margin-left: 75%
+		margin-left: $col9;
 	}
 	.offsetxsm10 {
-		margin-left: 83.33333333%
+		margin-left: $col10;
 	}
 	.offsetxsm11 {
-		margin-left: 91.66666667%
+		margin-left: $col11;
 	}
 	.offsetxsmNone {
 		margin-left: 0;
