@@ -1,47 +1,47 @@
 {
-	"name": "html-start",
-	"version": "2.0.0",
-	"description": "Заготовка для вёрстки сайта",
-	"scripts": {
-		"dev": "webpack-dev-server --mode development",
-		"build": "webpack --mode production"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/RayBob1993/htmlStart.git"
-	},
-	"keywords": [
-		"flexbox",
-		"css",
-		"html",
-		"css-framework",
-		"starter-kit"
-	],
-	"author": "RayBob1993",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/RayBob1993/htmlStart/issues"
-	},
-	"homepage": "https://github.com/RayBob1993/htmlStart",
-	"engines": {
-		"node": ">= 12.0.0"
-	},
-	"devDependencies": {
-		"autoprefixer": "^9.7.4",
-		"copy-webpack-plugin": "^5.1.1",
-		"css-loader": "^3.4.2",
-		"cssnano": "^4.1.10",
-		"handlebars": "^4.7.2",
-		"handlebars-loader": "^1.7.1",
-		"html-webpack-plugin": "^4.0.0-beta.2",
-		"mini-css-extract-plugin": "^0.9.0",
-		"node-sass": "^4.13.1",
-		"postcss-loader": "^3.0.0",
-		"progress-bar-webpack-plugin": "^2.1.0",
-		"sass-loader": "^8.0.2",
-		"webpack": "^4.41.5",
-		"webpack-cli": "^3.3.10",
-		"webpack-dev-server": "^3.1.10",
-		"clean-webpack-plugin": "^3.0.0"
-	}
+  "name": "html-start",
+  "version": "2.0.0",
+  "description": "Заготовка для вёрстки сайта",
+  "scripts": {
+    "serve": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayBob1993/htmlStart.git"
+  },
+  "keywords": [
+    "flexbox",
+    "css",
+    "html",
+    "css-framework",
+    "starter-kit"
+  ],
+  "author": "RayBob1993",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RayBob1993/htmlStart/issues"
+  },
+  "homepage": "https://github.com/RayBob1993/htmlStart",
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "handlebars": "^4.7.2",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^4.0.0-beta.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.1.10",
+    "clean-webpack-plugin": "^3.0.0"
+  }
 }
