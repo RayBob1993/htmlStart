@@ -349,6 +349,7 @@
         data-toggle="dropdown" 
         aria-haspopup="true" 
         aria-expanded="false"
+        data-display="static"
     > 
         <span class="icoMenu"> 
             <span></span> 
