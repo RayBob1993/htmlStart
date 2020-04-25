@@ -1,14 +1,11 @@
 .pagination {
-	a {
-		&.pagePrev {}
-		&.pageNext {}
-	}
-}
+  a {
 
-.paginationArrows {
+  }
 
-}
+  &-prev {
+  }
 
-.pagination li:hover > a:not(.paginationArrows),
-.pagination li.active > a:not(.paginationArrows) {
+  &-next {
+  }
 }

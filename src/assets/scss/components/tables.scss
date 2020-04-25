@@ -1,26 +1,31 @@
 table {
-	border-collapse: collapse;
-	border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0
 }
 
 td,
 th {
-	padding: 0
+  padding: 0
 }
 
 .table {
-	width: 100%;
-}
+  width: 100%;
 
-.tlf {
-	table-layout: fixed;
-}
+  // =================================== States
+  &.is-layout-fixed {
+    table-layout: fixed;
+  }
 
-/* Базовая таблица */
-.tableBasic {
-}
+  // =================================== Types
+  &--basic {}
 
-/* Полосатая таблица */
-.tableStriped > tbody > tr:nth-of-type(even) {
-	background: #ccc;
+  &--striped {
+    > tbody {
+      > tr {
+        &:nth-of-type(even) {
+          background: #ccc;
+        }
+      }
+    }
+  }
 }

@@ -1,13 +1,13 @@
 .nav-tabs {
-	a {
-		&.active {
-			text-decoration: underline;
-		}
-	}
+  a {
+    &.active {
+      text-decoration: underline;
+    }
+  }
 }
 
 .tab-pane {
-	&:not(.active) {
-		display: none;
-	}
+  &:not(.active) {
+    display: none;
+  }
 }

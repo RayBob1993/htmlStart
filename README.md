@@ -216,8 +216,8 @@
     <div class="swiper-pagination"></div>
     
     <!-- Стрелки переключения -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button swiper-button-next"></div>
+    <div class="swiper-button swiper-button-prev"></div>
 </section>
 ```
 
@@ -322,7 +322,7 @@
 ```html
 <div class="dropdown">
     <button 
-        class="but dropdownBut" 
+        class="button dropdownBut" 
         data-toggle="dropdown" 
         aria-haspopup="true" 
         aria-expanded="false" 
@@ -345,10 +345,11 @@
 <div class="dropdown topMenuWrap"> 
     <button 
         type="button" 
-        class="but dropdownBut"
+        class="button dropdownBut"
         data-toggle="dropdown" 
         aria-haspopup="true" 
         aria-expanded="false"
+        data-display="static"
     > 
         <span class="icoMenu"> 
             <span></span> 
@@ -377,7 +378,7 @@
 ```html
 <button
     type="button"
-    class="but"
+    class="button"
     data-toggle="modal"
     data-target="#feedbackModal"
 >
@@ -428,9 +429,15 @@
 
 ```html
 <div class="counter">
-    <button type="button" class="but counterBut dec">-</button>
-    <input type="text" class="field" value="1" data-min="1" data-max="20">
-    <button type="button" class="but counterBut inc">+</button>
+    <button type="button" class="button button-decrement">-</button>
+    <input 
+        type="text" 
+        class="field" 
+        value="1" 
+        data-min="1" 
+        data-max="20"
+    >
+    <button type="button" class="button button-increment">+</button>
 </div>
 ```
 
@@ -439,7 +446,7 @@
 <h3 id="breadcrumbs">Хлебные крошки</h3>
 
 ```html
-<nav class="breadcrumbs">
+<nav class="nav breadcrumbs">
     <ul class="list listFlex">
         <li><a href="/">Главная</a></li>
         <li class="active"><a href="#">Раздел</a></li>
@@ -452,17 +459,16 @@
 <h3 id="pager">Переключатель страниц</h3>
 
 ```html
-<nav class="nav pager">
+<nav class="nav pagination">
     <ul class="list listFlex">
-        <li><a href="#" class="pagerArrows pagerPrev">Назад</a></li>
+        <li><a href="#" class="pagination-prev">Назад</a></li>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li class="active"><a href="">4</a></li>
-        <li class="pagerDots"><a href="#">...</a></li>
         <li><a href="#">10</a></li>
         <li><a href="#">11</a></li>
-        <li><a href="#" class="pagerArrows pagerNext">Вперёд</a></li>
+        <li><a href="#" class="pagination-next">Вперёд</a></li>
     </ul>
 </nav>
 ```
@@ -472,6 +478,15 @@
 <h3 id="sections">Секции</h3>
 
 ```html
+<section class="section">
+    <header class="section-header">
+        <h2 class="section-title">Секция</h2>
+    </header>
+
+    <div class="section-body"></div>
+    
+    <footer class="section-footer"></footer>
+</section>
 ```
 
 <a href="#">наверх</a>

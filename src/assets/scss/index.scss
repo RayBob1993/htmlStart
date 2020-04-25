@@ -1,6 +1,8 @@
-@import 'utilities/index';
-@import 'base/index';
-@import 'layout/index';
-@import 'vendors/index';
-@import 'components/index';
-@import 'pages/index';
+@import './variables';
+@import './utils';
+@import './mixins';
+@import './base';
+@import './layout';
+@import './vendors';
+@import './components';
+@import './pages';

@@ -1,113 +1,98 @@
-.but {
-	position: relative;
+.button {
+  position: relative;
 
-	display: inline-block;
-	vertical-align: middle;
-	padding: 0;
-	margin: 0;
-	border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
 
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
-	cursor: pointer;
-	line-height: normal;
+  cursor: pointer;
+  border-radius: $border-radius-default;
+  transition: $transition-base;
 
-	border-radius: 0;
-	background: none;
-	outline: 0;
+  text-align: center;
+  line-height: $line-height;
+  white-space: nowrap;
+  text-transform: none;
+  text-shadow: none;
+  text-decoration: none;
+  font-weight: normal;
 
-	transition: $transitionBase;
+  -webkit-tap-highlight-color: transparent;
 
-	user-select: none;
+  outline: 0;
 
-	touch-action: manipulation;
+  @include utils-user-select(none);
+  @include utils-appearance(none);
 
-	appearance: none;
+  &[disabled] {
+    @include utils-disabled;
+  }
 
-	&[disabled] {
-		pointer-events: none;
-		cursor: not-allowed;
-		opacity: .65;
-	}
+  &::-moz-focus-inner {
+    border: 0;
+  }
 
-	/* Текст кнопки */
-	.butText {
-		display: inline-block;
-		vertical-align: middle;
+  /* Label */
+  &-label {
+    font-style: inherit;
+    font-weight: inherit;
+  }
 
-		white-space: normal;
-		line-height: 100%;
-	}
+  // =================================== Types
+  &--primary {
+    &:not([disabled]) {
+      &:focus,
+      &:hover {}
+    }
 
-	/* ============================= Размеры кнопок */
-	&.butBlock {
-		display: block;
-		width: 100%;
-	}
+    &:active {}
+  }
 
-	/* Очень большая */
-	&.butLarge {
-	}
+  &--secondary {
+    &:not([disabled]) {
+      &:focus,
+      &:hover {}
+    }
 
-	/* Средняя */
-	&.butMedium {
-	}
+    &:active {}
+  }
 
-	/* Маленькая */
-	&.butSmall {
-	}
+  &--success {
+    &:not([disabled]) {
+      &:focus,
+      &:hover {}
+    }
 
-	/* Очень маленькая */
-	&.butTiny {
-	}
+    &:active {}
+  }
 
-	/* ============================= Закругление */
-	&.butRound {
-		border-radius: 100px;
-	}
+  &--danger {
+    &:not([disabled]) {
+      &:focus,
+      &:hover {}
+    }
 
-}
+    &:active {}
+  }
 
-/* Стили кнопок */
-/* Первичная кнопка */
-.butPrimary {
+  // =================================== Sizes
+  &--large {}
 
-	&:hover {
-	}
+  &--medium {}
 
-	&.active,
-	&:active {
-	}
-}
+  &--small {}
 
-/* Вторичная */
-.butSecondary {
+  &--mini {}
 
-	&:hover {
-	}
+  // =================================== States
+  &.is-rounded {
+    border-radius: $border-radius-rounded;
+  }
 
-	&.active,
-	&:active {
-	}
-}
-
-/* Зелёная кнопка */
-.butSuccess {
-	&:hover {
-	}
-
-	&.active,
-	&:active {
-	}
-}
-
-/* Кнопка ссылка */
-.butLink {
-	&:hover {
-	}
-
-	&.active,
-	&:active {
-	}
+  &.is-expanded {
+    width: 100%;
+  }
 }

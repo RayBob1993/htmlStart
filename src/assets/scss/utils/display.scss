@@ -1,0 +1,59 @@
+@media (min-width: $xxl) {
+  .hiddenxLgUp {
+    display: none !important;
+  }
+}
+
+@media (min-width: $xl) {
+  .hiddenLgUp {
+    display: none !important;
+  }
+}
+
+@media (min-width: $md) {
+  .hiddenMdUp {
+    display: none !important;
+  }
+}
+
+@media (min-width: $sm) {
+  .hiddenSmUp {
+    display: none !important;
+  }
+}
+
+@media (min-width: $xs) {
+  .hiddenxSmUp {
+    display: none !important;
+  }
+}
+
+@media (max-width: $xs) {
+  .hiddenxSmDown {
+    display: none !important;
+  }
+}
+
+@media (max-width: $xxl) {
+  .hiddenxLgDown {
+    display: none !important;
+  }
+}
+
+@media (max-width: $xl) {
+  .hiddenLgDown {
+    display: none !important;
+  }
+}
+
+@media (max-width: $md) {
+  .hiddenMdDown {
+    display: none !important;
+  }
+}
+
+@media (max-width: $sm) {
+  .hiddenSmDown {
+    display: none !important;
+  }
+}

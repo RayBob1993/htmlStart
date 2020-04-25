@@ -1,0 +1,106 @@
+.col {
+  position: relative;
+
+  flex: 0 0 auto;
+  padding-left: $gutters;
+  padding-right: $gutters;
+  min-height: 1px;
+  max-width: 100%;
+
+  @include generate-cols;
+}
+
+// Offset
+.col-offset {
+  @include generate-offsets;
+}
+
+// Order
+.col-order {
+  @include generate-orders;
+}
+
+// Responsive
+@media (max-width: $xs) {
+  .col-xs {
+    @include generate-cols;
+  }
+
+  .col-xs-offset {
+    @include generate-offsets;
+  }
+
+  .col-xs-order {
+    @include generate-orders;
+  }
+}
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .col-sm {
+    @include generate-cols;
+  }
+
+  .col-sm-offset {
+    @include generate-offsets;
+  }
+
+  .col-sm-order {
+    @include generate-orders;
+  }
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .col-md {
+    @include generate-cols;
+  }
+
+  .col-md-offset {
+    @include generate-offsets;
+  }
+
+  .col-md-order {
+    @include generate-orders;
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .col-lg {
+    @include generate-cols;
+  }
+
+  .col-lg-offset {
+    @include generate-offsets;
+  }
+
+  .col-lg-order {
+    @include generate-orders;
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .col-xl {
+    @include generate-cols;
+  }
+
+  .col-xl-offset {
+    @include generate-offsets;
+  }
+
+  .col-xl-order {
+    @include generate-orders;
+  }
+}
+
+@media (min-width: $xl) and (max-width: $xxl) {
+  .col-xxl {
+    @include generate-cols;
+  }
+
+  .col-xxl-offset {
+    @include generate-offsets;
+  }
+
+  .col-xxl-order {
+    @include generate-orders;
+  }
+}

@@ -1,0 +1,7 @@
+.fade {
+  &:not(.show) {
+    opacity: 0;
+  }
+
+  transition: $transition-fade;
+}

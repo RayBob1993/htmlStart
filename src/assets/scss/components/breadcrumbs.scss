@@ -1,20 +1,18 @@
 .breadcrumbs {
-	li + li {
-		&:before {
-			padding: 0 5px;
+  li {
+    & + li {
+      &:before {
+        padding: 0 5px;
 
-			content: '/';
-		}
-	}
-	
-	a {
-		transition: $transitionBase;
-	}
-	
-	li:hover,
-	li.active {
-		> a {
-			
-		}
-	}
+        content: '/';
+      }
+    }
+
+    &:hover,
+    &.active {
+      > a {
+
+      }
+    }
+  }
 }

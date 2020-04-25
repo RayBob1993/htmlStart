@@ -4,202 +4,202 @@
 .formHeader,
 .formBody,
 .formGroup {
-	position: relative;
+  position: relative;
 
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .fieldName {
-	position: relative;
+  position: relative;
 
-	display: block;
+  display: block;
 }
 
 .fieldName + .field {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 .field {
-	display: block;
-	width: 100%;
-	padding: 0;
-	border: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
 
-	transition: $transitionBase;
+  transition: $transition-base;
 
-	outline: 0;
-	background-color: #fff;
-	border-radius: 0;
-	
-	&:not(select) {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-	}
-	
-	&:hover {}
-	
-	&:focus {}
+  outline: 0;
+  background-color: #fff;
+  border-radius: 0;
+
+  &:not(select) {
+    @include utils-appearance(none);
+  }
+
+  &:hover {
+  }
+
+  &:focus {
+  }
 }
 
 .field::-webkit-input-placeholder {
-	text-overflow: ellipsis;
-	color: #aaa;
+  text-overflow: ellipsis;
+  color: #aaa;
 }
 
 .field::-moz-placeholder {
-	text-overflow: ellipsis;
-	color: #aaa;
+  text-overflow: ellipsis;
+  color: #aaa;
 }
 
 .field:-moz-placeholder {
-	text-overflow: ellipsis;
-	color: #aaa;
+  text-overflow: ellipsis;
+  color: #aaa;
 }
 
 .field:-ms-input-placeholder {
-	text-overflow: ellipsis;
-	color: #aaa;
+  text-overflow: ellipsis;
+  color: #aaa;
 }
 
 .field:focus::-webkit-input-placeholder {
-	color: transparent
+  color: transparent
 }
 
 .field:focus::-moz-placeholder {
-	color: transparent
+  color: transparent
 }
 
 .field:focus:-moz-placeholder {
-	color: transparent
+  color: transparent
 }
 
 .field:focus:-ms-input-placeholder {
-	color: transparent
+  color: transparent
 }
 
 /* Чекбокс */
 .checkbox {
-	position: relative;
+  position: relative;
 
-	display: inline-block;
+  display: inline-block;
 
-	input {
-		position: absolute;
-		overflow: hidden;
-		height: 0;
-		width: 0;
-		visibility: hidden;
-	}
+  input {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
 
-	.checkboxText {
-		display: block;
-		padding-left: 20px;
+  .checkboxText {
+    display: block;
+    padding-left: 20px;
 
-		cursor: pointer;
-	}
+    cursor: pointer;
+  }
 
-	.checkboxText:before {
-		position: absolute;
-		top: 2px;
-		left: 0;
+  .checkboxText:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
 
-		width: 14px;
-		height: 14px;
-		border: 1px solid #000;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #000;
 
-		background-color: #fff;
-		border-radius: 1px;
+    background-color: #fff;
+    border-radius: 1px;
 
-		color: #000;
-		text-align: center;
-		line-height: 13px;
-		font-size: 11px;
-		font-weight: 600;
+    color: #000;
+    text-align: center;
+    line-height: 13px;
+    font-size: 11px;
+    font-weight: 600;
 
-		content: '';
-	}
+    content: '';
+  }
 
-	input:checked + .checkboxText:before {
-		content: '✓';
-	}
+  input:checked + .checkboxText:before {
+    content: '✓';
+  }
 }
 
 /* Радио */
 .radio {
-	position: relative;
+  position: relative;
 
-	display: inline-block;
-	min-height: 24px;
+  display: inline-block;
+  min-height: 24px;
 
-	input {
-		position: absolute;
-		overflow: hidden;
-		height: 0;
-		width: 0;
-		visibility: hidden;
-	}
+  input {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
 
-	.checkboxText {
-		display: block;
-		padding-left: 35px;
+  .checkboxText {
+    display: block;
+    padding-left: 35px;
 
-		cursor: pointer;
+    cursor: pointer;
 
-		color: #000;
-		font-size: 15px;
-		font-weight: 600;
-		line-height: 24px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
 
-		&:before {
-			position: absolute;
-			top: 0;
-			left: 0;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-			width: 14px;
-			height: 14px;
-			border: 1px solid #000;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #000;
 
-			background-color: #000;
-			border-radius: 100%;
+      background-color: #000;
+      border-radius: 100%;
 
-			color: #000;
-			text-align: center;
-			line-height: 13px;
-			font-size: 11px;
-			font-weight: 600;
+      color: #000;
+      text-align: center;
+      line-height: 13px;
+      font-size: 11px;
+      font-weight: 600;
 
-			content: '';
-		}
+      content: '';
+    }
 
-		&:after {
-			position: absolute;
-			top: 2px;
-			left: 0;
+    &:after {
+      position: absolute;
+      top: 2px;
+      left: 0;
 
-			width: 14px;
-			height: 14px;
+      width: 14px;
+      height: 14px;
 
-			background-color: #000;
-			border-radius: 100%;
+      background-color: #000;
+      border-radius: 100%;
 
-			transform: scale(.3);
-			opacity: 0;
-			visibility: hidden;
+      transform: scale(.3);
+      opacity: 0;
+      visibility: hidden;
 
-			transition: $transitionBase;
+      transition: $transition-base;
 
-			content: '';
-		}
-	}
+      content: '';
+    }
+  }
 
-	input:checked + .checkboxText {
-		color: #000;
+  input:checked + .checkboxText {
+    color: #000;
 
-		&:after {
-			opacity: 1;
-			visibility: visible;
-			transform: none;
-		}
-	}
+    &:after {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+  }
 }
