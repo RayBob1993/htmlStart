@@ -1,59 +1,59 @@
-@media (min-width: $xxl) {
-  .hiddenxLgUp {
-    display: none !important;
-  }
-}
-
 @media (min-width: $xl) {
-  .hiddenLgUp {
-    display: none !important;
-  }
-}
-
-@media (min-width: $md) {
-  .hiddenMdUp {
-    display: none !important;
-  }
-}
-
-@media (min-width: $sm) {
-  .hiddenSmUp {
-    display: none !important;
-  }
-}
-
-@media (min-width: $xs) {
-  .hiddenxSmUp {
-    display: none !important;
-  }
-}
-
-@media (max-width: $xs) {
-  .hiddenxSmDown {
-    display: none !important;
-  }
-}
-
-@media (max-width: $xxl) {
-  .hiddenxLgDown {
+  .hidden-xl-up {
     display: none !important;
   }
 }
 
 @media (max-width: $xl) {
-  .hiddenLgDown {
+  .hidden-xl-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: $lg) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: $lg) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: $md) {
+  .hidden-md-up {
     display: none !important;
   }
 }
 
 @media (max-width: $md) {
-  .hiddenMdDown {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: $sm) {
+  .hidden-sm-up {
     display: none !important;
   }
 }
 
 @media (max-width: $sm) {
-  .hiddenSmDown {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: $xs) {
+  .hidden-xs-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: $xs) {
+  .hidden-xs-down {
     display: none !important;
   }
 }
