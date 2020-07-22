@@ -1,63 +1,41 @@
-/* Обнуление списка */
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
 
-  > li {
-    position: relative;
-  }
-}
+  &-flex {
+    display: flex;
+    flex-flow: row wrap;
 
-/* Резиновый список */
-.listFlex {
-  display: flex;
-
-  flex-flow: row wrap;
-
-  > li {
-    flex: 0 0 auto;
-  }
-}
-
-.listAuto {
-  > li {
-    flex: 1;
-  }
-}
-
-.listCenter {
-  justify-content: center;
-}
-
-.listMiddle {
-  align-items: center;
-}
-
-.listBetween {
-  justify-content: space-between;
-}
-
-.listMark {
-  > li {
-    padding-left: 10px;
-
-    &:not(:last-child) {
-      margin-bottom: 10px;
+    > li {
+      flex: 0 0 auto;
+      max-width: 100%;
     }
+  }
 
-    &:before {
-      position: absolute;
-      top: 7px;
-      left: 0;
+  &-auto {
+    > li {
+      flex: 1;
+    }
+  }
 
-      width: 3px;
-      height: 3px;
+  &-mark {
+    > li {
+      padding-left: 30px;
 
-      background-color: #000;
-      border-radius: 100%;
+      &:before {
+        position: absolute;
+        top: 5px;
+        left: 0;
 
-      content: '';
+        width: 6px;
+        height: 6px;
+
+        background-color: #46D97A;
+        border-radius: 63px;
+
+        content: '';
+      }
     }
   }
 }
