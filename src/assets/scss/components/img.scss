@@ -6,21 +6,6 @@ img {
   vertical-align: middle;
 }
 
-.imgView {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  text-decoration: none;
-
-  overflow: hidden;
-
-  img {
-    max-height: 100%;
-  }
-}
-
-.imgCover {
+.img-cover {
   background: center / cover no-repeat;
 }

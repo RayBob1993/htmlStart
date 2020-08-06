@@ -1,0 +1,36 @@
+.field {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+
+  transition: $transition-base;
+
+  outline: 0;
+  background-color: #fff;
+  border-radius: 0;
+
+  &:not(select) {
+    @include utils-appearance(none);
+  }
+
+  &:hover {
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-moz-placeholder,
+    &:-ms-input-placeholder {
+      color: transparent
+    }
+  }
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
+    text-overflow: ellipsis;
+    color: #aaa;
+  }
+}

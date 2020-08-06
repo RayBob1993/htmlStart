@@ -1,3 +1,15 @@
+@media (min-width: $xxl) {
+  .hidden-xxl-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: $xxl) {
+  .hidden-xxl-down {
+    display: none !important;
+  }
+}
+
 @media (min-width: $xl) {
   .hidden-xl-up {
     display: none !important;

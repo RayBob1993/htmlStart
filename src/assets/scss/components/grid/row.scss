@@ -14,42 +14,4 @@
       padding-right: 0;
     }
   }
-
-  // Justify
-  &.is-justify-start {
-    justify-content: flex-start;
-  }
-
-  &.is-justify-center {
-    justify-content: center;
-  }
-
-  &.is-justify-right {
-    justify-content: flex-end;
-  }
-
-  &.is-justify-around {
-    justify-content: space-around;
-  }
-
-  &.is-justify-between {
-    justify-content: space-between;
-  }
-
-  // Align
-  &.is-align-start {
-    align-items: flex-start;
-  }
-
-  &.is-align-center {
-    align-items: center;
-  }
-
-  &.is-align-end {
-    align-items: flex-end;
-  }
-
-  &.is-align-baseline {
-    align-items: baseline;
-  }
 }
