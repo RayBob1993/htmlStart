@@ -27,6 +27,7 @@
     init: function () {
       this
         .swiperInit()
+        .tabsSwiperFix()
         .fancyboxInit()
         .inputTelMaskInit()
         .counter()
@@ -55,6 +56,24 @@
             spaceBetween: 0
           }
         }
+      });
+
+      return this;
+    },
+    
+    tabsSwiperFix: function () {
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (event) {
+        var activeTab = $($(event.target).attr('href'));
+        var activeTabSwiper = activeTab.find('.swiper-container');
+
+        if (
+          !activeTabSwiper.length ||
+          typeof window.Swiper === 'undefined'
+        ) {
+          return this;
+        }
+
+        activeTabSwiper[0].swiper.update();
       });
 
       return this;
