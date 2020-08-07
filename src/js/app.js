@@ -3,12 +3,12 @@
   var App = function () {
     // Точки для адаптивности
     this.mq = {
-			xxl: 1600,
-			xl: 1200,
+     xxl: 1600,
+      xl: 1200,
       lg: 992,
       md: 768,
       sm: 576,
-			xs: 480
+      xs: 480
     };
 
     // Формат цен
@@ -50,7 +50,7 @@
         slidesPerView: 2,
         spaceBetween: 30,
         breakpoints: {
-					576: {
+          576: {
             slidesPerView: 1,
             spaceBetween: 0
           }
@@ -138,13 +138,11 @@
       var button = $(selector);
 
       button.on('click', function (event) {
-
         event.preventDefault();
 
         $('html, body').animate({
           scrollTop: 0
         }, speed);
-
       });
 
       this.pageUpFadeToggle(button)
