@@ -25,7 +25,7 @@
 }
 
 // Responsive
-@media (max-width: $xxl) {
+@media screen and (max-width: $xxl) {
   .col-xxl {
     &-default {
       flex: 0 0 auto;
@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: $xl) {
+@media screen and (max-width: $xl) {
   .col-xl {
     &-default {
       flex: 0 0 auto;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: $lg) {
+@media screen and (max-width: $lg) {
   .col-lg {
     &-default {
       flex: 0 0 auto;
@@ -79,7 +79,7 @@
   }
 }
 
-@media (max-width: $md) {
+@media screen and (max-width: $md) {
   .col-md {
     &-default {
       flex: 0 0 auto;
@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: $sm) {
+@media screen and (max-width: $sm) {
   .col-sm {
     &-default {
       flex: 0 0 auto;
@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: $xs) {
+@media screen and (max-width: $xs) {
   .col-xs {
     &-default {
       flex: 0 0 auto;
