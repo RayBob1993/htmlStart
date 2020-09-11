@@ -51,7 +51,7 @@
         slidesPerView: 2,
         spaceBetween: 30,
         breakpoints: {
-          576: {
+          [this.mq.sm]: {
             slidesPerView: 1,
             spaceBetween: 0
           }
@@ -60,7 +60,7 @@
 
       return this;
     },
-    
+
     tabsSwiperFix: function () {
       $('a[data-toggle="tab"]').on('shown.bs.tab', function (event) {
         var activeTab = $($(event.target).attr('href'));
@@ -119,7 +119,7 @@
       var scrollTo = $('[data-scroll-to]');
 
       scrollTo.on('click', function () {
-        var target = $($(this).attr('href') || scrollTo.data('scroll-to'));
+        var target = $($(this).attr('href') || $(this).data('scroll-to'));
         var offset = target.offset().top;
 
         $('html, body').animate({
@@ -153,7 +153,7 @@
 
     // ============================ Прокрутка к началу страницы
     pageUp: function (selector, speed) {
-      var speed = speed || 200;
+      speed = speed || 200;
       var button = $(selector);
 
       button.on('click', function (event) {
@@ -164,14 +164,14 @@
         }, speed);
       });
 
-      this.pageUpFadeToggle(button)
+      this.pageUpFadeToggle(button);
 
       return this;
     },
 
     // ============================ Показывать кнопку вверх только если был скролл
     pageUpFadeToggle: function (button, length) {
-      var length = length || 200;
+      length = length || 200;
 
       $(window).on('load scroll', function () {
         var scrollTop = $(this).scrollTop();
@@ -270,8 +270,8 @@
     },
 
     counter: function (prfx) {
+      prfx = prfx || '';
       var counter = $('.counter');
-      var prfx = prfx || '';
       var field = counter.find('.field');
 
       function fieldCount (el) {

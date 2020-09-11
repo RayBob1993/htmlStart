@@ -25,7 +25,7 @@
 }
 
 // Responsive
-@media screen and (max-width: $xxl) {
+@include media-xxl-down {
   .col-xxl {
     &-default {
       flex: 0 0 auto;
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: $xl) {
+@include media-xl-down {
   .col-xl {
     &-default {
       flex: 0 0 auto;
@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (max-width: $lg) {
+@include media-lg-down {
   .col-lg {
     &-default {
       flex: 0 0 auto;
@@ -79,7 +79,7 @@
   }
 }
 
-@media screen and (max-width: $md) {
+@include media-md-down {
   .col-md {
     &-default {
       flex: 0 0 auto;
@@ -97,7 +97,7 @@
   }
 }
 
-@media screen and (max-width: $sm) {
+@include media-sm-down {
   .col-sm {
     &-default {
       flex: 0 0 auto;
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: $xs) {
+@include media-xs-down {
   .col-xs {
     &-default {
       flex: 0 0 auto;

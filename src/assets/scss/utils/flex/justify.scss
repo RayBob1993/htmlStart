@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: $xxl) {
+@include media-xxl-down {
   .justify-content-xxl-start {
     justify-content: flex-start;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: $xl) {
+@include media-xl-down {
   .justify-content-xl-start {
     justify-content: flex-start;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: $lg) {
+@include media-lg-down {
   .justify-content-lg-start {
     justify-content: flex-start;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: $md) {
+@include media-md-down {
   .justify-content-md-start {
     justify-content: flex-start;
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-width: $sm) {
+@include media-sm-down {
   .justify-content-sm-start {
     justify-content: flex-start;
   }
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: $xs) {
+@include media-xs-down {
   .justify-content-xs-start {
     justify-content: flex-start;
   }

@@ -18,7 +18,7 @@
   align-items: stretch;
 }
 
-@media (max-width: $xxl) {
+@include media-xxl-down {
   .align-items-xxl-start {
     align-items: flex-start;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: $xl) {
+@include media-xl-down {
   .align-items-xl-start {
     align-items: flex-start;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: $lg) {
+@include media-lg-down {
   .align-items-lg-start {
     align-items: flex-start;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: $md) {
+@include media-md-down {
   .align-items-md-start {
     align-items: flex-start;
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-width: $sm) {
+@include media-sm-down {
   .align-items-sm-start {
     align-items: flex-start;
   }
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: $xs) {
+@include media-xs-down {
   .align-items-xs-start {
     align-items: flex-start;
   }
