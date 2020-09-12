@@ -14,4 +14,9 @@
       padding-right: 0;
     }
   }
+  
+  &.gutters-small {
+    margin-left: -$gutters-small;
+    margin-right: -$gutters-small;
+  }
 }
