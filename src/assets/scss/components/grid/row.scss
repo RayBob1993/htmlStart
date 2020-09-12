@@ -18,5 +18,10 @@
   &.gutters-small {
     margin-left: -$gutters-small;
     margin-right: -$gutters-small;
+
+    > .col {
+      padding-left: $gutters-small;
+      padding-right: $gutters-small;
+    }
   }
 }
