@@ -1,8 +1,8 @@
-.topMenuWrap {
-  > .dropdownBut {
+.top-menu {
+  > .button {
     display: none;
 
-    @media (max-width: $md) {
+    @include media-md-down {
       position: fixed;
       top: 10px;
       right: 10px;
@@ -14,7 +14,7 @@
   }
 
   .dropdown-menu {
-    @media (min-width: $md) {
+    @include media-md-up {
       position: static;
 
       opacity: 1;
@@ -23,7 +23,7 @@
       transform: none;
     }
 
-    @media (max-width: $md) {
+    @include media-md-down {
       position: fixed;
       top: 0;
       left: 0;
@@ -48,79 +48,39 @@
       }
     }
   }
-}
 
-.topMenu {
-  @media (max-width: $md) {
-    height: 100%;
-    width: 280px;
-    padding: 15px;
+  &__nav {
+    @include media-md-down {
+      height: 100%;
+      width: 280px;
+      padding: 15px;
 
-    transition: $transition-base;
+      transition: $transition-base;
 
-    transform: translateX(-100%);
+      transform: translateX(-100%);
 
-    background-color: #fff;
+      background-color: #fff;
 
-    .show & {
-      transform: none;
+      .show & {
+        transform: none;
+      }
     }
-  }
 
-  /* Уровень 1 */
-  .level1 {
-    > li {
-      > a {
+    .level-1 {
+      > li {
+        > a {
 
-      }
+        }
 
-      &:hover > a,
-      &.active > a {
-        text-decoration: underline;
-      }
-
-      &:hover {
-        .level2 {
-          opacity: 1;
-          visibility: visible;
-
-          transform: none;
+        &:hover > a,
+        &.active > a {
+          text-decoration: underline;
         }
       }
-    }
 
-    @media (max-width: $md) {
-      flex-direction: column;
-    }
-  }
-
-  /* Уровень 2 */
-  .level2 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(20px);
-
-    transition: $transition-base;
-
-    @media (max-width: $md) {
-      position: static;
-
-      opacity: 1;
-      visibility: visible;
-
-      transform: none;
-
-      transition: none;
-
-      border: 0;
-      width: auto;
-      display: none;
+      @include media-md-down {
+        flex-direction: column;
+      }
     }
   }
 }
