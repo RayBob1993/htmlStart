@@ -64,7 +64,7 @@
 <h4>Список по горизонтали</h4>
 
 ```html
-<ul class="list listFlex">
+<ul class="list list-flex">
     <li>Пункт 1</li>
     <li>Пункт 2</li>
     <li>Пункт 3</li>
@@ -74,7 +74,7 @@
 <h4>Список по центру</h4>
 
 ```html
-<ul class="list listFlex listCenter">
+<ul class="list list-flex justify-content-center">
     <li>Пункт 1</li>
     <li>Пункт 2</li>
     <li>Пункт 3</li>
@@ -84,17 +84,7 @@
 <h4>Список равномерно по ширине блока</h4>
 
 ```html
-<ul class="list listFlex listBetween">
-    <li>Пункт 1</li>
-    <li>Пункт 2</li>
-    <li>Пункт 3</li>
-</ul>
-```
-
-<h4>Список с пунктами по всей ширине блока</h4>
-
-```html
-<ul class="list listFlex listBetween">
+<ul class="list list-flex justify-content-between">
     <li>Пункт 1</li>
     <li>Пункт 2</li>
     <li>Пункт 3</li>
@@ -119,7 +109,7 @@
 Если иконка расположена слева
 
 ```html
-<svg class="ico icoLeft">
+<svg class="ico ico-left">
     <use xlink:href="#icoTel"></use>
 </svg>
 ```
@@ -127,7 +117,7 @@
 Если иконка расположена справа
 
 ```html
-<svg class="ico icoRight">
+<svg class="ico ico-right">
     <use xlink:href="#icoTel"></use>
 </svg>
 ```
@@ -135,7 +125,7 @@
 <h4>Иконка гамбургер</h4>
 
 ```html
-<span class="icoMenu"> 
+<span class="ico-menu"> 
     <span></span> 
     <span></span> 
     <span></span> 
@@ -150,8 +140,22 @@
 
 ```html
 <table class="table">
-    <thead></thead>
-    <tbody></tbody>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
     <tfoot></tfoot>
 </table>
 ```
@@ -227,19 +231,19 @@
 Для начала, необходимо его подключить https://refreshless.com/nouislider/
 
 ```html
-<div class="rangeSliderGroup">
+<div class="range-field">
     <div class="row">
-        <div class="col">
-            <input type="text" class="field rangeSliderMin">
+        <div class="col col-6">
+            <input type="text" class="field range-field__min">
         </div>
 
-        <div class="col">
-            <input type="text" class="field rangeSliderMax">
+        <div class="col col-6">
+            <input type="text" class="field range-field__max">
         </div>
     </div>
 
     <div
-        class="rangeSlider"
+        class="range-field__slider"
         data-options='{
             "start": [1000, 278000],
             "range": {
@@ -265,7 +269,7 @@
 
 ```html
 <div class="tabs">
-    <ul class="list listFlex nav nav-tabs" role="tablist">
+    <ul class="list list-flex nav nav-tabs" role="tablist">
         <li class="nav-item">
             <a 
                 href="#tab1" 
@@ -292,7 +296,7 @@
         </li>
     </ul>
 
-    <div class="tabContent">
+    <div class="tab-content">
         <div 
             role="tabpanel" 
             class="tab-pane fade show active" 
@@ -322,7 +326,7 @@
 ```html
 <div class="dropdown">
     <button 
-        class="button dropdownBut" 
+        class="button" 
         data-toggle="dropdown" 
         aria-haspopup="true" 
         aria-expanded="false" 
@@ -342,16 +346,16 @@
 <h3 id="responsiveNav">Адаптивное меню</h3>
 
 ```html
-<div class="dropdown topMenuWrap"> 
+<div class="dropdown top-menu"> 
     <button 
         type="button" 
-        class="button dropdownBut"
+        class="button"
         data-toggle="dropdown" 
         aria-haspopup="true" 
         aria-expanded="false"
         data-display="static"
     > 
-        <span class="icoMenu"> 
+        <span class="ico-menu"> 
             <span></span> 
             <span></span> 
             <span></span> 
@@ -359,8 +363,8 @@
     </button> 
     
     <div class="dropdown-menu">
-        <nav class="nav topMenu"> 
-            <ul class="list listFlex level1">
+        <nav class="nav top-menu__nav"> 
+            <ul class="list list-flex level-1">
                 <li class="active"><a href="#">Главная</a></li>
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -447,7 +451,7 @@
 
 ```html
 <nav class="nav breadcrumbs">
-    <ul class="list listFlex">
+    <ul class="list list-flex">
         <li><a href="/">Главная</a></li>
         <li class="active"><a href="#">Раздел</a></li>
     </ul>
@@ -460,7 +464,7 @@
 
 ```html
 <nav class="nav pagination">
-    <ul class="list listFlex">
+    <ul class="list list-flex">
         <li><a href="#" class="pagination-prev">Назад</a></li>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -479,13 +483,13 @@
 
 ```html
 <section class="section">
-    <header class="section-header">
-        <h2 class="section-title">Секция</h2>
+    <header class="section__header">
+        <h2 class="section__title">Секция</h2>
     </header>
 
-    <div class="section-body"></div>
+    <div class="section__body"></div>
     
-    <footer class="section-footer"></footer>
+    <footer class="section__footer"></footer>
 </section>
 ```
 
@@ -496,8 +500,8 @@
 
 ```html
 <form action="#" class="search" method="post">
-    <input type="search" class="field" placeholder="Поиск по сайту..." required>
-    <input type="submit" class="but" value="Искать">
+    <input type="search" class="field search__field" placeholder="Поиск по сайту..." required>
+    <input type="submit" class="but search__button" value="Искать">
 </form>
 ```
 
