@@ -66,6 +66,7 @@
       }
     }
 
+    /* Уровень 1 */
     .level-1 {
       > li {
         > a {
@@ -76,10 +77,49 @@
         &.active > a {
           text-decoration: underline;
         }
+
+        &:hover {
+          .level2 {
+            opacity: 1;
+            visibility: visible;
+
+            transform: none;
+          }
+        }
       }
 
       @include media-md-down {
         flex-direction: column;
+      }
+    }
+
+    /* Уровень 2 */
+    .level-2 {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transform: translateY(20px);
+
+      transition: $transition-base;
+
+      @include media-md-down {
+        position: static;
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+
+        transition: none;
+
+        border: 0;
+        width: auto;
+        display: none;
       }
     }
   }
