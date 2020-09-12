@@ -1,0 +1,11 @@
+.price {
+  white-space: nowrap;
+
+  &--old {
+    text-decoration: line-through;
+  }
+
+  &--current {
+
+  }
+}
