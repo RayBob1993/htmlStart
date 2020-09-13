@@ -8,9 +8,9 @@
   padding: 0;
   border: 0;
 
-  cursor: pointer;
+  outline: 0;
   border-radius: $border-radius-default;
-  transition: $transition-base;
+  background-color: transparent;
 
   text-align: center;
   line-height: $line-height;
@@ -21,8 +21,8 @@
   font-weight: normal;
 
   -webkit-tap-highlight-color: transparent;
-
-  outline: 0;
+  cursor: pointer;
+  transition: $transition-base;
 
   @include utils-user-select(none);
   @include utils-appearance(none);
