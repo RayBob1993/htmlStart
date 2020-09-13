@@ -80,29 +80,31 @@
     },
 
     fancyboxInit: function () {
-      if (typeof ($.fn.fancybox) !== 'undefined') {
-        $('[data-fancybox]').fancybox({
-          backFocus: false,
-          image: {
-            protect: true
-          },
-          youtube: {
-            controls: 0,
-            showinfo: 0
-          },
-          thumbs: {
-            autoStart: true,
-            axis: 'x'
-          },
-          buttons: [
-            'slideShow',
-            'fullScreen',
-            'thumbs',
-            'zoom',
-            'close'
-          ],
-        });
+      if (typeof ($.fn.fancybox) === 'undefined') {
+        return this;
       }
+      
+      $('[data-fancybox]').fancybox({
+        backFocus: false,
+        image: {
+          protect: true
+        },
+        youtube: {
+          controls: 0,
+          showinfo: 0
+        },
+        thumbs: {
+          autoStart: true,
+          axis: 'x'
+        },
+        buttons: [
+          'slideShow',
+          'fullScreen',
+          'thumbs',
+          'zoom',
+          'close'
+        ],
+      });
 
       return this;
     },
