@@ -88,11 +88,19 @@
   &--mini {}
 
   // =================================== States
-  &.is-rounded {
+  &--rounded {
     border-radius: $border-radius-rounded;
   }
 
-  &.is-expanded {
+  &--expanded {
     width: 100%;
+  }
+  
+  &--plain {
+    &.button--primary {
+      &:not(:hover) {
+        background-color: transparent;
+      }
+    }
   }
 }
