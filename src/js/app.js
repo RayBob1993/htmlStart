@@ -28,10 +28,23 @@
       this
         .swiperInit()
         .tabsSwiperFix()
+        .dropdownClickOutsideDisable()
         .fancyboxInit()
         .inputTelMaskInit()
         .counter()
         .accordion('.topMenu');
+    },
+    
+    dropdownClickOutsideDisable: function () {
+      var dropdown = $('.disable-outside-click');
+      var dropdownMenu = dropdown.find('.dropdown-menu');
+
+      dropdownMenu.on("click.bs.dropdown", function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+      });
+
+      return this;
     },
 
     swiperInit: function () {
