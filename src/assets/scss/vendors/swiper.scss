@@ -77,9 +77,16 @@
 .swiper-button {
   position: absolute;
   top: calc(50% - 22px);
+  z-index: 10;
+  
   width: 27px;
   height: 44px;
-  z-index: 10;
+  border: 0;
+  padding: 0;
+  
+  outline: none;
+  background-color: transparent;
+  
   cursor: pointer;
 
   &-disabled {
