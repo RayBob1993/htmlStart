@@ -216,12 +216,10 @@
         </div>
     </div>
     
-    <!-- Навигация -->
     <div class="swiper-pagination"></div>
     
-    <!-- Стрелки переключения -->
-    <div class="swiper-button swiper-button-next"></div>
-    <div class="swiper-button swiper-button-prev"></div>
+    <button class="swiper-button swiper-button-prev"></button>
+    <button class="swiper-button swiper-button-next"></button>
 </section>
 ```
 
