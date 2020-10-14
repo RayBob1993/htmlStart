@@ -16,21 +16,40 @@
 
   &:hover {
   }
+}
 
-  &:focus {
-    &::-webkit-input-placeholder,
-    &::-moz-placeholder,
-    &:-moz-placeholder,
-    &:-ms-input-placeholder {
-      color: transparent
-    }
-  }
+.field::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
 
-  &::-webkit-input-placeholder,
-  &::-moz-placeholder,
-  &:-moz-placeholder,
-  &:-ms-input-placeholder {
-    text-overflow: ellipsis;
-    color: #aaa;
-  }
+.field::-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.field:focus::-moz-placeholder {
+  color: transparent
+}
+
+.field:focus:-moz-placeholder {
+  color: transparent
+}
+
+.field:focus:-ms-input-placeholder {
+  color: transparent
 }
