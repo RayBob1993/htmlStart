@@ -1,14 +1,11 @@
 .top-menu {
   > .button {
-    display: none;
-
     @include media-md-down {
       position: fixed;
       top: 10px;
       right: 10px;
       z-index: 1001;
 
-      display: block;
       padding: 5px;
     }
   }
