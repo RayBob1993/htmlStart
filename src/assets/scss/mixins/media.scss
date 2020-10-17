@@ -89,6 +89,13 @@
   }
 }
 
+// Media min-max
+@mixin media-min-max ($maxWidth, $minWidth) {
+  @media screen and (max-width: $maxWidth) and (min-width: $minWidth) {
+    @content;
+  }
+}
+
 // Media print
 @mixin media-print  {
   @media print {
