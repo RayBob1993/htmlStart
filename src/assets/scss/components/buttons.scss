@@ -35,11 +35,14 @@
     border: 0;
   }
 
-  /* Label */
   &__label {
     flex: 1;
     font-style: inherit;
     font-weight: inherit;
+  }
+  
+  &__ico {
+    flex: 0 0 auto;
   }
 
   // =================================== Types
