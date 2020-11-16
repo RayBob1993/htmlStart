@@ -189,7 +189,7 @@
       var subMenus = el.next();
 
       function init (event) {
-        var subMenu = $(this).next(),
+        var subMenu = $(this).next();
         var parent = $(this).parent();
 
         if (subMenu.length) {
