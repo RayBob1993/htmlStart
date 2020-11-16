@@ -92,31 +92,29 @@
 
     /* Уровень 2 */
     .level-2 {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 1000;
+      @include media-md-up {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
 
-      opacity: 0;
-      visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
 
-      transform: translateY(20px);
+        transform: translateY(20px);
 
-      transition: $transition-base;
+        transition: $transition-base;
+      }
 
-      @include media-md-down {
-        position: static;
+      > li {
+        > a {
 
-        opacity: 1;
-        visibility: visible;
+        }
 
-        transform: none;
+        &:hover > a,
+        &.active > a {
 
-        transition: none;
-
-        border: 0;
-        width: auto;
-        display: none;
+        }
       }
     }
   }
