@@ -66,6 +66,12 @@
     /* Уровень 1 */
     .level-1 {
       > li {
+        position: relative;
+        
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        
         > a {
 
         }
@@ -107,6 +113,10 @@
       }
 
       > li {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        
         > a {
 
         }
