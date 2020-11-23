@@ -1,8 +1,35 @@
-const gulp = require('gulp');
+const { src, dest } = require('gulp');
 const imagemin = require('gulp-imagemin');
+const gulpIf = require('gulp-if');
 
-function images () {
+const { gifsicle, mozjpeg, optipng, svgo } = imagemin;
+const { isProd } = require('../utils/index');
+const config = require('../gulp.config');
 
-}
+const imagesTask = () => {
+  const imageminOptions = [
+    gifsicle({
+      interlaced: true
+    }),
+    mozjpeg({
+      progressive: true
+    }),
+    optipng({
+      optimizationLevel: 5
+    }),
+    svgo({
+      plugins: [
+        {
+          removeViewBox: false,
+          collapseGroups: true
+        }
+      ]
+    })
+  ];
 
-exports.images = images;
+  return src(config.path.dev.images)
+    .pipe(gulpIf(isProd, imagemin(imageminOptions)))
+    .pipe(dest(config.path.build.images));
+};
+
+exports.imagesTask = imagesTask;

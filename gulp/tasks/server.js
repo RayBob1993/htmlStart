@@ -1,13 +1,18 @@
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
 
-function server () {
-  browserSync.init({
-    watch: true,
-    server: {
-      baseDir: 'src/html'
-    },
-    notify: false
-  });
-}
+const config = require('../gulp.config');
 
-exports.server = server;
+const serverTask = (done) => {
+  browserSync.init(config.server);
+
+  done();
+};
+
+const reloadBrowser = (done) => {
+  browserSync.reload();
+
+  done();
+};
+
+exports.serverTask = serverTask;
+exports.reloadBrowser = reloadBrowser;

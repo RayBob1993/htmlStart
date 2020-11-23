@@ -1,19 +1,17 @@
-const styles = require('./styles');
-const server = require('./server');
-const clean = require('./clean');
-const fonts = require('./fonts');
-const images = require('./images');
-const js = require('./js');
-const watch = require('./watch');
-const build = require('./build');
+const { clearTask } = require('./clear');
+const { fontsTask } = require('./fonts');
+const { htmlTask } = require('./html');
+const { imagesTask } = require('./images');
+const { serverTask } = require('./server');
+const { stylesTask } = require('./styles');
+const { watchTask } = require('./watch');
+const { jsTask } = require('./js');
 
-exports = {
-  styles,
-  server,
-  clean,
-  fonts,
-  images,
-  js,
-  watch,
-  build
-}
+exports.watchTask = watchTask;
+exports.htmlTask = htmlTask;
+exports.stylesTask = stylesTask;
+exports.imagesTask = imagesTask;
+exports.fontsTask = fontsTask;
+exports.clearTask = clearTask;
+exports.jsTask = jsTask;
+exports.serverTask = serverTask;
