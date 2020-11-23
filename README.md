@@ -1,8 +1,7 @@
 # htmlStart
 ## Запуск
 * ```npm install```
-* Как установили все зависимости для сборки, запускаем дев сервер ```npm run dev```
-* Работаем
+* ```npm run serve```
 
 ## Сборка билда
 * ```npm run build```
@@ -40,6 +39,7 @@
 * [Ползунок диапазона чисел/цен](https://refreshless.com/nouislider/)
 * [Валидация форм](https://github.com/jzaefferer/jquery-validation)
 * [Кастомный select](https://github.com/select2/select2)
+* [Анимация при скролле](https://github.com/graingert/wow)
 * [Динамическая сетка](https://github.com/metafizzy/isotope)
 * [Датапикер](https://github.com/Eonasdan/bootstrap-datetimepicker)
 * [Отслеживание видимости элемента в окне браузера](https://github.com/dirkgroenen/jQuery-viewport-checker)
@@ -109,7 +109,7 @@
 Если иконка расположена слева
 
 ```html
-<svg class="ico ico-left">
+<svg class="ico ico--left">
     <use xlink:href="#icoTel"></use>
 </svg>
 ```
@@ -117,7 +117,7 @@
 Если иконка расположена справа
 
 ```html
-<svg class="ico ico-right">
+<svg class="ico ico--right">
     <use xlink:href="#icoTel"></use>
 </svg>
 ```
@@ -174,7 +174,7 @@
 Пример кода:
 
 ```html
-<a href="app/img/galery/1.jpg" data-fancybox>
+<a href="app/img/galery/1.jpg" class="fancybox" data-fancybox>
     <img class="app/img/galery/1.jpg">
 </a>
 ```
@@ -201,7 +201,7 @@
 Для работы слайдеров используется плагин <a href="http://idangero.us/swiper/api/"><b>Swiper</b></a>
 
 ```html
-<section id="mainSlider" class="swiper-container">
+<div id="main-slider" class="swiper-container main-slider">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             Slide 1
@@ -220,7 +220,7 @@
     
     <button class="swiper-button swiper-button-prev"></button>
     <button class="swiper-button swiper-button-next"></button>
-</section>
+</div>
 ```
 
 <a href="#">наверх</a>
@@ -382,14 +382,14 @@
     type="button"
     class="button"
     data-toggle="modal"
-    data-target="#feedbackModal"
+    data-target="#feedback-modal"
 >
     Обратная связь
 </button>
 
 <div
     class="modal fade"
-    id="feedbackModal"
+    id="feedback-modal"
     tabindex="-1"
     role="dialog"
     aria-labelledby="Обратная связь"
