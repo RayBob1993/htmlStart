@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "Заготовка для вёрстки сайта",
 	"scripts": {
-		"serve": "gulp NODE_ENV=development",
-		"build": "gulp build NODE_ENV=production"
+		"serve": "cross-env NODE_ENV=development gulp",
+		"build": "cross-env NODE_ENV=production gulp build"
 	},
 	"repository": {
 		"type": "git",
@@ -29,6 +29,7 @@
 	"devDependencies": {
 		"autoprefixer": "^10.0.2",
 		"browser-sync": "^2.26.13",
+		"cross-env": "^7.0.2",
 		"cssnano": "^4.1.10",
 		"gulp": "^4.0.2",
 		"gulp-clean": "^0.4.0",

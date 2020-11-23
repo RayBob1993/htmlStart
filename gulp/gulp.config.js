@@ -22,7 +22,7 @@ const gulpConfig = {
     open: true,
     watch: true,
     server: {
-      baseDir: 'src/html'
+      baseDir: 'dist/'
     },
     notify: false
   },
