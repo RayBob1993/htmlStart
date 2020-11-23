@@ -4,4 +4,4 @@ function watch () {
 
 }
 
-module.exports = watch;
+exports.watch = watch;

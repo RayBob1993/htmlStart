@@ -1,7 +1,7 @@
-const gulp = require('gulp');
+const { parallel } = require('gulp');
 
 function build () {
-
+  return parallel();
 }
 
-module.exports = build;
+exports.build = build;

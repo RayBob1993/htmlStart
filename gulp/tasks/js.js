@@ -4,4 +4,4 @@ function js () {
 
 }
 
-module.exports = js;
+exports.js = js;

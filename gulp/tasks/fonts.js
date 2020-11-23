@@ -4,4 +4,4 @@ function fonts () {
 
 }
 
-module.exports = fonts;
+exports.fonts = fonts;

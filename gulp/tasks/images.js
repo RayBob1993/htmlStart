@@ -5,4 +5,4 @@ function images () {
 
 }
 
-module.exports = images;
+exports.images = images;

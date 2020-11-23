@@ -5,4 +5,4 @@ function clear () {
 
 }
 
-module.exports = clear;
+exports.clear = clear;

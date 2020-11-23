@@ -1,5 +1,5 @@
-const styles = require('./clean');
-const serve = require('./serve');
+const styles = require('./styles');
+const server = require('./server');
 const clean = require('./clean');
 const fonts = require('./fonts');
 const images = require('./images');
@@ -7,9 +7,9 @@ const js = require('./js');
 const watch = require('./watch');
 const build = require('./build');
 
-module.exports = {
+exports = {
   styles,
-  serve,
+  server,
   clean,
   fonts,
   images,

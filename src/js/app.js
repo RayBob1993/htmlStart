@@ -34,7 +34,7 @@
         .counter()
         .accordion('.topMenu');
     },
-    
+
     dropdownClickOutsideDisable: function () {
       var dropdown = $('.disable-outside-click');
       var dropdownMenu = dropdown.find('.dropdown-menu');
@@ -96,7 +96,7 @@
       if (typeof ($.fn.fancybox) === 'undefined') {
         return this;
       }
-      
+
       $('[data-fancybox]').fancybox({
         backFocus: false,
         image: {

@@ -9,4 +9,4 @@ function styles () {
     .pipe(gulp.dest(config.path.build.css))
 }
 
-module.exports = styles;
+exports.styles = styles;

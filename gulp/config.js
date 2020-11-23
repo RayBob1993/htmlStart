@@ -1,15 +1,24 @@
 const config = {
   path: {
     dev: {
-      scss: 'src/assets/scss/**/*.scss'
+      scss: 'src/assets/scss/*.scss',
+      js: 'src/js/**/*',
+      images: 'src/assets/images/**/*',
+      fonts: 'src/assets/fonts/**/*'
     },
     build: {
-      css: 'dist/css/'
+      dist: 'dist/*',
+      css: 'dist/css/',
+      js: 'dist/js/',
+      images: 'dist/images/',
+      fonts: 'dist/fonts/'
     }
   },
   server: {
+    open: true,
+    watch: true,
     server: {
-      baseDir: './assets/build'
+      baseDir: 'src/html'
     },
     notify: false
   }
