@@ -6,6 +6,7 @@ const rename = require('gulp-rename');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
+const stylelint = require('gulp-stylelint');
 
 const config = require('../gulp.config');
 const { isDev } = require('../utils/index');
@@ -16,7 +17,7 @@ const stylesTask = () => {
     cssnano()
   ];
 
-  return src(config.path.dev.scss)
+  return src(config.path.scss.dev)
     .pipe(gulpIf(isDev, sourcemaps.init()))
     .pipe(
       sass({
@@ -26,8 +27,20 @@ const stylesTask = () => {
     )
     .pipe(postcss(postcssPlugins))
     .pipe(gulpIf(isDev, sourcemaps.write()))
-    .pipe(rename('styles.min.css'))
-    .pipe(dest(config.path.build.css))
+    .pipe(rename({
+      basename: 'styles',
+      suffix: '.min'
+    }))
+    .pipe(dest(config.path.scss.build))
+};
+
+const stylesLintTask = () => {
+  return src(config.path.scss.lint)
+    .pipe(stylelint({
+      fix: true
+    }))
+    .pipe(dest('dist/'))
 };
 
 exports.stylesTask = stylesTask;
+exports.stylesLintTask = stylesLintTask;

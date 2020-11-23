@@ -5,18 +5,16 @@
 .ico {
   display: inline-block;
   vertical-align: middle;
-  width: 18px;
-  height: 18px;
 
   fill: #000;
 
   transition: $transition-base;
 
-  &-left {
+  &--left {
     margin-right: 5px;
   }
 
-  &-right {
+  &--right {
     margin-left: 5px;
   }
 }

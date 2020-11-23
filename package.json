@@ -1,6 +1,6 @@
 {
 	"name": "html-start",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Заготовка для вёрстки сайта",
 	"scripts": {
 		"serve": "cross-env NODE_ENV=development gulp",
@@ -15,7 +15,10 @@
 		"css",
 		"html",
 		"css-framework",
-		"starter-kit"
+		"starter-kit",
+		"gulp",
+		"gulp 4",
+		"scss"
 	],
 	"author": "RayBob1993",
 	"license": "MIT",
@@ -41,7 +44,11 @@
 		"gulp-rename": "^2.0.0",
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^3.0.0",
+		"gulp-stylelint": "^13.0.0",
 		"node-sass": "^4.14.1",
-		"postcss": "^8.1.9"
+		"postcss": "^8.1.9",
+		"stylelint": "^13.8.0",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-scss": "^3.18.0"
 	}
 }

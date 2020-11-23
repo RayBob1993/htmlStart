@@ -7,6 +7,7 @@ const {
   imagesTask,
   serverTask,
   stylesTask,
+  stylesLintTask,
   watchTask,
   jsTask
 } = require('./gulp/tasks/index');
@@ -32,6 +33,7 @@ exports.build = series(
 exports.watch = watchTask;
 exports.html = htmlTask;
 exports.styles = stylesTask;
+exports.stylesLintTask = stylesLintTask;
 exports.images = imagesTask;
 exports.fonts = fontsTask;
 exports.clear = clearTask;

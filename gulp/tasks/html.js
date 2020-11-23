@@ -5,10 +5,10 @@ const htmlbeautify = require('gulp-html-beautify');
 const config = require('../gulp.config');
 
 const htmlTask = () => {
-  return src(config.path.dev.pages)
+  return src(config.path.html.dev)
     .pipe(htmlPartial(config.partials))
     .pipe(htmlbeautify(config.htmlbeautify))
-    .pipe(dest(config.path.build.html));
+    .pipe(dest(config.path.html.build));
 };
 
 exports.htmlTask = htmlTask;

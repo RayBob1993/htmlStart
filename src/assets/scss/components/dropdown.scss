@@ -1,25 +1,25 @@
 .dropdown {
   position: relative;
-}
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
+  &-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
 
-  visibility: hidden;
-  opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 
-  transition: $transition-base;
+    transition: $transition-base;
 
-  transform: translateY(20px);
+    transform: translateY(20px);
 
-  &.show {
-    visibility: visible;
-    opacity: 1;
+    &.show {
+      visibility: visible;
+      opacity: 1;
 
-    -webkit-transform: none;
-    transform: none;
+      -webkit-transform: none;
+      transform: none;
+    }
   }
 }

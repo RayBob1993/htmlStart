@@ -27,9 +27,9 @@ const imagesTask = () => {
     })
   ];
 
-  return src(config.path.dev.images)
+  return src(config.path.images.dev)
     .pipe(gulpIf(isProd, imagemin(imageminOptions)))
-    .pipe(dest(config.path.build.images));
+    .pipe(dest(config.path.images.build));
 };
 
 exports.imagesTask = imagesTask;
