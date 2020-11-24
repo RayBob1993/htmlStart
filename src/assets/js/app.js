@@ -25,14 +25,15 @@
 
   App.prototype = {
     init: function () {
-      this
-        .swiperInit()
-        .tabsSwiperFix()
-        .dropdownClickOutsideDisable()
-        .fancyboxInit()
-        .inputTelMaskInit()
-        .counter()
-        .accordion('.topMenu');
+      this.swiperInit();
+      this.tabsSwiperFix();
+      this.dropdownClickOutsideDisable();
+      this.fancyboxInit();
+      this.inputTelMaskInit();
+      this.counter();
+      this.rangeSlider();
+      this.accordion('.topMenu');
+      this.labelPlaceholder();
     },
 
     dropdownClickOutsideDisable: function () {
@@ -43,13 +44,11 @@
         event.stopPropagation();
         event.preventDefault();
       });
-
-      return this;
     },
 
     swiperInit: function () {
       if (typeof window.Swiper === 'undefined') {
-        return this;
+        return;
       }
 
       var mySwiper = new Swiper('#reviewsSlider', {
@@ -70,8 +69,6 @@
           }
         }
       });
-
-      return this;
     },
 
     tabsSwiperFix: function () {
@@ -83,18 +80,16 @@
           !activeTabSwiper.length ||
           typeof window.Swiper === 'undefined'
         ) {
-          return this;
+          return;
         }
 
         activeTabSwiper[0].swiper.update();
       });
-
-      return this;
     },
 
     fancyboxInit: function () {
       if (typeof ($.fn.fancybox) === 'undefined') {
-        return this;
+        return;
       }
 
       $('[data-fancybox]').fancybox({
@@ -116,18 +111,16 @@
           'thumbs',
           'zoom',
           'close'
-        ],
+        ]
       });
-
-      return this;
     },
 
     inputTelMaskInit: function () {
-      if (typeof ($.fn.mask) !== 'undefined') {
-        $('input[type="tel"]').mask('7 (999) 999 99 99');
+      if (typeof ($.fn.mask) === 'undefined') {
+        return;
       }
 
-      return this;
+      $('input[type="tel"]').mask('7 (999) 999 99 99');
     },
 
     scrollTo: function () {
@@ -141,34 +134,53 @@
           scrollTop: offset
         }, 300);
       });
-
-      return this;
     },
 
-    sendForm: function (selector) {
-      var form = $(selector);
+    labelPlaceholder: function () {
+      var labelPlaceholdersSelector = '.form-item__label-placeholder';
+      var labelPlaceholders = $(labelPlaceholdersSelector);
+      var inputs = labelPlaceholders.find('.field');
 
-      $.ajax({
-        url: form.attr('action'),
-        type: form.attr('method') || 'POST',
-        dataType: 'html',
-        data: form.serialize()
-      }).done(function (result) {
+      if (!labelPlaceholders.length) {
+        return this;
+      }
 
-        if (result && (result === 'ok')) {
-          console.log(result);
+      function onFocus () {
+        var labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
 
-          form.trigger('reset');
-        } else {
-          console.error('Ошибка, форма не отправлена');
+        labelPlaceholder.addClass('is-filled');
+      }
+
+      function onBlur () {
+        var labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
+        var hasValue = !!$(this).val().trim();
+
+        if (!hasValue) {
+          labelPlaceholder.removeClass('is-filled');
         }
+      }
 
-      });
+      function onEach (index, el) {
+        var labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
+        var value = $(el).val().trim();
+
+        if (value) {
+          labelPlaceholder.addClass('is-filled');
+        } else {
+          labelPlaceholder.removeClass('is-filled');
+        }
+      }
+
+      inputs
+        .on('focus', onFocus)
+        .on('blur', onBlur)
+        .each(onEach);
     },
 
     // ============================ Прокрутка к началу страницы
     pageUp: function (selector, speed) {
       speed = speed || 200;
+
       var button = $(selector);
 
       button.on('click', function (event) {
@@ -180,8 +192,6 @@
       });
 
       this.pageUpFadeToggle(button);
-
-      return this;
     },
 
     // ============================ Показывать кнопку вверх только если был скролл
@@ -196,20 +206,16 @@
           : button.fadeOut()
         ;
       });
-
-      return this;
     },
 
     accordion: function (selector) {
       var self = this;
-      var
-        el = $(selector).find('a'),
-        subMenus = el.next();
+      var el = $(selector).find('a');
+      var subMenus = el.next();
 
       function init (event) {
-        var
-          subMenu = $(this).next(),
-          parent = $(this).parent();
+        var subMenu = $(this).next();
+        var parent = $(this).parent();
 
         if (subMenu.length) {
           event.preventDefault();
@@ -226,7 +232,6 @@
           subMenus.slideUp();
           subMenu.slideDown();
         } else {
-
           el
             .parent()
             .removeClass('act');
@@ -257,8 +262,6 @@
           parent.addClass('subMenu')
         }
       });
-
-      return this;
     },
 
     isMobileDevice: function () {
@@ -286,6 +289,7 @@
 
     counter: function (prfx) {
       prfx = prfx || '';
+
       var counter = $('.counter');
       var field = counter.find('.field');
 
@@ -338,8 +342,6 @@
           fieldCount($(this))
         });
       }
-
-      return this;
     },
 
     rangeSlider: function () {
@@ -350,7 +352,7 @@
       };
 
       if (typeof window.noUiSlider === 'undefined') {
-        return this;
+        return;
       }
 
       rangeSliderGroup.each(function (index, el) {
@@ -379,8 +381,6 @@
           sliderNode.noUiSlider.set([null, $(this).val()]);
         });
       });
-
-      return this;
     }
   };
 

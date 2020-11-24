@@ -27,10 +27,7 @@ const stylesTask = () => {
     )
     .pipe(postcss(postcssPlugins))
     .pipe(gulpIf(isDev, sourcemaps.write()))
-    .pipe(rename({
-      basename: 'styles',
-      suffix: '.min'
-    }))
+    .pipe(rename(config.fileNames.css.buildMin))
     .pipe(dest(config.path.scss.build))
 };
 

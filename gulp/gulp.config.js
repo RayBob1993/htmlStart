@@ -24,6 +24,16 @@ const gulpConfig = {
     },
     dist: 'dist/*'
   },
+  fileNames: {
+    css: {
+      build: 'styles.css',
+      buildMin: 'styles.min.css',
+    },
+    js: {
+      build: 'app.js',
+      buildMin: 'app.min.js'
+    }
+  },
   server: {
     open: true,
     watch: true,
@@ -33,7 +43,7 @@ const gulpConfig = {
     notify: false
   },
   partials: {
-    variablePrefix: '>>',
+    variablePrefix: '$',
     basePath: 'src/assets/partials/'
   },
   htmlbeautify: {
