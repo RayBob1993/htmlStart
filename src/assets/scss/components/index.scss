@@ -1,6 +1,5 @@
-@import './fonts';
+@import './fonts/index';
 @import './grid/index';
-@import './form/index';
 @import './img';
 @import './buttons';
 @import './breadcrumbs';
@@ -11,12 +10,10 @@
 @import './footer';
 @import './list';
 @import './pagination';
-@import './modals';
-@import './tabs';
 @import './table';
-@import './collapse';
 @import './counter';
-@import './dropdown';
 @import './icons';
-@import './section';
 @import './price';
+@import './form/index';
+@import './bootstrap/index';
+@import './sections/index';

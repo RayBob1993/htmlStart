@@ -27,6 +27,7 @@
     init: function () {
       this.swiperInit();
       this.tabsSwiperFix();
+      this.wowJs();
       this.dropdownClickOutsideDisable();
       this.fancyboxInit();
       this.inputTelMaskInit();
@@ -115,6 +116,23 @@
       });
     },
 
+    wowJs: function () {
+      if (typeof window.WOW === 'undefined') {
+        return this;
+      }
+
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'is-animation',
+        offset: 100,
+        mobile: true,
+        live: true,
+        scrollContainer: null
+      });
+
+      wow.init();
+    },
+
     inputTelMaskInit: function () {
       if (typeof ($.fn.mask) === 'undefined') {
         return;
@@ -142,7 +160,7 @@
       var inputs = labelPlaceholders.find('.field');
 
       if (!labelPlaceholders.length) {
-        return this;
+        return;
       }
 
       function onFocus () {
