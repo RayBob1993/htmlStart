@@ -1,0 +1,56 @@
+{
+	"name": "html-start",
+	"version": "2.0.0",
+	"description": "Заготовка для вёрстки сайта",
+	"scripts": {
+		"serve": "cross-env NODE_ENV=development gulp",
+		"build": "cross-env NODE_ENV=production gulp build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RayBob1993/htmlStart.git"
+	},
+	"keywords": [
+		"flexbox",
+		"css",
+		"html",
+		"css-framework",
+		"starter-kit",
+		"gulp",
+		"gulp 4",
+		"scss"
+	],
+	"author": "RayBob1993",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/RayBob1993/htmlStart/issues"
+	},
+	"homepage": "https://github.com/RayBob1993/htmlStart",
+	"engines": {
+		"node": ">= 12.14.0"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.0.2",
+		"browser-sync": "^2.26.13",
+		"cross-env": "^7.0.2",
+		"cssnano": "^4.1.10",
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-html-beautify": "^1.0.1",
+		"gulp-html-partial": "^1.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-postcss": "^9.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-stylelint": "^13.0.0",
+		"gulp-uglify": "^3.0.2",
+		"node-sass": "^4.14.1",
+		"postcss": "^8.1.9",
+		"stylelint": "^13.8.0",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-scss": "^3.18.0"
+	}
+}

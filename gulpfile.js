@@ -15,6 +15,9 @@ const {
 exports.default = parallel(
   stylesTask,
   jsTask,
+  fontsTask,
+  imagesTask,
+  htmlTask,
   serverTask,
   watchTask
 );

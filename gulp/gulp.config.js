@@ -2,24 +2,28 @@ const gulpConfig = {
   path: {
     scss: {
       dev: 'src/assets/scss/*.scss',
-      build: 'dist/css/',
-      lint: 'src/assets/scss/**/*.scss'
+      watch: 'src/assets/scss/**/*.scss',
+      lint: 'src/assets/scss/**/*.scss',
+      build: 'dist/css/'
     },
     js: {
       dev: 'src/assets/js/**/*.js',
+      watch: 'src/assets/js/**/*.js',
       build: 'dist/js/'
     },
     fonts: {
       dev: 'src/assets/fonts/**/*.{eot,svg,ttf,woff,woff2}',
+      watch: 'src/assets/fonts/**/*.{eot,svg,ttf,woff,woff2}',
       build: 'dist/fonts/'
     },
     images: {
       dev: 'src/assets/images/**/*',
+      watch: 'src/assets/images/**/*',
       build: 'dist/images/'
     },
     html: {
       dev: 'src/*.html',
-      watch: 'src/**/*.html',
+      watch: 'dist/**/*.html',
       build: 'dist/'
     },
     dist: 'dist/*'

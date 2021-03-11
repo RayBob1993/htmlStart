@@ -1,0 +1,151 @@
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+@include media-xxl-down {
+  .align-items-xxl-start {
+    align-items: flex-start;
+  }
+
+  .align-items-xxl-center {
+    align-items: center;
+  }
+
+  .align-items-xxl-end {
+    align-items: flex-end;
+  }
+
+  .align-items-xxl-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-xxl-stretch {
+    align-items: stretch;
+  }
+}
+
+@include media-xl-down {
+  .align-items-xl-start {
+    align-items: flex-start;
+  }
+
+  .align-items-xl-center {
+    align-items: center;
+  }
+
+  .align-items-xl-end {
+    align-items: flex-end;
+  }
+
+  .align-items-xl-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-xl-stretch {
+    align-items: stretch;
+  }
+}
+
+@include media-lg-down {
+  .align-items-lg-start {
+    align-items: flex-start;
+  }
+
+  .align-items-lg-center {
+    align-items: center;
+  }
+
+  .align-items-lg-end {
+    align-items: flex-end;
+  }
+
+  .align-items-lg-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-lg-stretch {
+    align-items: stretch;
+  }
+}
+
+@include media-md-down {
+  .align-items-md-start {
+    align-items: flex-start;
+  }
+
+  .align-items-md-center {
+    align-items: center;
+  }
+
+  .align-items-md-end {
+    align-items: flex-end;
+  }
+
+  .align-items-md-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-md-stretch {
+    align-items: stretch;
+  }
+}
+
+@include media-sm-down {
+  .align-items-sm-start {
+    align-items: flex-start;
+  }
+
+  .align-items-sm-center {
+    align-items: center;
+  }
+
+  .align-items-sm-end {
+    align-items: flex-end;
+  }
+
+  .align-items-sm-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-sm-stretch {
+    align-items: stretch;
+  }
+}
+
+@include media-xs-down {
+  .align-items-xs-start {
+    align-items: flex-start;
+  }
+
+  .align-items-xs-center {
+    align-items: center;
+  }
+
+  .align-items-xs-end {
+    align-items: flex-end;
+  }
+
+  .align-items-xs-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-xs-stretch {
+    align-items: stretch;
+  }
+}

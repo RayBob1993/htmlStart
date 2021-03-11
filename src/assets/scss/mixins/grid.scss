@@ -1,0 +1,24 @@
+@mixin generate-cols {
+  @for $i from 0 through $cols-count {
+    &-#{$i} {
+      flex-basis: (1 / $cols-count * $i * 100) * 1%;
+      max-width: (1 / $cols-count * $i * 100) * 1%;
+    }
+  }
+}
+
+@mixin generate-offsets {
+  @for $i from 0 through $cols-count {
+    &-#{$i} {
+      margin-left: (1 / $cols-count * $i * 100) * 1%;
+    }
+  }
+}
+
+@mixin generate-orders {
+  @for $i from 1 through $cols-count {
+    &-#{$i} {
+      order: $i
+    }
+  }
+}

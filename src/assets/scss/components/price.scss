@@ -1,0 +1,15 @@
+.price {
+  white-space: nowrap;
+  
+  &:after {
+    content: '₽';
+  }
+
+  &--old {
+    text-decoration: line-through;
+  }
+
+  &--current {
+
+  }
+}

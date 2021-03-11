@@ -1,0 +1,151 @@
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+@include media-xxl-down {
+  .justify-content-xxl-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-xxl-center {
+    justify-content: center;
+  }
+
+  .justify-content-xxl-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-xxl-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-xxl-between {
+    justify-content: space-between;
+  }
+}
+
+@include media-xl-down {
+  .justify-content-xl-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-xl-center {
+    justify-content: center;
+  }
+
+  .justify-content-xl-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-xl-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-xl-between {
+    justify-content: space-between;
+  }
+}
+
+@include media-lg-down {
+  .justify-content-lg-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-lg-center {
+    justify-content: center;
+  }
+
+  .justify-content-lg-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-lg-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-lg-between {
+    justify-content: space-between;
+  }
+}
+
+@include media-md-down {
+  .justify-content-md-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-md-center {
+    justify-content: center;
+  }
+
+  .justify-content-md-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-md-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-md-between {
+    justify-content: space-between;
+  }
+}
+
+@include media-sm-down {
+  .justify-content-sm-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-sm-center {
+    justify-content: center;
+  }
+
+  .justify-content-sm-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-sm-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-sm-between {
+    justify-content: space-between;
+  }
+}
+
+@include media-xs-down {
+  .justify-content-xs-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-xs-center {
+    justify-content: center;
+  }
+
+  .justify-content-xs-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-xs-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-xs-between {
+    justify-content: space-between;
+  }
+}

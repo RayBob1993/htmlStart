@@ -1,0 +1,55 @@
+.field {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+
+  transition: $transition-base;
+
+  outline: 0;
+  background-color: #fff;
+  border-radius: 0;
+
+  &:not(select) {
+    @include utils-appearance(none);
+  }
+
+  &:hover {
+  }
+}
+
+.field::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field::-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  color: #aaa;
+}
+
+.field:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.field:focus::-moz-placeholder {
+  color: transparent
+}
+
+.field:focus:-moz-placeholder {
+  color: transparent
+}
+
+.field:focus:-ms-input-placeholder {
+  color: transparent
+}

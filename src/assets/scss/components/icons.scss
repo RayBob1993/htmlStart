@@ -1,0 +1,57 @@
+.icons {
+  display: none;
+}
+
+.ico {
+  display: inline-block;
+  vertical-align: middle;
+
+  fill: #000;
+
+  transition: $transition-base;
+
+  &--left {
+    margin-right: 5px;
+  }
+
+  &--right {
+    margin-left: 5px;
+  }
+}
+
+/* Иконка меню */
+.ico-menu {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 16px;
+
+  span {
+    display: block;
+    height: 2px;
+
+    background-color: #000;
+
+    transition: $transition-base;
+
+    &:nth-child(2) {
+      margin: 5px 0;
+    }
+  }
+
+  .show & {
+    span {
+      &:first-child {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
+}

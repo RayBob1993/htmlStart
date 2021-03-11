@@ -1,0 +1,168 @@
+.col {
+  flex: 0 0 auto;
+  padding-left: $gutters;
+  padding-right: $gutters;
+  min-height: 1px;
+  max-width: 100%;
+
+  @include generate-cols;
+
+  &-auto {
+    flex: 1;
+  }
+}
+
+// Offset
+.col-offset {
+  @include generate-offsets;
+}
+
+// Order
+.col-order {
+  @include generate-orders;
+}
+
+// Responsive
+@include media-xxl-down {
+  .col-xxl {
+    &-default {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    
+    &-auto {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    @include generate-cols;
+  }
+
+  .col-xxl-offset {
+    @include generate-offsets;
+  }
+
+  .col-xxl-order {
+    @include generate-orders;
+  }
+}
+
+@include media-xl-down {
+  .col-xl {
+    &-default {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    
+    &-auto {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    @include generate-cols;
+  }
+
+  .col-xl-offset {
+    @include generate-offsets;
+  }
+
+  .col-xl-order {
+    @include generate-orders;
+  }
+}
+
+@include media-lg-down {
+  .col-lg {
+    &-default {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    
+    &-auto {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    @include generate-cols;
+  }
+
+  .col-lg-offset {
+    @include generate-offsets;
+  }
+
+  .col-lg-order {
+    @include generate-orders;
+  }
+}
+
+@include media-md-down {
+  .col-md {
+    &-default {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    
+    &-auto {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    @include generate-cols;
+  }
+
+  .col-md-offset {
+    @include generate-offsets;
+  }
+
+  .col-md-order {
+    @include generate-orders;
+  }
+}
+
+@include media-sm-down {
+  .col-sm {
+    &-default {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    
+    &-auto {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    @include generate-cols;
+  }
+
+  .col-sm-offset {
+    @include generate-offsets;
+  }
+
+  .col-sm-order {
+    @include generate-orders;
+  }
+}
+
+@include media-xs-down {
+  .col-xs {
+    &-default {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+    
+    &-auto {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    @include generate-cols;
+  }
+
+  .col-xs-offset {
+    @include generate-offsets;
+  }
+
+  .col-xs-order {
+    @include generate-orders;
+  }
+}

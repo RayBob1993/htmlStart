@@ -1,0 +1,41 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &-flex {
+    display: flex;
+    flex-flow: row wrap;
+
+    > li {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+  }
+
+  &-auto {
+    > li {
+      flex: 1;
+    }
+  }
+
+  &-mark {
+    > li {
+      padding-left: 30px;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 10px;
+        height: 10px;
+
+        background-color: #000;
+        border-radius: $border-radius-circle;
+
+        content: '';
+      }
+    }
+  }
+}

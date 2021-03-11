@@ -1,0 +1,104 @@
+// Media xxl
+@mixin media-xxl-up {
+  @media screen and (min-width: $xxl + 1) {
+    @content;
+  }
+}
+
+@mixin media-xxl-down {
+  @media screen and (max-width: $xxl) {
+    @content;
+  }
+}
+
+// Media xl
+@mixin media-xl-up {
+  @media screen and (min-width: $xl + 1) {
+    @content;
+  }
+}
+
+@mixin media-xl-down {
+  @media screen and (max-width: $xl) {
+    @content;
+  }
+}
+
+// Media lg
+@mixin media-lg-up {
+  @media screen and (min-width: $lg + 1) {
+    @content;
+  }
+}
+
+@mixin media-lg-down {
+  @media screen and (max-width: $lg) {
+    @content;
+  }
+}
+
+// Media md
+@mixin media-md-up {
+  @media screen and (min-width: $md + 1) {
+    @content;
+  }
+}
+
+@mixin media-md-down {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+
+// Media sm
+@mixin media-sm-up {
+  @media screen and (min-width: $sm + 1) {
+    @content;
+  }
+}
+
+@mixin media-sm-down {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+// Media xs
+@mixin media-xs-up {
+  @media screen and (min-width: $xs + 1) {
+    @content;
+  }
+}
+
+@mixin media-xs-down {
+  @media screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+// Media custom
+@mixin media-custom-up ($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-custom-down ($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+// Media min-max
+@mixin media-min-max ($maxWidth, $minWidth) {
+  @media screen and (max-width: $maxWidth) and (min-width: $minWidth) {
+    @content;
+  }
+}
+
+// Media print
+@mixin media-print  {
+  @media print {
+    @content;
+  }
+}

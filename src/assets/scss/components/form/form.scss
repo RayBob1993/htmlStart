@@ -1,0 +1,15 @@
+.form-group {
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.field-name {
+  position: relative;
+
+  display: block;
+
+  & + .field {
+    margin-top: 5px;
+  }
+}

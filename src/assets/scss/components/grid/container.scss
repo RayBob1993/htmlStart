@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: $container-size;
+  min-height: 1px;
+  margin: 0 auto;
+  padding-left: $gutters;
+  padding-right: $gutters;
+
+  &.is-fluid {
+    max-width: 100%;
+  }
+}
