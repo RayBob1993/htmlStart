@@ -23,7 +23,7 @@ const gulpConfig = {
     },
     html: {
       dev: 'src/*.html',
-      watch: 'dist/**/*.html',
+      watch: 'src/**/*.html',
       build: 'dist/'
     },
     dist: 'dist/*'
