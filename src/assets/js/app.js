@@ -35,6 +35,33 @@
       this.rangeSlider();
       this.accordion('.topMenu');
       this.labelPlaceholder();
+      this.select2Init();
+      this.datepicker();
+    },
+
+    datepicker: function () {
+      // http://t1m0n.name/air-datepicker/docs/index-ru.html
+      if (typeof ($.fn.datepicker) === 'undefined') {
+        return;
+      }
+
+      $('.field--datepicker').datepicker();
+    },
+
+    select2Init: function () {
+      if (typeof ($.fn.select2) === 'undefined') {
+        return;
+      }
+
+      $('.field--select').each(function (index, el) {
+        var select = $(el);
+        var placeholder = select.data('placeholder');
+
+        select.select2({
+          placeholder: placeholder,
+          allowClear: true
+        });
+      });
     },
 
     dropdownClickOutsideDisable: function () {
