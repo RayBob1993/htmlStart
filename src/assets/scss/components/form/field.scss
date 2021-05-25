@@ -18,6 +18,14 @@
   }
 }
 
+.form-group {
+  &.error {
+    .field {
+      border-color: red;
+    }
+  }
+}
+
 .field::-webkit-input-placeholder {
   text-overflow: ellipsis;
   color: #aaa;
