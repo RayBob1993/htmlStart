@@ -1,3 +1,11 @@
+.fade {
+  &:not(.show) {
+    opacity: 0;
+  }
+
+  transition: $transition-fade;
+}
+
 @import './tabs';
 @import './modals';
 @import './dropdown';
