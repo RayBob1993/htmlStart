@@ -462,16 +462,23 @@
 
 ```html
 <nav class="nav pagination">
-    <ul class="list list-flex">
-        <li><a href="#" class="pagination-prev">Назад</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li class="active"><a href="">4</a></li>
-        <li><a href="#">10</a></li>
-        <li><a href="#">11</a></li>
-        <li><a href="#" class="pagination-next">Вперёд</a></li>
-    </ul>
+  <ul class="list list-flex justify-content-sm-center pagination__list">
+    <li><a href="#" class="pagination__list-item pagination__list-item--active">1</a></li>
+    <li><a href="#" class="pagination__list-item">2</a></li>
+    <li><a href="#" class="pagination__list-item">3</a></li>
+    <li><a href="#" class="pagination__list-item">4</a></li>
+    <li><a href="#" class="pagination__list-item">5</a></li>
+    <li><a href="#" class="pagination__list-item">. . .</a></li>
+    <li><a href="#" class="pagination__list-item">20</a></li>
+  </ul> 
+  
+  <a href="#" class="pagination__button pagination__button--prev">
+    Назад
+  </a>
+  
+  <a href="#" class="pagination__button pagination__button--next">
+    Дальше
+  </a>
 </nav>
 ```
 

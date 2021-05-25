@@ -1,11 +1,32 @@
 .pagination {
-  a {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 
+  &__button {
+    &--prev {
+      @include media-sm-up {
+        order: -1;
+      }
+    }
+
+    &--next {
+      
+    }
   }
 
-  &-prev {
-  }
+  &__list {
+    @include media-sm-down {
+      margin-bottom: 15px;
+      flex: 1;
+      flex-basis: 100%;
+    }
 
-  &-next {
+    &-item {
+      &--active {
+        
+      }
+    }
   }
 }
