@@ -38,11 +38,8 @@
 * [Кастомный скроллбар](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 * [Полноэкранный скролл](https://github.com/alvarotrigo/fullPage.js)
 * [Ползунок диапазона чисел/цен](https://refreshless.com/nouislider/)
-* [Валидация форм](https://github.com/jzaefferer/jquery-validation)
-* [Кастомный select](https://github.com/select2/select2)
 * [Анимация при скролле](https://github.com/graingert/wow)
 * [Динамическая сетка](https://github.com/metafizzy/isotope)
-* [Датапикер](https://github.com/Eonasdan/bootstrap-datetimepicker)
 * [Отслеживание видимости элемента в окне браузера](https://github.com/dirkgroenen/jQuery-viewport-checker)
 
 <h3 id="accordion">Аккордион</h3>
@@ -108,9 +105,9 @@
 
 ```html
 <ul class="list">
-    <li>Пункт 1</li>
-    <li>Пункт 2</li>
-    <li>Пункт 3</li>
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
 </ul>
 ```
 
@@ -118,9 +115,9 @@
 
 ```html
 <ul class="list list-flex">
-    <li>Пункт 1</li>
-    <li>Пункт 2</li>
-    <li>Пункт 3</li>
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
 </ul>
 ```
 
@@ -128,9 +125,9 @@
 
 ```html
 <ul class="list list-flex justify-content-center">
-    <li>Пункт 1</li>
-    <li>Пункт 2</li>
-    <li>Пункт 3</li>
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
 </ul>
 ```
 
@@ -138,9 +135,9 @@
 
 ```html
 <ul class="list list-flex justify-content-between">
-    <li>Пункт 1</li>
-    <li>Пункт 2</li>
-    <li>Пункт 3</li>
+  <li>Пункт 1</li>
+  <li>Пункт 2</li>
+  <li>Пункт 3</li>
 </ul>
 ```
 
@@ -149,11 +146,11 @@
 <h3 id="icons">Иконки</h3>
 Для вставки иконки, добавьте ей класс <b>.ico</b>. Так как работа с иконками подразумевает использование <b>svg</b> иконок, класс <b>.ico</b> по умолчанию имеет размер 18px-18px и заливку чёрным. Что бы унифицировать все иконки. Для каждого проекта изменяем значения на нужные.
 
-Созданный спрайт должен иметь атрибут <b>id</b> со значением <b>iconsSvg</b>. Далее инлайним его в документ и вставляем нужные иконки так:
+Созданный спрайт должен иметь класс со значением <b>icons</b>. Далее инлайним его в документ и вставляем нужные иконки так:
 
 ```html
 <svg class="ico">
-    <use xlink:href="#icoTel"></use>
+  <use xlink:href="#ico-phone"></use>
 </svg>
 ```
 Если используются растровые иконки, просто удалите в стилях размеры и заливку.
@@ -163,7 +160,7 @@
 
 ```html
 <svg class="ico ico--left">
-    <use xlink:href="#icoTel"></use>
+  <use xlink:href="#ico-phone"></use>
 </svg>
 ```
 
@@ -171,7 +168,7 @@
 
 ```html
 <svg class="ico ico--right">
-    <use xlink:href="#icoTel"></use>
+  <use xlink:href="#ico-phone"></use>
 </svg>
 ```
 
@@ -179,9 +176,9 @@
 
 ```html
 <span class="ico-menu"> 
-    <span></span> 
-    <span></span> 
-    <span></span> 
+  <span></span> 
+  <span></span> 
+  <span></span> 
 </span> 
 ```
 
@@ -227,24 +224,24 @@
 Пример кода:
 
 ```html
-<a href="app/img/galery/1.jpg" class="fancybox" data-fancybox>
-    <img class="app/img/galery/1.jpg">
+<a href="images/galery/1.jpg" class="fancybox" data-fancybox>
+    <img class="images/galery/1.jpg">
 </a>
 ```
 
 Для создания галереи из множества изображений используйте атрибут <b>data-fancybox</b> с уникальным значением.
 
 ```html
-<a href="app/img/galery/1.jpg" class="fancybox" data-fancybox="galery">
-    <img class="app/img/galery/1.jpg">
+<a href="images/galery/1.jpg" class="fancybox" data-fancybox="galery">
+  <img class="images/galery/1.jpg">
 </a>
 
-<a href="app/img/galery/2.jpg" class="fancybox" data-fancybox="galery">
-    <img class="app/img/galery/2.jpg">
+<a href="images/galery/2.jpg" class="fancybox" data-fancybox="galery">
+  <img class="images/galery/2.jpg">
 </a>
 
-<a href="app/img/galery/3.jpg" class="fancybox" data-fancybox="galery">
-    <img class="app/img/galery/3.jpg">
+<a href="images/galery/3.jpg" class="fancybox" data-fancybox="galery">
+  <img class="images/galery/3.jpg">
 </a>
 ```
 
@@ -432,42 +429,44 @@
 
 ```html
 <button
-    type="button"
-    class="button"
-    data-toggle="modal"
-    data-target="#feedback-modal"
+  type="button"
+  class="button"
+  data-toggle="modal"
+  data-target="#feedback-modal"
 >
+  <span class="button__label">
     Обратная связь
+  </span>
 </button>
 
 <div
-    class="modal fade"
-    id="feedback-modal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="Обратная связь"
-    aria-hidden="true"
+  class="modal fade"
+  id="feedback-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="Обратная связь"
+  aria-hidden="true"
 >
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Обратная связь</h5>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Обратная связь</h5>
 
-                <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                >
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
-            <div class="modal-body">
+      <div class="modal-body">
 
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 ```
 
@@ -484,15 +483,17 @@
 
 ```html
 <div class="counter">
-    <button type="button" class="button button-decrement">-</button>
-    <input 
-        type="text" 
-        class="field" 
-        value="1" 
-        data-min="1" 
-        data-max="20"
-    >
-    <button type="button" class="button button-increment">+</button>
+  <button type="button" class="button counter__button counter__button--decrement">-</button>
+
+  <input 
+    type="text" 
+    class="field" 
+    value="1" 
+    data-min="1" 
+    data-max="20"
+  >
+
+  <button type="button" class="button counter__button counter__button--increment">+</button>
 </div>
 ```
 
@@ -502,10 +503,10 @@
 
 ```html
 <nav class="nav breadcrumbs">
-    <ul class="list list-flex">
-        <li><a href="/">Главная</a></li>
-        <li class="active"><a href="#">Раздел</a></li>
-    </ul>
+  <ul class="list list-flex breadcrumbs__list">
+    <li><a href="/">Главная</a></li>
+    <li class="active"><a href="#">Раздел</a></li>
+  </ul>
 </nav>
 ```
 
@@ -541,13 +542,19 @@
 
 ```html
 <section class="section">
-    <header class="section__header">
-        <h2 class="section__title">Секция</h2>
-    </header>
+  <header class="section__header">
+    <div class="container">
+      <h2 class="section__title">Секция</h2>
+    </div>
+  </header>
 
-    <div class="section__body"></div>
-    
-    <footer class="section__footer"></footer>
+  <div class="section__body">
+    <div class="container"></div>
+  </div>
+
+  <footer class="section__footer">
+    <div class="container"></div>
+  </footer>
 </section>
 ```
 
@@ -558,8 +565,13 @@
 
 ```html
 <form action="#" class="search" method="post">
-    <input type="search" class="field search__field" placeholder="Поиск по сайту..." required>
-    <input type="submit" class="but search__button" value="Искать">
+  <input type="search" class="field search__field" placeholder="Поиск по сайту..." required>
+
+  <button type="submit" class="button search__button">
+    <span class="button__label">
+      Искать
+    </span>
+  </button>
 </form>
 ```
 

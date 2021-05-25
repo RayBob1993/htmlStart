@@ -6,11 +6,14 @@
   margin: 0 auto;
   max-width: 100px;
 
-  .button {
+  &__button {
     flex: 0 0 30px;
     width: 30px;
 
     background-color: #F7F7F7;
+
+    &--decrement {}
+    &--increment {}
   }
 
   .field {
