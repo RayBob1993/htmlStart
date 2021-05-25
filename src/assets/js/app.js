@@ -37,6 +37,7 @@
       this.labelPlaceholder();
       this.select2Init();
       this.datepicker();
+      this.validation();
     },
 
     datepicker: function () {
@@ -46,6 +47,75 @@
       }
 
       $('.field--datepicker').datepicker();
+    },
+
+    validation: function () {
+      if (typeof ($.fn.validate) === 'undefined') {
+        return;
+      }
+
+      $.validator.addMethod('cyrillic', function(value, element) {
+        return /[а-яА-ЯЁё]/.test(value);
+      });
+
+      $('.form').each(function(index, el){
+        $(this).validate({
+          errorElement: 'div',
+          rules: {
+            name: {
+              required: true,
+              cyrillic: true
+            },
+            email: {
+              required: true,
+              email: true
+            },
+            phone: {
+              required: true,
+              minlength: 16,
+              maxlength: 16
+            },
+            policy: {
+              required: true
+            }
+          },
+          messages: {
+            name: {
+              required: 'Укажите своё имя',
+              cyrillic: 'Поле может содержать только кириллические символы'
+            },
+            email: {
+              required: 'Укажите свой email адрес',
+              email: 'Ваш email адрес должен содержать символ @ и не содержать после себя символы .,/?| и подобных'
+            },
+            phone: {
+              required: 'Укажите свой номер телефона',
+              minlength: 'Длина телефона не должна привышать 11 символов',
+              maxlength: 'Длина телефона не должна привышать 11 символов'
+            },
+            policy: {
+              required: 'Примите согласие на обработку персональных данных'
+            }
+          },
+          errorPlacement: function(error, element) {
+            error
+              .addClass('form-group__error')
+              .appendTo(element.parents('.form-group'));
+          },
+          highlight: function(element, errorClass, validClass) {
+            $(element)
+              .parents('.form-group')
+              .addClass(errorClass)
+              .removeClass(validClass);
+          },
+          unhighlight: function(element, errorClass, validClass){
+            $(element)
+              .parents('.form-group')
+              .removeClass(errorClass)
+              .addClass(validClass);
+          }
+        });
+      });
     },
 
     select2Init: function () {
