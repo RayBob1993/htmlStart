@@ -9,10 +9,11 @@
 
 ## Компоненты
 
+* <a href="#accordion">Аккордион</a>
 * <a href="#titles">Заголовки</a>
 * <a href="#lists">Списки</a>
 * <a href="#icons">Иконки</a>
-* <a href="#tables">Таблици</a>
+* <a href="#tables">Таблицы</a>
 * <a href="#buttons">Кнопки</a>
 * <a href="#imgGalery">Галерея изображений</a>
 * <a href="#sliders">Слайдер</a>
@@ -44,6 +45,58 @@
 * [Датапикер](https://github.com/Eonasdan/bootstrap-datetimepicker)
 * [Отслеживание видимости элемента в окне браузера](https://github.com/dirkgroenen/jQuery-viewport-checker)
 
+<h3 id="accordion">Аккордион</h3>
+```html
+<div class="accordion" id="accordion">
+  <article class="accordion__item">
+    <h6 
+      class="accordion__item-title" 
+      data-toggle="collapse" 
+      data-target="#accordion-1" 
+      aria-expanded="true" 
+      aria-controls="accordion-1"
+    >
+      <span class="accordion__item-ico">
+        <svg class="ico">
+          <use xlink:href="#ico-arrow-bottom"></use>
+        </svg>
+      </span>
+
+      Заголовок
+    </h6>
+
+    <div id="accordion-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="accordion__item-text">
+        Текст
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion__item">
+    <h6 
+      class="accordion__item-title" 
+      data-toggle="collapse" 
+      data-target="#accordion-2" 
+      aria-expanded="true" 
+      aria-controls="accordion-2"
+    >
+      <span class="accordion__item-ico">
+        <svg class="ico">
+          <use xlink:href="#ico-arrow-bottom"></use>
+        </svg>
+      </span>
+
+      Заголовок
+    </h6>
+
+    <div id="accordion-2" class="collapse collapsing" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="text accordion__item-text">
+        Текст
+      </div>
+    </div>
+  </article>
+</div>
+```
 
 <h3 id="titles">Заголовки</h3>
 С заголовками всё просто. У всех убран верхний отступы и высота линии задана в 100%

@@ -1,3 +1,46 @@
+.accordion {
+  &__item {
+    @include media-sm-down {
+      padding: 20px;
+    }
+
+    &-title {
+      position: relative;
+
+      margin-bottom: 0;
+      padding-left: 65px;
+
+      cursor: pointer;
+
+      &:not(.collapsed) {
+        .accordion__item-ico {
+          .ico {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    &-ico {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include utils-flex-center();
+
+      width: 40px;
+      height: 40px;
+
+      .ico {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &-text {}
+  }
+}
+
 .collapse {
   &:not(.show) {
     display: none;
@@ -10,26 +53,6 @@
   overflow: hidden;
 
   transition-timing-function: ease;
-
   transition-duration: .35s;
-
   transition-property: height, visibility;
-}
-
-.collapseTitle {
-  position: relative;
-
-  cursor: pointer;
-}
-
-.collapseIco {
-  position: absolute;
-  top: 5px;
-  left: 0;
-
-  transform: rotate(180deg);
-}
-
-.collapseTitle.collapsed .collapseIco {
-  transform: none;
 }
