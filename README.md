@@ -575,6 +575,16 @@
 </form>
 ```
 
+Поле ввода
+```html
+<div class="form-group">
+	<label class="field">
+		<span class="field__name">Имя</span>
+		<input type="text" class="field__input">
+	</label>
+</div>
+```
+
 <a href="#">наверх</a>
 
 <h3 id="mediaQueries">Медиа запросы</h3>
