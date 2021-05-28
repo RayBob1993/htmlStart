@@ -565,7 +565,9 @@
 
 ```html
 <form action="#" class="search" method="post">
-  <input type="search" class="field search__field" placeholder="Поиск по сайту..." required>
+  <label class="field">
+    <input type="search" class="field__input search__input" placeholder="Поиск по сайту..." required>
+  </label>
 
   <button type="submit" class="button search__button">
     <span class="button__label">
@@ -578,10 +580,10 @@
 Поле ввода
 ```html
 <div class="form-group">
-	<label class="field">
-		<span class="field__name">Имя</span>
-		<input type="text" class="field__input">
-	</label>
+  <label class="field">
+    <span class="field__name">Имя</span>
+    <input type="text" class="field__input">
+  </label>
 </div>
 ```
 
