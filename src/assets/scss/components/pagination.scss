@@ -18,9 +18,9 @@
 
   &__list {
     @include media-sm-down {
-      margin-bottom: 15px;
       flex: 1;
       flex-basis: 100%;
+      margin-bottom: 15px;
     }
 
     &-item {

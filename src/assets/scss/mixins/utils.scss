@@ -15,19 +15,20 @@
 
 @mixin utils-ellipsis {
   overflow: hidden;
-  text-overflow: ellipsis;
+
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @mixin utils-flex-center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 @mixin utils-disabled {
-  cursor: not-allowed;
   background-image: none !important;
   box-shadow: none !important;
+  cursor: not-allowed;
   opacity: .35;
 }

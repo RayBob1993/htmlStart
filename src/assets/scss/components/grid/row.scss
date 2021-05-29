@@ -1,27 +1,27 @@
 .row {
   display: flex;
   flex-flow: row wrap;
-  margin-left: -$gutters;
   margin-right: -$gutters;
+  margin-left: -$gutters;
 
   // Gutters
   &.no-gutters {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
 
     > .col {
-      padding-left: 0;
       padding-right: 0;
+      padding-left: 0;
     }
   }
   
   &.gutters-small {
-    margin-left: -$gutters-small;
     margin-right: -$gutters-small;
+    margin-left: -$gutters-small;
 
     > .col {
-      padding-left: $gutters-small;
       padding-right: $gutters-small;
+      padding-left: $gutters-small;
     }
   }
 }

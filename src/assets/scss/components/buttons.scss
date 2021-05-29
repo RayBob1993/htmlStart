@@ -2,27 +2,30 @@
   position: relative;
 
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   border: 0;
-
-  outline: 0;
   border-radius: $border-radius-default;
-  background-color: transparent;
 
-  text-align: center;
+  font-weight: normal;
   line-height: $line-height;
   white-space: nowrap;
+
+  text-align: center;
   text-transform: none;
-  text-shadow: none;
   text-decoration: none;
-  font-weight: normal;
+  text-shadow: none;
+
+  background-color: transparent;
+
+  outline: 0;
+  cursor: pointer;
+
+  transition: $transition-base;
 
   -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
-  transition: $transition-base;
 
   @include utils-user-select(none);
   @include utils-appearance(none);
@@ -37,8 +40,9 @@
 
   &__label {
     flex: 1;
-    font-style: inherit;
+
     font-weight: inherit;
+    font-style: inherit;
   }
   
   &__ico {

@@ -1,9 +1,10 @@
 .swiper-container {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  overflow: hidden;
   z-index: 1;
+
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 
 .swiper-container-vertical > .swiper-wrapper {
@@ -12,10 +13,12 @@
 
 .swiper-wrapper {
   position: relative;
+  z-index: 1;
+
+  display: flex;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  display: flex;
+
   transition-property: transform;
 }
 
@@ -29,15 +32,18 @@
 }
 
 .swiper-container-free-mode > .swiper-wrapper {
-  transition-timing-function: ease-out;
   margin: 0 auto;
+
+  transition-timing-function: ease-out;
 }
 
 .swiper-slide {
+  position: relative;
+
   flex-shrink: 0;
   width: 100%;
   height: 100%;
-  position: relative;
+
   transition-property: transform;
 }
 
@@ -49,17 +55,20 @@
 
 .swiper-container-autoheight .swiper-wrapper {
   align-items: flex-start;
+
   transition-property: transform, height;
 }
 
 /* a11y */
 .swiper-container .swiper-notification {
   position: absolute;
-  left: 0;
   top: 0;
-  pointer-events: none;
-  opacity: 0;
+  left: 0;
   z-index: -1000;
+
+  opacity: 0;
+
+  pointer-events: none;
 }
 
 .swiper-wp8-horizontal {
@@ -78,11 +87,12 @@
 
   width: 27px;
   height: 44px;
-  border: 0;
   padding: 0;
+  border: 0;
+
+  background-color: transparent;
 
   outline: none;
-  background-color: transparent;
 
   cursor: pointer;
 
@@ -91,8 +101,8 @@
   }
 
   &-prev {
-    left: 10px;
     right: auto;
+    left: 10px;
   }
 
   &-next {
@@ -104,10 +114,13 @@
 /* Pagination Styles */
 .swiper-pagination {
   position: absolute;
-  text-align: center;
-  transition: 300ms;
-  transform: translate3d(0, 0, 0);
   z-index: 10;
+
+  text-align: center;
+
+  transform: translate3d(0, 0, 0);
+
+  transition: 300ms;
 
   &-hidden {
     opacity: 0;
@@ -120,24 +133,28 @@
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 10px;
   left: 0;
+
   width: 100%;
 }
 
 /* Bullets */
 .swiper-pagination-bullet {
+  display: inline-block;
   width: 8px;
   height: 8px;
-  display: inline-block;
   border-radius: 100%;
+
   background: $color-black;
   opacity: 0.2;
 }
 
 button.swiper-pagination-bullet {
-  border: none;
   margin: 0;
   padding: 0;
+  border: none;
+
   box-shadow: none;
+
   appearance: none;
 }
 
@@ -150,8 +167,8 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1;
   background: #007aff;
+  opacity: 1;
 }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
@@ -163,14 +180,15 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
-  right: 10px;
   top: 50%;
+  right: 10px;
+
   transform: translate3d(0px, -50%, 0);
 }
 
 .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 5px 0;
   display: block;
+  margin: 5px 0;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -179,17 +197,20 @@ button.swiper-pagination-bullet {
 
 /* Progress */
 .swiper-pagination-progress {
-  background: rgba(0, 0, 0, 0.25);
   position: absolute;
+
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .swiper-pagination-progress .swiper-pagination-progressbar {
-  background: #007aff;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
+
+  background: #007aff;
   transform: scale(0);
   transform-origin: left top;
 }
@@ -199,17 +220,19 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-horizontal > .swiper-pagination-progress {
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 4px;
-  left: 0;
-  top: 0;
 }
 
 .swiper-container-vertical > .swiper-pagination-progress {
+  top: 0;
+  left: 0;
+
   width: 4px;
   height: 100%;
-  left: 0;
-  top: 0;
 }
 
 .swiper-pagination-progress.swiper-pagination-white {
@@ -244,12 +267,14 @@ button.swiper-pagination-bullet {
 .swiper-container-3d .swiper-slide-shadow-top,
 .swiper-container-3d .swiper-slide-shadow-bottom {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: 10;
+
   width: 100%;
   height: 100%;
+
   pointer-events: none;
-  z-index: 10;
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
@@ -281,9 +306,11 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube .swiper-slide,
 .swiper-container-flip .swiper-slide {
-  pointer-events: none;
-  backface-visibility: hidden;
   z-index: 1;
+
+  backface-visibility: hidden;
+
+  pointer-events: none;
 }
 
 .swiper-container-cube .swiper-slide .swiper-slide,
@@ -307,15 +334,17 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-shadow-right,
 .swiper-container-flip .swiper-slide-shadow-right {
   z-index: 0;
+
   backface-visibility: hidden;
 }
 
 /* Cube */
 .swiper-container-cube .swiper-slide {
-  visibility: hidden;
-  transform-origin: 0 0;
   width: 100%;
   height: 100%;
+
+  transform-origin: 0 0;
+  visibility: hidden;
 }
 
 .swiper-container-cube.swiper-container-rtl .swiper-slide {
@@ -326,20 +355,23 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-next,
 .swiper-container-cube .swiper-slide-prev,
 .swiper-container-cube .swiper-slide-next + .swiper-slide {
-  pointer-events: auto;
   visibility: visible;
+
+  pointer-events: auto;
 }
 
 .swiper-container-cube .swiper-cube-shadow {
   position: absolute;
-  left: 0;
   bottom: 0px;
+  left: 0;
+  z-index: 0;
+
   width: 100%;
   height: 100%;
+
   background: $color-black;
   opacity: 0.6;
   filter: blur(50px);
-  z-index: 0;
 }
 
 /* Fade */
@@ -348,8 +380,9 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-fade .swiper-slide {
-  pointer-events: none;
   transition-property: opacity;
+
+  pointer-events: none;
 }
 
 .swiper-container-fade .swiper-slide .swiper-slide {
@@ -362,11 +395,12 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-zoom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   text-align: center;
 }
 
@@ -380,38 +414,45 @@ button.swiper-pagination-bullet {
 
 /* Scrollbar */
 .swiper-scrollbar {
-  border-radius: 10px;
   position: relative;
-  -ms-touch-action: none;
+
+  border-radius: 10px;
+
   background: rgba(0, 0, 0, 0.1);
+
+  -ms-touch-action: none;
 }
 
 .swiper-container-horizontal > .swiper-scrollbar {
   position: absolute;
-  left: 1%;
   bottom: 3px;
+  left: 1%;
   z-index: 50;
-  height: 5px;
+
   width: 98%;
+  height: 5px;
 }
 
 .swiper-container-vertical > .swiper-scrollbar {
   position: absolute;
-  right: 3px;
   top: 1%;
+  right: 3px;
   z-index: 50;
+
   width: 5px;
   height: 98%;
 }
 
 .swiper-scrollbar-drag {
-  height: 100%;
-  width: 100%;
   position: relative;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  left: 0;
   top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .swiper-scrollbar-cursor-drag {
@@ -420,27 +461,32 @@ button.swiper-pagination-bullet {
 
 /* Preloader */
 .swiper-lazy-preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
   width: 42px;
   height: 42px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -21px;
   margin-top: -21px;
-  z-index: 10;
+  margin-left: -21px;
+
   transform-origin: 50%;
+
   animation: swiper-preloader-spin 1s steps(12, end) infinite;
 }
 
 .swiper-lazy-preloader:after {
   display: block;
-  content: "";
   width: 100%;
   height: 100%;
+
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100%;
-  background-repeat: no-repeat;
+
+  content: "";
 }
 
 .swiper-lazy-preloader-white:after {

@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -12,16 +13,17 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  min-width: 320px;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
   margin: 0;
 
-  font-size: $font-default;
   color: $color-default;
-  line-height: $line-height;
+
+  font-size: $font-default;
   font-family: $font-family;
+  line-height: $line-height;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -50,6 +52,7 @@ canvas,
 progress,
 video {
   display: inline-block;
+
   vertical-align: baseline;
 }
 
@@ -84,8 +87,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
   font-size: 1em;
+  font-family: monospace, monospace;
 }
 
 button,
@@ -93,8 +96,9 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit;
   margin: 0;
+
+  font: inherit;
 }
 
 button,
@@ -127,8 +131,8 @@ html input[type="button"],
 }
 
 input::-moz-focus-inner {
-  border: 0;
-  padding: 0
+  padding: 0;
+  border: 0
 }
 
 [type="checkbox"],
@@ -151,14 +155,14 @@ input::-moz-focus-inner {
 }
 
 fieldset {
-  border: 0;
   margin: 0;
-  padding: 0
+  padding: 0;
+  border: 0
 }
 
 legend {
-  border: 0;
-  padding: 0
+  padding: 0;
+  border: 0
 }
 
 textarea {
@@ -181,6 +185,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+
   line-height: 100%;
 }
 
@@ -257,9 +262,10 @@ sub {
 /* Ссылки */
 a {
   color: #4078c0;
+  text-decoration: none;
+
   background-color: transparent;
   cursor: pointer;
-  text-decoration: none;
 
   &:active,
   &:hover,

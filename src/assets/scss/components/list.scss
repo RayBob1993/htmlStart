@@ -1,6 +1,7 @@
 .list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   &-flex {
@@ -30,9 +31,9 @@
 
         width: 10px;
         height: 10px;
+        border-radius: $border-radius-circle;
 
         background-color: $color-black;
-        border-radius: $border-radius-circle;
 
         content: '';
       }

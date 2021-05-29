@@ -7,17 +7,19 @@
 
   &__input {
     position: absolute;
-    overflow: hidden;
-    height: 0;
+
     width: 0;
+    height: 0;
+    overflow: hidden;
+
     visibility: hidden;
 
     &:checked {
       + .checkbox__text {
         &:after {
-          opacity: 1;
-          visibility: visible;
           transform: none;
+          visibility: visible;
+          opacity: 1;
         }
       }
     }
@@ -48,13 +50,13 @@
 
       width: 12px;
       height: 12px;
-
-      background-color: $color-black;
       border-radius: $border-radius-small;
 
-      opacity: 0;
-      visibility: hidden;
+      background-color: $color-black;
       transform: scale(.3);
+      visibility: hidden;
+
+      opacity: 0;
 
       content: '✓';
     }

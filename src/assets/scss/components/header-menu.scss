@@ -14,49 +14,49 @@
     @include media-md-up {
       position: static;
 
-      opacity: 1;
+      transform: none;
       visibility: visible;
 
-      transform: none;
+      opacity: 1;
     }
 
     @include media-md-down {
       position: fixed;
       top: 0;
-      left: 0;
-      bottom: 0;
       right: 0;
+      bottom: 0;
+      left: 0;
       z-index: 1000;
 
       overflow: hidden;
       overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
 
       background: rgba(0, 0, 0, .3);
 
       transform: none;
-
-      opacity: 0;
       visibility: hidden;
 
+      opacity: 0;
+      -webkit-overflow-scrolling: touch;
+
       &.show {
-        opacity: 1;
         visibility: visible;
+        opacity: 1;
       }
     }
   }
 
   &__nav {
     @include media-md-down {
-      height: 100%;
       width: 280px;
+      height: 100%;
       padding: 15px;
 
-      transition: $transition-base;
+      background-color: $color-white;
 
       transform: translateX(-100%);
 
-      background-color: $color-white;
+      transition: $transition-base;
 
       .show & {
         transform: none;
@@ -78,10 +78,10 @@
         @include media-md-up {
           &:hover {
             .level2 {
-              opacity: 1;
-              visibility: visible;
 
               transform: none;
+              visibility: visible;
+              opacity: 1;
             }
           }
         }
@@ -100,10 +100,10 @@
         left: 0;
         z-index: 1000;
 
-        opacity: 0;
+        transform: translateY(20px);
         visibility: hidden;
 
-        transform: translateY(20px);
+        opacity: 0;
 
         transition: $transition-base;
       }

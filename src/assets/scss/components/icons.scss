@@ -4,11 +4,12 @@
 
 .ico {
   display: inline-block;
+
   vertical-align: middle;
 
-  fill: $color-black;
-
   transition: $transition-base;
+
+  fill: $color-black;
 
   &--left {
     margin-right: 5px;
@@ -22,9 +23,10 @@
 /* Иконка меню */
 .ico-menu {
   display: inline-block;
-  vertical-align: middle;
   width: 25px;
   height: 16px;
+
+  vertical-align: middle;
 
   span {
     display: block;

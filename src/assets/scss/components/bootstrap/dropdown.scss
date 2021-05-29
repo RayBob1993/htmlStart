@@ -7,19 +7,19 @@
     left: 0;
     z-index: 1000;
 
+    transform: translateY(20px);
+
     visibility: hidden;
     opacity: 0;
 
     transition: $transition-base;
 
-    transform: translateY(20px);
-
     &.show {
-      visibility: visible;
-      opacity: 1;
 
       -webkit-transform: none;
       transform: none;
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

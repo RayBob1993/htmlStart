@@ -7,12 +7,13 @@
     width: 100%;
     padding: 0;
     border: 0;
+    border-radius: 0;
 
-    transition: $transition-base;
+    background-color: $color-white;
 
     outline: 0;
-    background-color: $color-white;
-    border-radius: 0;
+
+    transition: $transition-base;
 
     @include utils-appearance(none);
 
@@ -24,23 +25,23 @@
     }
 
     &::-webkit-input-placeholder {
-      text-overflow: ellipsis;
       color: #aaa;
+      text-overflow: ellipsis;
     }
 
     &::-moz-placeholder {
-      text-overflow: ellipsis;
       color: #aaa;
+      text-overflow: ellipsis;
     }
 
     &:-moz-placeholder {
-      text-overflow: ellipsis;
       color: #aaa;
+      text-overflow: ellipsis;
     }
 
     &:-ms-input-placeholder {
-      text-overflow: ellipsis;
       color: #aaa;
+      text-overflow: ellipsis;
     }
 
     &:focus::-webkit-input-placeholder {
