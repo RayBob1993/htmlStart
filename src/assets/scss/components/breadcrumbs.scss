@@ -1,17 +1,15 @@
 .breadcrumbs {
-  li {
-    & + li {
-      &:before {
-        padding: 0 5px;
-
-        content: '/';
-      }
-    }
-
-    &:hover,
-    &.active {
+  &__list {
+    &-item {
       > a {
 
+      }
+
+      &:hover,
+      &--active {
+        > a {
+
+        }
       }
     }
   }

@@ -17,9 +17,6 @@
       thousand: ' '
     });
 
-    // На какой позиции скролла показать фиксированные элементы
-    this.fixedElementsVisible = 200;
-
     this.init();
   };
 
@@ -33,7 +30,6 @@
       this.inputTelMaskInit();
       this.counter();
       this.rangeSlider();
-      this.accordion('.topMenu');
       this.labelPlaceholder();
       this.select2Init();
       this.datepicker();
@@ -323,62 +319,6 @@
       });
     },
 
-    accordion: function (selector) {
-      var self = this;
-      var el = $(selector).find('a');
-      var subMenus = el.next();
-
-      function init (event) {
-        var subMenu = $(this).next();
-        var parent = $(this).parent();
-
-        if (subMenu.length) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-
-        if (!subMenu.is(':visible')) {
-          el
-            .parent()
-            .removeClass('act');
-
-          parent.addClass('act');
-
-          subMenus.slideUp();
-          subMenu.slideDown();
-        } else {
-          el
-            .parent()
-            .removeClass('act');
-
-          subMenus.slideUp();
-        }
-      }
-
-      $(window).on('load resize', function () {
-        var winWidth = $(this).innerWidth();
-
-        if (winWidth <= self.mq.md) {
-          el
-            .unbind('click')
-            .on('click', init);
-        } else {
-          el.unbind('click');
-          subMenus.attr('style', '');
-        }
-      });
-
-      // Установим класс на родителя, если есть вложенное меню
-      el.each(function () {
-        var subMenu = $(this).next();
-        var parent = $(this).parent();
-
-        if (subMenu.length) {
-          parent.addClass('subMenu')
-        }
-      });
-    },
-
     isMobileDevice: function () {
       return {
         Android: function () {
@@ -406,7 +346,7 @@
       prfx = prfx || '';
 
       var counter = $('.counter');
-      var field = counter.find('.field');
+      var field = counter.find('.field__input');
 
       function fieldCount (el) {
         // Мин. значение
@@ -460,7 +400,7 @@
     },
 
     rangeSlider: function () {
-      var rangeSliderGroup = $('.rangeSliderGroup');
+      var rangeSlider = $('.range-slider');
       var sliderDefaultOptions = {
         connect: true,
         format: this.priceFormat
@@ -470,11 +410,12 @@
         return;
       }
 
-      rangeSliderGroup.each(function (index, el) {
+      rangeSlider.each(function (index, el) {
         var group = $(el);
-        var rangeSliderMin = group.find('.rangeSliderMin');
-        var rangeSliderMax = group.find('.rangeSliderMax');
-        var slider = group.find('.rangeSlider');
+        var rangeSliderMin = group.find('.range-slider__min');
+        var rangeSliderMax = group.find('.range-slider__max');
+
+        var slider = group.find('.range-slider__slider');
         var sliderUserOption = slider.data('options');
         var sliderNode = slider[0];
 
