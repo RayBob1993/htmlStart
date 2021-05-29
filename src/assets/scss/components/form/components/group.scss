@@ -1,0 +1,17 @@
+.form-group {
+  position: relative;
+
+  margin-bottom: 10px;
+
+  &.error {
+
+  }
+
+  &.valid {
+
+  }
+
+  &__error {
+    color: red;
+  }
+}

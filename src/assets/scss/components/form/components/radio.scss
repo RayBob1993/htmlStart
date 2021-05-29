@@ -1,11 +1,11 @@
-.checkbox {
+.radio {
   position: relative;
 
   display: block;
 
   cursor: pointer;
 
-  input {
+  &__input {
     position: absolute;
     overflow: hidden;
     height: 0;
@@ -13,7 +13,7 @@
     visibility: hidden;
 
     &:checked {
-      + .checkbox__text {
+      + .radio__text {
         &:after {
           opacity: 1;
           visibility: visible;
@@ -34,9 +34,9 @@
 
       width: 16px;
       height: 16px;
-      border: 1px solid #000;
+      border: 1px solid $color-black;
 
-      border-radius: $border-radius-small;
+      border-radius: $border-radius-circle;
 
       content: '';
     }
@@ -49,14 +49,14 @@
       width: 12px;
       height: 12px;
 
-      background-color: #000;
-      border-radius: $border-radius-small;
+      background-color: $color-black;
+      border-radius: $border-radius-circle;
 
       opacity: 0;
       visibility: hidden;
       transform: scale(.3);
 
-      content: '✓';
+      content: '';
     }
   }
 }

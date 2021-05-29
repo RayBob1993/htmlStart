@@ -564,12 +564,17 @@
 Блок поиска
 
 ```html
-<form action="#" class="search" method="post">
+<form action="#" class="form-search" method="post">
   <label class="field">
-    <input type="search" class="field__input search__input" placeholder="Поиск по сайту..." required>
+    <input 
+      type="search" 
+      class="field__input form-search__input" 
+      placeholder="Поиск по сайту..." 
+      required
+    >
   </label>
 
-  <button type="submit" class="button search__button">
+  <button type="submit" class="button form-search__button">
     <span class="button__label">
       Искать
     </span>
@@ -583,6 +588,51 @@
   <label class="field">
     <span class="field__name">Имя</span>
     <input type="text" class="field__input">
+  </label>
+</div>
+```
+
+Датапикер
+```html
+<div class="form-group">
+  <label class="field">
+    <span class="field__name">Дата</span>
+    <input type="text" class="field__input field__input--datepicker">
+  </label>
+</div>
+```
+
+Селект
+```html
+<div class="form-group">
+  <label class="field">
+    <span class="field__name">Селект</span>
+    <select class="field__input field__input--select" data-placeholder="Выберите">
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </label>
+</div>
+```
+
+Чекбокс
+```html
+<div class="form-group">
+  <label class="checkbox">
+    <input type="checkbox" class="checkbox__input">
+    <span class="checkbox__text">Чекбокс</span>
+  </label>
+</div>
+```
+
+Радио кнопка
+```html
+<div class="form-group">
+  <label class="radio">
+    <input type="radio" class="radio__input">
+    <span class="radio__text">Радио</span>
   </label>
 </div>
 ```

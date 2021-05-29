@@ -56,7 +56,7 @@
 
   pointer-events: auto;
 
-  background-color: #fff;
+  background-color: $color-white;
 
   outline: 0;
 }
@@ -69,7 +69,7 @@
   left: 0;
   z-index: 999;
 
-  background-color: #000;
+  background-color: $color-black;
 
   &.fade {
     opacity: 0;

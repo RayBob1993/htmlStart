@@ -11,7 +11,7 @@
 }
 
 .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
-  color: #fff;
+  color: $color-white;
   background: #a2ddf6;
 }
 
@@ -123,13 +123,13 @@
 }
 
 .datepicker--cell.-selected- {
-  color: #fff;
+  color: $color-white;
   border: none;
   background: #5cc4ef;
 }
 
 .datepicker--cell.-selected-.-current- {
-  color: #fff;
+  color: $color-white;
   background: #5cc4ef;
 }
 
@@ -209,7 +209,7 @@
 }
 
 .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
-  color: #fff;
+  color: $color-white;
   background: #a2ddf6;
 }
 
@@ -247,7 +247,7 @@
 }
 
 .datepicker {
-  background: #fff;
+  background: $color-white;
   border: 1px solid #dbdbdb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -320,7 +320,7 @@
 
 .datepicker--pointer {
   position: absolute;
-  background: #fff;
+  background: $color-white;
   border-top: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
   width: 10px;
@@ -397,7 +397,7 @@
 }
 
 .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
-  color: #fff;
+  color: $color-white;
   background: #a2ddf6;
 }
 
@@ -545,7 +545,7 @@
 }
 
 .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
-  color: #fff;
+  color: $color-white;
   background: #a2ddf6;
 }
 
@@ -738,7 +738,7 @@
   width: 12px;
   border-radius: 3px;
   border: 1px solid #dedede;
-  background: #fff;
+  background: $color-white;
   cursor: pointer;
   transition: background .2s;
 }
@@ -749,7 +749,7 @@
   width: 12px;
   border-radius: 3px;
   border: 1px solid #dedede;
-  background: #fff;
+  background: $color-white;
   cursor: pointer;
   transition: background .2s;
 }
@@ -760,7 +760,7 @@
   width: 12px;
   border-radius: 3px;
   border: 1px solid #dedede;
-  background: #fff;
+  background: $color-white;
   cursor: pointer;
   transition: background .2s;
 }
@@ -851,7 +851,7 @@
 }
 
 .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
-  color: #fff;
+  color: $color-white;
   background: #a2ddf6;
 }
 

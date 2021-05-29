@@ -46,7 +46,7 @@
         return;
       }
 
-      $('.field--datepicker').datepicker();
+      $('.field__input--datepicker').datepicker();
     },
 
     validation: function () {
@@ -98,7 +98,7 @@
             }
           },
           errorPlacement: function(error, element) {
-            error
+            return error
               .addClass('form-group__error')
               .appendTo(element.parents('.form-group'));
           },
@@ -123,7 +123,7 @@
         return;
       }
 
-      $('.field--select').each(function (index, el) {
+      $('.field__input--select').each(function (index, el) {
         var select = $(el);
         var placeholder = select.data('placeholder');
 

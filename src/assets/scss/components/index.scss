@@ -4,7 +4,7 @@
 @import './buttons';
 @import './breadcrumbs';
 @import './nav';
-@import './navigation';
+@import './header-menu';
 @import './header';
 @import './logo';
 @import './footer';
@@ -14,6 +14,6 @@
 @import './counter';
 @import './icons';
 @import './price';
-@import './form/index';
+@import 'form/components/index';
 @import './bootstrap/index';
 @import './sections/index';

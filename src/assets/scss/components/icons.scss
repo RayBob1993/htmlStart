@@ -6,7 +6,7 @@
   display: inline-block;
   vertical-align: middle;
 
-  fill: #000;
+  fill: $color-black;
 
   transition: $transition-base;
 
@@ -30,7 +30,7 @@
     display: block;
     height: 2px;
 
-    background-color: #000;
+    background-color: $color-black;
 
     transition: $transition-base;
 
