@@ -9,7 +9,7 @@
 
 ## Компоненты
 
-* <a href="#accordion">Аккордион</a>
+* <a href="#collapse">Аккордион</a>
 * <a href="#titles">Заголовки</a>
 * <a href="#lists">Списки</a>
 * <a href="#icons">Иконки</a>
@@ -42,7 +42,7 @@
 * [Динамическая сетка](https://github.com/metafizzy/isotope)
 * [Отслеживание видимости элемента в окне браузера](https://github.com/dirkgroenen/jQuery-viewport-checker)
 
-<h3 id="accordion">Аккордион</h3>
+<h3 id="collapse">Аккордион</h3>
 ```html
 <div class="accordion" id="accordion">
   <article class="accordion__item">
