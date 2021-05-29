@@ -5,7 +5,8 @@
 	"scripts": {
 		"serve": "cross-env NODE_ENV=development gulp",
 		"build": "cross-env NODE_ENV=production gulp build",
-		"stylelint": "stylelint **/*.scss --fix"
+		"lint:style": "stylelint \"**/*.{css,scss}\" --ignore-path .gitignore --fix",
+    "lint": "yarn lint:style"
 	},
 	"repository": {
 		"type": "git",
