@@ -17,8 +17,8 @@ const gulpConfig = {
       build: 'dist/fonts/'
     },
     images: {
-      dev: 'src/assets/images/**/*',
-      watch: 'src/assets/images/**/*',
+      dev: 'src/assets/images/**/*.{jpg,png,svg,gif,ico,webp}',
+      watch: 'src/assets/images/**/*.{jpg,png,svg,gif,ico,webp}',
       build: 'dist/images/'
     },
     html: {
