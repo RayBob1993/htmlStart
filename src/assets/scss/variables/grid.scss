@@ -1,6 +1,7 @@
-$container-size: 1280px !default;
-
 $gutters: 10px !default;
+$container-gutters: $gutters;
 $gutters-small: 5px !default;
 
 $cols-count: 12 !default;
+
+$container-size: calc(1280px + #{$container-gutters * 2}) !default;
