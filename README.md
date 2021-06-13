@@ -193,6 +193,7 @@
   <tfoot></tfoot>
 </table>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="buttons">Кнопки</h3>
@@ -208,6 +209,7 @@
   </span>
 </button>
 ```
+
 <a href="#">наверх</a>
 
 <h3 id="imgGalery">Галерея изображений</h3>
