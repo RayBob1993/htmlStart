@@ -1,0 +1,13 @@
+.social-networks {
+  li {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .ico {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+}
