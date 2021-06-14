@@ -102,7 +102,7 @@
 
 <h5>Список по горизонтали</h5>
 ```html
-<ul class="list list-flex">
+<ul class="list list--flex">
   <li>Пункт 1</li>
   <li>Пункт 2</li>
   <li>Пункт 3</li>
@@ -111,7 +111,7 @@
 
 <h5>Список по центру</h5>
 ```html
-<ul class="list list-flex justify-content-center">
+<ul class="list list--flex justify-content-center">
   <li>Пункт 1</li>
   <li>Пункт 2</li>
   <li>Пункт 3</li>
@@ -120,7 +120,7 @@
 
 <h5>Список равномерно по ширине блока</h5>
 ```html
-<ul class="list list-flex justify-content-between">
+<ul class="list list--flex justify-content-between">
   <li>Пункт 1</li>
   <li>Пункт 2</li>
   <li>Пункт 3</li>
@@ -302,7 +302,7 @@
 <a href="http://getbootstrap.com/docs/4.1/components/navs/#via-javascript"><b>Документация</b></a> по работе с событиями плагина
 ```html
 <div class="tabs">
-  <ul class="list list-flex nav nav-tabs" role="tablist">
+  <ul class="list list--flex nav nav-tabs" role="tablist">
     <li class="nav-item">
       <a 
         href="#tab1" 
@@ -393,7 +393,7 @@
     
   <div class="dropdown-menu">
     <nav class="nav header-menu__nav"> 
-      <ul class="list list-flex level-1">
+      <ul class="list list--flex level-1">
         <li class="active">
           <a href="#">Главная</a>
         </li>
@@ -496,7 +496,7 @@
 <h3 id="breadcrumbs">Хлебные крошки</h3>
 ```html
 <nav class="nav breadcrumbs">
-  <ul class="list list-flex breadcrumbs__list">
+  <ul class="list list--flex breadcrumbs__list">
     <li class="breadcrumbs__list-item">
       <a href="/">Главная</a>
     </li>
@@ -512,7 +512,7 @@
 <h3 id="pager">Переключатель страниц</h3>
 ```html
 <nav class="nav pagination">
-  <ul class="list list-flex justify-content-sm-center pagination__list">
+  <ul class="list list--flex justify-content-sm-center pagination__list">
     <li class="pagination__list-item pagination__list-item--active">
       <a href="#">1</a>
     </li>
