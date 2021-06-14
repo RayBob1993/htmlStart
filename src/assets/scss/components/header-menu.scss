@@ -77,8 +77,7 @@
 
         @include media-md-up {
           &:hover {
-            .level2 {
-
+            .level-2 {
               transform: none;
               visibility: visible;
               opacity: 1;
