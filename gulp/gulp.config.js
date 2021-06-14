@@ -50,8 +50,9 @@ const gulpConfig = {
     variablePrefix: '$',
     basePath: 'src/assets/partials/'
   },
-  htmlbeautify: {
-    indent_size: 2
+  prettier: {
+    printWidth: 120,
+    htmlWhitespaceSensitivity: 'ignore'
   },
   autoprefixer: {
     overrideBrowserslist: ['last 10 versions'],
