@@ -29,6 +29,38 @@
 
   @include utils-user-select(none);
   @include utils-appearance(none);
+  
+  &-empty {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+
+    font-weight: normal;
+    white-space: nowrap;
+
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: none;
+
+    background-color: transparent;
+
+    outline: 0;
+    cursor: pointer;
+
+    transition: $transition-base;
+
+    -webkit-tap-highlight-color: transparent;
+
+    @include utils-user-select(none);
+    @include utils-appearance(none);
+  }
 
   &[disabled] {
     @include utils-disabled;
