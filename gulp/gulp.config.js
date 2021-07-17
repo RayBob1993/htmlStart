@@ -28,6 +28,13 @@ const gulpConfig = {
     },
     dist: 'dist/*'
   },
+  cacheNames: {
+    scss: 'scss',
+    html: 'html',
+    js: 'js',
+    images: 'images',
+    fonts: 'fonts'
+  },
   fileNames: {
     css: {
       build: 'styles.css',
@@ -40,7 +47,7 @@ const gulpConfig = {
   },
   server: {
     open: true,
-    watch: true,
+    tunnel: true,
     server: {
       baseDir: 'dist/'
     },
