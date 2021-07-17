@@ -1,6 +1,8 @@
 const { src, dest } = require('gulp');
 const sass = require('gulp-sass');
 const gulpIf = require('gulp-if');
+const cache = require('gulp-cached');
+const remember = require('gulp-remember');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const cssnano = require('cssnano');
@@ -18,6 +20,8 @@ const stylesTask = () => {
   ];
 
   return src(config.path.scss.dev)
+    .pipe(cache(config.cacheNames.scss))
+    .pipe(remember(config.cacheNames.scss))
     .pipe(gulpIf(isDev, sourcemaps.init()))
     .pipe(
       sass({
