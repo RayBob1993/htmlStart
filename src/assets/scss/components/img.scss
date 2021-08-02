@@ -7,6 +7,11 @@ img {
   vertical-align: middle;
 }
 
+.img-fluid {
+  display: block;
+  width: 100%;
+}
+
 .img-cover {
   background: $color-default center / cover no-repeat;
 }
