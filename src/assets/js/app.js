@@ -57,42 +57,6 @@
       $('.form').each(function(index, el){
         $(this).validate({
           errorElement: 'div',
-          rules: {
-            name: {
-              required: true,
-              cyrillic: true
-            },
-            email: {
-              required: true,
-              email: true
-            },
-            phone: {
-              required: true,
-              minlength: 16,
-              maxlength: 16
-            },
-            policy: {
-              required: true
-            }
-          },
-          messages: {
-            name: {
-              required: 'Укажите своё имя',
-              cyrillic: 'Поле может содержать только кириллические символы'
-            },
-            email: {
-              required: 'Укажите свой email адрес',
-              email: 'Ваш email адрес должен содержать символ @ и не содержать после себя символы .,/?| и подобных'
-            },
-            phone: {
-              required: 'Укажите свой номер телефона',
-              minlength: 'Длина телефона не должна привышать 11 символов',
-              maxlength: 'Длина телефона не должна привышать 11 символов'
-            },
-            policy: {
-              required: 'Примите согласие на обработку персональных данных'
-            }
-          },
           errorPlacement: function(error, element) {
             return error
               .addClass('form-group__error')
