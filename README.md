@@ -240,25 +240,27 @@
 <h3 id="sliders">Слайдер</h3>
 Для работы слайдеров используется плагин <a href="http://idangero.us/swiper/api/"><b>Swiper</b></a>
 ```html
-<div id="main-slider" class="swiper-container main-slider">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      Slide 1
+<div id="main-slider" class="swiper main-slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        Slide 1
+      </div>
+
+      <div class="swiper-slide">
+        Slide 2
+      </div>
+
+      <div class="swiper-slide">
+        Slide 3
+      </div>
     </div>
 
-    <div class="swiper-slide">
-      Slide 2
-    </div>
+    <div class="swiper-pagination"></div>
 
-    <div class="swiper-slide">
-      Slide 3
-    </div>
+    <button class="swiper-button swiper-button--prev"></button>
+    <button class="swiper-button swiper-button--next"></button>
   </div>
-
-  <div class="swiper-pagination"></div>
-
-  <button class="swiper-button swiper-button-prev"></button>
-  <button class="swiper-button swiper-button-next"></button>
 </div>
 ```
 <a href="#">наверх</a>
