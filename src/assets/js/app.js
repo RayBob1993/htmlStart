@@ -161,7 +161,7 @@
         },
         thumbs: {
           autoStart: true,
-          axis: 'x'
+          axis: 'y'
         },
         buttons: [
           'slideShow',
