@@ -4,6 +4,6 @@
 
     text-decoration: none;
 
-    transition: $transition-base;
+    transition: var(--transition-base);
   }
 }

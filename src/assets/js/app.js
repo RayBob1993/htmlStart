@@ -1,27 +1,25 @@
 (function ($) {
+  class App {
+    constructor () {
+      this.mq = {
+        xxl: 1600,
+        xl: 1200,
+        lg: 992,
+        md: 768,
+        sm: 576,
+        xs: 480
+      };
 
-  var App = function () {
-    // Точки для адаптивности
-    this.mq = {
-     xxl: 1600,
-      xl: 1200,
-      lg: 992,
-      md: 768,
-      sm: 576,
-      xs: 480
-    };
+      // Формат цен
+      this.priceFormat = wNumb({
+        mark: '',
+        thousand: ' '
+      });
 
-    // Формат цен
-    this.priceFormat = wNumb({
-      mark: '',
-      thousand: ' '
-    });
+      this.init();
+    }
 
-    this.init();
-  };
-
-  App.prototype = {
-    init: function () {
+    init () {
       this.swiperInit();
       this.tabsSwiperFix();
       this.wowJs();
@@ -34,18 +32,18 @@
       this.select2Init();
       this.datepicker();
       this.validation();
-    },
+    }
 
-    datepicker: function () {
+    datepicker () {
       // http://t1m0n.name/air-datepicker/docs/index-ru.html
       if (typeof ($.fn.datepicker) === 'undefined') {
         return;
       }
 
       $('.field__input--datepicker').datepicker();
-    },
+    }
 
-    validation: function () {
+    validation () {
       if (typeof ($.fn.validate) === 'undefined') {
         return;
       }
@@ -54,7 +52,7 @@
         return /[а-яА-ЯЁё]/.test(value);
       });
 
-      $('.form').each(function(index, el){
+      $('.form').each(function(index, el) {
         $(this).validate({
           errorElement: 'div',
           errorPlacement: function(error, element) {
@@ -68,7 +66,7 @@
               .addClass(errorClass)
               .removeClass(validClass);
           },
-          unhighlight: function(element, errorClass, validClass){
+          unhighlight: function(element, errorClass, validClass) {
             $(element)
               .parents('.form-group')
               .removeClass(errorClass)
@@ -76,14 +74,14 @@
           }
         });
       });
-    },
+    }
 
-    select2Init: function () {
+    select2Init () {
       if (typeof ($.fn.select2) === 'undefined') {
         return;
       }
 
-      $('.field__input--select').each(function (index, el) {
+      $('.field__input--select').each(function(index, el) {
         var select = $(el);
         var placeholder = select.data('placeholder');
 
@@ -92,24 +90,24 @@
           allowClear: true
         });
       });
-    },
+    }
 
-    dropdownClickOutsideDisable: function () {
+    dropdownClickOutsideDisable () {
       var dropdown = $('.disable-outside-click');
       var dropdownMenu = dropdown.find('.dropdown-menu');
 
-      dropdownMenu.on('click.bs.dropdown', function (event) {
+      dropdownMenu.on('click.bs.dropdown', function(event) {
         event.stopPropagation();
         event.preventDefault();
       });
-    },
+    }
 
-    swiperInit: function () {
+    swiperInit () {
       if (typeof window.Swiper === 'undefined') {
         return;
       }
 
-      var mySwiper = new Swiper('#reviewsSlider', {
+      const mySwiper = new Swiper('#reviewsSlider', {
         pagination: {
           el: '.swiper-pagination',
           clickable: true
@@ -127,12 +125,12 @@
           }
         }
       });
-    },
+    }
 
-    tabsSwiperFix: function () {
-      $('a[data-toggle="tab"]').on('shown.bs.tab', function (event) {
-        var activeTab = $($(event.target).attr('href'));
-        var activeTabSwiper = activeTab.find('.swiper-container');
+    tabsSwiperFix () {
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function(event) {
+        const activeTab = $($(event.target).attr('href'));
+        const activeTabSwiper = activeTab.find('.swiper-container');
 
         if (
           !activeTabSwiper.length ||
@@ -143,9 +141,9 @@
 
         activeTabSwiper[0].swiper.update();
       });
-    },
+    }
 
-    fancyboxInit: function () {
+    fancyboxInit () {
       if (typeof ($.fn.fancybox) === 'undefined') {
         return;
       }
@@ -171,14 +169,14 @@
           'close'
         ]
       });
-    },
+    }
 
-    wowJs: function () {
+    wowJs () {
       if (typeof window.WOW === 'undefined') {
         return this;
       }
 
-      var wow = new WOW({
+      const wow = new WOW({
         boxClass: 'wow',
         animateClass: 'is-animation',
         offset: 100,
@@ -188,20 +186,20 @@
       });
 
       wow.init();
-    },
+    }
 
-    inputTelMaskInit: function () {
+    inputTelMaskInit () {
       if (typeof ($.fn.mask) === 'undefined') {
         return;
       }
 
       $('input[type="tel"]').mask('7 (999) 999 99 99');
-    },
+    }
 
-    scrollTo: function () {
-      var scrollTo = $('[data-scroll-to]');
+    scrollTo () {
+      const scrollTo = $('[data-scroll-to]');
 
-      scrollTo.on('click', function () {
+      scrollTo.on('click', function() {
         var target = $($(this).attr('href') || $(this).data('scroll-to'));
         var offset = target.offset().top;
 
@@ -209,26 +207,26 @@
           scrollTop: offset
         }, 300);
       });
-    },
+    }
 
-    labelPlaceholder: function () {
-      var labelPlaceholdersSelector = '.form-item__label-placeholder';
-      var labelPlaceholders = $(labelPlaceholdersSelector);
-      var inputs = labelPlaceholders.find('.field');
+    labelPlaceholder () {
+      const labelPlaceholdersSelector = '.form-item__label-placeholder';
+      const labelPlaceholders = $(labelPlaceholdersSelector);
+      const inputs = labelPlaceholders.find('.field');
 
       if (!labelPlaceholders.length) {
         return;
       }
 
       function onFocus () {
-        var labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
+        const labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
 
         labelPlaceholder.addClass('is-filled');
       }
 
       function onBlur () {
-        var labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
-        var hasValue = !!$(this).val().trim();
+        const labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
+        const hasValue = !!$(this).val().trim();
 
         if (!hasValue) {
           labelPlaceholder.removeClass('is-filled');
@@ -236,8 +234,8 @@
       }
 
       function onEach (index, el) {
-        var labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
-        var value = $(el).val().trim();
+        const labelPlaceholder = $(this).parents(labelPlaceholdersSelector);
+        const value = $(el).val().trim();
 
         if (value) {
           labelPlaceholder.addClass('is-filled');
@@ -250,15 +248,15 @@
         .on('focus', onFocus)
         .on('blur', onBlur)
         .each(onEach);
-    },
+    }
 
     // ============================ Прокрутка к началу страницы
-    pageUp: function (selector, speed) {
+    pageUp (selector, speed) {
       speed = speed || 200;
 
-      var button = $(selector);
+      const button = $(selector);
 
-      button.on('click', function (event) {
+      button.on('click', function(event) {
         event.preventDefault();
 
         $('html, body').animate({
@@ -267,60 +265,60 @@
       });
 
       this.pageUpFadeToggle(button);
-    },
+    }
 
     // ============================ Показывать кнопку вверх только если был скролл
-    pageUpFadeToggle: function (button, length) {
+    pageUpFadeToggle (button, length) {
       length = length || 200;
 
-      $(window).on('load scroll', function () {
-        var scrollTop = $(this).scrollTop();
+      $(window).on('load scroll', function() {
+        const scrollTop = $(this).scrollTop();
 
         scrollTop >= length
           ? button.fadeIn()
           : button.fadeOut()
         ;
       });
-    },
+    }
 
-    isMobileDevice: function () {
+    isMobileDevice () {
       return {
-        Android: function () {
+        Android: function() {
           return navigator.userAgent.match(/Android/i)
         },
-        BlackBerry: function () {
+        BlackBerry: function() {
           return navigator.userAgent.match(/BlackBerry/i)
         },
-        iOS: function () {
+        iOS: function() {
           return navigator.userAgent.match(/iPhone|iPad|iPod/i)
         },
-        Opera: function () {
+        Opera: function() {
           return navigator.userAgent.match(/Opera Mini/i)
         },
-        Windows: function () {
+        Windows: function() {
           return navigator.userAgent.match(/IEMobile/i)
         },
-        any: function () {
+        any: function() {
           return this.Android() || this.BlackBerry() || this.iOS() || this.Opera() || this.Windows()
         }
       }
-    },
+    }
 
-    counter: function (prfx) {
+    counter (prfx) {
       prfx = prfx || '';
 
-      var counter = $('.counter');
-      var field = counter.find('.field__input');
+      const counter = $('.counter');
+      const field = counter.find('.field__input');
 
       function fieldCount (el) {
         // Мин. значение
-        var min = el.data('min') || false;
+        const min = el.data('min') || false;
         // Макс. значение
-        var max = el.data('max') || false;
+        const max = el.data('max') || false;
         // Кнопка уменьшения кол-ва
-        var dec = el.prev('.dec');
+        const dec = el.prev('.dec');
         // Кнопка увеличения кол-ва
-        var inc = el.next('.inc');
+        const inc = el.next('.inc');
 
         function init (el) {
           if (!el.attr('disabled')) {
@@ -330,7 +328,7 @@
 
           // Уменьшим значение
           function decrement () {
-            var value = parseInt(el.val());
+            let value = parseInt(el.val());
             value--;
 
             if (!min || value >= min) {
@@ -340,7 +338,7 @@
 
           // Увеличим значение
           function increment () {
-            var value = parseInt(el.val());
+            let value = parseInt(el.val());
 
             value++;
 
@@ -351,21 +349,21 @@
 
         }
 
-        el.each(function () {
+        el.each(function() {
           init($(this))
         });
       }
 
       if (field.length) {
-        field.each(function () {
+        field.each(function() {
           fieldCount($(this))
         });
       }
-    },
+    }
 
-    rangeSlider: function () {
-      var rangeSlider = $('.range-slider');
-      var sliderDefaultOptions = {
+    rangeSlider () {
+      const rangeSlider = $('.range-slider');
+      const sliderDefaultOptions = {
         connect: true,
         format: this.priceFormat
       };
@@ -374,18 +372,18 @@
         return;
       }
 
-      rangeSlider.each(function (index, el) {
-        var group = $(el);
-        var rangeSliderMin = group.find('.range-slider__min');
-        var rangeSliderMax = group.find('.range-slider__max');
+      rangeSlider.each(function(index, el) {
+        const group = $(el);
+        const rangeSliderMin = group.find('.range-slider__min');
+        const rangeSliderMax = group.find('.range-slider__max');
 
-        var slider = group.find('.range-slider__slider');
-        var sliderUserOption = slider.data('options');
-        var sliderNode = slider[0];
+        const slider = group.find('.range-slider__slider');
+        const sliderUserOption = slider.data('options');
+        const sliderNode = slider[0];
 
         noUiSlider.create(sliderNode, $.extend(sliderDefaultOptions, sliderUserOption, true));
 
-        sliderNode.noUiSlider.on('update', function (values, handle) {
+        sliderNode.noUiSlider.on('update', function(values, handle) {
           var value = values[handle];
 
           handle
@@ -393,16 +391,16 @@
             : rangeSliderMin.val(value)
         });
 
-        rangeSliderMin.on('change', function () {
+        rangeSliderMin.on('change', function() {
           sliderNode.noUiSlider.set([$(this).val(), null]);
         });
 
-        rangeSliderMax.on('change', function () {
+        rangeSliderMax.on('change', function() {
           sliderNode.noUiSlider.set([null, $(this).val()]);
         });
       });
     }
-  };
+  }
 
-  var app = new App();
+  const app = new App();
 })(jQuery);

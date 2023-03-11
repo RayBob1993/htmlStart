@@ -7,9 +7,9 @@
 
   vertical-align: middle;
 
-  transition: $transition-base;
+  transition: var(--transition-base);
 
-  fill: $color-black;
+  fill: var(--color-black);
 
   &--left {
     margin-right: 5px;
@@ -32,9 +32,9 @@
     display: block;
     height: 2px;
 
-    background-color: $color-black;
+    background-color: var(--color-black);
 
-    transition: $transition-base;
+    transition: var(--transition-base);
 
     &:nth-child(2) {
       margin: 5px 0;

@@ -149,7 +149,7 @@
   height: 8px;
   border-radius: 100%;
 
-  background: $color-black;
+  background: var(--color-black);
   opacity: 0.2;
 }
 
@@ -168,7 +168,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: $color-white;
+  background: var(--color-white);
 }
 
 .swiper-pagination-bullet-active {
@@ -177,11 +177,11 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: $color-white;
+  background: var(--color-white);
 }
 
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: $color-black;
+  background: var(--color-black);
 }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
@@ -245,11 +245,11 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-progress.swiper-pagination-white .swiper-pagination-progressbar {
-  background: $color-white;
+  background: var(--color-white);
 }
 
 .swiper-pagination-progress.swiper-pagination-black .swiper-pagination-progressbar {
-  background: $color-black;
+  background: var(--color-black);
 }
 
 /* 3D Container */
@@ -374,7 +374,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
 
-  background: $color-black;
+  background: var(--color-black);
   opacity: 0.6;
   filter: blur(50px);
 }

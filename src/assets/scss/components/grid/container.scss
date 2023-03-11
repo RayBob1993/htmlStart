@@ -1,10 +1,10 @@
 .container {
   width: 100%;
-  max-width: $container-size;
+  max-width: var(--container-size);
   min-height: 1px;
   margin: 0 auto;
-  padding-right: $container-gutters;
-  padding-left: $container-gutters;
+  padding-right: var(--container-gutters);
+  padding-left: var(--container-gutters);
 
   &.is-fluid {
     max-width: 100%;

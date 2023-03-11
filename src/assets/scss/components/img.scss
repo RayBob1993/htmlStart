@@ -13,5 +13,5 @@ img {
 }
 
 .img-cover {
-  background: $color-default center / cover no-repeat;
+  background: var(--color-black) center / cover no-repeat;
 }

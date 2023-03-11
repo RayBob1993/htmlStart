@@ -1,8 +1,8 @@
 .row {
   display: flex;
   flex-flow: row wrap;
-  margin-right: -$gutters;
-  margin-left: -$gutters;
+  margin-right: var(--gutters-negative);
+  margin-left: var(--gutters-negative);
 
   // Gutters
   &.no-gutters {
@@ -14,14 +14,14 @@
       padding-left: 0;
     }
   }
-  
+
   &.gutters-small {
-    margin-right: -$gutters-small;
-    margin-left: -$gutters-small;
+    margin-right: var(--gutters-small-negative);
+    margin-left: var(--gutters-small-negative);
 
     > .col {
-      padding-right: $gutters-small;
-      padding-left: $gutters-small;
+      padding-right: var(--gutters-small);
+      padding-left: var(--gutters-small);
     }
   }
 }

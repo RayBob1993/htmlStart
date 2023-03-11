@@ -3,7 +3,7 @@
     opacity: 0;
   }
 
-  transition: $transition-fade;
+  transition: var(--transition-fade);
 }
 
 @import './tabs';

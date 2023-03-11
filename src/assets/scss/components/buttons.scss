@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: $border-radius-default;
+  border-radius: var(--border-radius-default);
 
   font-weight: normal;
   line-height: $line-height;
@@ -23,13 +23,13 @@
   outline: 0;
   cursor: pointer;
 
-  transition: $transition-base;
+  transition: var(--transition-base);
 
   -webkit-tap-highlight-color: transparent;
 
   @include utils-user-select(none);
   @include utils-appearance(none);
-  
+
   &-empty {
     position: relative;
 
@@ -54,7 +54,7 @@
     outline: 0;
     cursor: pointer;
 
-    transition: $transition-base;
+    transition: var(--transition-base);
 
     -webkit-tap-highlight-color: transparent;
 
@@ -76,7 +76,7 @@
     font-weight: inherit;
     font-style: inherit;
   }
-  
+
   &__ico {
     flex: 0 0 auto;
   }
@@ -131,13 +131,13 @@
 
   // =================================== States
   &--rounded {
-    border-radius: $border-radius-rounded;
+    border-radius: var(--border-radius-rounded);
   }
 
   &--expanded {
     width: 100%;
   }
-  
+
   &--plain {
     &.button--primary {
       &:not(:hover) {

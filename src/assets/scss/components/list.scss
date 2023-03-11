@@ -23,7 +23,7 @@
   &--mark {
     > li {
       position: relative;
-      
+
       padding-left: 30px;
 
       &:before {
@@ -33,9 +33,9 @@
 
         width: 10px;
         height: 10px;
-        border-radius: $border-radius-circle;
+        border-radius: var(--border-radius-circle);
 
-        background-color: $color-black;
+        background-color: var(--color-black);
 
         content: '';
       }

@@ -1,4 +1,6 @@
-$border-radius-default: 4px !default;
-$border-radius-small: 2px !default;
-$border-radius-circle: 50% !default;
-$border-radius-rounded: 50px !default;
+:root {
+  --border-radius-default: 4px;
+  --border-radius-small: 2px;
+  --border-radius-circle: 50%;
+  --border-radius-rounded: 50px;
+}

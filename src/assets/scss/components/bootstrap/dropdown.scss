@@ -12,11 +12,9 @@
     visibility: hidden;
     opacity: 0;
 
-    transition: $transition-base;
+    transition: var(--transition-base);
 
     &.show {
-
-      -webkit-transform: none;
       transform: none;
       visibility: visible;
       opacity: 1;
