@@ -82,8 +82,8 @@
       }
 
       $('.field__input--select').each(function(index, el) {
-        var select = $(el);
-        var placeholder = select.data('placeholder');
+        const select = $(el);
+        const placeholder = select.data('placeholder');
 
         select.select2({
           placeholder: placeholder,
@@ -93,8 +93,8 @@
     }
 
     dropdownClickOutsideDisable () {
-      var dropdown = $('.disable-outside-click');
-      var dropdownMenu = dropdown.find('.dropdown-menu');
+      const dropdown = $('.disable-outside-click');
+      const dropdownMenu = dropdown.find('.dropdown-menu');
 
       dropdownMenu.on('click.bs.dropdown', function(event) {
         event.stopPropagation();
@@ -200,8 +200,8 @@
       const scrollTo = $('[data-scroll-to]');
 
       scrollTo.on('click', function() {
-        var target = $($(this).attr('href') || $(this).data('scroll-to'));
-        var offset = target.offset().top;
+        const target = $($(this).attr('href') || $(this).data('scroll-to'));
+        const offset = target.offset().top;
 
         $('html, body').animate({
           scrollTop: offset
@@ -384,7 +384,7 @@
         noUiSlider.create(sliderNode, $.extend(sliderDefaultOptions, sliderUserOption, true));
 
         sliderNode.noUiSlider.on('update', function(values, handle) {
-          var value = values[handle];
+          const value = values[handle];
 
           handle
             ? rangeSliderMax.val(value)
